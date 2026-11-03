@@ -127,6 +127,23 @@
 .md-typeset .dmg.spirit    { --nd-dmg-bg: #8e24aa; --nd-dmg-fg: #ffffff; }
 
 /* ----------------------------------------------------------------------------------------------------
+   Damage values in tables: the total is the main value; a mixed-type breakdown goes on a second, smaller line.
+   **50**<br><span class="nd-split">25 *Fire*{.dmg .fire} + 25 *Spirit*{.dmg .spirit}</span>
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset td:not(:first-child) > strong {
+    font-size: 1.15em;
+}
+
+.md-typeset .nd-split {
+    display: inline-block;
+    margin-top: 0.15em;
+    color: var(--md-default-fg-color--light);
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+/* ----------------------------------------------------------------------------------------------------
    Keys (pymdownx.keys): never wrap a key combination
    ---------------------------------------------------------------------------------------------------- */
 

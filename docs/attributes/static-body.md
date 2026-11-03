@@ -49,6 +49,7 @@ When an enemy hits you, it takes *Lightning*{.dmg .lightning} damage back.
 | Reflected damage *Lightning*{.dmg .lightning} | **0** | **12.5** | **25** |
 
 - Damage from other players is not reflected.
+- Bosses are not staggered.
 
 ## Resources and skills
 
@@ -63,4 +64,4 @@ When an enemy hits you, it takes *Lightning*{.dmg .lightning} damage back.
 - [Thor](../demigods/thor.md)
 - [Glossary](../getting-started/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.0 -->
+<!-- Verified against NorseDemigods 1.9.1 -->

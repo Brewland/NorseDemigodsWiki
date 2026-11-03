@@ -77,4 +77,4 @@ Bonus maximum energy (for example from Infused Megingjord) makes the blast even 
 
 - [Thor](../demigods/thor.md)
 
-<!-- Verified against NorseDemigods 1.9.0 -->
+<!-- Verified against NorseDemigods 1.9.1 -->

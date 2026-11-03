@@ -28,7 +28,7 @@ It costs no energy and is enabled by default.
 
 ## Limits
 
-- You must have claimed a bed. In-game message: *"You have not claimed a bed yet"*.
+- You must have claimed a bed.
 - You cannot teleport while carrying items that cannot be teleported, such as ore.
 
 **If enabled:** `[Teleportation] Ignore Non Teleportable Items` = `true` allows them. This only matters if world
@@ -45,4 +45,4 @@ modifiers or other mods restrict teleportation.
 
 - [Thor](../demigods/thor.md)
 
-<!-- Verified against NorseDemigods 1.9.0 -->
+<!-- Verified against NorseDemigods 1.9.1 -->

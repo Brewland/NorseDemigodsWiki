@@ -90,7 +90,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 
     Lightning bonus damage, damage reflection, extra eitr and armor, energy regeneration.
 
--   :material-arm-flex:{ .lg .middle } [**Bear Strength**](../attributes/strength.md#bear-strength)
+-   :material-arm-flex:{ .lg .middle } [**Bear Strength**](../attributes/bear-strength.md)
 
     ---
 
@@ -98,7 +98,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 
     Shared with Njord, Surtr.
 
--   :material-shoe-print:{ .lg .middle } [**Titan Legs**](../attributes/movement-and-stamina.md#titan-legs)
+-   :material-shoe-print:{ .lg .middle } [**Titan Legs**](../attributes/titan-legs.md)
 
     ---
 
@@ -149,4 +149,4 @@ Infusing Thor's abilities upgrades all of them at once:
 
 - [Glossary](../getting-started/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.0 -->
+<!-- Verified against NorseDemigods 1.9.1 -->

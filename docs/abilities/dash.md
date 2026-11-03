@@ -44,7 +44,7 @@ Range grows evenly from 12 m to 18 m.
 - Deals *Lightning*{.dmg .lightning} damage.
 - **Air dive:** while airborne and looking down, you dash straight to the aimed spot on the ground.
 - The spot must be within dash range and at least twice your height away.
-- With [Titan Legs](../attributes/movement-and-stamina.md#titan-legs), the dive triggers the landing blast at
+- With [Titan Legs](../attributes/titan-legs.md), the dive triggers the landing blast at
   maximum force.
 
 ### Nature (Freyja)
@@ -60,6 +60,6 @@ Range grows evenly from 12 m to 18 m.
 ## Related pages
 
 - [Thor](../demigods/thor.md)
-- [Titan Legs](../attributes/movement-and-stamina.md#titan-legs)
+- [Titan Legs](../attributes/titan-legs.md)
 
-<!-- Verified against NorseDemigods 1.9.0 -->
+<!-- Verified against NorseDemigods 1.9.1 -->

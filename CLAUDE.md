@@ -19,8 +19,7 @@ Player-facing gameplay wiki for the Valheim mod **Norse Demigods**.
   - `docs/demigods/thor.md`
   - `docs/abilities/` `lightning-strike.md`, `dash.md`, `lightning-aura.md`, `lightning-storm.md`,
     `restoration.md`, `teleport.md`
-  - `docs/attributes/static-body.md`, plus the Bear Strength section in `strength.md` and the Titan Legs section
-    in `movement-and-stamina.md`
+  - `docs/attributes/` `static-body.md`, `bear-strength.md`, `titan-legs.md`
 - **Decisions go into the guide.** Any style or convention decision the user makes in chat must be written into
   WIKI_GUIDE.md in the same batch, so the guide alone is enough to produce identical-looking pages.
 
@@ -49,30 +48,34 @@ Status: ✅ done · 🟡 partly done · ⬜ to do
 
 ### Demigods
 
-Each demigod batch = the demigod page, its ability pages (or variant sections), its single-class attribute pages
-and its sections on shared attribute pages.
+Each demigod batch = the demigod page, its ability pages (or variant sections) and its attribute pages, including
+shared attributes not written yet.
 
 | Demigod | Status | Notes |
 | --- | --- | --- |
-| Brokkr | ⬜ | |
-| Eir | ⬜ | |
-| Fenrir | ⬜ | |
-| Freyja | ⬜ | Dash Nature variant section already exists |
+| Brokkr | ✅ | |
+| Eir | ✅ | |
+| Fenrir | ✅ | |
+| Freyja | ⬜ | Already exist: Dash Nature and Heal Over Time Nature sections, Stagger, Deer Endurance, Eagle Strength, Hare Legs, Valkyrie, Wolf Speed |
 | Hel | ⬜ | |
-| Hraesvelgr | ⬜ | |
-| Kvasir | ⬜ | |
-| Njord | ⬜ | Restoration Water variant section already exists |
-| Surtr | ⬜ | |
+| Hraesvelgr | ⬜ | Already exist: Eagle Strength, Hare Legs |
+| Kvasir | ⬜ | Already exist: Heal Over Time Blood section, Deer Endurance, Hare Legs |
+| Njord | ⬜ | Already exist: Restoration Water section, Bear Strength, Titan Legs |
+| Surtr | ⬜ | Already exist: Elemental Shield Fire and Slash Fire sections, Bear Strength, Titan Legs |
 | Thor | ✅ | Reference batch |
-| Ullr | ⬜ | |
+| Ullr | ⬜ | Already exist: Summon Wolf Wolf and Heal Over Time Frost sections, Deer Endurance, Hare Legs, Wolf Speed |
 
 ### Shared attributes
 
 | Page | Status | Notes |
 | --- | --- | --- |
-| `movement-and-stamina.md` | 🟡 | Titan Legs done; Hare Legs, Deer Endurance, Wolf Speed to do |
-| `strength.md` | 🟡 | Bear Strength done; Eagle Strength to do |
-| `valkyrie.md` | ⬜ | |
+| `bear-strength.md` | ✅ | Thor batch |
+| `deer-endurance.md` | ✅ | Eir/Fenrir batch |
+| `eagle-strength.md` | ✅ | Eir batch |
+| `hare-legs.md` | ✅ | Eir/Fenrir batch |
+| `titan-legs.md` | ✅ | Thor batch |
+| `valkyrie.md` | ✅ | Eir batch |
+| `wolf-speed.md` | ✅ | Fenrir batch |
 
 ### Other sections
 
@@ -80,7 +83,7 @@ and its sections on shared attribute pages.
 | --- | --- | --- |
 | Home (`index.md`) | 🟡 | Summary and server-defaults disclaimer only |
 | Getting Started | 🟡 | Glossary done; Becoming a Demigod, Controls and Hotkeys, Energy, Demigod Skill and Progression, Ability Infusion to do |
-| Abilities | 🟡 | Teleport + Thor's abilities done |
+| Abilities | 🟡 | Teleport + Brokkr's, Eir's, Fenrir's and Thor's abilities done |
 | Items | ⬜ | Demigod Runestone, Infusion Items, Permanent Consumables, Infused Megingjord, Sweet Fish Foods, Abyssal Harpoon |
 | Companions | ⬜ | |
 | Reference | ⬜ | Difficulty and Server Settings, Optional Features, Compatibility, FAQ, Changelog |

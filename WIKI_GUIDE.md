@@ -48,8 +48,8 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
 
 ### Settled decisions
 
-- **Hraesvelgr is fully released.** The player README still marks him as experimental (asterisk and footnote);
-  that is outdated. The code does not lock him. Do not label him "If enabled".
+- **Hraesvelgr is fully released** (since 1.9.0). He does not need `Enable Experimental Features`. Do not label him
+  "If enabled" or experimental.
 - **Holy Sun burning tar** works only with `[(General)] Enable Experimental Features` = `true`, and does not work
   in multiplayer yet. Mention it on the Holy Sun page with an "If enabled" label.
 - **No controller support.** Gamepad bindings are commented out in the code. Do not document controller controls.
@@ -61,9 +61,35 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
   repeat it on other pages.
 - **No unarmed note for attack-speed bonuses.** Do not state whether weapon attack-speed bonuses apply to
   unarmed attacks unless the mod code handles unarmed explicitly.
-- **Movement speed bonuses** that go through the mod's status effect apply to all movement (walking, jogging,
-  sprinting, crouching, swimming), whatever the config text says. Write "Movement speed (all movement,
-  including swimming)".
+- **Demigod Role** is the README's "Brief Description", kept in full, even when part of it is flavor text (e.g. Eir's
+  "bringing light to even the depths of the underworld"). Do not trim it to match the mechanics.
+- **Movement speed bonuses** ("+X% movement speed") apply to walking, jogging, sprinting, sneaking and swimming,
+  never while encumbered, and do not change jump height. They add up with each other and are scaled by
+  `[(Special Modifiers)] Special Movement Speed Modifier (%)`. Write the row as `| Movement speed | +10% |` and add
+  the movement speed standard note (see [Standard notes](#standard-notes)). Exception: Wind Aura is removed while
+  swimming, so its bonus never applies in water; say so on its page.
+- **Sneak and swim speed** (since 1.9.1) are separate percentage bonuses, not part of movement speed:
+  - Sneak speed (`Bonus Sneak Speed (%)`): only while sneaking, never while encumbered; sneaking is never faster
+    than jogging (armor penalties included).
+  - Swim speed (`Bonus Swim Speed (%)`): only while swimming, also while encumbered.
+  - Bonuses of the same kind do not stack (the highest applies). Both multiply with movement speed bonuses.
+  - They are not scaled by the Special Movement Speed Modifier.
+- **Sneak stamina** (`Stamina Drain Modifier From Sneaking (%)`): reductions from different attributes add up,
+  like the sprinting ones.
+- **Sprinting:** call the sprint key's effects "sprinting" everywhere, never "running" or "jogging" (e.g. "No
+  stamina regeneration while sprinting, swimming or encumbered"). The vanilla skill keeps its name, Run.
+- **Minor conditions may be left out** (e.g. regeneration pausing while burning or poisoned), unless leaving them
+  out would mislead players. They must be stated when a nearby line implies the opposite, such as "also while
+  sprinting or swimming".
+- **Sneak attacks** (vanilla backstab: target not alerted, at most once per target every 300 s), since 1.9.1:
+  - Only Lightning Torpedo and Poison Javelin have their own ×4 bonus; they get the ×4 standard note.
+  - Acid Bolt, Fireball, Ice Shards and Lightning Bolt reuse a cloned vanilla weapon attack, and Infused Arrow's
+    arrow uses the bow's attack. They get that attack's vanilla sneak bonus. Many fire without a weapon equipped,
+    so never call it "your weapon's" bonus. Do not mention sneak attacks on them at all.
+  - Every other ability, including its weapon swing, and all attribute splash damage get no sneak bonus. Add no
+    sneak note to them, and make no sneak claims about summons.
+- **Bosses are never staggered** by the mod's staggers (abilities and attributes). Add the boss standard note to
+  every stagger effect.
 
 ## 3. Conventions
 
@@ -110,6 +136,10 @@ brackets. Show the **default** binding; players can rebind every key.
 | Teleport | `++p++ (Teleport)` | P (Teleport) |
 | Ignore special attack | `++left-alt++ + ++mouse-middle++` | Left Alt + Middle Mouse |
 
+When a shared special attack uses different weapons per demigod, the ability page (infobox and index row) lists
+each: `++mouse-middle++ (Special attack, unarmed for Fenrir; axes or swords for Surtr)`. A demigod's own card shows only
+that demigod's weapons: `++mouse-middle++ (Special attack, unarmed)`.
+
 Where the defaults come from:
 
 - **Ability A / B / Teleport / Ignore special attack:** `[(Hotkeys)]` in `Configs.cs` (`Mouse4`, `Mouse3`, `P`,
@@ -134,11 +164,13 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
   | Case | Markdown | Renders as |
   | --- | --- | --- |
   | One type | `**80** *Lightning*{.dmg .lightning}` | **80** [Lightning] |
-  | Several types | `**5** = **2.5** *Blunt*{.dmg .blunt} + **2.5** *Fire*{.dmg .fire}` | **5** = **2.5** [Blunt] + **2.5** [Fire] |
-  | Weapon-relative | `**100%** of weapon damage = **75%** *Slash*{.dmg .slash} + **25%** *Fire*{.dmg .fire}` | |
+  | Several types, table cell | `**5**<br><span class="nd-split">2.5 *Blunt*{.dmg .blunt} + 2.5 *Fire*{.dmg .fire}</span>` | **5**, then a smaller grey line: 2.5 [Blunt] + 2.5 [Fire] |
+  | Several types, prose | `**5** (2.5 *Blunt*{.dmg .blunt} + 2.5 *Fire*{.dmg .fire})` | **5** (2.5 [Blunt] + 2.5 [Fire]) |
+  | Weapon-relative | `**100%** of weapon damage (75% *Slash*{.dmg .slash} + 25% *Fire*{.dmg .fire})` | |
 
-  Lead with the **in-game total** (what the tooltip shows), then the split. Example: Fireball's config is 2.5 per
-  type, but the tooltip shows 5.
+  The **in-game total** (what the tooltip shows) is the main value: bold, on its own line in tables (the CSS makes
+  it larger). The split comes second: not bold, on a second line in the `nd-split` span (smaller, grey), so the
+  badges never outweigh the total. Example: Fireball's config is 2.5 per type, but the tooltip shows 5.
 - Damage is a base amount plus an amount [per level](getting-started/glossary.md#per-level). Put scaling
   values in a **level table** with the columns `Lv 0 / Lv 50 / Lv 100` (demigod skill level), one row per value.
   Right-align the level columns. When a row has a single damage type, put the badge in the **row label** and
@@ -151,8 +183,13 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
   | Range | 12 m | 15 m | 18 m |
   ```
 
-  Mixed-type rows keep the badges in each cell. Non-damage values (range, carry weight) are not bold.
+  Mixed-type rows keep the badges in each cell's `nd-split` line. Non-damage values (range, carry weight) are not bold.
   Variant rows name the demigod before the badge: `| Path damage, Thor *Lightning*{.dmg .lightning} | **10** | … |`.
+- Values that also scale with another skill (e.g. Titan Arms: demigod skill **and** Unarmed skill) keep the
+  `Lv 0 / Lv 50 / Lv 100` columns (demigod level) and get one row per level of the other skill:
+  `| Damage per hit, Unarmed skill 0 | … |`, `| Damage per hit, Unarmed skill 100 | … |`.
+- Values that depend **only** on another skill get their own columns, named after that skill:
+  `| | Unarmed 0 | Unarmed 50 | Unarmed 100 |` (e.g. Titan Arms tree damage).
 - A column that holds one damage type may carry the badge in its **header**:
   `| Weapon | Extra damage *Lightning*{.dmg .lightning} |` (see Static Body).
 - **Bold** marks damage and healing amounts only, including a damage share in prose ("deal **35%** of the hit's
@@ -172,7 +209,10 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
 - Changes as before → after: `Eitr cost: 40 → 30`.
 - "None" for a cost or cooldown that is zero (`**Cooldown** | None`).
 - Minimum resource needs as `Needs 1+ energy; drains 1 every 4 s`.
-- In-game messages in italics with quotes: `In-game message: *"You have not claimed a bed yet"*`.
+- In-game messages in italics with quotes: `In-game message when it gets hungry again: *"Your wolf is no longer
+  happy"*`. Quote one only when it tells the player something the page does not already say (e.g. a
+  notification). Never quote the message that only repeats a stated limit ("Not usable indoors" needs no
+  *"The sun will not shine underground..."*).
 
 ### Writing style
 
@@ -180,6 +220,19 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
 - **No paragraph longer than 3 lines** (about 3 × 100 characters as rendered). Split or convert to bullets.
 - Numbered lists only for sequences (what happens, in order).
 - Tables for anything with two or more comparable values.
+
+### Standard notes
+
+Reuse these exact wordings in `## Notes` (or the `**Notes:**` label) wherever they apply:
+
+| When | Note (copy the wording) |
+| --- | --- |
+| The ability damages trees, rocks or ores in an area | **Collateral protection:** trees and ores are not damaged when an enemy is within 10 m of the explosion (or beam), or when an enemy within 6 m of you is targeting you. Setting: `[(General)] Protect Resources From Collateral Damage` (on by default; outdoors only). |
+| The ability's hit has its own ×4 sneak bonus (since 1.9.1 only Lightning Torpedo and Poison Javelin) | Sneak attacks deal ×4 damage. |
+| The ability summons a companion | Bosses deal only 50% damage to summoned companions. Setting: `[Combat] Follower Damage From Boss Modifier (%)`. |
+| An energy-on-hit or energy-on-block chance that is blocked by draining abilities | No energy regeneration while an energy-draining ability is active. |
+| A "+X% movement speed" bonus | **Movement speed:** applies to walking, jogging, sprinting, sneaking and swimming, but not while encumbered, and does not change jump height. Adds up with other movement speed bonuses. Setting: `[(Special Modifiers)] Special Movement Speed Modifier (%)`. |
+| A stagger effect | Bosses are not staggered. |
 
 ### Spoilers
 
@@ -260,8 +313,7 @@ Every entry on the compatibility page is labelled:
   Order within a section:
   - **Demigods:** alphabetical.
   - **Abilities:** Teleport first, then alphabetical.
-  - **Attributes:** grouped pages first (Movement and Stamina, Strength, Valkyrie), then single-class pages
-    alphabetical.
+  - **Attributes:** alphabetical.
 - Every new page also gets a row in its section's `index.md` table (see [Section index pages](#section-index-pages)).
 
 ### File naming
@@ -271,9 +323,20 @@ Every entry on the compatibility page is labelled:
   Heal Over Time, Restoration, Stagger, Summon Wolf) get **one page with a section per variant**:
   `docs/abilities/slash.md` with `### Fire (Surtr)` and `### Frost (Fenrir)` under `## Variants`.
   Variants share one config section, so a server change affects all of them; say so on the page.
-- **Single-class attributes** get their own page: `docs/attributes/static-body.md`.
-- **Shared attributes** (owned by several demigods) stay on their grouped page, one `##` section each:
-  `docs/attributes/strength.md#bear-strength`.
+- If **all** owners use the same theme (e.g. Stagger: Eir and Freyja, both `BROWN`), skip `## Variants`: say in the
+  summary that they share the same version, and cards link to the page itself, not a section.
+- If variants share a theme but differ in another property, name the section after that difference. Example: Summon
+  Wolf (both `FROST`) uses the creature: `### Ulv (Fenrir)`, `### Wolf (Ullr)`.
+- **One page per attribute**, whether one demigod or several have it: `docs/attributes/static-body.md`,
+  `docs/attributes/hare-legs.md`. Never group attributes on a shared page (no "Movement and Stamina" or "Strength"
+  pages), even when their content is similar. The same goes for abilities: one page per ability (theme variants of
+  the same ability stay as sections on that page, see above).
+- **Items are the exception:** related items stay grouped on one page, one `##` section each. Keep the groups
+  separate by who can use them:
+  - **Infusion Items** (`infusion-items.md`): the items that infuse a demigod's abilities, one per demigod.
+  - **Permanent Consumables** (`permanent-consumables.md`): items any demigod can consume for a permanent effect.
+  - **Sweet Fish Foods** (`sweet-fish-foods.md`).
+  - Standalone items (Demigod Runestone, Infused Megingjord, Abyssal Harpoon) get their own page.
 
 ### Images
 
@@ -313,15 +376,13 @@ table (empty header row) wrapped in `<div class="nd-infobox" markdown>`. Player-
 </div>
 ```
 
-Grouped attribute pages put one infobox at the top of each attribute's `##` section.
-
 Field order (omit rows that do not apply, except where marked "always"):
 
 | Page type | Fields, in order |
 | --- | --- |
 | Demigod | Role, Element (badges), Favorite weapons, Preferred armor, Config ID, Config section |
 | Ability | Used by, Input, Eitr cost (only if any), Energy cost (always), Cooldown (always), Duration or Cast time, Range, other areas (e.g. Explosion radius), Config ID, Config section |
-| Attribute | Demigod (single-class) or Demigods (grouped), Condition, Config ID, Config section |
+| Attribute | Demigod (one owner) or Demigods (several owners), Condition, Config ID, Config section |
 | Item | Type, Crafting station, Restricted to, Stack size, Consume limit, Config ID |
 
 - Values that scale with level appear as a range: `12–18 m, by level`; the level table has the details.
@@ -366,14 +427,16 @@ inline. One card per ability or attribute:
 Card order:
 
 - **Abilities:** by input: special attacks (normal, while blocking, airborne), Ability A, B, C, D, then Teleport.
-- **Attributes:** the demigod's single-class attributes first, then shared attributes; alphabetical within each.
+- **Attributes:** the demigod's own attributes (no other owner) first, then shared attributes; alphabetical within
+  each.
 
 Card text rules:
 
 - Toggles start with "Toggle: ", e.g. "Toggle: faster attacks, faster movement and stamina regeneration."
 - Teleport's card always reads "Teleport to your bed and back. Shared by all demigods."
-- Variant abilities link to the variant section: `../abilities/dash.md#lightning-thor`.
-- Shared attributes link to their grouped section: `../attributes/strength.md#bear-strength`.
+- Variant abilities link to the variant section: `../abilities/dash.md#lightning-thor` (unless the page has no
+  `## Variants`, see [File naming](#file-naming)).
+- Attributes always link to their page: `../attributes/bear-strength.md`.
 
 Icons come from `pymdownx.emoji` with Material's icon set (`:material-<name>:`). Browse names at
 <https://pictogrammers.com/library/mdi/>; check the icon exists in
@@ -392,6 +455,39 @@ use (add new ones here):
 | Static Body | `:material-flash:` |
 | Bear Strength | `:material-arm-flex:` |
 | Titan Legs | `:material-shoe-print:` |
+| Lightning Torpedo | `:material-rocket-launch:` |
+| Combustion | `:material-rocket:` |
+| Bomb | `:material-bomb:` |
+| Stone Shield | `:material-wall:` |
+| Stone Golem | `:material-robot-angry:` |
+| Nano Cube | `:material-cube-outline:` |
+| Blacksmith | `:material-hammer:` |
+| Gourmand | `:material-food-drumstick:` |
+| Sturdy Legs | `:material-foot-print:` |
+| Thunder Forger | `:material-anvil:` |
+| Titan Strength | `:material-weight-lifter:` |
+| Holy Strike | `:material-star-four-points:` |
+| Stagger | `:material-rotate-3d-variant:` |
+| Holy Sun | `:material-weather-sunny:` |
+| Elemental Shield | `:material-shield-sun:` |
+| Holy Heal | `:material-hand-heart:` |
+| Holy Conjuration | `:material-fish:` |
+| Holy Body | `:material-white-balance-sunny:` |
+| Purity | `:material-flare:` |
+| Deer Endurance | `:material-heart-pulse:` |
+| Eagle Strength | `:material-bird:` |
+| Hare Legs | `:material-rabbit:` |
+| Valkyrie | `:material-shield-sword:` |
+| Slash | `:material-slash-forward:` |
+| Ice Shards | `:material-snowflake:` |
+| Enrage | `:material-emoticon-angry:` |
+| Frost Nova | `:material-snowflake-variant:` |
+| Summon Wolf | `:material-paw:` |
+| Heal Over Time | `:material-heart-plus:` |
+| Boiling Blood | `:material-thermometer-high:` |
+| Frost Body | `:material-snowman:` |
+| Titan Arms | `:material-boxing-glove:` |
+| Wolf Speed | `:material-speedometer:` |
 
 #### Section index pages
 
@@ -401,7 +497,7 @@ Each section's `index.md` is a one-line summary plus one entry per page, sorted 
 | --- | --- | --- |
 | `demigods/index.md` | Demigod, Summary, Element, Favorite weapons, Preferred armor | Element as badges |
 | `abilities/index.md` | Ability, Used by, Input, Summary | Input as keys; ends with "Inputs show the default keys." |
-| `attributes/index.md` | Attribute, Demigods, Summary | Shared attributes link to their grouped section |
+| `attributes/index.md` | Attribute, Demigods, Summary | Every attribute links to its own page |
 | `getting-started/index.md` | No table: a `## Pages` bullet list | `- [Glossary](glossary.md): heavy armor, per level, …` |
 
 Demigods without a page yet are plain text (no link) in the Used by / Demigods columns.
@@ -544,7 +640,7 @@ clubs and axes and fights best in heavy armor.
 
     One short sentence.
 
--   :material-arm-flex:{ .lg .middle } [**Bear Strength**](../attributes/strength.md#bear-strength)
+-   :material-arm-flex:{ .lg .middle } [**Bear Strength**](../attributes/bear-strength.md)
 
     ---
 
@@ -665,7 +761,7 @@ Both variants share one config section: a server change affects Surtr and Fenrir
 <!-- Verified against NorseDemigods x.y.z -->
 ```
 
-### Attribute (single-class)
+### Attribute
 
 ```markdown
 # Static Body
@@ -676,7 +772,7 @@ One-sentence summary of this attribute.
 
 | | |
 | --- | --- |
-| **Demigod** | [Thor](../demigods/thor.md) |
+| **Demigod** | [Thor](../demigods/thor.md) (several owners: **Demigods**, comma-separated) |
 | **Condition** | Always active / e.g. only when not wearing heavy armor, out of combat, sneaking |
 | **Config ID** | `StaticBody` |
 | **Config section** | `[Attribute Static Body]` |
@@ -713,56 +809,6 @@ One-sentence summary of this attribute.
 ```
 
 Split long effect lists into themed `##` sections (e.g. "Weapon damage", "Defense") when that reads better.
-
-### Attribute (grouped)
-
-Only for attributes shared by several demigods; one `##` section per attribute, each with its own infobox.
-
-```markdown
-# Movement and Stamina Attributes
-
-Passive attributes that make demigods run faster, jump higher or use less stamina.
-
-<!-- IMAGE: attribute icons -->
-
-| Attribute | Demigods | Summary |
-| --- | --- | --- |
-| [Hare Legs](#hare-legs) | Eir, Fenrir, … | … |
-
-## Hare Legs
-
-One-sentence summary of this attribute.
-
-<div class="nd-infobox" markdown>
-
-| | |
-| --- | --- |
-| **Demigods** | [Eir](../demigods/eir.md), … |
-| **Condition** | Always active / … |
-| **Config ID** | `HareLegs` |
-| **Config section** | `[Attribute Hare Legs]` |
-
-</div>
-
-| Effect | Value |
-| --- | --- |
-| Run speed | +X% |
-
-Add a `Lv 0 / Lv 50 / Lv 100` table if the attribute scales. List resistances and weaknesses if it grants any.
-
-### A sub-topic (e.g. Landing blast)
-
-- Longer topics get `###` subsections inside the attribute's `##` section.
-
-**Notes:**
-
-- Short notes use a bold "Notes:" label instead of a heading.
-
-<!-- Verified against NorseDemigods x.y.z -->
-```
-
-Placeholders for attributes added in later batches stay as HTML comments under the overview table, e.g.
-`<!-- Eagle Strength (Eir, Freyja, Hraesvelgr) will be added in a later batch. -->`.
 
 ### Item
 
@@ -935,10 +981,7 @@ docs/
 │   └── one page per ability                (table below)
 ├── attributes/
 │   ├── index.md                            All attributes (table)
-│   ├── movement-and-stamina.md             Hare Legs, Deer Endurance, Titan Legs, Wolf Speed
-│   ├── strength.md                         Bear Strength, Eagle Strength
-│   ├── valkyrie.md                         Eir and Freyja
-│   └── one page per single-class attribute (table below), e.g. static-body.md
+│   └── one page per attribute              (table below), e.g. static-body.md, hare-legs.md
 ├── items/
 │   ├── index.md
 │   ├── demigod-runestone.md
@@ -1026,16 +1069,22 @@ Read the `skills:` list in `Demigods.yaml` for each.
 
 ### Attributes
 
-Shared attributes (grouped pages):
+Every attribute gets its own page, named from the display name (`static-body.md`, `hare-legs.md`), listed
+alphabetically in `nav`.
 
-| Page | Attributes (demigods) |
+Shared attributes (several owners):
+
+| Attribute | Demigods |
 | --- | --- |
-| `movement-and-stamina.md` | Hare Legs (Eir, Fenrir, Freyja, Hraesvelgr, Kvasir, Ullr), Deer Endurance (Eir, Fenrir, Freyja, Kvasir, Ullr), Titan Legs (Njord, Surtr, Thor), Wolf Speed (Fenrir, Freyja, Ullr) |
-| `strength.md` | Bear Strength (Njord, Surtr, Thor), Eagle Strength (Eir, Freyja, Hraesvelgr) |
-| `valkyrie.md` | Valkyrie (Eir, Freyja) |
+| Bear Strength | Njord, Surtr, Thor |
+| Deer Endurance | Eir, Fenrir, Freyja, Kvasir, Ullr |
+| Eagle Strength | Eir, Freyja, Hraesvelgr |
+| Hare Legs | Eir, Fenrir, Freyja, Hraesvelgr, Kvasir, Ullr |
+| Titan Legs | Njord, Surtr, Thor |
+| Valkyrie | Eir, Freyja |
+| Wolf Speed | Fenrir, Freyja, Ullr |
 
-Single-class attributes (38) each get their own page, named from the display name (`static-body.md`). In `nav`,
-list the grouped pages first, then the single-class pages alphabetically.
+Attributes with one owner (38):
 
 | Demigod | Attributes |
 | --- | --- |
@@ -1052,5 +1101,5 @@ list the grouped pages first, then the single-class pages alphabetically.
 | Ullr | Hunter, Lumberjack, Sneaky, Wolf Fur |
 
 The 10 `Infused…` attributes are covered on the Items pages (Infusion Items, Permanent Consumables),
-not as attribute pages. Attribute themes (Titan Arms `FROST`; Titan Legs `BLUE`/`BROWN`) are documented within the
-attribute's section.
+not as attribute pages. Attribute themes (Titan Arms `FROST`; Titan Legs `BLUE`/`BROWN`) are documented on the
+attribute's page.

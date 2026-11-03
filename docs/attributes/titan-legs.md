@@ -1,16 +1,4 @@
-# Movement and Stamina Attributes
-
-Passive attributes that make demigods run faster, jump higher or use less stamina.
-
-<!-- IMAGE: Titan Legs attribute icon -->
-
-| Attribute | Demigods | Summary |
-| --- | --- | --- |
-| [Titan Legs](#titan-legs) | Njord, Surtr, [Thor](../demigods/thor.md) | Faster movement, higher jumps, cheaper sprinting and a landing blast. |
-
-<!-- Hare Legs, Deer Endurance and Wolf Speed will be added in later batches. -->
-
-## Titan Legs
+# Titan Legs
 
 Titan Legs makes you faster and lighter on your feet, reduces fall damage, and turns hard landings into a blast
 that damages nearby enemies.
@@ -26,15 +14,19 @@ that damages nearby enemies.
 
 </div>
 
+<!-- IMAGE: Titan Legs attribute icon -->
+
+## Effects
+
 | Effect | Value |
 | --- | --- |
-| Movement speed (all movement, including swimming) | +10% |
+| Movement speed | +10% |
 | Jump force | +15% |
 | Stamina used when sprinting | −40% |
 | Stamina used when jumping | −40% |
 | Landing blast radius | 4 m |
 
-### Landing blast
+## Landing blast
 
 - Triggers when you land from a fall of about 8 m or more.
 - Hits enemies within 4 m and pushes them away.
@@ -51,15 +43,26 @@ and closer enemies take more.
 
 Thor's [Dash](../abilities/dash.md#lightning-thor) air dive triggers the blast at maximum force.
 
-### Fall damage
+## Fall damage
 
 - No fall damage from falls of 12 m or less.
 - Above 12 m, fall damage rises to 100 at 20 m or higher.
 - Fall damage never takes you below 10 health.
 
-### Themes
+## Themes
 
 - Njord and Thor: blue theme. Surtr: brown theme.
 - Only the landing blast's visual and sound effects differ.
 
-<!-- Verified against NorseDemigods 1.9.0 -->
+## Notes
+
+- **Movement speed:** applies to walking, jogging, sprinting, sneaking and swimming, but not while encumbered, and
+  does not change jump height. Adds up with other movement speed bonuses. Setting:
+  `[(Special Modifiers)] Special Movement Speed Modifier (%)`.
+
+## Related pages
+
+- [Thor](../demigods/thor.md)
+- [Dash](../abilities/dash.md)
+
+<!-- Verified against NorseDemigods 1.9.1 -->

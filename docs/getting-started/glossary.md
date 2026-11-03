@@ -43,4 +43,4 @@ vanilla axes and pickaxes.
 
 These are vanilla Valheim values, not mod settings.
 
-<!-- Verified against NorseDemigods 1.9.0 -->
+<!-- Verified against NorseDemigods 1.9.1 -->

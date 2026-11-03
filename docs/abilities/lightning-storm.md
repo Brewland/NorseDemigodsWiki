@@ -53,7 +53,6 @@ Each strike: 5 base + 0.45 [per level](../getting-started/glossary.md#per-level)
 ## Limits
 
 - Not usable indoors, such as in dungeons and caves.
-- In-game message: *"Ever heard of a lightning storm inside a cave?"*
 
 ## Notes
 
@@ -64,4 +63,4 @@ Each strike: 5 base + 0.45 [per level](../getting-started/glossary.md#per-level)
 - [Thor](../demigods/thor.md)
 - [Lightning Aura](lightning-aura.md)
 
-<!-- Verified against NorseDemigods 1.9.0 -->
+<!-- Verified against NorseDemigods 1.9.1 -->

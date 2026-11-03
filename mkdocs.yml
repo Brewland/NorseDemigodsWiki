@@ -58,20 +58,56 @@ nav:
       - Glossary: getting-started/glossary.md
   - Demigods:
       - demigods/index.md
+      - Brokkr: demigods/brokkr.md
+      - Eir: demigods/eir.md
+      - Fenrir: demigods/fenrir.md
       - Thor: demigods/thor.md
   - Abilities:
       - abilities/index.md
       - Teleport: abilities/teleport.md
+      - Bomb: abilities/bomb.md
+      - Combustion: abilities/combustion.md
       - Dash: abilities/dash.md
+      - Elemental Shield: abilities/elemental-shield.md
+      - Enrage: abilities/enrage.md
+      - Frost Nova: abilities/frost-nova.md
+      - Heal Over Time: abilities/heal-over-time.md
+      - Holy Conjuration: abilities/holy-conjuration.md
+      - Holy Heal: abilities/holy-heal.md
+      - Holy Strike: abilities/holy-strike.md
+      - Holy Sun: abilities/holy-sun.md
+      - Ice Shards: abilities/ice-shards.md
       - Lightning Aura: abilities/lightning-aura.md
       - Lightning Storm: abilities/lightning-storm.md
       - Lightning Strike: abilities/lightning-strike.md
+      - Lightning Torpedo: abilities/lightning-torpedo.md
+      - Nano Cube: abilities/nano-cube.md
       - Restoration: abilities/restoration.md
+      - Slash: abilities/slash.md
+      - Stagger: abilities/stagger.md
+      - Stone Golem: abilities/stone-golem.md
+      - Stone Shield: abilities/stone-shield.md
+      - Summon Wolf: abilities/summon-wolf.md
   - Attributes:
       - attributes/index.md
-      - Movement and Stamina: attributes/movement-and-stamina.md
-      - Strength: attributes/strength.md
+      - Bear Strength: attributes/bear-strength.md
+      - Blacksmith: attributes/blacksmith.md
+      - Boiling Blood: attributes/boiling-blood.md
+      - Deer Endurance: attributes/deer-endurance.md
+      - Eagle Strength: attributes/eagle-strength.md
+      - Frost Body: attributes/frost-body.md
+      - Gourmand: attributes/gourmand.md
+      - Hare Legs: attributes/hare-legs.md
+      - Holy Body: attributes/holy-body.md
+      - Purity: attributes/purity.md
       - Static Body: attributes/static-body.md
+      - Sturdy Legs: attributes/sturdy-legs.md
+      - Thunder Forger: attributes/thunder-forger.md
+      - Titan Arms: attributes/titan-arms.md
+      - Titan Legs: attributes/titan-legs.md
+      - Titan Strength: attributes/titan-strength.md
+      - Valkyrie: attributes/valkyrie.md
+      - Wolf Speed: attributes/wolf-speed.md
   - Items:
       - items/index.md
   - Companions:
