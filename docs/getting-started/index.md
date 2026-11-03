@@ -4,4 +4,4 @@ How to become a demigod, use your abilities, manage energy and level up your dem
 
 ## Pages
 
-- [Glossary](glossary.md): heavy armor, per level, specialized weapons, tool tier.
+- [Glossary](glossary.md): heavy armor, per level, specialized weapons, tool tier, true damage.

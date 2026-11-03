@@ -4,29 +4,46 @@ Every active ability, with its damage, cooldown, energy cost and infused upgrade
 
 | Ability | Used by | Input | Summary |
 | --- | --- | --- | --- |
+| [Acid Bolt](acid-bolt.md) | [Hel](../demigods/hel.md) | ++mouse-middle++ (Special attack, unarmed) | Acid bolt that explodes on impact with true and Poison damage. |
 | [Bomb](bomb.md) | [Brokkr](../demigods/brokkr.md) | ++mouse-side-up++ (Ability A) | Throw a bomb that damages enemies and breaks trees, rocks and ores. |
+| [Burning Ground](burning-ground.md) | [Surtr](../demigods/surtr.md) | ++mouse-side-up++ (Ability A) | Set the ground around you on fire for 6 s. |
 | [Combustion](combustion.md) | [Brokkr](../demigods/brokkr.md) | ++mouse-middle++ (Special attack while airborne) | Explosion that launches you forward or upward. |
-| [Dash](dash.md) | [Thor](../demigods/thor.md), Freyja | ++mouse-side-up++ (Ability A) | Teleport forward, damaging enemies in your path. |
-| [Elemental Shield](elemental-shield.md) | [Eir](../demigods/eir.md), Surtr | ++mouse-side-down++ (Ability B) | Three charges of damage reduction, element immunity and speed. |
+| [Crush](crush.md) | [Njord](../demigods/njord.md), [Surtr](../demigods/surtr.md) | ++mouse-middle++ (Special attack while airborne) | Leap and strike from above, landing with a blast. |
+| [Dash](dash.md) | [Thor](../demigods/thor.md), [Freyja](../demigods/freyja.md) | ++mouse-side-up++ (Ability A) | Teleport forward, damaging enemies in your path. |
+| [Decay Aura](decay-aura.md) | [Hel](../demigods/hel.md) | ++mouse-side-down++ (Ability B) | Toggle: drain the life of nearby enemies to heal yourself. |
+| [Drain Blood](drain-blood.md) | [Surtr](../demigods/surtr.md) | ++mouse-side-down++ + ++block++ (Ability D) | Toggle: turn your own health into energy. |
+| [Elemental Shield](elemental-shield.md) | [Eir](../demigods/eir.md), [Surtr](../demigods/surtr.md) | ++mouse-side-down++ (Ability B) | Three charges of damage reduction, element immunity and speed. |
 | [Enrage](enrage.md) | [Fenrir](../demigods/fenrir.md) | ++mouse-side-up++ (Ability A) | Toggle: Spirit bonus and Frost splash on hits, half damage taken. |
+| [Fireball](fireball.md) | [Surtr](../demigods/surtr.md) | ++mouse-middle++ (Special attack, unarmed) | Fireball that explodes on impact and damages trees. |
 | [Frost Nova](frost-nova.md) | [Fenrir](../demigods/fenrir.md) | ++mouse-side-down++ (Ability B) | Frost burst that damages all enemies around you. |
-| [Heal Over Time](heal-over-time.md) | [Fenrir](../demigods/fenrir.md), Freyja, Kvasir, Ullr | ++mouse-side-down++ + ++block++ (Ability D) | Heal every second until full health, draining energy. |
+| [Heal Over Time](heal-over-time.md) | [Fenrir](../demigods/fenrir.md), [Freyja](../demigods/freyja.md), Kvasir, Ullr | ++mouse-side-down++ + ++block++ (Ability D) | Heal every second until full health, draining energy. |
 | [Holy Conjuration](holy-conjuration.md) | [Eir](../demigods/eir.md) | ++mouse-side-down++ + ++block++ (Ability D) | Conjure a fish, with a chance of seeds or a queen bee. |
 | [Holy Heal](holy-heal.md) | [Eir](../demigods/eir.md) | ++mouse-side-up++ + ++block++ (Ability C) | Heal another player or yourself instantly. |
 | [Holy Strike](holy-strike.md) | [Eir](../demigods/eir.md) | ++mouse-middle++ (Special attack, unarmed) | Instant holy fire on the enemy under your crosshair. |
 | [Holy Sun](holy-sun.md) | [Eir](../demigods/eir.md) | ++mouse-side-up++ (Ability A) | Sun beam that burns enemies, trees, rocks and ores. |
 | [Ice Shards](ice-shards.md) | [Fenrir](../demigods/fenrir.md) | ++block++ + ++mouse-middle++ (Special attack while blocking, unarmed) | Fire ice shards from your hands. |
 | [Lightning Aura](lightning-aura.md) | [Thor](../demigods/thor.md) | ++mouse-side-down++ (Ability B) | Toggle: faster attacks, faster movement and stamina regeneration. |
+| [Lightning Bolt](lightning-bolt.md) | [Njord](../demigods/njord.md) | ++mouse-middle++ (Special attack, unarmed) | Fast lightning bolt that explodes on impact. |
 | [Lightning Storm](lightning-storm.md) | [Thor](../demigods/thor.md) | ++mouse-side-up++ + ++block++ (Ability C) | Toggle: lightning repeatedly strikes nearby enemies. |
 | [Lightning Strike](lightning-strike.md) | [Thor](../demigods/thor.md) | ++mouse-middle++ (Special attack, unarmed) | Long-range lightning beam that explodes on impact. |
 | [Lightning Torpedo](lightning-torpedo.md) | [Brokkr](../demigods/brokkr.md) | ++mouse-middle++ (Special attack, unarmed) | Homing torpedo that explodes on impact. |
+| [Meteor](meteor.md) | [Hel](../demigods/hel.md) | ++mouse-side-up++ (Ability A) | Call a meteor down on the spot you aim at. |
+| [Minions](minions.md) | [Hel](../demigods/hel.md) | ++mouse-side-up++ + ++block++ (Ability C) | Raise up to three skeletons that fight for you. |
 | [Nano Cube](nano-cube.md) | [Brokkr](../demigods/brokkr.md) | ++mouse-side-down++ + ++block++ (Ability D) | Lightning cube that damages enemies and heals players inside. |
-| [Restoration](restoration.md) | [Thor](../demigods/thor.md), Njord | ++mouse-side-down++ + ++block++ (Ability D) | Channel to heal and restore energy, stamina and eitr. |
-| [Slash](slash.md) | [Fenrir](../demigods/fenrir.md), Surtr | ++mouse-middle++ (Special attack, unarmed for Fenrir; axes or swords for Surtr) | Sweep that hits all nearby enemies and chops trees. |
-| [Stagger](stagger.md) | [Eir](../demigods/eir.md), Freyja | ++block++ + ++mouse-middle++ (Special attack while blocking, spears) | Spin with your spear, staggering all nearby enemies. |
+| [Nature Wisp](nature-wisp.md) | [Freyja](../demigods/freyja.md) | ++mouse-side-up++ + ++block++ (Ability C) | Summon a wisp that catches fish, grows crops and brings wood. |
+| [Neck](neck.md) | [Njord](../demigods/njord.md) | ++mouse-side-up++ + ++block++ (Ability C) | Summon a neck that catches fish and chops wood. |
+| [Poison Cloud](poison-cloud.md) | [Freyja](../demigods/freyja.md) | ++mouse-side-down++ (Ability B) | Poison burst around you that also summons deathsquitos. |
+| [Poison Javelin](poison-javelin.md) | [Freyja](../demigods/freyja.md) | ++mouse-middle++ (Special attack, unarmed) | Throw a poison javelin that pierces enemies. |
+| [Restoration](restoration.md) | [Thor](../demigods/thor.md), [Njord](../demigods/njord.md) | ++mouse-side-down++ + ++block++ (Ability D) | Channel to heal and restore energy, stamina and eitr. |
+| [Sacrifice](sacrifice.md) | [Hel](../demigods/hel.md) | ++mouse-side-down++ + ++block++ (Ability D) | Turn your minions, or your own health, into energy. |
+| [Slash](slash.md) | [Fenrir](../demigods/fenrir.md), [Surtr](../demigods/surtr.md) | ++mouse-middle++ (Special attack, unarmed for Fenrir; axes or swords for Surtr) | Sweep that hits all nearby enemies and chops trees. |
+| [Stagger](stagger.md) | [Eir](../demigods/eir.md), [Freyja](../demigods/freyja.md) | ++block++ + ++mouse-middle++ (Special attack while blocking, spears) | Spin with your spear, staggering all nearby enemies. |
 | [Stone Golem](stone-golem.md) | [Brokkr](../demigods/brokkr.md) | ++mouse-side-up++ + ++block++ (Ability C) | Summon a stone golem that fights for you for 60 s. |
 | [Stone Shield](stone-shield.md) | [Brokkr](../demigods/brokkr.md) | ++mouse-side-down++ (Ability B) | Short shield: physical resistance, healing, stamina and speed. |
+| [Summon Surtling](summon-surtling.md) | [Surtr](../demigods/surtr.md) | ++mouse-side-up++ + ++block++ (Ability C) | Summon a surtling that fights for you for 30 s. |
 | [Summon Wolf](summon-wolf.md) | [Fenrir](../demigods/fenrir.md), Ullr | ++mouse-side-up++ + ++block++ (Ability C) | Summon a wolf companion that grows stronger with you. |
 | [Teleport](teleport.md) | All demigods | ++p++ (Teleport) | Teleport to your bed and back. |
+| [Tornado](tornado.md) | [Njord](../demigods/njord.md) | ++mouse-side-down++ (Ability B) | A slow tornado that shocks every enemy in its path. |
+| [Water Sphere](water-sphere.md) | [Njord](../demigods/njord.md) | ++mouse-side-up++ (Ability A) | Water spheres that launch at the closest enemies. |
 
 Inputs show the default keys.

@@ -6,7 +6,7 @@ Deer Endurance makes your stamina come back faster and start regenerating sooner
 
 | | |
 | --- | --- |
-| **Demigods** | [Eir](../demigods/eir.md), [Fenrir](../demigods/fenrir.md), Freyja, Kvasir, Ullr |
+| **Demigods** | [Eir](../demigods/eir.md), [Fenrir](../demigods/fenrir.md), [Freyja](../demigods/freyja.md), Kvasir, Ullr |
 | **Condition** | Always active |
 | **Config ID** | `DeerEndurance` |
 | **Config section** | `[Attribute Deer Endurance]` |
@@ -34,5 +34,6 @@ Stamina regeneration rate grows evenly from 150% at level 0 to 200% at level 100
 
 - [Eir](../demigods/eir.md)
 - [Fenrir](../demigods/fenrir.md)
+- [Freyja](../demigods/freyja.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

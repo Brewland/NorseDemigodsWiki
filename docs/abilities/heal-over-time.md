@@ -7,7 +7,7 @@ costing energy up front. Fenrir, Freyja, Kvasir and Ullr each have their own vis
 
 | | |
 | --- | --- |
-| **Used by** | [Fenrir](../demigods/fenrir.md), Freyja, Kvasir, Ullr |
+| **Used by** | [Fenrir](../demigods/fenrir.md), [Freyja](../demigods/freyja.md), Kvasir, Ullr |
 | **Input** | ++mouse-side-down++ + ++block++ (Ability D) |
 | **Energy cost** | Needs 1+ energy; drains 1 every second |
 | **Cooldown** | None |
@@ -65,5 +65,6 @@ All variants have the same values; only the visual and sound effects differ.
 ## Related pages
 
 - [Fenrir](../demigods/fenrir.md)
+- [Freyja](../demigods/freyja.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

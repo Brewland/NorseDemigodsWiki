@@ -7,7 +7,7 @@ you block, and makes thrown spears faster, deadlier and always return to you.
 
 | | |
 | --- | --- |
-| **Demigods** | [Eir](../demigods/eir.md), Freyja |
+| **Demigods** | [Eir](../demigods/eir.md), [Freyja](../demigods/freyja.md) |
 | **Condition** | Always active |
 | **Config ID** | `Valkyrie` |
 | **Config section** | `[Attribute Valkyrie]` |
@@ -63,6 +63,7 @@ landed.
 ## Related pages
 
 - [Eir](../demigods/eir.md)
+- [Freyja](../demigods/freyja.md)
 - [Stagger](../abilities/stagger.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

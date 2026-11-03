@@ -7,7 +7,7 @@ bonuses of leg attributes such as [Hare Legs](hare-legs.md).
 
 | | |
 | --- | --- |
-| **Demigods** | [Fenrir](../demigods/fenrir.md), Freyja, Ullr |
+| **Demigods** | [Fenrir](../demigods/fenrir.md), [Freyja](../demigods/freyja.md), Ullr |
 | **Condition** | Always active; no movement or sneak speed bonus while encumbered |
 | **Config ID** | `WolfSpeed` |
 | **Config section** | `[Attribute Wolf Speed]` |
@@ -50,6 +50,7 @@ bonuses of leg attributes such as [Hare Legs](hare-legs.md).
 ## Related pages
 
 - [Fenrir](../demigods/fenrir.md)
+- [Freyja](../demigods/freyja.md)
 - [Hare Legs](hare-legs.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

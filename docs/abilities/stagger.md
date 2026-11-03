@@ -7,7 +7,7 @@ staggering everything around you. Eir and Freyja share the same version.
 
 | | |
 | --- | --- |
-| **Used by** | [Eir](../demigods/eir.md), Freyja |
+| **Used by** | [Eir](../demigods/eir.md), [Freyja](../demigods/freyja.md) |
 | **Input** | ++block++ + ++mouse-middle++ (Special attack while blocking, spears) |
 | **Energy cost** | 1 |
 | **Cooldown** | 10 s |
@@ -39,6 +39,7 @@ Both demigods share one config section: a server change affects Eir and Freyja a
 ## Related pages
 
 - [Eir](../demigods/eir.md)
+- [Freyja](../demigods/freyja.md)
 - [Valkyrie](../attributes/valkyrie.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

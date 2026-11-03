@@ -200,6 +200,10 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
   (most tooltips show whole numbers); if unsure, give one decimal and add `TODO: verify`.
 - Healing follows the same rules (bold numbers, level table, caps stated explicitly), without a badge.
 - Resistances and weaknesses: badge, then the level in plain text: `*Lightning*{.dmg .lightning} Very resistant`.
+- **True damage** (untyped damage, e.g. Acid Bolt, Decay Aura) has no badge. Write "true damage" in plain text and link
+  the first use to the glossary. In level tables, use the row label `True damage` with bold numbers. When an ability
+  adds typed damage on top (Acid Bolt's extra Poison), give it its own row, as the in-game status shows the two values
+  separately: `| Extra damage *Poison*{.dmg .poison} | **1** | **8** | **15** |`.
 
 ### Numbers and units
 
@@ -233,6 +237,18 @@ Reuse these exact wordings in `## Notes` (or the `**Notes:**` label) wherever th
 | An energy-on-hit or energy-on-block chance that is blocked by draining abilities | No energy regeneration while an energy-draining ability is active. |
 | A "+X% movement speed" bonus | **Movement speed:** applies to walking, jogging, sprinting, sneaking and swimming, but not while encumbered, and does not change jump height. Adds up with other movement speed bonuses. Setting: `[(Special Modifiers)] Special Movement Speed Modifier (%)`. |
 | A stagger effect | Bosses are not staggered. |
+
+### Standard limits
+
+State whether an ability works while airborne or swimming (`Helper.IsPlayerBusy`'s `ignoreFlying` and
+`ignoreSwimming`) with these exact wordings:
+
+| When | Wording (copy it) |
+| --- | --- |
+| Works in both cases | Usable while airborne or swimming. |
+| Works in neither case | Not usable while airborne or swimming. |
+| Only one case is worth stating | Usable while airborne. / Not usable while swimming. |
+| Needs to be airborne (e.g. Crush) | Only while airborne. Extra conditions go in the same bullet. |
 
 ### Spoilers
 
@@ -308,6 +324,7 @@ Every entry on the compatibility page is labelled:
   | per level | `getting-started/glossary.md#per-level` | Per demigod skill level (0–100) |
   | specialized weapons | `getting-started/glossary.md#specialized-weapons` | The weapon types an attribute's bonus applies to |
   | tool tier | `getting-started/glossary.md#tool-tier` | Which trees and ores an ability or attribute can damage |
+| true damage | `getting-started/glossary.md#true-damage` | Damage without a type: armor, resistances and weaknesses do not change it (vanilla) |
 
 - Every new page must be added to `nav` in `mkdocs.yml`, under its section, after that section's `index.md`.
   Order within a section:
@@ -488,6 +505,35 @@ use (add new ones here):
 | Frost Body | `:material-snowman:` |
 | Titan Arms | `:material-boxing-glove:` |
 | Wolf Speed | `:material-speedometer:` |
+| Poison Javelin | `:material-spear:` |
+| Poison Cloud | `:material-biohazard:` |
+| Nature Wisp | `:material-sprout:` |
+| Thorn Body | `:material-cactus:` |
+| Acid Bolt | `:material-bottle-tonic-skull:` |
+| Meteor | `:material-meteor:` |
+| Decay Aura | `:material-skull-crossbones:` |
+| Minions | `:material-skull:` |
+| Sacrifice | `:material-blood-bag:` |
+| Celestial Body | `:material-orbit:` |
+| Child of Darkness | `:material-weather-night:` |
+| Cursed Hands | `:material-hand-back-right:` |
+| Fox Legs | `:material-run:` |
+| Phantom Shroud | `:material-ghost:` |
+| Soul Reaper | `:material-sickle:` |
+| Lightning Bolt | `:material-lightning-bolt-outline:` |
+| Crush | `:material-arrow-collapse-down:` |
+| Water Sphere | `:material-water:` |
+| Tornado | `:material-weather-tornado:` |
+| Neck | `:material-snake:` |
+| Aquatic Body | `:material-waves:` |
+| Raider | `:material-sail-boat:` |
+| Water Shield | `:material-shield-half-full:` |
+| Fireball | `:material-fire:` |
+| Burning Ground | `:material-campfire:` |
+| Summon Surtling | `:material-emoticon-devil:` |
+| Drain Blood | `:material-heart-minus:` |
+| Cold Blood | `:material-thermometer-low:` |
+| Flame Body | `:material-fire-circle:` |
 
 #### Section index pages
 

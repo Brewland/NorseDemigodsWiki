@@ -43,4 +43,13 @@ vanilla axes and pickaxes.
 
 These are vanilla Valheim values, not mod settings.
 
+## True damage
+
+Damage without a type, such as the core damage of Hel's [Acid Bolt](../abilities/acid-bolt.md).
+
+- Armor, resistances and weaknesses do not change it.
+- Other abilities that deal it: [Decay Aura](../abilities/decay-aura.md).
+
+These are vanilla Valheim rules, not mod settings.
+
 <!-- Verified against NorseDemigods 1.9.1 -->

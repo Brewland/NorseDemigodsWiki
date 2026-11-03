@@ -7,7 +7,7 @@ uses his claws and deals Frost damage; Surtr's version uses his axe or sword and
 
 | | |
 | --- | --- |
-| **Used by** | [Fenrir](../demigods/fenrir.md), Surtr |
+| **Used by** | [Fenrir](../demigods/fenrir.md), [Surtr](../demigods/surtr.md) |
 | **Input** | ++mouse-middle++ (Special attack, unarmed for Fenrir; axes or swords for Surtr) |
 | **Energy cost** | 1 |
 | **Cooldown** | 3 s |
@@ -79,6 +79,7 @@ Damage to trees depends on the Unarmed skill only:
 ## Related pages
 
 - [Fenrir](../demigods/fenrir.md)
+- [Surtr](../demigods/surtr.md)
 - [Titan Arms](../attributes/titan-arms.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

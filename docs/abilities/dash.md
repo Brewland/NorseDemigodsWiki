@@ -7,7 +7,7 @@ Lightning damage and can dive to the ground from the air; Freyja's version deals
 
 | | |
 | --- | --- |
-| **Used by** | [Thor](../demigods/thor.md), Freyja |
+| **Used by** | [Thor](../demigods/thor.md), [Freyja](../demigods/freyja.md) |
 | **Input** | ++mouse-side-up++ (Ability A) |
 | **Energy cost** | 1 |
 | **Cooldown** | 3 s |
@@ -59,6 +59,7 @@ Range grows evenly from 12 m to 18 m.
 
 ## Related pages
 
+- [Freyja](../demigods/freyja.md)
 - [Thor](../demigods/thor.md)
 - [Titan Legs](../attributes/titan-legs.md)
 

@@ -7,7 +7,7 @@ that damages nearby enemies.
 
 | | |
 | --- | --- |
-| **Demigods** | Njord, Surtr, [Thor](../demigods/thor.md) |
+| **Demigods** | [Njord](../demigods/njord.md), [Surtr](../demigods/surtr.md), [Thor](../demigods/thor.md) |
 | **Condition** | Always active; no speed bonus while encumbered |
 | **Config ID** | `TitanLegs` |
 | **Config section** | `[Attribute Titan Legs]` |
@@ -41,7 +41,8 @@ and closer enemies take more.
 | Average damage *Blunt*{.dmg .blunt} | **10** | **80** | **150** |
 | Damage range *Blunt*{.dmg .blunt} | **7.5–12.5** | **60–100** | **112.5–187.5** |
 
-Thor's [Dash](../abilities/dash.md#lightning-thor) air dive triggers the blast at maximum force.
+Thor's [Dash](../abilities/dash.md#lightning-thor) air dive triggers the blast at maximum force. So does a hard landing
+after Njord's or Surtr's [Crush](../abilities/crush.md).
 
 ## Fall damage
 
@@ -62,7 +63,10 @@ Thor's [Dash](../abilities/dash.md#lightning-thor) air dive triggers the blast a
 
 ## Related pages
 
+- [Njord](../demigods/njord.md)
+- [Surtr](../demigods/surtr.md)
 - [Thor](../demigods/thor.md)
 - [Dash](../abilities/dash.md)
+- [Crush](../abilities/crush.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

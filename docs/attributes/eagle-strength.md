@@ -6,7 +6,7 @@ Eagle Strength lets you move more freely in heavy equipment, carry more and chop
 
 | | |
 | --- | --- |
-| **Demigods** | [Eir](../demigods/eir.md), Freyja, Hraesvelgr |
+| **Demigods** | [Eir](../demigods/eir.md), [Freyja](../demigods/freyja.md), Hraesvelgr |
 | **Condition** | Always active |
 | **Config ID** | `EagleStrength` |
 | **Config section** | `[Attribute Eagle Strength]` |
@@ -41,6 +41,7 @@ Extra carry weight: 1 [per level](../getting-started/glossary.md#per-level).
 ## Related pages
 
 - [Eir](../demigods/eir.md)
+- [Freyja](../demigods/freyja.md)
 - [Bear Strength](bear-strength.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

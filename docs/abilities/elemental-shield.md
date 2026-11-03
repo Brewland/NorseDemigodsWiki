@@ -7,7 +7,7 @@ immune to one element and makes you faster. Eir's holy version blocks Spirit; Su
 
 | | |
 | --- | --- |
-| **Used by** | [Eir](../demigods/eir.md), Surtr |
+| **Used by** | [Eir](../demigods/eir.md), [Surtr](../demigods/surtr.md) |
 | **Input** | ++mouse-side-down++ (Ability B) |
 | **Energy cost** | 2 |
 | **Cooldown** | 15 s |
@@ -88,5 +88,6 @@ While you have charges:
 ## Related pages
 
 - [Eir](../demigods/eir.md)
+- [Surtr](../demigods/surtr.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

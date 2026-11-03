@@ -7,7 +7,7 @@ Channel too long and the gathered energy explodes in a large Lightning blast tha
 
 | | |
 | --- | --- |
-| **Used by** | [Thor](../demigods/thor.md), Njord |
+| **Used by** | [Thor](../demigods/thor.md), [Njord](../demigods/njord.md) |
 | **Input** | ++mouse-side-down++ + ++block++ (Ability D), hold |
 | **Energy cost** | None |
 | **Cooldown** | 30 s, starts when activated |
@@ -75,6 +75,7 @@ Bonus maximum energy (for example from Infused Megingjord) makes the blast even 
 
 ## Related pages
 
+- [Njord](../demigods/njord.md)
 - [Thor](../demigods/thor.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

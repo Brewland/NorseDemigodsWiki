@@ -7,7 +7,7 @@ energy you have left.
 
 | | |
 | --- | --- |
-| **Demigods** | Njord, Surtr, [Thor](../demigods/thor.md) |
+| **Demigods** | [Njord](../demigods/njord.md), [Surtr](../demigods/surtr.md), [Thor](../demigods/thor.md) |
 | **Condition** | Always active |
 | **Config ID** | `BearStrength` |
 | **Config section** | `[Attribute Bear Strength]` |
@@ -44,6 +44,8 @@ Extra carry weight: 2 [per level](../getting-started/glossary.md#per-level).
 
 ## Related pages
 
+- [Njord](../demigods/njord.md)
+- [Surtr](../demigods/surtr.md)
 - [Thor](../demigods/thor.md)
 - [Eagle Strength](eagle-strength.md)
 
