@@ -1,1 +1,1 @@
-# NorseDemigods-Wiki
+# NorseDemigodsWiki
