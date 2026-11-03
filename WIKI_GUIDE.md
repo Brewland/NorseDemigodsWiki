@@ -2,6 +2,11 @@
 
 The rulebook for anyone, human or AI, who writes or edits pages in this wiki. Read it fully before writing a page.
 
+**Reference batch:** Thor is the approved example of every rule in this guide: `docs/demigods/thor.md`, its
+ability pages (`lightning-strike`, `dash`, `lightning-aura`, `lightning-storm`, `restoration`, `teleport`), its
+attribute pages (`attributes/static-body.md`, the Bear Strength and Titan Legs sections) and the glossary. When
+this guide leaves a detail open, copy what the matching Thor page does.
+
 ## 1. Audience
 
 - Write for **players** (and server admins tuning their server), not developers. The wiki is built to be
@@ -35,6 +40,11 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
   tooltip may differ on a changed server.
 - Record the mod version you verified against in the HTML comment at the end of each page
   (the current version is `PluginVersion` in `NorseDemigods/NorseDemigods.cs`).
+- **Vanilla Valheim facts** (e.g. tool tiers, how status-effect speed bonuses apply) may be used when the mod
+  relies on vanilla behavior. Verify them against the game itself: the decompiled `assembly_valheim.dll`
+  (`ilspycmd`) or the game's data files. Community sources (wikis, data dumps) are only a cross-check, and
+  the game wins when they disagree. Label such values as vanilla on the page (e.g. "These are vanilla Valheim
+  values, not mod settings.").
 
 ### Settled decisions
 
@@ -46,6 +56,14 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
 - **Changelog** links to the mod's release notes. Do not copy them into the wiki.
 - **Images:** add an image placeholder on every page now (see templates); screenshots come later.
   Icons and models live in the Unity bundle and cannot be extracted from the source scan.
+- **Server-defaults disclaimer:** the sentence "Values shown are server defaults; your server may differ." appears
+  **once**, as a normal paragraph in the body of the home page (`docs/index.md`). No site-wide banner, and do not
+  repeat it on other pages.
+- **No unarmed note for attack-speed bonuses.** Do not state whether weapon attack-speed bonuses apply to
+  unarmed attacks unless the mod code handles unarmed explicitly.
+- **Movement speed bonuses** that go through the mod's status effect apply to all movement (walking, jogging,
+  sprinting, crouching, swimming), whatever the config text says. Write "Movement speed (all movement,
+  including swimming)".
 
 ## 3. Conventions
 
@@ -73,38 +91,95 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
 
 ### Inputs
 
-Use these player-facing names for the `input` values in `Demigods.yaml`:
+Inputs are written as **keyboard keys** with `pymdownx.keys` (`++key++`), followed by the input's name in
+brackets. Show the **default** binding; players can rebind every key.
 
-| YAML input | Write on pages as |
-| --- | --- |
-| `SLOT_1` | Ability A |
-| `SLOT_2` | Ability B |
-| `SLOT_3` | Ability C (default: Ability A + block) |
-| `SLOT_4` | Ability D (default: Ability B + block) |
-| `SPECIAL_ATTACK` | Special attack (list the weapon types from `skills:`) |
-| `SPECIAL_ATTACK_BLOCKING` | Special attack while blocking (list the weapon types from `skills:`) |
-| `SPECIAL_ATTACK_AIR` | Special attack while airborne |
+- One input per line. Never split an input across lines: in tables, one input per cell (use `<br>` between
+  inputs); in cards, the input is its own paragraph. Key groups never wrap (CSS keeps them on one line).
+- Combine keys with ` + ` between key groups: `++mouse-side-up++ + ++block++`.
+
+| YAML input | Write on pages as | Renders as |
+| --- | --- | --- |
+| `SLOT_1` | `++mouse-side-up++ (Ability A)` | Upper Side Mouse (Ability A) |
+| `SLOT_2` | `++mouse-side-down++ (Ability B)` | Lower Side Mouse (Ability B) |
+| `SLOT_3` | `++mouse-side-up++ + ++block++ (Ability C)` | Upper Side Mouse + Block (Ability C) |
+| `SLOT_4` | `++mouse-side-down++ + ++block++ (Ability D)` | Lower Side Mouse + Block (Ability D) |
+| `SPECIAL_ATTACK` | `++mouse-middle++ (Special attack, clubs or axes)` | Middle Mouse (…), list the weapon types from `skills:` |
+| `SPECIAL_ATTACK_BLOCKING` | `++block++ + ++mouse-middle++ (Special attack while blocking, …)` | Block + Middle Mouse (…) |
+| `SPECIAL_ATTACK_AIR` | `++mouse-middle++ (Special attack while airborne)` | Middle Mouse (…) |
+| Teleport | `++p++ (Teleport)` | P (Teleport) |
+| Ignore special attack | `++left-alt++ + ++mouse-middle++` | Left Alt + Middle Mouse |
+
+Where the defaults come from:
+
+- **Ability A / B / Teleport / Ignore special attack:** `[(Hotkeys)]` in `Configs.cs` (`Mouse4`, `Mouse3`, `P`,
+  `LeftAlt`). Unity numbers mouse buttons from 0 (`Mouse0` = left), so the config's `Mouse4` is the 5th button
+  and `Mouse3` the 4th. Never write "Mouse 4" or "Mouse 5" on pages; players know them as the side buttons:
+  - `++mouse-side-up++` (**Upper Side Mouse**, config `Mouse4`): the side button furthest from the fingers
+    (the upper one when looking down at the mouse).
+  - `++mouse-side-down++` (**Lower Side Mouse**, config `Mouse3`): the other side button.
+  Keep key labels short; explanations go in text outside the key, never inside it.
+- **Ability C / D:** no hotkey by default; the mod uses Ability A / B while blocking.
+- **Special attack** is Valheim's *secondary attack* (default: middle mouse); **block** is Valheim's block
+  (default: right mouse). `++block++` means "hold your block key".
+
+Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`: `mouse-side-up`,
+`mouse-side-down`, `mouse-middle`, `block`. Add new ones there; never invent a key name that is not in the key map or the
+[built-in list](https://facelessuser.github.io/pymdown-extensions/extensions/keys/#key-map-index).
 
 ### Damage and healing
 
-- Show the **in-game total** (what players see), followed by the **per-type split in brackets**:
-  `5 (2.5 Blunt + 2.5 Fire)`. Capitalize damage types.
-  Example: Fireball's config is 2.5 per type, but the tooltip shows 5, so write `5 (2.5 Blunt + 2.5 Fire)`.
-- Damage is a base amount plus an amount [per level](getting-started/glossary.md#per-level). Show it at
-  **demigod skill levels 0, 50 and 100** in a table:
+- **Numbers in bold**, **damage type as a colored badge** after the number. Never write the type in brackets.
 
-  | Demigod skill level | Damage |
-  | --- | --- |
-  | 0 | 5 (2.5 Blunt + 2.5 Fire) |
-  | 50 | … |
-  | 100 | … |
+  | Case | Markdown | Renders as |
+  | --- | --- | --- |
+  | One type | `**80** *Lightning*{.dmg .lightning}` | **80** [Lightning] |
+  | Several types | `**5** = **2.5** *Blunt*{.dmg .blunt} + **2.5** *Fire*{.dmg .fire}` | **5** = **2.5** [Blunt] + **2.5** [Fire] |
+  | Weapon-relative | `**100%** of weapon damage = **75%** *Slash*{.dmg .slash} + **25%** *Fire*{.dmg .fire}` | |
 
-- Damage relative to the weapon or punch is shown as a percentage with the same split:
-  `100% of weapon damage (75% Slash + 25% Fire)`. Only add the level table if it also scales with level.
+  Lead with the **in-game total** (what the tooltip shows), then the split. Example: Fireball's config is 2.5 per
+  type, but the tooltip shows 5.
+- Damage is a base amount plus an amount [per level](getting-started/glossary.md#per-level). Put scaling
+  values in a **level table** with the columns `Lv 0 / Lv 50 / Lv 100` (demigod skill level), one row per value.
+  Right-align the level columns. When a row has a single damage type, put the badge in the **row label** and
+  only bold numbers in the cells:
+
+  ```markdown
+  | | Lv 0 | Lv 50 | Lv 100 |
+  | --- | ---: | ---: | ---: |
+  | Damage *Lightning*{.dmg .lightning} | **10** | **80** | **150** |
+  | Range | 12 m | 15 m | 18 m |
+  ```
+
+  Mixed-type rows keep the badges in each cell. Non-damage values (range, carry weight) are not bold.
+  Variant rows name the demigod before the badge: `| Path damage, Thor *Lightning*{.dmg .lightning} | **10** | … |`.
+- A column that holds one damage type may carry the badge in its **header**:
+  `| Weapon | Extra damage *Lightning*{.dmg .lightning} |` (see Static Body).
+- **Bold** marks damage and healing amounts only, including a damage share in prose ("deal **35%** of the hit's
+  damage as *Lightning*{.dmg .lightning}"). Percentage bonuses in effect tables (`+10%`) are not bold.
+- State the formula in one short line above the table: "10 base + 1.4 per level".
 - Mark time-based values clearly: "per second", "every X seconds".
 - Values are before enemy armor, resistances and weaknesses. Round the way the in-game tooltip does
   (most tooltips show whole numbers); if unsure, give one decimal and add `TODO: verify`.
-- Healing follows the same rules (total, levels 0/50/100, caps stated explicitly).
+- Healing follows the same rules (bold numbers, level table, caps stated explicitly), without a badge.
+- Resistances and weaknesses: badge, then the level in plain text: `*Lightning*{.dmg .lightning} Very resistant`.
+
+### Numbers and units
+
+- Units after a space, abbreviated in infoboxes and tables: `3 s`, `12 m`, `+20%`. In prose, "seconds" is fine.
+- Ranges with an en dash and no spaces: `12–18 m`, `7.5–12.5`. Negative changes with a real minus sign:
+  `−40%`. Multipliers with `×`: `×3 (300%)`.
+- Changes as before → after: `Eitr cost: 40 → 30`.
+- "None" for a cost or cooldown that is zero (`**Cooldown** | None`).
+- Minimum resource needs as `Needs 1+ energy; drains 1 every 4 s`.
+- In-game messages in italics with quotes: `In-game message: *"You have not claimed a bed yet"*`.
+
+### Writing style
+
+- **Short bullet lists over long sentences.** One fact per bullet.
+- **No paragraph longer than 3 lines** (about 3 × 100 characters as rendered). Split or convert to bullets.
+- Numbered lists only for sequences (what happens, in order).
+- Tables for anything with two or more comparable values.
 
 ### Spoilers
 
@@ -147,7 +222,7 @@ Teleport and Harpoon Fishing are **on** by default.
 ### Configurable class kits
 
 Servers can change which abilities and attributes each demigod has (`Demigods.yaml`). Every demigod page
-carries this note directly under the infobox:
+carries this note after the infobox and image placeholder, directly before the Lore box:
 
 ```markdown
 !!! note
@@ -182,18 +257,27 @@ Every entry on the compatibility page is labelled:
   | tool tier | `getting-started/glossary.md#tool-tier` | Which trees and ores an ability or attribute can damage |
 
 - Every new page must be added to `nav` in `mkdocs.yml`, under its section, after that section's `index.md`.
+  Order within a section:
+  - **Demigods:** alphabetical.
+  - **Abilities:** Teleport first, then alphabetical.
+  - **Attributes:** grouped pages first (Movement and Stamina, Strength, Valkyrie), then single-class pages
+    alphabetical.
+- Every new page also gets a row in its section's `index.md` table (see [Section index pages](#section-index-pages)).
 
 ### File naming
 
 - `lowercase-kebab-case.md`, from the English display name: `docs/abilities/stone-golem.md`.
 - Abilities shared by several demigods or with theme variants (Slash, Crush, Dash, Elemental Shield,
   Heal Over Time, Restoration, Stagger, Summon Wolf) get **one page with a section per variant**:
-  `docs/abilities/slash.md` with `## Fire (Surtr)` and `## Frost (Fenrir)`.
+  `docs/abilities/slash.md` with `### Fire (Surtr)` and `### Frost (Fenrir)` under `## Variants`.
   Variants share one config section, so a server change affects all of them; say so on the page.
+- **Single-class attributes** get their own page: `docs/attributes/static-body.md`.
+- **Shared attributes** (owned by several demigods) stay on their grouped page, one `##` section each:
+  `docs/attributes/strength.md#bear-strength`.
 
 ### Images
 
-Until screenshots exist, add an image placeholder as an HTML comment right after the summary:
+Until screenshots exist, add an image placeholder as an HTML comment right after the infobox:
 
 ```markdown
 <!-- IMAGE: in-game screenshot of Slash (Fire) hitting an enemy -->
@@ -202,13 +286,210 @@ Until screenshots exist, add an image placeholder as an HTML comment right after
 Replace it later with `![Description](../assets/images/<section>/<page>.png)`, storing files in
 `docs/assets/images/<section>/`.
 
+### Visual components
+
+All custom styling lives in `docs/stylesheets/extra.css` (registered as `extra_css` in `mkdocs.yml`). It must look
+right in both light and dark mode; check both with the palette toggle after changing it. Use only the classes
+listed here; do not add inline `style=` attributes.
+
+#### Infobox
+
+Every demigod, ability, attribute and item page starts with an infobox right after the summary: a two-column
+table (empty header row) wrapped in `<div class="nd-infobox" markdown>`. Player-facing fields first;
+**Config ID** and **Config section** always last. Blank lines inside the `div` are required.
+
+```markdown
+<div class="nd-infobox" markdown>
+
+| | |
+| --- | --- |
+| **Used by** | [Thor](../demigods/thor.md) |
+| **Input** | ++mouse-side-up++ (Ability A) |
+| **Energy cost** | 1 |
+| **Cooldown** | 3 s |
+| **Config ID** | `Dash` |
+| **Config section** | `[Ability Dash]` |
+
+</div>
+```
+
+Grouped attribute pages put one infobox at the top of each attribute's `##` section.
+
+Field order (omit rows that do not apply, except where marked "always"):
+
+| Page type | Fields, in order |
+| --- | --- |
+| Demigod | Role, Element (badges), Favorite weapons, Preferred armor, Config ID, Config section |
+| Ability | Used by, Input, Eitr cost (only if any), Energy cost (always), Cooldown (always), Duration or Cast time, Range, other areas (e.g. Explosion radius), Config ID, Config section |
+| Attribute | Demigod (single-class) or Demigods (grouped), Condition, Config ID, Config section |
+| Item | Type, Crafting station, Restricted to, Stack size, Consume limit, Config ID |
+
+- Values that scale with level appear as a range: `12–18 m, by level`; the level table has the details.
+- Channeled abilities add ", hold" after the input: `++mouse-side-down++ + ++block++ (Ability D), hold`.
+- Shared config sections add `(shared by all variants)` after the section.
+- Element and resistance rows use damage badges: `*Lightning*{.dmg .lightning}`.
+
+#### Lore
+
+The demigod description goes in a quote admonition titled "Lore", directly after the class-kit note:
+
+```markdown
+!!! quote "Lore"
+    Thor is the god of thunder, lightning, storms, wrestling and strength…
+```
+
+#### Card grid
+
+Demigod pages list abilities and attributes **only** as Material grid cards that link to their pages; no details
+inline. One card per ability or attribute:
+
+- Line 1: a Material icon, then the linked name in bold.
+- A `---` separator.
+- The input (abilities only), as its own paragraph.
+- One short sentence (max ~15 words).
+- Shared attributes: a last line "Shared with Njord, Surtr."
+
+```markdown
+<div class="grid cards" markdown>
+
+-   :material-run-fast:{ .lg .middle } [**Dash**](../abilities/dash.md#lightning-thor)
+
+    ---
+
+    ++mouse-side-up++ (Ability A)
+
+    Teleport forward, damaging enemies in your path.
+
+</div>
+```
+
+Card order:
+
+- **Abilities:** by input: special attacks (normal, while blocking, airborne), Ability A, B, C, D, then Teleport.
+- **Attributes:** the demigod's single-class attributes first, then shared attributes; alphabetical within each.
+
+Card text rules:
+
+- Toggles start with "Toggle: ", e.g. "Toggle: faster attacks, faster movement and stamina regeneration."
+- Teleport's card always reads "Teleport to your bed and back. Shared by all demigods."
+- Variant abilities link to the variant section: `../abilities/dash.md#lightning-thor`.
+- Shared attributes link to their grouped section: `../attributes/strength.md#bear-strength`.
+
+Icons come from `pymdownx.emoji` with Material's icon set (`:material-<name>:`). Browse names at
+<https://pictogrammers.com/library/mdi/>; check the icon exists in
+`.venv/Lib/site-packages/material/templates/.icons/material/` before using it. Reuse the same icon for the same
+ability or attribute everywhere, and never give two different abilities or attributes the same icon. Icons in
+use (add new ones here):
+
+| Ability or attribute | Icon |
+| --- | --- |
+| Lightning Strike | `:material-lightning-bolt:` |
+| Dash | `:material-run-fast:` |
+| Lightning Aura | `:material-lightning-bolt-circle:` |
+| Lightning Storm | `:material-weather-lightning:` |
+| Restoration | `:material-meditation:` |
+| Teleport | `:material-bed:` |
+| Static Body | `:material-flash:` |
+| Bear Strength | `:material-arm-flex:` |
+| Titan Legs | `:material-shoe-print:` |
+
+#### Section index pages
+
+Each section's `index.md` is a one-line summary plus one entry per page, sorted alphabetically by name:
+
+| Index | Columns | Notes |
+| --- | --- | --- |
+| `demigods/index.md` | Demigod, Summary, Element, Favorite weapons, Preferred armor | Element as badges |
+| `abilities/index.md` | Ability, Used by, Input, Summary | Input as keys; ends with "Inputs show the default keys." |
+| `attributes/index.md` | Attribute, Demigods, Summary | Shared attributes link to their grouped section |
+| `getting-started/index.md` | No table: a `## Pages` bullet list | `- [Glossary](glossary.md): heavy armor, per level, …` |
+
+Demigods without a page yet are plain text (no link) in the Used by / Demigods columns.
+
+#### CSS class reference
+
+| Class | Use on | Markdown example |
+| --- | --- | --- |
+| `nd-infobox` | `<div>` around the page's top fact table | `<div class="nd-infobox" markdown>` |
+| `dmg` + type | Emphasis with `attr_list`, for damage types, elements, resistances | `*Fire*{.dmg .fire}` |
+| `grid cards` | `<div>` around a card list (Material built-in) | `<div class="grid cards" markdown>` |
+| `lg middle` | Card icon size and alignment (Material built-in) | `:material-flash:{ .lg .middle }` |
+| `keys` | Generated by `pymdownx.keys`; CSS stops key combinations from wrapping | `++mouse-side-up++ + ++block++` |
+| `admonition quote` | Lore box, recolored to the accent color | `!!! quote "Lore"` |
+
+Damage-type classes (always together with `dmg`): `blunt`, `slash`, `pierce`, `chop`, `pickaxe`, `fire`,
+`frost`, `lightning`, `poison`, `spirit`. Use the badge for **damage types and elements only**, not for
+themes or status effects. Write the visible text with a capital letter: `*Poison*{.dmg .poison}`.
+
+Badge colors (from `extra.css`; solid background, so they read the same in light and dark mode):
+
+| Class | Background | Text |
+| --- | --- | --- |
+| `blunt` | `#795548` brown | white |
+| `slash` | `#b03a3a` red | white |
+| `pierce` | `#3f51b5` indigo | white |
+| `chop` | `#5d4037` dark brown | white |
+| `pickaxe` | `#546e7a` blue-gray | white |
+| `fire` | `#d84315` orange | white |
+| `frost` | `#4fc3f7` light blue | dark |
+| `lightning` | `#fdd835` yellow | dark |
+| `poison` | `#7cb342` green | dark |
+| `spirit` | `#8e24aa` purple | white |
+
+The theme colors are CSS variables at the top of `extra.css`; `mkdocs.yml` uses `primary: custom` and
+`accent: custom` for both palettes:
+
+| Variable | Light | Dark (`slate`) |
+| --- | --- | --- |
+| Primary (header) | `#24394d` fjord blue | `#1a2836` |
+| Accent | `#b07a22` bronze | `#e2b354` gold |
+| Links | `#2a5d88` | `#8cbbe3` |
+| Panel background / border (infobox) | `#f4f1ea` / `#d9cfbd` | `#1f2a36` / `#34465a` |
+
+The accent color is used for the infobox's left border, the Lore box, the top border and icon of each card, and
+card titles on hover. `h2` headings get a thin bottom border.
+
+#### Required `mkdocs.yml` setup
+
+These settings make the components work; do not remove them:
+
+```yaml
+theme:
+  name: material
+  custom_dir: overrides          # main.html only extends base.html (no banner)
+  palette: # light + dark, both with primary: custom, accent: custom
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - pymdownx.details             # ??? spoiler boxes
+  - pymdownx.superfences
+  - tables
+  - attr_list                    # damage badges, card icon classes
+  - md_in_html                   # infobox and card grid divs
+  - pymdownx.emoji:              # :material-...: icons
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys:               # ++key++ inputs
+      key_map:
+        mouse-side-up: Upper Side Mouse
+        mouse-side-down: Lower Side Mouse
+        mouse-middle: Middle Mouse
+        block: Block
+  - toc:
+      permalink: true
+```
+
 ## 4. Page templates
 
 Every page starts with a **1–2 sentence plain-language summary** right after the title. It must make sense on
-its own (search snippets and AI answers quote it). Remove optional sections that would be empty; never leave
-empty headings.
+its own (search snippets and AI answers quote it). Then the infobox, then the image placeholder. Remove optional
+sections that would be empty; never leave empty headings.
 
 ### Demigod
+
+Abilities and attributes appear **only as cards** (see [Card grid](#card-grid)). All details live on their own
+pages.
 
 ```markdown
 # Thor
@@ -216,58 +497,66 @@ empty headings.
 Thor is a lightning demigod who dashes at the speed of light and strikes enemies with lightning. He favors
 clubs and axes and fights best in heavy armor.
 
-<!-- IMAGE: Thor in full armor with his passive lightning effect -->
+<div class="nd-infobox" markdown>
 
 | | |
 | --- | --- |
-| **Config ID** | `Thor` |
-| **Config section** | `[Demigod Thor]` |
 | **Role** | … |
-| **Element(s)** | Lightning |
+| **Element** | *Lightning*{.dmg .lightning} |
 | **Favorite weapons** | … |
 | **Preferred armor** | Heavy |
+| **Config ID** | `Thor` |
+| **Config section** | `[Demigod Thor]` |
+
+</div>
+
+<!-- IMAGE: Thor in full armor with his passive lightning effect -->
 
 !!! note
     This is the default loadout. Servers can change which abilities and attributes each demigod has.
 
-## Lore
-
-From the demigod description.
+!!! quote "Lore"
+    From the demigod description.
 
 ## Abilities
 
-| Input | Ability | Summary |
-| --- | --- | --- |
-| Special attack (clubs, axes) | [Lightning Strike](../abilities/lightning-strike.md) | … |
-| Ability A | [Dash](../abilities/dash.md#lightning-thor) | … |
-| Teleport | [Teleport](../abilities/teleport.md) | Shared by all demigods. |
+<div class="grid cards" markdown>
+
+-   :material-lightning-bolt:{ .lg .middle } [**Lightning Strike**](../abilities/lightning-strike.md)
+
+    ---
+
+    ++mouse-middle++ (Special attack, unarmed)
+
+    One short sentence.
+
+-   … one card per ability, in input order: special attacks, A, B, C, D, Teleport
+
+</div>
 
 ## Attributes
 
-| Attribute | Summary |
-| --- | --- |
-| [Static Body](#static-body) | … |
-| [Bear Strength](../attributes/strength.md#bear-strength) | Shared attribute. |
+<div class="grid cards" markdown>
 
-### Static Body
+-   :material-flash:{ .lg .middle } [**Static Body**](../attributes/static-body.md)
 
-One-sentence summary of this attribute.
+    ---
 
-| | |
-| --- | --- |
-| **Config ID** | `StaticBody` |
-| **Config section** | `[Attribute Static Body]` |
-| **Condition** | Always active / e.g. only when not wearing heavy armor, out of combat, sneaking |
+    One short sentence.
 
-| Effect | Value |
-| --- | --- |
-| … | … |
+-   :material-arm-flex:{ .lg .middle } [**Bear Strength**](../attributes/strength.md#bear-strength)
 
-If the attribute scales, add a level 0 / 50 / 100 table. List resistances and weaknesses if it grants any.
+    ---
+
+    One short sentence.
+
+    Shared with Njord, Surtr.
+
+</div>
 
 ## Demigod skill experience
 
-How this demigod gains demigod skill experience (each class is different).
+Thor gains demigod skill experience from dealing and taking damage.
 
 | Source | Experience gained |
 | --- | --- |
@@ -275,9 +564,20 @@ How this demigod gains demigod skill experience (each class is different).
 
 ## Infusion
 
-What changes when this demigod's abilities are infused (link to [Ability Infusion](../getting-started/ability-infusion.md)).
+- One bullet per ability: [Ability](../abilities/….md#infused): what infusion adds, in a few words.
+
+!!! tip "In-game hint"
+    *"First § paragraph of `demigod_<id>_overview_ext`, in full (it says where to craft, e.g. 'a highly
+    equipped forge'), without color tags or the §."*
+
+Other § paragraphs of `_overview_ext` (e.g. Fenrir's Fenris Set) belong in Class quirks.
 
 ??? spoiler "Infusion recipe (spoiler)"
+
+    Craft an **Infused Hammer** at a Forge (level 7+) and consume it.
+
+    - Only Thor can consume it.
+    - It can be consumed only once.
 
     | Material | Amount |
     | --- | --- |
@@ -285,7 +585,7 @@ What changes when this demigod's abilities are infused (link to [Ability Infusio
 
 ## Class quirks
 
-Class-specific rules (e.g. armor sets, unarmed skill), if any.
+Class-specific rules (e.g. armor sets, unarmed skill), as bullets, if any.
 
 ## Related pages
 
@@ -302,54 +602,61 @@ Class-specific rules (e.g. armor sets, unarmed skill), if any.
 Slash is a special attack that damages enemies in front of you with a claw slash and also chops trees.
 Surtr's version deals fire damage and Fenrir's deals frost damage.
 
-<!-- IMAGE: in-game screenshot of Slash hitting an enemy -->
+<div class="nd-infobox" markdown>
 
 | | |
 | --- | --- |
+| **Used by** | [Surtr](../demigods/surtr.md), [Fenrir](../demigods/fenrir.md) |
+| **Input** | ++mouse-middle++ (Special attack, …) |
+| **Eitr cost** | X (omit if none) |
+| **Energy cost** | X or None |
+| **Cooldown** | X s or None |
+| **Duration** | X s (omit if instant) |
+| **Range** | X m (omit if not relevant) |
 | **Config ID** | `Slash` |
 | **Config section** | `[Ability Slash]` (shared by all variants) |
-| **Used by** | [Surtr](../demigods/surtr.md), [Fenrir](../demigods/fenrir.md) |
-| **Input** | Special attack (…) |
-| **Energy cost** | X |
-| **Eitr cost** | X (omit if none) |
-| **Cooldown** | X seconds |
-| **Duration** | X seconds (omit if instant) |
+
+</div>
+
+<!-- IMAGE: in-game screenshot of Slash hitting an enemy -->
+
+Both variants share one config section: a server change affects Surtr and Fenrir alike.
 
 ## Effect
 
-What it does, in order, in plain language.
+1. What happens, in order, one step per item.
 
 ## Damage
 
-| Demigod skill level | Damage |
-| --- | --- |
-| 0 | … |
-| 50 | … |
-| 100 | … |
+10 base + 1.4 [per level](../getting-started/glossary.md#per-level).
 
-Damage to trees and ores, tool tier, chance to regain energy on hit (if any).
+| | Lv 0 | Lv 50 | Lv 100 |
+| --- | ---: | ---: | ---: |
+| Damage *Fire*{.dmg .fire} | **…** | **…** | **…** |
+
+- Damage to trees and ores, tool tier, chance to regain energy on hit (if any).
 
 ## Variants
 
 ### Fire (Surtr)
 
-Differences only (damage split, effects).
+- Differences only (damage type, effects).
 
 ### Frost (Fenrir)
 
-…
+- …
 
 ## Infused
 
-What infusion adds (values at default settings).
+- What infusion adds (values at default settings).
 
 ## Limits
 
-When the ability cannot be used (e.g. underground, target too strong).
+- When the ability cannot be used (e.g. underground, target too strong).
 
 ## Notes
 
-Interactions and tips derivable from the code.
+- Interactions and tips derivable from the code.
 
 ## Related pages
 
@@ -358,12 +665,58 @@ Interactions and tips derivable from the code.
 <!-- Verified against NorseDemigods x.y.z -->
 ```
 
+### Attribute (single-class)
+
+```markdown
+# Static Body
+
+One-sentence summary of this attribute.
+
+<div class="nd-infobox" markdown>
+
+| | |
+| --- | --- |
+| **Demigod** | [Thor](../demigods/thor.md) |
+| **Condition** | Always active / e.g. only when not wearing heavy armor, out of combat, sneaking |
+| **Config ID** | `StaticBody` |
+| **Config section** | `[Attribute Static Body]` |
+
+</div>
+
+<!-- IMAGE: Static Body attribute icon -->
+
+## Effects
+
+| Effect | Value |
+| --- | --- |
+| … | … |
+
+## Scaling
+
+| | Lv 0 | Lv 50 | Lv 100 |
+| --- | ---: | ---: | ---: |
+| … | … | … | … |
+
+## Resistances
+
+- *Lightning*{.dmg .lightning} Very resistant
+
+## Notes
+
+- …
+
+## Related pages
+
+- …
+
+<!-- Verified against NorseDemigods x.y.z -->
+```
+
+Split long effect lists into themed `##` sections (e.g. "Weapon damage", "Defense") when that reads better.
+
 ### Attribute (grouped)
 
-Only for attributes shared by several demigods; one `##` section per attribute. Single-class attributes do **not**
-get their own page: they are `###` sections under `## Attributes` on their demigod's page (see the Demigod
-template), using the same infobox and effect table, without the **Demigods** row. The demigod's attribute table
-links shared attributes to their grouped page.
+Only for attributes shared by several demigods; one `##` section per attribute, each with its own infobox.
 
 ```markdown
 # Movement and Stamina Attributes
@@ -380,21 +733,36 @@ Passive attributes that make demigods run faster, jump higher or use less stamin
 
 One-sentence summary of this attribute.
 
+<div class="nd-infobox" markdown>
+
 | | |
 | --- | --- |
+| **Demigods** | [Eir](../demigods/eir.md), … |
+| **Condition** | Always active / … |
 | **Config ID** | `HareLegs` |
 | **Config section** | `[Attribute Hare Legs]` |
-| **Demigods** | [Eir](../demigods/eir.md), … |
-| **Condition** | Always active / e.g. only when not wearing heavy armor, out of combat, sneaking |
+
+</div>
 
 | Effect | Value |
 | --- | --- |
 | Run speed | +X% |
 
-If the attribute scales, add a level 0 / 50 / 100 table. List resistances and weaknesses if it grants any.
+Add a `Lv 0 / Lv 50 / Lv 100` table if the attribute scales. List resistances and weaknesses if it grants any.
+
+### A sub-topic (e.g. Landing blast)
+
+- Longer topics get `###` subsections inside the attribute's `##` section.
+
+**Notes:**
+
+- Short notes use a bold "Notes:" label instead of a heading.
 
 <!-- Verified against NorseDemigods x.y.z -->
 ```
+
+Placeholders for attributes added in later batches stay as HTML comments under the overview table, e.g.
+`<!-- Eagle Strength (Eir, Freyja, Hraesvelgr) will be added in a later batch. -->`.
 
 ### Item
 
@@ -403,20 +771,24 @@ If the attribute scales, add a level 0 / 50 / 100 table. List resistances and we
 
 Infused Megingjord is an equippable belt that increases your maximum energy and carry weight.
 
-<!-- IMAGE: Infused Megingjord in the inventory -->
+<div class="nd-infobox" markdown>
 
 | | |
 | --- | --- |
-| **Config ID** | `InfusedBeltStrength` |
 | **Type** | Equipment / Consumable (permanent effect) / Food |
 | **Crafting station** | Forge (level X+) |
 | **Restricted to** | Any demigod / [Demigod](../demigods/….md) |
 | **Stack size** | X |
 | **Consume limit** | How many times it can be consumed, if limited |
+| **Config ID** | `InfusedBeltStrength` |
+
+</div>
+
+<!-- IMAGE: Infused Megingjord in the inventory -->
 
 ## Effect
 
-Effect at default settings.
+- Effect at default settings.
 
 ## Recipe
 
@@ -439,7 +811,7 @@ at a time.
 ### System
 
 Used for Getting Started topics (Energy, Demigod Skill & Progression, Ability Infusion, …), Companions and
-Reference pages.
+Reference pages. No infobox.
 
 ```markdown
 # Energy
@@ -451,7 +823,7 @@ with your demigod skill level.
 
 ## How it works
 
-Plain-language explanation.
+- Plain-language explanation, as bullets.
 
 ## Default values
 
@@ -538,12 +910,13 @@ plus `User Interface` in `CustomUI.cs`. Ignore `(Gamepad)`: it is commented out.
 
 ## 6. Planned structure
 
-Derived from the shipped `Demigods.yaml`, `Consumables.json` and `Configs.cs` (mod 1.9.0). Only the section
-`index.md` files exist so far. Create pages from this list and add each one to `nav`.
+Derived from the shipped `Demigods.yaml`, `Consumables.json` and `Configs.cs` (mod 1.9.0). Create missing
+pages from this list and add each one to `nav`.
 
 ```text
 docs/
 ├── index.md                                Home
+├── stylesheets/extra.css                   Theme colors, badges, infobox (see Visual components)
 ├── getting-started/
 │   ├── index.md
 │   ├── becoming-a-demigod.md               Runestone, choosing, switching, revoking
@@ -561,11 +934,11 @@ docs/
 │   ├── teleport.md                         Shared by all demigods
 │   └── one page per ability                (table below)
 ├── attributes/
-│   ├── index.md                            All attributes (table, links to demigod-page sections)
+│   ├── index.md                            All attributes (table)
 │   ├── movement-and-stamina.md             Hare Legs, Deer Endurance, Titan Legs, Wolf Speed
 │   ├── strength.md                         Bear Strength, Eagle Strength
-│   └── valkyrie.md                         Eir and Freyja
-│                                           Single-class attributes: sections on demigod pages
+│   ├── valkyrie.md                         Eir and Freyja
+│   └── one page per single-class attribute (table below), e.g. static-body.md
 ├── items/
 │   ├── index.md
 │   ├── demigod-runestone.md
@@ -661,8 +1034,8 @@ Shared attributes (grouped pages):
 | `strength.md` | Bear Strength (Njord, Surtr, Thor), Eagle Strength (Eir, Freyja, Hraesvelgr) |
 | `valkyrie.md` | Valkyrie (Eir, Freyja) |
 
-Single-class attributes (38) are `###` sections on their demigod's page, not separate pages. The All Attributes
-table on `attributes/index.md` links to them, e.g. `../demigods/thor.md#static-body`.
+Single-class attributes (38) each get their own page, named from the display name (`static-body.md`). In `nav`,
+list the grouped pages first, then the single-class pages alphabetically.
 
 | Demigod | Attributes |
 | --- | --- |

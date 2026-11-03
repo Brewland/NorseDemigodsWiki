@@ -10,11 +10,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -25,6 +29,9 @@ theme:
     - search.suggest
     - search.highlight
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -32,6 +39,15 @@ markdown_extensions:
   - tables
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys:
+      key_map:
+        mouse-side-up: Upper Side Mouse
+        mouse-side-down: Lower Side Mouse
+        mouse-middle: Middle Mouse
+        block: Block
   - toc:
       permalink: true
 
@@ -39,12 +55,23 @@ nav:
   - Home: index.md
   - Getting Started:
       - getting-started/index.md
+      - Glossary: getting-started/glossary.md
   - Demigods:
       - demigods/index.md
+      - Thor: demigods/thor.md
   - Abilities:
       - abilities/index.md
+      - Teleport: abilities/teleport.md
+      - Dash: abilities/dash.md
+      - Lightning Aura: abilities/lightning-aura.md
+      - Lightning Storm: abilities/lightning-storm.md
+      - Lightning Strike: abilities/lightning-strike.md
+      - Restoration: abilities/restoration.md
   - Attributes:
       - attributes/index.md
+      - Movement and Stamina: attributes/movement-and-stamina.md
+      - Strength: attributes/strength.md
+      - Static Body: attributes/static-body.md
   - Items:
       - items/index.md
   - Companions:

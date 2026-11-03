@@ -1,0 +1,178 @@
+/* Norse Demigods Wiki styles. Class reference and usage rules: WIKI_GUIDE.md, "Visual components". */
+
+/* ----------------------------------------------------------------------------------------------------
+   Theme colors: fjord blue primary, bronze-gold accent
+   ---------------------------------------------------------------------------------------------------- */
+
+:root {
+    --md-primary-fg-color: #24394d;
+    --md-primary-fg-color--light: #3b5873;
+    --md-primary-fg-color--dark: #172636;
+    --md-accent-fg-color: #b07a22;
+    --md-accent-fg-color--transparent: rgba(176, 122, 34, 0.1);
+    --md-typeset-a-color: #2a5d88;
+
+    --nd-panel-bg: #f4f1ea;
+    --nd-panel-border: #d9cfbd;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-hue: 210;
+    --md-primary-fg-color: #1a2836;
+    --md-primary-fg-color--light: #2c4155;
+    --md-primary-fg-color--dark: #111b25;
+    --md-accent-fg-color: #e2b354;
+    --md-accent-fg-color--transparent: rgba(226, 179, 84, 0.1);
+    --md-typeset-a-color: #8cbbe3;
+
+    --nd-panel-bg: #1f2a36;
+    --nd-panel-border: #34465a;
+}
+
+.md-typeset h1 {
+    font-weight: 700;
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid var(--nd-panel-border);
+}
+
+/* ----------------------------------------------------------------------------------------------------
+   Infobox: <div class="nd-infobox" markdown> around a two-column table
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset .nd-infobox {
+    margin: 1em 0 1.5em;
+    padding: 0.3rem 0.8rem;
+    background: var(--nd-panel-bg);
+    border: 1px solid var(--nd-panel-border);
+    border-left: 0.25rem solid var(--md-accent-fg-color);
+    border-radius: 0.3rem;
+}
+
+.md-typeset .nd-infobox .md-typeset__scrollwrap,
+.md-typeset .nd-infobox .md-typeset__table {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.md-typeset .nd-infobox table:not([class]) {
+    display: table;
+    width: 100%;
+    margin: 0;
+    border: none;
+    background: transparent;
+    font-size: 0.75rem;
+}
+
+.md-typeset .nd-infobox thead {
+    display: none;
+}
+
+.md-typeset .nd-infobox table:not([class]) td {
+    padding: 0.45em 0.6em;
+    border-top: 1px solid var(--nd-panel-border);
+    vertical-align: top;
+}
+
+.md-typeset .nd-infobox table:not([class]) tr:first-child td {
+    border-top: none;
+}
+
+.md-typeset .nd-infobox table:not([class]) tr:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.md-typeset .nd-infobox td:first-child {
+    width: 1%;
+    white-space: nowrap;
+    color: var(--md-default-fg-color--light);
+}
+
+/* ----------------------------------------------------------------------------------------------------
+   Damage type and element badges: *Lightning*{.dmg .lightning}
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset .dmg {
+    --nd-dmg-bg: #616161;
+    --nd-dmg-fg: #ffffff;
+
+    display: inline-block;
+    padding: 0 0.45em;
+    border-radius: 0.3em;
+    background: var(--nd-dmg-bg);
+    color: var(--nd-dmg-fg);
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    vertical-align: 0.05em;
+}
+
+.md-typeset .dmg.blunt     { --nd-dmg-bg: #795548; --nd-dmg-fg: #ffffff; }
+.md-typeset .dmg.slash     { --nd-dmg-bg: #b03a3a; --nd-dmg-fg: #ffffff; }
+.md-typeset .dmg.pierce    { --nd-dmg-bg: #3f51b5; --nd-dmg-fg: #ffffff; }
+.md-typeset .dmg.chop      { --nd-dmg-bg: #5d4037; --nd-dmg-fg: #ffffff; }
+.md-typeset .dmg.pickaxe   { --nd-dmg-bg: #546e7a; --nd-dmg-fg: #ffffff; }
+.md-typeset .dmg.fire      { --nd-dmg-bg: #d84315; --nd-dmg-fg: #ffffff; }
+.md-typeset .dmg.frost     { --nd-dmg-bg: #4fc3f7; --nd-dmg-fg: #0b2a3a; }
+.md-typeset .dmg.lightning { --nd-dmg-bg: #fdd835; --nd-dmg-fg: #2b2400; }
+.md-typeset .dmg.poison    { --nd-dmg-bg: #7cb342; --nd-dmg-fg: #15260a; }
+.md-typeset .dmg.spirit    { --nd-dmg-bg: #8e24aa; --nd-dmg-fg: #ffffff; }
+
+/* ----------------------------------------------------------------------------------------------------
+   Keys (pymdownx.keys): never wrap a key combination
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset .keys {
+    white-space: nowrap;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+   Lore: !!! quote "Lore"
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset .admonition.quote,
+.md-typeset details.quote {
+    border-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .quote > .admonition-title,
+.md-typeset .quote > summary {
+    background-color: var(--md-accent-fg-color--transparent);
+}
+
+.md-typeset .quote > .admonition-title::before,
+.md-typeset .quote > summary::before {
+    background-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .admonition.quote > p {
+    font-style: italic;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+   Card grid (Material grid cards)
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset .grid.cards > ul > li {
+    border-top: 0.15rem solid var(--md-accent-fg-color);
+}
+
+.md-typeset .grid.cards .lg {
+    color: var(--md-accent-fg-color);
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child > a {
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child > a:hover {
+    color: var(--md-accent-fg-color);
+}
