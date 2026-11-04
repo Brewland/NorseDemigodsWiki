@@ -64,6 +64,8 @@ nav:
       - Playing:
           - How the Mod Works: getting-started/how-the-mod-works.md
           - Controls and Hotkeys: getting-started/controls-and-hotkeys.md
+          - Progression: getting-started/progression.md
+          - Energy: getting-started/energy.md
           - First Steps: getting-started/first-steps.md
   - Demigods:
       - demigods/index.md

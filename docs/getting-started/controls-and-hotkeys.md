@@ -60,7 +60,7 @@ settings too.
 | Setting | Default | What it does |
 | --- | --- | --- |
 | `Enable Meters` | On | Shows the mod's meters. Turn it off if another interface mod clashes with them. |
-| `Show Current Experience` | Off | Shows your current demigod skill experience in the energy meter. |
+| `Show Current Experience` | Off | Shows your progress toward the next demigod skill level, as a percentage, in the energy meter. |
 | `Energy Meter Anchor`, `Position`, `Scale`, `Text Color` | Lower left | Moves, resizes and recolors the energy meter. |
 | `Pet Health Meter Anchor`, `Position`, `Scale`, `Text Color` | Lower left | The same for the companion meter (minions, necks or wolf). |
 

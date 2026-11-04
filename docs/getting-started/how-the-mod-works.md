@@ -43,23 +43,20 @@ See [Attributes](../attributes/index.md).
 
 ## Energy
 
-Energy is what most abilities cost.
+Energy is what most abilities cost. It regenerates over time, many abilities and attributes give it back, and your
+maximum grows with your demigod skill level. The energy meter sits at the bottom left of the screen.
 
-- You have 2 energy at demigod skill level 0, rising to 12 at level 100.
-- You regain 1 energy every 10 seconds, and some abilities and attributes give energy back.
-- The energy meter sits at the bottom left of the screen.
+See [Energy](energy.md).
 
 ## Demigod skill
 
-The **Demigod** skill (levels 0 to 100) measures your power. Higher levels mean more energy and stronger abilities
-and attributes.
+The **Demigod** skill (levels 0 to 100) measures your power. It rises in combat, and higher levels mean more energy
+and stronger abilities and attributes.
 
-- It rises in combat: attacking enemies, blocking and taking hits. Each demigod page lists how that demigod gains
-  experience.
-- It is capped by the bosses you have beaten: level 10 before any boss, and each boss raises the cap. After the
-  Queen there is no cap.
-- A boss only counts once its trophy (head) is in your trophy list: killing it is not enough.
+- It is capped until you obtain each boss's trophy: killing the boss is not enough, you must pick up its head.
 - You do not lose demigod skill levels when you die.
+
+See [Progression](progression.md).
 
 ## Infusion
 

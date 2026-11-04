@@ -82,7 +82,7 @@ shared attributes not written yet.
 | Section | Status | Notes |
 | --- | --- | --- |
 | Home (`index.md`) | 🟡 | Summary and server-defaults disclaimer only |
-| Getting Started | 🟡 | Setup (Installing the Mod, Recommended Mods, Compatibility, Difficulty, Optional Features) and Playing (How the Mod Works, Controls and Hotkeys, First Steps) done; Energy, Demigod Skill and Progression, Ability Infusion to do |
+| Getting Started | ✅ | Setup (Installing the Mod, Recommended Mods, Compatibility, Difficulty, Optional Features) and Playing (How the Mod Works, Controls and Hotkeys, Progression, Energy, First Steps). No Ability Infusion page: infusion is on each ability page |
 | Abilities | ✅ | All 54 ability pages and Teleport |
 | Items | ✅ | Demigod Runestone, Abyssal Harpoon, Infused Megingjord, Infusion Items, Permanent Consumables, Sweet Fish Foods |
 | Companions | ✅ | One overview page comparing every companion |
@@ -118,6 +118,14 @@ Remove an item once it is resolved.
   (`AttributeCorruption.AssignItemToBeDuplicated`). The wiki documents the code.
 - **Bloody Archer eitr burst** triggers on any hit while a bow or crossbow is equipped (`OnVictimDamage` checks the
   equipped weapon, not the hit's source). The wiki says "your next hit on an enemy while you hold a bow or crossbow".
+- **Progression and Energy (sent to `norsedemigods-7e`, no reply yet):**
+  - Hraesvelgr's airborne experience (`RaiseSkillPct`) ignores `[Skills] Skill Demigod Experience Modifier (%)`
+    and the world skill-gain modifier. Intended? `progression.md` documents the code.
+  - The `demigod_basic_tooltip_ext` text " (kill the next boss to uncap it)" conflicts with the trophy requirement
+    (the cap uses `player.m_trophies`).
+  - Switching demigods: `RevokeDemigod(softReset)` calls `RaiseSkill(level)` after the level loss, so progress
+    toward the next level is kept. `progression.md` says "5 levels".
+  - Confirm that energy is not saved (starts at 0 on login, respawn and choosing a demigod), as `energy.md` says.
 
 ### `TODO: verify` in the pages
 

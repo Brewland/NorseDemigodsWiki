@@ -238,6 +238,13 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
 - Numbered lists only for sequences (what happens, in order).
 - Tables for anything with two or more comparable values.
 
+### Table orientation
+
+A table that lists a series of more than 6 values (e.g. maximum energy every 10 levels, experience per level) is
+**vertical**: one row per step, the step in the first column (`| Demigod skill level | Maximum energy |`). Short
+series of up to 6 values may stay horizontal (e.g. Infused Leather Scraps per item consumed). Level tables
+(`Lv 0 / Lv 50 / Lv 100`) keep their horizontal form.
+
 ### Line breaks
 
 Rendered width must never decide where a line breaks. Where a cell or line holds several items, break it
@@ -367,8 +374,10 @@ Getting Started is a linear reading path for new players, split into two `nav` g
 always kept separate from Playing (in the game). `nav` and the index follow this order:
 
 - **Setup:** Installing the Mod, Recommended Mods, Compatibility, Difficulty, Optional Features.
-- **Playing:** How the Mod Works, Controls and Hotkeys, First Steps. Energy, Demigod Skill and Progression and
-  Ability Infusion join this group later.
+- **Playing:** How the Mod Works, Controls and Hotkeys, Progression, Energy, First Steps.
+
+There is no Ability Infusion page: Infusion Items and each demigod's `## Infusion` section cover it, and How the Mod
+Works links to Infusion Items.
 
 All use the System template.
 
@@ -384,6 +393,14 @@ All use the System template.
   Haldor's items, queen bees, beehives, feathers) and "Other features" (Experimental features first; Skill loss on
   death before Disabled demigods). Each setting is documented once: feather drops live here, the
   other `[(Difficulty)]` settings on Difficulty.
+- **Energy** (`energy.md`): maximum energy per 10 levels and its bonuses, regeneration (spending restarts the
+  countdown), the draining abilities table, and a "Getting energy back" table (Source, Demigods, When, Blocked
+  while draining). The exact chances and amounts stay on each ability or attribute page; the Energy page only names
+  the trigger. Add a row when an ability or attribute gains an energy source.
+- **Progression** (`progression.md`, about the demigod skill): links to each demigod's
+  `#demigod-skill-experience` section instead of repeating the sources; experience per level (vanilla formula
+  `(level)^1.5 × 0.5 + 0.5`, totals rounded); the skill cap per boss trophy; losing levels; settings.
+- **How the Mod Works** keeps only a short paragraph on energy and the demigod skill, then links to these pages.
 - **Video guide:** the setup video (<https://www.youtube.com/watch?v=uaGUaIzbVR8>) is on Installing the Mod: one
   sentence ending in `:<br>`, the link on the next line (see [Line breaks](#line-breaks)), then a warning
   admonition that it is from early access and outdated.
@@ -1119,7 +1136,7 @@ one sweet fish food can be active at a time.
 
 ### System
 
-Used for Getting Started topics (Energy, Demigod Skill & Progression, Ability Infusion, …), Companions and
+Used for Getting Started topics (Progression, Energy, …), Companions and
 Reference pages. No infobox.
 
 ```markdown
@@ -1238,6 +1255,8 @@ Paths are relative to `../NorseDemigods/NorseDemigods/`. Translation keys are in
 | Topic | Source |
 | --- | --- |
 | Energy, skill caps, level loss, difficulty presets, teleport | `Configs.cs`, `Helper.cs` |
+| Maximum energy, regeneration, drains | `SE_Demigod.cs` (`GetMaxEnergy`, `GetEnergyPassiveRegenerationTimePeriod`, `RemoveEnergy`), `DemigodAbility.cs` (`EnergyDrainPeriod`, `Stop`), callers of `Helper.IsAnyDrainingAbilityActive` |
+| Skill experience, cap, death and switching | `SE_Demigod.cs` (`RaiseSkill`, `RaiseSkillPct`), `Helper.IsDemigodSkillCapped`, `NorseDemigods.cs` (`Skills_LowerAllSkills_Patch`), `Demigod.RevokeDemigod`; vanilla `Skills.Skill.Raise` and `GetNextLevelRequirement` |
 | Teleport ability | `Abilities/AbilityTeleport.cs`, `StatusEffects/SE_TeleportLocationExpiration.cs` |
 | Harpoon fishing, honey, merchant, armor sets | `Configs.cs`, `NorseDemigods.cs` |
 | Console commands (for First Steps and the FAQ) | `Console/*.cs` (`IsCheat`), `Demigod.cs` (`RevokeDemigod`) |
@@ -1277,10 +1296,9 @@ docs/
 │   │   Playing:
 │   ├── how-the-mod-works.md                Overview of every system, with tips
 │   ├── controls-and-hotkeys.md             Default keys, special attacks, changing keys, interface
-│   ├── first-steps.md                      Compendium, runestone, first session, revoking
-│   ├── energy.md                           (next batch)
-│   ├── demigod-skill-and-progression.md    Experience, boss caps, death (next batch)
-│   └── ability-infusion.md                 (next batch)
+│   ├── progression.md                      Demigod skill: experience, skill cap per boss, losing levels
+│   ├── energy.md                           Maximum, regeneration, draining abilities, energy sources
+│   └── first-steps.md                      Compendium, runestone, first session, revoking
 ├── demigods/
 │   ├── index.md                            Overview / comparison table
 │   └── brokkr.md  eir.md  fenrir.md  freyja.md  hel.md  hraesvelgr.md

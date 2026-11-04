@@ -16,4 +16,6 @@ mods and server settings. **Playing** covers what to do in the game.
 
 - [How the Mod Works](how-the-mod-works.md): demigods, abilities, attributes, energy, the demigod skill and more.
 - [Controls and Hotkeys](controls-and-hotkeys.md): default keys, special attacks and how to change them.
+- [Progression](progression.md): the demigod skill, experience, the skill cap per boss and losing levels.
+- [Energy](energy.md): maximum energy, regeneration, draining abilities and ways to get energy back.
 - [First Steps](first-steps.md): the compendium, the Demigod Runestone and your first session.
