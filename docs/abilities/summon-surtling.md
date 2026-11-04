@@ -8,7 +8,7 @@ much stronger with Surtr's level and can give him energy when it hits an enemy.
 | | |
 | --- | --- |
 | **Used by** | [Surtr](../demigods/surtr.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | 2 |
 | **Cooldown** | 60 s |
 | **Duration** | 30 s |

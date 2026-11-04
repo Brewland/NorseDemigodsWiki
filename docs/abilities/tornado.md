@@ -8,7 +8,7 @@ Lightning damage.
 | | |
 | --- | --- |
 | **Used by** | [Njord](../demigods/njord.md) |
-| **Input** | ++mouse-side-down++ (Ability B) |
+| **Input** | ++mouse-side-down++<br>(Ability B) |
 | **Energy cost** | 2 |
 | **Cooldown** | 25 s |
 | **Duration** | 8 s |
@@ -32,7 +32,7 @@ Lightning damage.
 
 ## Damage
 
-Each hit: 1 base + 0.39 [per level](../getting-started/glossary.md#per-level).
+Each hit: 1 base + 0.39 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

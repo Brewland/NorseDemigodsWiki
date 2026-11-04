@@ -8,7 +8,7 @@ explode on impact with Blunt damage.
 | | |
 | --- | --- |
 | **Used by** | [Njord](../demigods/njord.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | 1 |
 | **Cooldown** | 10 s |
 | **Range** | Targets enemies within 15 m |
@@ -34,7 +34,7 @@ explode on impact with Blunt damage.
 
 ## Damage
 
-5 base + 0.7 [per level](../getting-started/glossary.md#per-level), per sphere.
+5 base + 0.7 [per level](../reference/glossary.md#per-level), per sphere.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

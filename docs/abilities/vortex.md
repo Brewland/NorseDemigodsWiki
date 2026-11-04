@@ -8,7 +8,7 @@ fish, and ends in an explosion that damages every enemy around him. It costs no 
 | | |
 | --- | --- |
 | **Used by** | [Hraesvelgr](../demigods/hraesvelgr.md) |
-| **Input** | ++mouse-side-down++ (Ability B), hold |
+| **Input** | ++mouse-side-down++<br>(Ability B), hold |
 | **Energy cost** | None |
 | **Cooldown** | 15 s, starts when activated |
 | **Duration** | Up to 8 s of channeling |
@@ -40,7 +40,7 @@ fish, and ends in an explosion that damages every enemy around him. It costs no 
 ## Damage
 
 The explosion deals *Blunt*{.dmg .blunt} damage for each second you channeled, up to 3 s:
-5 base + 0.45 [per level](../getting-started/glossary.md#per-level) per second.
+5 base + 0.45 [per level](../reference/glossary.md#per-level) per second.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -59,7 +59,7 @@ The explosion deals *Blunt*{.dmg .blunt} damage for each second you channeled, u
 ## Infused
 
 The explosion also deals *Chop*{.dmg .chop} damage to trees and other destructible objects within 10 m, with
-[tool tier](../getting-started/glossary.md#tool-tier) 1. Per second channeled, up to 3 s: 10 base + 0.2 per level.
+[tool tier](../reference/glossary.md#tool-tier) 1. Per second channeled, up to 3 s: 10 base + 0.2 per level.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

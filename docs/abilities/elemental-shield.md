@@ -8,7 +8,7 @@ immune to one element and makes you faster. Eir's holy version blocks Spirit; Su
 | | |
 | --- | --- |
 | **Used by** | [Eir](../demigods/eir.md), [Surtr](../demigods/surtr.md) |
-| **Input** | ++mouse-side-down++ (Ability B) |
+| **Input** | ++mouse-side-down++<br>(Ability B) |
 | **Energy cost** | 2 |
 | **Cooldown** | 15 s |
 | **Duration** | Until all 3 charges are used |
@@ -42,7 +42,7 @@ Casting gives you **3 charges** (the maximum). While you have charges:
 
 ## Damage reduction
 
-2 base + 0.1 [per level](../getting-started/glossary.md#per-level).
+2 base + 0.1 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

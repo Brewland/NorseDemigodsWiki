@@ -7,7 +7,7 @@ Frost Nova freezes the ground around Fenrir: after a short charge, every enemy w
 | | |
 | --- | --- |
 | **Used by** | [Fenrir](../demigods/fenrir.md) |
-| **Input** | ++mouse-side-down++ (Ability B) |
+| **Input** | ++mouse-side-down++<br>(Ability B) |
 | **Energy cost** | 2 |
 | **Cooldown** | 30 s |
 | **Cast time** | 1.25 s |
@@ -27,7 +27,7 @@ Frost Nova freezes the ground around Fenrir: after a short charge, every enemy w
 
 ## Damage
 
-10 base + 1.4 [per level](../getting-started/glossary.md#per-level).
+10 base + 1.4 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

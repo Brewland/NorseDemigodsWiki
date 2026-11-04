@@ -8,7 +8,7 @@ costs eitr instead of energy and can give energy back on a hit.
 | | |
 | --- | --- |
 | **Used by** | [Thor](../demigods/thor.md) |
-| **Input** | ++mouse-middle++ (Special attack, unarmed) |
+| **Input** | ++mouse-middle++<br>(Special attack, unarmed) |
 | **Eitr cost** | 40 |
 | **Energy cost** | None |
 | **Cooldown** | None |
@@ -30,7 +30,7 @@ costs eitr instead of energy and can give energy back on a hit.
 
 ## Damage
 
-10 base + 1.4 [per level](../getting-started/glossary.md#per-level).
+10 base + 1.4 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

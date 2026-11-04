@@ -8,7 +8,7 @@ for a few seconds and also burns down trees and breaks rocks and ores.
 | | |
 | --- | --- |
 | **Used by** | [Eir](../demigods/eir.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | 1 |
 | **Cooldown** | 5 s |
 | **Duration** | About 3 s |
@@ -30,7 +30,7 @@ for a few seconds and also burns down trees and breaks rocks and ores.
 
 ## Damage
 
-Each hit: 2 base + 0.48 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.
+Each hit: 2 base + 0.48 [per level](../reference/glossary.md#per-level), split evenly between the two types.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -39,7 +39,7 @@ Each hit: 2 base + 0.48 [per level](../getting-started/glossary.md#per-level), s
 | Damage to trees and ores per hit *Chop*{.dmg .chop} *Pickaxe*{.dmg .pickaxe} | 50 | 100 | 150 |
 
 - Resource damage: 50 base + 1 per level, per hit.
-- [Tool tier](../getting-started/glossary.md#tool-tier) 1.
+- [Tool tier](../reference/glossary.md#tool-tier) 1.
 
 ## Infused
 
@@ -62,6 +62,6 @@ Each hit: 2 base + 0.48 [per level](../getting-started/glossary.md#per-level), s
 ## Related pages
 
 - [Eir](../demigods/eir.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

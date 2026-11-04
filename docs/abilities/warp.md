@@ -8,7 +8,7 @@ his level.
 | | |
 | --- | --- |
 | **Used by** | [Kvasir](../demigods/kvasir.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | None |
 | **Cooldown** | 10 s |
 | **Range** | 12–18 m, by level |

@@ -8,7 +8,7 @@ animal within 70 m.
 | | |
 | --- | --- |
 | **Used by** | [Ullr](../demigods/ullr.md) |
-| **Input** | ++mouse-side-down++ (Ability B) |
+| **Input** | ++mouse-side-down++<br>(Ability B) |
 | **Energy cost** | None |
 | **Cooldown** | 3 s |
 | **Duration** | 1 s |

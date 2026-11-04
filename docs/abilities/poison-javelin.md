@@ -8,7 +8,7 @@ It costs eitr instead of energy, can give energy back on a hit and also damages 
 | | |
 | --- | --- |
 | **Used by** | [Freyja](../demigods/freyja.md) |
-| **Input** | ++mouse-middle++ (Special attack, unarmed) |
+| **Input** | ++mouse-middle++<br>(Special attack, unarmed) |
 | **Eitr cost** | 15 |
 | **Energy cost** | None |
 | **Cooldown** | None |
@@ -31,14 +31,14 @@ It costs eitr instead of energy, can give energy back on a hit and also damages 
 
 ## Damage
 
-10 base + 1.9 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.
+10 base + 1.9 [per level](../reference/glossary.md#per-level), split evenly between the two types.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
 | Damage | **10**<br><span class="nd-split">5 *Pierce*{.dmg .pierce} + 5 *Poison*{.dmg .poison}</span> | **105**<br><span class="nd-split">52.5 *Pierce*{.dmg .pierce} + 52.5 *Poison*{.dmg .poison}</span> | **200**<br><span class="nd-split">100 *Pierce*{.dmg .pierce} + 100 *Poison*{.dmg .poison}</span> |
 | Damage to rocks and ores *Pickaxe*{.dmg .pickaxe} | 10 | 105 | 200 |
 
-- [Tool tier](../getting-started/glossary.md#tool-tier) 1.
+- [Tool tier](../reference/glossary.md#tool-tier) 1.
 
 ## Infused
 
@@ -53,6 +53,6 @@ It costs eitr instead of energy, can give energy back on a hit and also damages 
 ## Related pages
 
 - [Freyja](../demigods/freyja.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

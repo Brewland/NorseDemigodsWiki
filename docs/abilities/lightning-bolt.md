@@ -8,7 +8,7 @@ damage. It costs eitr instead of energy and can give energy back on a hit.
 | | |
 | --- | --- |
 | **Used by** | [Njord](../demigods/njord.md) |
-| **Input** | ++mouse-middle++ (Special attack, unarmed) |
+| **Input** | ++mouse-middle++<br>(Special attack, unarmed) |
 | **Eitr cost** | 20 |
 | **Energy cost** | None |
 | **Cooldown** | None |
@@ -31,7 +31,7 @@ damage. It costs eitr instead of energy and can give energy back on a hit.
 
 ## Damage
 
-5 base + 0.95 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.
+5 base + 0.95 [per level](../reference/glossary.md#per-level), split evenly between the two types.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

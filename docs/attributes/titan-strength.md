@@ -27,7 +27,7 @@ and uses less stamina when attacking.
 
 ## Scaling
 
-Extra carry weight: 3 [per level](../getting-started/glossary.md#per-level).
+Extra carry weight: 3 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -36,7 +36,7 @@ Extra carry weight: 3 [per level](../getting-started/glossary.md#per-level).
 ## Notes
 
 - The movement penalty counts all equipment together.
-- Example: 35% total penalty from [heavy armor](../getting-started/glossary.md#heavy-armor), weapon and shield slows
+- Example: 35% total penalty from [heavy armor](../reference/glossary.md#heavy-armor), weapon and shield slows
   you by only 5%.
 
 ## Related pages

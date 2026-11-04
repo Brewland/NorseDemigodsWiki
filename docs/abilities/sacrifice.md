@@ -8,7 +8,7 @@ health into 1 energy every second.
 | | |
 | --- | --- |
 | **Used by** | [Hel](../demigods/hel.md) |
-| **Input** | ++mouse-side-down++ + ++block++ (Ability D) |
+| **Input** | ++mouse-side-down++ + ++block++<br>(Ability D) |
 | **Energy cost** | None |
 | **Cooldown** | 10 s, starts when activated |
 | **Duration** | Instant with minions; otherwise until energy is full or stopped |
@@ -41,7 +41,7 @@ Without minions, it works as a toggle:
 - Each sacrificed skeleton explodes, hitting enemies within 5 m of it. The ghost does not explode.
 - Without minions: you also regain 30 eitr every second.
 
-Explosion damage: 2 per type [per level](../getting-started/glossary.md#per-level), with no base damage.
+Explosion damage: 2 per type [per level](../reference/glossary.md#per-level), with no base damage.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

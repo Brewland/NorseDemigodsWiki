@@ -8,7 +8,7 @@ on impact with Blunt and Lightning damage. It costs eitr instead of energy and c
 | | |
 | --- | --- |
 | **Used by** | [Brokkr](../demigods/brokkr.md) |
-| **Input** | ++mouse-middle++ (Special attack, unarmed) |
+| **Input** | ++mouse-middle++<br>(Special attack, unarmed) |
 | **Eitr cost** | 20 |
 | **Energy cost** | None |
 | **Cooldown** | None |
@@ -34,7 +34,7 @@ on impact with Blunt and Lightning damage. It costs eitr instead of energy and c
 
 ## Damage
 
-10 base + 0.9 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.
+10 base + 0.9 [per level](../reference/glossary.md#per-level), split evenly between the two types.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

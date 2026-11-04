@@ -8,7 +8,7 @@ damages trees. It costs eitr instead of energy and can give energy back on a hit
 | | |
 | --- | --- |
 | **Used by** | [Surtr](../demigods/surtr.md) |
-| **Input** | ++mouse-middle++ (Special attack, unarmed) |
+| **Input** | ++mouse-middle++<br>(Special attack, unarmed) |
 | **Eitr cost** | 20 |
 | **Energy cost** | None |
 | **Cooldown** | None |
@@ -27,14 +27,14 @@ damages trees. It costs eitr instead of energy and can give energy back on a hit
 
 ## Damage
 
-5 base + 0.95 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.
+5 base + 0.95 [per level](../reference/glossary.md#per-level), split evenly between the two types.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
 | Damage | **5**<br><span class="nd-split">2.5 *Blunt*{.dmg .blunt} + 2.5 *Fire*{.dmg .fire}</span> | **52.5**<br><span class="nd-split">26.25 *Blunt*{.dmg .blunt} + 26.25 *Fire*{.dmg .fire}</span> | **100**<br><span class="nd-split">50 *Blunt*{.dmg .blunt} + 50 *Fire*{.dmg .fire}</span> |
 | Damage to trees *Chop*{.dmg .chop} | 50 | 100 | 150 |
 
-- Damage to trees: 50 base + 1 per level. [Tool tier](../getting-started/glossary.md#tool-tier) 1.
+- Damage to trees: 50 base + 1 per level. [Tool tier](../reference/glossary.md#tool-tier) 1.
 - TODO: verify (explosion radius comes from the game's Staff of Embers fireball).
 
 ## Infused

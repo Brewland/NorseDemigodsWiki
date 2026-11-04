@@ -8,7 +8,7 @@ second. It drains energy while active and cannot be used indoors.
 | | |
 | --- | --- |
 | **Used by** | [Thor](../demigods/thor.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | Needs 1+ energy; drains 1 every second |
 | **Cooldown** | 10 s, starts when activated |
 | **Duration** | Until turned off, out of energy or no enemy in range |
@@ -35,7 +35,7 @@ Stopping it within the first second still costs 1 energy.
 
 ## Damage
 
-Each strike: 5 base + 0.45 [per level](../getting-started/glossary.md#per-level).
+Each strike: 5 base + 0.45 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

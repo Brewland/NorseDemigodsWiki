@@ -8,7 +8,7 @@ for her for 30 seconds.
 | | |
 | --- | --- |
 | **Used by** | [Freyja](../demigods/freyja.md) |
-| **Input** | ++mouse-side-down++ (Ability B) |
+| **Input** | ++mouse-side-down++<br>(Ability B) |
 | **Energy cost** | 2 |
 | **Cooldown** | 45 s |
 | **Duration** | 30 s (deathsquitos) |
@@ -32,7 +32,7 @@ for her for 30 seconds.
 
 ## Damage
 
-Burst: 10 base + 1.9 [per level](../getting-started/glossary.md#per-level).
+Burst: 10 base + 1.9 [per level](../reference/glossary.md#per-level).
 Deathsquito hits: the same amount, split 75% *Pierce*{.dmg .pierce} and 25% *Poison*{.dmg .poison}.
 
 | | Lv 0 | Lv 50 | Lv 100 |

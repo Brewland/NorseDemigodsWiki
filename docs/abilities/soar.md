@@ -8,7 +8,7 @@ charge a longer, higher launch. He can soar several times before landing.
 | | |
 | --- | --- |
 | **Used by** | [Hraesvelgr](../demigods/hraesvelgr.md) |
-| **Input** | ++mouse-middle++ (Special attack while airborne), hold to charge |
+| **Input** | ++mouse-middle++<br>(Special attack while airborne), hold to charge |
 | **Energy cost** | None |
 | **Cooldown** | 3 s |
 | **Cast time** | Up to 8 s of charging (optional) |

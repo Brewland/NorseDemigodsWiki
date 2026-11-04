@@ -11,15 +11,15 @@ every companion and lists the rules they share; each ability page has the full d
 
 | Companion | Ability | Demigod | Job | How many | Lasts |
 | --- | --- | --- | --- | --- | --- |
-| [Charmed creature](../abilities/charm.md) | Charm | [Kvasir](../demigods/kvasir.md) | Fights | No limit | 15–30 s, by level |
-| [Deathsquito](../abilities/poison-cloud.md) | Poison Cloud | [Freyja](../demigods/freyja.md) | Fights | 3 (5 infused) | 30 s |
-| [Ghost](../abilities/minions.md#infused) | Minions, infused | [Hel](../demigods/hel.md) | Fights | 1, once 3 skeletons are out | Until killed |
-| [Neck](../abilities/neck.md) | Neck | [Njord](../demigods/njord.md) | Catches fish, chops wood | 1 (2 infused) | Until dismissed or killed |
-| [Skeleton](../abilities/minions.md) | Minions | [Hel](../demigods/hel.md) | Fights | Up to 3 | Until killed |
-| [Stone golem](../abilities/stone-golem.md) | Stone Golem | [Brokkr](../demigods/brokkr.md) | Fights | 1 | 60 s |
-| [Surtling](../abilities/summon-surtling.md) | Summon Surtling | [Surtr](../demigods/surtr.md) | Fights | 1 (2 infused) | 30 s |
-| [Ulv](../abilities/summon-wolf.md#ulv-fenrir) | Summon Wolf | [Fenrir](../demigods/fenrir.md) | Fights | 1 | Until dismissed or killed |
-| [Wolf](../abilities/summon-wolf.md#wolf-ullr) | Summon Wolf | [Ullr](../demigods/ullr.md) | Fights | 1 | Until dismissed or killed |
+| Charmed creature | [Charm](../abilities/charm.md) | [Kvasir](../demigods/kvasir.md) | Fights | No limit | 15–30 s, by level |
+| Deathsquito | [Poison Cloud](../abilities/poison-cloud.md) | [Freyja](../demigods/freyja.md) | Fights | 3 (5 infused) | 30 s |
+| Ghost | [Minions](../abilities/minions.md#infused), infused | [Hel](../demigods/hel.md) | Fights | 1, once 3 skeletons are out | Until killed |
+| Neck | [Neck](../abilities/neck.md) | [Njord](../demigods/njord.md) | Catches fish, chops wood | 1 (2 infused) | Until dismissed or killed |
+| Skeleton | [Minions](../abilities/minions.md) | [Hel](../demigods/hel.md) | Fights | Up to 3 | Until killed |
+| Stone golem | [Stone Golem](../abilities/stone-golem.md) | [Brokkr](../demigods/brokkr.md) | Fights | 1 | 60 s |
+| Surtling | [Summon Surtling](../abilities/summon-surtling.md) | [Surtr](../demigods/surtr.md) | Fights | 1 (2 infused) | 30 s |
+| Ulv | [Summon Wolf](../abilities/summon-wolf.md#ulv-fenrir) | [Fenrir](../demigods/fenrir.md) | Fights | 1 | Until dismissed or killed |
+| Wolf | [Summon Wolf](../abilities/summon-wolf.md#wolf-ullr) | [Ullr](../demigods/ullr.md) | Fights | 1 | Until dismissed or killed |
 
 </div>
 
@@ -49,16 +49,16 @@ Most companions' damage per hit grows slowly at low levels and sharply at high l
 
 | Companion | Damage types | Lv 0 | Lv 50 | Lv 100 |
 | --- | --- | ---: | ---: | ---: |
-| Deathsquito | 75% *Pierce*{.dmg .pierce} + 25% *Poison*{.dmg .poison} | **10** | **105** | **200** |
+| Deathsquito | 75% *Pierce*{.dmg .pierce}<br>25% *Poison*{.dmg .poison} | **10** | **105** | **200** |
 | Ghost | *Slash*{.dmg .slash} | **10** | **88** | **200** |
 | Skeleton | *Slash*{.dmg .slash} | **5** | **44** | **100** |
-| Stone golem | 75% *Blunt*{.dmg .blunt} + 25% *Pierce*{.dmg .pierce} | **10** | **77** | **200** |
-| Surtling | 75% *Fire*{.dmg .fire} + 25% *Blunt*{.dmg .blunt} | **10** | **59** | **150** |
-| Ulv | 75% *Slash*{.dmg .slash} + 25% *Pierce*{.dmg .pierce} | **5** | **31** | **80** |
+| Stone golem | 75% *Blunt*{.dmg .blunt}<br>25% *Pierce*{.dmg .pierce} | **10** | **77** | **200** |
+| Surtling | 75% *Fire*{.dmg .fire}<br>25% *Blunt*{.dmg .blunt} | **10** | **59** | **150** |
+| Ulv | 75% *Slash*{.dmg .slash}<br>25% *Pierce*{.dmg .pierce} | **5** | **31** | **80** |
 | Wolf | *Slash*{.dmg .slash} | **5** | **31** | **80** |
 
 - Deathsquito damage grows evenly with level: 10 base + 1.9
-  [per level](../getting-started/glossary.md#per-level).
+  [per level](../reference/glossary.md#per-level).
 - A fed Ulv or wolf deals 25% more.
 - The neck does not fight. Its chop damage to trees is on the [Neck](../abilities/neck.md#stats) page.
 

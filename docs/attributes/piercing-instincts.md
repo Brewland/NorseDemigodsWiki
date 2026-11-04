@@ -31,7 +31,7 @@ Your knives also deal *Chop*{.dmg .chop} and *Pickaxe*{.dmg .pickaxe} damage, so
 and ores:
 
 - Chop and pickaxe damage: **175%** each of the knife's Pierce damage, counting the +20% bonus above.
-- [Tool tier](../getting-started/glossary.md#tool-tier) 1.
+- [Tool tier](../reference/glossary.md#tool-tier) 1.
 - Knife hits on trees raise your Woodcutting skill.
 
 ## Related pages

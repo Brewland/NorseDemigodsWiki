@@ -8,7 +8,7 @@ with Blunt damage, pushing them away.
 | | |
 | --- | --- |
 | **Used by** | [Ullr](../demigods/ullr.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | 1 |
 | **Cooldown** | 3 s |
 | **Range** | About 11 m in front of you, 5 m wide |
@@ -31,7 +31,7 @@ with Blunt damage, pushing them away.
 
 ## Damage
 
-5 base + 0.7 [per level](../getting-started/glossary.md#per-level).
+5 base + 0.7 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

@@ -8,7 +8,7 @@ energy is full. Infused, it also restores stamina.
 | | |
 | --- | --- |
 | **Used by** | [Surtr](../demigods/surtr.md) |
-| **Input** | ++mouse-side-down++ + ++block++ (Ability D) |
+| **Input** | ++mouse-side-down++ + ++block++<br>(Ability D) |
 | **Energy cost** | None |
 | **Cooldown** | 30 s, starts when activated |
 | **Duration** | Until energy is full or stopped |

@@ -43,6 +43,6 @@ Extra damage added to your weapon hits:
 
 - [Surtr](../demigods/surtr.md)
 - [Cold Blood](cold-blood.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

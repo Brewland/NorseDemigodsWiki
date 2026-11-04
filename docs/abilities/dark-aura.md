@@ -8,7 +8,7 @@ stamina and makes him move faster.
 | | |
 | --- | --- |
 | **Used by** | [Kvasir](../demigods/kvasir.md) |
-| **Input** | ++mouse-side-down++ (Ability B) |
+| **Input** | ++mouse-side-down++<br>(Ability B) |
 | **Energy cost** | 2 |
 | **Cooldown** | 30 s, starts when activated |
 | **Duration** | 7 s |

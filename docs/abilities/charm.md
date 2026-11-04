@@ -8,7 +8,7 @@ creature for good.
 | | |
 | --- | --- |
 | **Used by** | [Kvasir](../demigods/kvasir.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | 1 |
 | **Cooldown** | 10 s |
 | **Duration** | 15–30 s, by level |
@@ -37,7 +37,7 @@ creature for good.
 - Hostile creatures, or tameable creatures that are not tamed yet.
 - Not bosses, players, or animals that never fight (such as deer).
 - Its maximum health must not be above the limit for your level: 20
-  [per level](../getting-started/glossary.md#per-level).
+  [per level](../reference/glossary.md#per-level).
 - No energy is spent and no cooldown starts when there is no valid target.
 
 ## Scaling

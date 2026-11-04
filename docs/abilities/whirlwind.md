@@ -8,7 +8,7 @@ enemy around him and pushing them away.
 | | |
 | --- | --- |
 | **Used by** | [Hraesvelgr](../demigods/hraesvelgr.md) |
-| **Input** | ++block++ + ++mouse-middle++ (Special attack while blocking, swords or polearms) |
+| **Input** | ++block++ + ++mouse-middle++<br>(Special attack while blocking, swords or polearms) |
 | **Energy cost** | 1 |
 | **Cooldown** | 10 s |
 | **Range** | 4 m around you |
@@ -40,7 +40,7 @@ weapon's own damage types.
 
 ## Infused
 
-The whirlwind also deals *Lightning*{.dmg .lightning} damage: 0.5 [per level](../getting-started/glossary.md#per-level),
+The whirlwind also deals *Lightning*{.dmg .lightning} damage: 0.5 [per level](../reference/glossary.md#per-level),
 with no base damage.
 
 | | Lv 0 | Lv 50 | Lv 100 |

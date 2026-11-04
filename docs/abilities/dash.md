@@ -8,7 +8,7 @@ Lightning damage and can dive to the ground from the air; Freyja's version deals
 | | |
 | --- | --- |
 | **Used by** | [Thor](../demigods/thor.md), [Freyja](../demigods/freyja.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | 1 |
 | **Cooldown** | 3 s |
 | **Range** | 12–18 m, by level |
@@ -28,7 +28,7 @@ Both variants share one config section: a server change affects Thor and Freyja 
 
 ## Damage and range
 
-Damage: 10 base + 1.4 [per level](../getting-started/glossary.md#per-level).
+Damage: 10 base + 1.4 [per level](../reference/glossary.md#per-level).
 Range grows evenly from 12 m to 18 m.
 
 | | Lv 0 | Lv 50 | Lv 100 |

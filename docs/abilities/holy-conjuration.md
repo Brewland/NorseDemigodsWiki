@@ -8,7 +8,7 @@ energy but has a long cooldown.
 | | |
 | --- | --- |
 | **Used by** | [Eir](../demigods/eir.md) |
-| **Input** | ++mouse-side-down++ + ++block++ (Ability D) |
+| **Input** | ++mouse-side-down++ + ++block++<br>(Ability D) |
 | **Energy cost** | None |
 | **Cooldown** | 300 s |
 | **Config ID** | `HolyConjuration` |

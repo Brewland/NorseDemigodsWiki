@@ -8,7 +8,7 @@ around the impact point.
 | | |
 | --- | --- |
 | **Used by** | [Brokkr](../demigods/brokkr.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | 1 |
 | **Cooldown** | 5 s |
 | **Explosion radius** | 5 m |
@@ -29,7 +29,7 @@ around the impact point.
 
 ## Damage
 
-Enemies: 5 base + 0.95 [per level](../getting-started/glossary.md#per-level), 80% *Blunt*{.dmg .blunt} and 20%
+Enemies: 5 base + 0.95 [per level](../reference/glossary.md#per-level), 80% *Blunt*{.dmg .blunt} and 20%
 *Fire*{.dmg .fire}.
 
 | | Lv 0 | Lv 50 | Lv 100 |
@@ -38,7 +38,7 @@ Enemies: 5 base + 0.95 [per level](../getting-started/glossary.md#per-level), 80
 | Damage to trees and ores *Chop*{.dmg .chop} *Pickaxe*{.dmg .pickaxe} | 100 | 200 | 300 |
 
 - Resource damage: 100 base + 2 per level.
-- [Tool tier](../getting-started/glossary.md#tool-tier) 2.
+- [Tool tier](../reference/glossary.md#tool-tier) 2.
 
 ## Infused
 
@@ -55,6 +55,6 @@ Enemies: 5 base + 0.95 [per level](../getting-started/glossary.md#per-level), 80
 ## Related pages
 
 - [Brokkr](../demigods/brokkr.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

@@ -8,7 +8,7 @@ per second, while players inside are healed.
 | | |
 | --- | --- |
 | **Used by** | [Brokkr](../demigods/brokkr.md) |
-| **Input** | ++mouse-side-down++ + ++block++ (Ability D) |
+| **Input** | ++mouse-side-down++ + ++block++<br>(Ability D) |
 | **Energy cost** | 2 |
 | **Cooldown** | 30 s |
 | **Duration** | 5 s |
@@ -29,7 +29,7 @@ per second, while players inside are healed.
 
 ## Damage and healing
 
-Damage per pulse: 1 base + 0.14 [per level](../getting-started/glossary.md#per-level).
+Damage per pulse: 1 base + 0.14 [per level](../reference/glossary.md#per-level).
 Healing per pulse grows evenly from 3 at level 0 to 8 at level 100.
 
 | | Lv 0 | Lv 50 | Lv 100 |

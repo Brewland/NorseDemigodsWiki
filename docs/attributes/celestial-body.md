@@ -8,7 +8,7 @@ favorite weapons spread damage and heal her, and her eitr regenerates faster whe
 | | |
 | --- | --- |
 | **Demigod** | [Hel](../demigods/hel.md) |
-| **Condition** | Always active; the eitr regeneration bonus only when not wearing any [heavy armor](../getting-started/glossary.md#heavy-armor) |
+| **Condition** | Always active; the eitr regeneration bonus only when not wearing any [heavy armor](../reference/glossary.md#heavy-armor) |
 | **Config ID** | `CelestialBody` |
 | **Config section** | `[Attribute Celestial Body]` |
 
@@ -48,6 +48,6 @@ Extra damage added to your melee weapon hits:
 
 - [Hel](../demigods/hel.md)
 - [Phantom Shroud](phantom-shroud.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

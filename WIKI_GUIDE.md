@@ -52,7 +52,8 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
   "If enabled" or experimental.
 - **Holy Sun burning tar** works only with `[(General)] Enable Experimental Features` = `true`, and does not work
   in multiplayer yet. Mention it on the Holy Sun page with an "If enabled" label.
-- **No controller support.** Gamepad bindings are commented out in the code. Do not document controller controls.
+- **Controllers are never mentioned.** Gamepad bindings are commented out in the code. Do not write about
+  controllers at all, not even to say they are unsupported.
 - **Changelog** links to the mod's release notes. Do not copy them into the wiki.
 - **Images:** add an image placeholder on every page now (see templates); screenshots come later.
   Icons and models live in the Unity bundle and cannot be extracted from the source scan.
@@ -125,34 +126,38 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
 Inputs are written as **keyboard keys** with `pymdownx.keys` (`++key++`), followed by the input's name in
 brackets. Show the **default** binding; players can rebind every key.
 
-- One input per line. Never split an input across lines: in tables, one input per cell (use `<br>` between
-  inputs); in cards, the input is its own paragraph. Key groups never wrap (CSS keeps them on one line).
+- Keys first, then the input's name in brackets **on the next line**, with `<br>` between them:
+  `++mouse-side-up++<br>(Ability A)`. This applies everywhere inputs appear: infoboxes, index tables and cards.
+  The keys of one input never split across lines (CSS keeps key groups on one line).
+- One input per cell (in tables) or per paragraph (in cards).
 - Combine keys with ` + ` between key groups: `++mouse-side-up++ + ++block++`.
 
 | YAML input | Write on pages as | Renders as |
 | --- | --- | --- |
-| `SLOT_1` | `++mouse-side-up++ (Ability A)` | Upper Side Mouse (Ability A) |
-| `SLOT_2` | `++mouse-side-down++ (Ability B)` | Lower Side Mouse (Ability B) |
-| `SLOT_3` | `++mouse-side-up++ + ++block++ (Ability C)` | Upper Side Mouse + Block (Ability C) |
-| `SLOT_4` | `++mouse-side-down++ + ++block++ (Ability D)` | Lower Side Mouse + Block (Ability D) |
-| `SPECIAL_ATTACK` | `++mouse-middle++ (Special attack, clubs or axes)` | Middle Mouse (…), list the weapon types from `skills:` |
-| `SPECIAL_ATTACK_BLOCKING` | `++block++ + ++mouse-middle++ (Special attack while blocking, …)` | Block + Middle Mouse (…) |
-| `SPECIAL_ATTACK_AIR` | `++mouse-middle++ (Special attack while airborne)` | Middle Mouse (…) |
-| Teleport | `++p++ (Teleport)` | P (Teleport) |
+| `SLOT_1` | `++mouse-side-up++<br>(Ability A)` | Upper Side Mouse (Ability A) |
+| `SLOT_2` | `++mouse-side-down++<br>(Ability B)` | Lower Side Mouse (Ability B) |
+| `SLOT_3` | `++mouse-side-up++ + ++block++<br>(Ability C)` | Upper Side Mouse + Block (Ability C) |
+| `SLOT_4` | `++mouse-side-down++ + ++block++<br>(Ability D)` | Lower Side Mouse + Block (Ability D) |
+| `SPECIAL_ATTACK` | `++mouse-middle++<br>(Special attack, clubs or axes)` | Middle Mouse (…), list the weapon types from `skills:` |
+| `SPECIAL_ATTACK_BLOCKING` | `++block++ + ++mouse-middle++<br>(Special attack while blocking, …)` | Block + Middle Mouse (…) |
+| `SPECIAL_ATTACK_AIR` | `++mouse-middle++<br>(Special attack while airborne)` | Middle Mouse (…) |
+| Teleport | `++p++<br>(Teleport)` | P (Teleport) |
 | Ignore special attack | `++left-alt++ + ++mouse-middle++` | Left Alt + Middle Mouse |
 
 When a shared special attack uses different weapons per demigod, the ability page (infobox and index row) lists
-each: `++mouse-middle++ (Special attack, unarmed for Fenrir; axes or swords for Surtr)`. A demigod's own card shows only
-that demigod's weapons: `++mouse-middle++ (Special attack, unarmed)`.
+each: `++mouse-middle++<br>(Special attack, unarmed for Fenrir; axes or swords for Surtr)`. A demigod's own card shows only
+that demigod's weapons: `++mouse-middle++<br>(Special attack, unarmed)`.
 
 Where the defaults come from:
 
 - **Ability A / B / Teleport / Ignore special attack:** `[(Hotkeys)]` in `Configs.cs` (`Mouse4`, `Mouse3`, `P`,
   `LeftAlt`). Unity numbers mouse buttons from 0 (`Mouse0` = left), so the config's `Mouse4` is the 5th button
   and `Mouse3` the 4th. Never write "Mouse 4" or "Mouse 5" on pages; players know them as the side buttons:
-  - `++mouse-side-up++` (**Upper Side Mouse**, config `Mouse4`): the side button furthest from the fingers
-    (the upper one when looking down at the mouse).
-  - `++mouse-side-down++` (**Lower Side Mouse**, config `Mouse3`): the other side button.
+  - Picture the mouse from above, as a flat 2D image with its front (the main buttons) at the top.
+  - `++mouse-side-up++` (**Upper Side Mouse**, config `Mouse4`, Ability A): the side button higher up in that view,
+    nearer the front of the mouse (the README's "front side mouse button").
+  - `++mouse-side-down++` (**Lower Side Mouse**, config `Mouse3`, Ability B): the side button lower down in that
+    view, nearer the back.
   Keep key labels short; explanations go in text outside the key, never inside it.
 - **Ability C / D:** no hotkey by default; the mod uses Ability A / B while blocking.
 - **Special attack** is Valheim's *secondary attack* (default: middle mouse); **block** is Valheim's block
@@ -176,7 +181,7 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
   The **in-game total** (what the tooltip shows) is the main value: bold, on its own line in tables (the CSS makes
   it larger). The split comes second: not bold, on a second line in the `nd-split` span (smaller, grey), so the
   badges never outweigh the total. Example: Fireball's config is 2.5 per type, but the tooltip shows 5.
-- Damage is a base amount plus an amount [per level](getting-started/glossary.md#per-level). Put scaling
+- Damage is a base amount plus an amount [per level](reference/glossary.md#per-level). Put scaling
   values in a **level table** with the columns `Lv 0 / Lv 50 / Lv 100` (demigod skill level), one row per value.
   Right-align the level columns. When a row has a single damage type, put the badge in the **row label** and
   only bold numbers in the cells:
@@ -198,8 +203,8 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
 - A column that holds one damage type may carry the badge in its **header**:
   `| Weapon | Extra damage *Lightning*{.dmg .lightning} |` (see Static Body).
 - Tables that compare several sources with different damage types (the Companions page) put the types in their own
-  `Damage types` column, as shares with badges (`75% *Blunt*{.dmg .blunt} + 25% *Pierce*{.dmg .pierce}`, or just the
-  badge for one type), and keep only the bold totals in the level columns.
+  `Damage types` column, as shares with badges, one share per line (`75% *Blunt*{.dmg .blunt}<br>25% *Pierce*{.dmg .pierce}`, or just
+  the badge for one type), and keep only the bold totals in the level columns.
 - **Bold** marks damage and healing amounts only, including a damage share in prose ("deal **35%** of the hit's
   damage as *Lightning*{.dmg .lightning}"). Percentage bonuses in effect tables (`+10%`) are not bold.
 - State the formula in one short line above the table: "10 base + 1.4 per level".
@@ -232,6 +237,21 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
 - **No paragraph longer than 3 lines** (about 3 × 100 characters as rendered). Split or convert to bullets.
 - Numbered lists only for sequences (what happens, in order).
 - Tables for anything with two or more comparable values.
+
+### Line breaks
+
+Rendered width must never decide where a line breaks. Where a cell or line holds several items, break it
+explicitly with `<br>`:
+
+| Case | Write | Not |
+| --- | --- | --- |
+| Input (table cell or card) | `++p++<br>(Teleport)` | `++p++ (Teleport)` |
+| Cell that lists badges (Element, demigod infobox and index) | `*Spirit*{.dmg .spirit}<br>*Fire*{.dmg .fire}` | `*Spirit*{.dmg .spirit} *Fire*{.dmg .fire}` |
+| Cell that lists damage shares (Companions `Damage types`) | `75% *Pierce*{.dmg .pierce}<br>25% *Poison*{.dmg .poison}` | `75% … + 25% …` |
+| Text that introduces a link | `Mod page:<br>` then the link on the next source line | Text and link on one line, or a blank line between |
+
+Badges inside a row label or a sentence (`| *Blunt*{.dmg .blunt} *Slash*{.dmg .slash} resistance |`) stay inline.
+A damage breakdown in an `nd-split` line stays on one line (`2.5 *Blunt*{.dmg .blunt} + 2.5 *Fire*{.dmg .fire}`).
 
 ### Standard notes
 
@@ -297,7 +317,7 @@ Food and Runestone recipes are not spoilers.
 
 Anything disabled by default is labelled **"If enabled"** and names the setting. Off-by-default features
 (extra merchant items, the Queen Bee spawn chance, boss/merchant map pins, ward protection, and so on)
-are documented on the **Optional Features** page.
+are documented on the **Optional Features** page (`getting-started/optional-features.md`).
 
 - Whole page or section: put this admonition directly under the summary:
 
@@ -333,6 +353,62 @@ Every entry on the compatibility page is labelled:
   mod author has stated it.
 - **User-reported**: reported by players (e.g. on Discord) and not verified in code. Include these as-is.
 
+The page lives in Getting Started (`getting-started/compatibility.md`), with three tables: `## Known problems`
+(Mod, Severity, Problem, Source; severity copied from the README), `## Built-in support` (Mod, What Norse
+Demigods does, Source; no links) and `## Bridge mods` (Mod, Author, For players of, What it does, Links; no
+Source label), then `## If something breaks`. All five known problems are User-reported (the author confirmed
+this). Old compatibility claims from past release notes that the current code no longer shows (Auga, Harpoon
+Melee Attack And Upgrading, the Therzie damage-modifier workaround) are left out. EpicLootRaritySets is not listed anywhere in the wiki (it turns off
+the demigod system).
+
+### Getting Started pages
+
+Getting Started is a linear reading path for new players, split into two `nav` groups. Setup (outside the game) is
+always kept separate from Playing (in the game). `nav` and the index follow this order:
+
+- **Setup:** Installing the Mod, Recommended Mods, Compatibility, Difficulty, Optional Features.
+- **Playing:** How the Mod Works, Controls and Hotkeys, First Steps. Energy, Demigod Skill and Progression and
+  Ability Infusion join this group later.
+
+All use the System template.
+
+- **Each fact lives on one page.** There is no General Tips page: a tip goes on the page that owns its topic (e.g.
+  the trophy needed to raise the skill cap in How the Mod Works, a new character in First Steps), as a bullet or
+  paragraph starting with **Tip:** or **Good to know:**. Other pages link to it instead of repeating it.
+- **Difficulty** (`difficulty.md`): the summary's second sentence (final damage keeps shields and armor useful) is
+  bold. Presets table columns: Difficulty, Base damage, `Final damage<br>(enemies)`, `Final damage<br>(bosses)`.
+  Then why final damage keeps shields and armor useful (vanilla block and armor formulas, with a worked example), and the other
+  `[(Difficulty)]` settings. Expert is the recommended difficulty (README).
+- **Optional Features** (`optional-features.md`): every server feature that is optional, on or off by default, in
+  two tables (Feature, Default, What it does, Setting): "Easier materials" (Harpoon fishing first, then pins,
+  Haldor's items, queen bees, beehives, feathers) and "Other features" (Experimental features first; Skill loss on
+  death before Disabled demigods). Each setting is documented once: feather drops live here, the
+  other `[(Difficulty)]` settings on Difficulty.
+- **Video guide:** the setup video (<https://www.youtube.com/watch?v=uaGUaIzbVR8>) is on Installing the Mod: one
+  sentence ending in `:<br>`, the link on the next line (see [Line breaks](#line-breaks)), then a warning
+  admonition that it is from early access and outdated.
+
+- **No "Becoming a Demigod" page.** The Demigod Runestone item page covers choosing and switching; First Steps covers
+  the first session, the compendium and revoking (`RevokeDemigod`), and links to the Runestone page.
+- **How the Mod Works** is an overview: one short `##` section per system, few numbers, a link to the full page.
+  Do not repeat tables that belong to another page (e.g. the skill cap per boss).
+- **File paths are allowed** on install and settings pages when players need them: `BepInEx/plugins`,
+  `BepInEx/config/NorseDemigods.cfg`, `NorseDemigods.dll`, `Demigods.yaml`, `Consumables.json`.
+- **Links to mods**, this one included, give the Thunderstore page and, when one exists, the Hexium page, written
+  `[Thunderstore](…) · [Hexium](…)`. In tables they go in a `Links` column. Exception: the Built-in support table on
+  Compatibility has no links.
+  - Thunderstore: `https://thunderstore.io/c/valheim/p/<Namespace>/<Name>/`, checked against the Thunderstore API.
+  - Hexium: `https://valheim.hexium.gg/mods/<Namespace>/<Name>`, checked to load (a missing mod returns 404).
+  - Mods without a verified page are named in plain text.
+- **Recommended Mods** lists only NorseDemigodsUI and shudnal's ConfigurationManager: a plain table (Mod, Author,
+  What it adds, Links), then one `##` section per mod. Weapon mods and other suggestions are not listed.
+- **Bridge mods** (third-party mods that connect Norse Demigods to another mod, such as NorseDemigodsPovBridge for
+  PathOfValheiman) go on Compatibility, not Recommended Mods: they are only useful together with that other mod.
+  Describe them from their own page and say they are not made or tested by the Norse Demigods author.
+- **Compendium page names** are written in bold as they appear in-game: **ND: Introduction**, **ND: Abilities**.
+- **Console commands** (`RevokeDemigod`): say that the console opens with ++f5++ only when the game is started with
+  `-console` (vanilla). Cheat commands are not documented in Getting Started.
+
 ### Exclusions
 
 - **Saiyan is excluded.** It is a hidden test class reachable only with an admin command. Do not document it,
@@ -348,14 +424,17 @@ Every entry on the compatibility page is labelled:
 
   | Term | Link target | Meaning (verify against the code) |
   | --- | --- | --- |
-  | heavy armor | `getting-started/glossary.md#heavy-armor` | Any armor piece with a movement penalty of 5% or more |
-  | per level | `getting-started/glossary.md#per-level` | Per demigod skill level (0–100) |
-  | specialized weapons | `getting-started/glossary.md#specialized-weapons` | The weapon types an attribute's bonus applies to |
-  | tool tier | `getting-started/glossary.md#tool-tier` | Which trees and ores an ability or attribute can damage |
-| true damage | `getting-started/glossary.md#true-damage` | Damage without a type: armor, resistances and weaknesses do not change it (vanilla) |
+  | heavy armor | `reference/glossary.md#heavy-armor` | Any armor piece with a movement penalty of 5% or more |
+  | per level | `reference/glossary.md#per-level` | Per demigod skill level (0–100) |
+  | specialized weapons | `reference/glossary.md#specialized-weapons` | The weapon types an attribute's bonus applies to |
+  | tool tier | `reference/glossary.md#tool-tier` | Which trees and ores an ability or attribute can damage |
+  | true damage | `reference/glossary.md#true-damage` | Damage without a type: armor, resistances and weaknesses do not change it (vanilla) |
+
+  The glossary lives in Reference (`docs/reference/glossary.md`), not Getting Started.
 
 - Every new page must be added to `nav` in `mkdocs.yml`, under its section, after that section's `index.md`.
   Order within a section:
+  - **Getting Started:** reading order (see [Getting Started pages](#getting-started-pages)), not alphabetical.
   - **Demigods:** alphabetical.
   - **Abilities:** Teleport first, then alphabetical.
   - **Attributes:** alphabetical.
@@ -413,7 +492,7 @@ table (empty header row) wrapped in `<div class="nd-infobox" markdown>`. Player-
 | | |
 | --- | --- |
 | **Used by** | [Thor](../demigods/thor.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | 1 |
 | **Cooldown** | 3 s |
 | **Config ID** | `Dash` |
@@ -435,7 +514,7 @@ Field order (omit rows that do not apply, except where marked "always"):
 - Item infoboxes show **Crafting station** and **Recipe** only when the recipe is not a spoiler (foods, Runestone).
   The Recipe row lists one material per line, amount first: `2 Raw fish<br>2 Honey`. **Effect** is a short
   summary; several effects go on separate lines with `<br>`.
-- Channeled abilities add ", hold" after the input: `++mouse-side-down++ + ++block++ (Ability D), hold`.
+- Channeled abilities add ", hold" after the input: `++mouse-side-down++ + ++block++<br>(Ability D), hold`.
 - Shared config sections add `(shared by all variants)` after the section.
 - Element and resistance rows use damage badges: `*Lightning*{.dmg .lightning}`.
 
@@ -466,7 +545,7 @@ inline. One card per ability or attribute:
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Teleport forward, damaging enemies in your path.
 
@@ -618,7 +697,14 @@ Wrap the table in a `div` (blank lines inside it are required). Notes after the 
 </div>
 ```
 
-Do not use it for other tables (level tables, effect tables, recipes): those stay plain.
+Do not use it for other tables (level tables, effect tables, recipes): those get the plain table style.
+
+#### Plain table
+
+Every other table (level tables, effect tables, recipes, settings tables) gets a light style automatically, with
+no wrapper and no class: a thin panel-colored border with rounded corners and a header row tinted with the panel
+background. No accent line, stripes or colored header, so it stays lighter than the infobox and the overview table.
+The infobox and overview rules are more specific and override it.
 
 #### Section index pages
 
@@ -631,7 +717,8 @@ Each section's `index.md` is a one-line summary plus one entry per page, sorted 
 | `abilities/index.md` | Ability, Used by, Input, Summary | Input as keys; ends with "Inputs show the default keys." |
 | `attributes/index.md` | Attribute, Demigods, Summary | Every attribute links to its own page |
 | `items/index.md` | Page, Summary | One row per page (grouped pages are one row), in `nav` order: Demigod Runestone first, then alphabetical |
-| `getting-started/index.md` | No table: a `## Pages` bullet list | `- [Glossary](glossary.md): heavy armor, per level, …` |
+| `getting-started/index.md` | No table: `## Setup` and `## Playing` bullet lists, in reading order (Python-Markdown ignores list start numbers, so no numbered lists) | `- [Installing the Mod](installing-the-mod.md): requirements, …` |
+| `reference/index.md` | No table: a `## Pages` bullet list | `- [Glossary](glossary.md): heavy armor, per level, …` |
 
 Demigods without a page yet are plain text (no link) in the Used by / Demigods columns.
 
@@ -646,6 +733,7 @@ Demigods without a page yet are plain text (no link) in the Used by / Demigods c
 | `keys` | Generated by `pymdownx.keys`; CSS stops key combinations from wrapping | `++mouse-side-up++ + ++block++` |
 | `admonition quote` | Lore box, recolored to the accent color | `!!! quote "Lore"` |
 | `nd-overview` | `<div>` around a section index table or a grouped page's `## Overview` table | `<div class="nd-overview" markdown>` |
+| (none) | Any other table: plain table style, applied automatically | A normal Markdown table |
 | `nd-row-exception` | A link in a table's first cell; tints that whole row with the panel background (CSS `:has()`) | `[Kvasir](../demigods/kvasir.md){ .nd-row-exception }` |
 
 Damage-type classes (always together with `dmg`): `blunt`, `slash`, `pierce`, `chop`, `pickaxe`, `fire`,
@@ -677,6 +765,7 @@ The theme colors are CSS variables at the top of `extra.css`; `mkdocs.yml` uses 
 | Links | `#2a5d88` | `#8cbbe3` |
 | Panel background / border (infobox) | `#f4f1ea` / `#d9cfbd` | `#1f2a36` / `#34465a` |
 | Overview table header / stripe | `#24394d` / `#faf8f4` | `#2c4155` / `rgba(255, 255, 255, 0.025)` |
+| Plain table border / header | Panel border / panel background | Panel border / panel background |
 
 The accent color is used for the infobox's left border, the Lore box, the top border and icon of each card, and
 card titles on hover. `h2` headings get a thin bottom border.
@@ -758,7 +847,7 @@ clubs and axes and fights best in heavy armor.
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     One short sentence.
 
@@ -839,7 +928,7 @@ Surtr's version deals fire damage and Fenrir's deals frost damage.
 | | |
 | --- | --- |
 | **Used by** | [Surtr](../demigods/surtr.md), [Fenrir](../demigods/fenrir.md) |
-| **Input** | ++mouse-middle++ (Special attack, …) |
+| **Input** | ++mouse-middle++<br>(Special attack, …) |
 | **Eitr cost** | X (omit if none) |
 | **Energy cost** | X or None |
 | **Cooldown** | X s or None |
@@ -860,7 +949,7 @@ Both variants share one config section: a server change affects Surtr and Fenrir
 
 ## Damage
 
-10 base + 1.4 [per level](../getting-started/glossary.md#per-level).
+10 base + 1.4 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -1068,7 +1157,9 @@ with your demigod skill level.
 details; the Companions page only compares and links. Sections, in order:
 
 1. `## Overview`: an [overview table](#overview-table) with the columns Companion, Ability, Demigod, Job, How many,
-   Lasts. The companion links to its ability page (or variant section). Rows alphabetical by companion.
+   Lasts. The companion name is plain text (bold through the overview style, no link); the Ability column links to
+   the ability page or its variant section (`[Summon Wolf](../abilities/summon-wolf.md#ulv-fenrir)`,
+   `[Minions](../abilities/minions.md#infused), infused`), and the Demigod column to the demigod page. Rows alphabetical by companion.
 2. `## How companions work`: the shared rules as bullets, then `### Summon Wolf is different`.
 3. `## Damage` and `## Health`: level tables with one row per companion (alphabetical), damage types in a
    `Damage types` column (see [Damage and healing](#damage-and-healing)).
@@ -1149,7 +1240,14 @@ Paths are relative to `../NorseDemigods/NorseDemigods/`. Translation keys are in
 | Energy, skill caps, level loss, difficulty presets, teleport | `Configs.cs`, `Helper.cs` |
 | Teleport ability | `Abilities/AbilityTeleport.cs`, `StatusEffects/SE_TeleportLocationExpiration.cs` |
 | Harpoon fishing, honey, merchant, armor sets | `Configs.cs`, `NorseDemigods.cs` |
-| Console commands (for Becoming a Demigod and the FAQ) | `Console/*.cs` |
+| Console commands (for First Steps and the FAQ) | `Console/*.cs` (`IsCheat`), `Demigod.cs` (`RevokeDemigod`) |
+| Installing: dependencies, version check, data-file check | `_Publish/manifest.json`, `NorseDemigods.cs` (`NetworkCompatibility`), `DataFileValidation.cs` |
+| Settings file, update reset, server-synced vs own settings | `Configs.cs` (`AutomaticallyUpdateConfigs`, `ResetMainSettings`, `IsAdminOnly`) |
+| Compendium pages, spawn message, free runestone | `CustomUI.cs` (`UpdateLore`), `NorseDemigods.cs` (`Player_OnSpawned_Patch`), translation keys `lore_*`, `tutorial_*` |
+| Interface settings | `CustomUI.cs` (`SetupConfigs`) |
+| Difficulty: final damage, base damage | `Helper.cs` (`GetDifficultyDamageModifier`, `GetCreatureDifficultyDamageModifier`), `NorseDemigods.cs` (`Character_ApplyDamage_Patch`, the `SE_Burning` / `SE_Poison` prefixes, `Humanoid_GiveDefaultItems_Patch`); vanilla order in `Character.RPC_Damage`, `Humanoid.BlockAttack`, `HitData.ApplyArmor` |
+| Optional features (pins, merchant, honey, feathers, spawns, ammo, ward) | `Configs.cs`, `NorseDemigods.cs` (`Player_OnSpawned_Patch`, the Haldor trader patch, `Beehive_*` patches, `DropOnDestroyed_OnDestroyed_Patch`, `SpawnSystem_Awake_Patch`, `WearNTear_Damage_Patch`) |
+| Recommended mods, tips, incompatible mods | `_Publish/README.md` (Enhanced User Interface, General Tips, Setup) |
 | Companions: shared rules (distance, boss damage, regeneration, energy on hit, summon bonuses) | `StatusEffects/SE_Minion.cs`, `StatusEffects/SE_Wolf.cs`, `Helper.cs` (`GetSummonDamageModifier`, `GetSummonHealthModifier`), each summon ability's `Execute` |
 | Companions: what happens on teleport, death and logout | `DemigodAbility.cs` (`OnPlayerTeleporting`, `OnPlayerDeath`, `OnPlayerDisconnecting`), each ability's `Stop` |
 | Compatibility | `Configs.cs` (`Enhance Compatibility With …`), `Patches/*.cs`, `_Publish/README.md` |
@@ -1169,13 +1267,20 @@ docs/
 ├── index.md                                Home
 ├── stylesheets/extra.css                   Theme colors, badges, infobox (see Visual components)
 ├── getting-started/
-│   ├── index.md
-│   ├── becoming-a-demigod.md               Runestone, choosing, switching, revoking
-│   ├── controls-and-hotkeys.md             Slots, special-attack combos, ignore key
-│   ├── energy.md
-│   ├── demigod-skill-and-progression.md    Experience, boss caps, death
-│   ├── ability-infusion.md
-│   └── glossary.md                         heavy armor, per level, specialized weapons, tool tier
+│   ├── index.md                            ## Setup and ## Playing lists, reading order
+│   │   Setup:
+│   ├── installing-the-mod.md               Requirements, mod managers, video, multiplayer, settings file
+│   ├── recommended-mods.md                 NorseDemigodsUI, ConfigurationManager (shudnal)
+│   ├── compatibility.md                    Known problems, built-in support, bridge mods
+│   ├── difficulty.md                       Final vs base damage, presets, other difficulty settings
+│   ├── optional-features.md                Easier materials, other features (on or off by default)
+│   │   Playing:
+│   ├── how-the-mod-works.md                Overview of every system, with tips
+│   ├── controls-and-hotkeys.md             Default keys, special attacks, changing keys, interface
+│   ├── first-steps.md                      Compendium, runestone, first session, revoking
+│   ├── energy.md                           (next batch)
+│   ├── demigod-skill-and-progression.md    Experience, boss caps, death (next batch)
+│   └── ability-infusion.md                 (next batch)
 ├── demigods/
 │   ├── index.md                            Overview / comparison table
 │   └── brokkr.md  eir.md  fenrir.md  freyja.md  hel.md  hraesvelgr.md
@@ -1200,9 +1305,7 @@ docs/
 │   └── index.md                            One page comparing every companion (see Companions template)
 └── reference/
     ├── index.md
-    ├── difficulty-and-server-settings.md   What players feel
-    ├── optional-features.md                Off by default, "If enabled"
-    ├── compatibility.md                    Confirmed / User-reported
+    ├── glossary.md                         heavy armor, per level, specialized weapons, tool tier, true damage
     ├── faq.md
     └── changelog.md                        Links to the mod's release notes
 ```

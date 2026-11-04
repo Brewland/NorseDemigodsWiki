@@ -25,7 +25,7 @@ Eagle Strength lets you move more freely in heavy equipment, carry more and chop
 
 ## Scaling
 
-Extra carry weight: 1 [per level](../getting-started/glossary.md#per-level).
+Extra carry weight: 1 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -34,7 +34,7 @@ Extra carry weight: 1 [per level](../getting-started/glossary.md#per-level).
 ## Notes
 
 - The movement penalty counts all equipment together.
-- Example: 30% total penalty from [heavy armor](../getting-started/glossary.md#heavy-armor), weapon and shield
+- Example: 30% total penalty from [heavy armor](../reference/glossary.md#heavy-armor), weapon and shield
   slows you by only 10%.
 - Unlike [Bear Strength](bear-strength.md), it adds no extra melee damage.
 

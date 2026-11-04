@@ -8,7 +8,7 @@ badly injured player, attacks the closest enemy with Lightning or mines the rock
 | | |
 | --- | --- |
 | **Used by** | [Hraesvelgr](../demigods/hraesvelgr.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | None |
 | **Cooldown** | 15 s, starts when summoned |
 | **Duration** | Until dismissed |
@@ -40,7 +40,7 @@ badly injured player, attacks the closest enemy with Lightning or mines the rock
 
 ## Attack
 
-Each second while attacking: 1 base + 0.39 [per level](../getting-started/glossary.md#per-level).
+Each second while attacking: 1 base + 0.39 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -62,7 +62,7 @@ Healing per second grows evenly from 5 at level 0 to 10 at level 100.
 - It only mines the large rock or ore vein you hit last, if your hit damaged it in the last 300 s.
 - Each second, it deals *Pickaxe*{.dmg .pickaxe} damage within 2 m of the point it aims at:
   200% of its attack damage.
-- [Tool tier](../getting-started/glossary.md#tool-tier) 1. It ignores veins it cannot mine.
+- [Tool tier](../reference/glossary.md#tool-tier) 1. It ignores veins it cannot mine.
 - It also mines the parts of the vein below the ground. Setting: `[Ability Energy Wisp] Mine Ores Below Surface`.
 
 | | Lv 0 | Lv 50 | Lv 100 |
@@ -81,6 +81,6 @@ Healing per second grows evenly from 5 at level 0 to 10 at level 100.
 ## Related pages
 
 - [Hraesvelgr](../demigods/hraesvelgr.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

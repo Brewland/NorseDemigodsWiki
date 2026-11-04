@@ -24,7 +24,7 @@ you block, and makes thrown spears faster, deadlier and always return to you.
 | Chance to stagger the attacker when blocking with a tower shield | 25% |
 | Blocking skill experience | ×3 (300%) |
 
-Extra block armor for shields: 5 base + 0.1 [per level](../getting-started/glossary.md#per-level).
+Extra block armor for shields: 5 base + 0.1 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

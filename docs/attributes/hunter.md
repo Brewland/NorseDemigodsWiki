@@ -8,7 +8,7 @@ his arrow hits can give energy, and hunted animals drop twice the skins and feat
 | | |
 | --- | --- |
 | **Demigod** | [Ullr](../demigods/ullr.md) |
-| **Condition** | Always active; draw and reload bonuses only without [heavy armor](../getting-started/glossary.md#heavy-armor) |
+| **Condition** | Always active; draw and reload bonuses only without [heavy armor](../reference/glossary.md#heavy-armor) |
 | **Config ID** | `Hunter` |
 | **Config section** | `[Attribute Hunter]` |
 
@@ -27,7 +27,7 @@ his arrow hits can give energy, and hunted animals drop twice the skins and feat
 | Chance to regenerate 1 energy when an arrow or bolt hits an enemy | 50% |
 | Bows and Crossbows skill experience | ×2 (200%) |
 
-- "Without heavy armor" means no [heavy armor](../getting-started/glossary.md#heavy-armor) piece at all.
+- "Without heavy armor" means no [heavy armor](../reference/glossary.md#heavy-armor) piece at all.
 
 ## Skins and feathers
 

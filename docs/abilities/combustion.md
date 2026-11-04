@@ -8,7 +8,7 @@ up if he is not moving. It costs no energy, but the blast is loud enough to attr
 | | |
 | --- | --- |
 | **Used by** | [Brokkr](../demigods/brokkr.md) |
-| **Input** | ++mouse-middle++ (Special attack while airborne) |
+| **Input** | ++mouse-middle++<br>(Special attack while airborne) |
 | **Energy cost** | None |
 | **Cooldown** | 5 s |
 | **Config ID** | `Combustion` |

@@ -34,7 +34,7 @@ deathsquitos and a helpful wisp. She favors spears, swords and shields, and is b
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     Throw a poison javelin that pierces enemies. Costs eitr.
 
@@ -42,7 +42,7 @@ deathsquitos and a helpful wisp. She favors spears, swords and shields, and is b
 
     ---
 
-    ++block++ + ++mouse-middle++ (Special attack while blocking, spears)
+    ++block++ + ++mouse-middle++<br>(Special attack while blocking, spears)
 
     Spin with your spear, staggering all nearby enemies.
 
@@ -50,7 +50,7 @@ deathsquitos and a helpful wisp. She favors spears, swords and shields, and is b
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Teleport forward, damaging enemies in your path.
 
@@ -58,7 +58,7 @@ deathsquitos and a helpful wisp. She favors spears, swords and shields, and is b
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Poison burst around you that also summons deathsquitos.
 
@@ -66,7 +66,7 @@ deathsquitos and a helpful wisp. She favors spears, swords and shields, and is b
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Summon a wisp that catches fish, grows crops and brings wood.
 
@@ -74,7 +74,7 @@ deathsquitos and a helpful wisp. She favors spears, swords and shields, and is b
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Heal every second until full health, draining energy.
 
@@ -82,7 +82,7 @@ deathsquitos and a helpful wisp. She favors spears, swords and shields, and is b
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -186,6 +186,6 @@ Infusing Freyja's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

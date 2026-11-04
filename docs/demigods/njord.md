@@ -8,7 +8,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 | | |
 | --- | --- |
 | **Role** | Calls the force of the seas to summon tornadoes and even necks to help with gathering resources. Swims and sails faster |
-| **Element** | *Lightning*{.dmg .lightning} *Frost*{.dmg .frost} |
+| **Element** | *Lightning*{.dmg .lightning}<br>*Frost*{.dmg .frost} |
 | **Favorite weapons** | Axes, swords, polearms |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Njord` |
@@ -33,7 +33,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     Fast lightning bolt that explodes on impact. Costs eitr.
 
@@ -41,7 +41,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 
     ---
 
-    ++mouse-middle++ (Special attack while airborne)
+    ++mouse-middle++<br>(Special attack while airborne)
 
     Leap and strike from above, landing with a blast.
 
@@ -49,7 +49,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Water spheres that launch at the closest enemies.
 
@@ -57,7 +57,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     A slow tornado that shocks every enemy in its path.
 
@@ -65,7 +65,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Summon a neck that catches fish and chops wood.
 
@@ -73,7 +73,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Channel to heal and restore energy, stamina and eitr.
 
@@ -81,7 +81,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -169,6 +169,6 @@ Infusing Njord's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

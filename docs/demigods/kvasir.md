@@ -33,7 +33,7 @@ heals by killing. He favors bows and knives, and fights best in light armor.
 
     ---
 
-    ++mouse-middle++ (Special attack, knives or unarmed)
+    ++mouse-middle++<br>(Special attack, knives or unarmed)
 
     A wide slash that damages every enemy in front of you.
 
@@ -41,7 +41,7 @@ heals by killing. He favors bows and knives, and fights best in light armor.
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Teleport forward. Costs no energy.
 
@@ -49,7 +49,7 @@ heals by killing. He favors bows and knives, and fights best in light armor.
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Short aura: physical resistance, stamina and speed.
 
@@ -57,7 +57,7 @@ heals by killing. He favors bows and knives, and fights best in light armor.
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Turn a creature into a temporary ally, or tame it for good.
 
@@ -65,7 +65,7 @@ heals by killing. He favors bows and knives, and fights best in light armor.
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Heal every second until full health, draining energy.
 
@@ -73,7 +73,7 @@ heals by killing. He favors bows and knives, and fights best in light armor.
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -174,6 +174,6 @@ Kvasir's infusion is not crafted: it comes from a kill.
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

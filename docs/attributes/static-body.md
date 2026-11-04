@@ -8,7 +8,7 @@ enemies that hit him and strengthens his heavy armor.
 | | |
 | --- | --- |
 | **Demigod** | [Thor](../demigods/thor.md) |
-| **Condition** | Always active; the armor bonus needs 2+ [heavy armor](../getting-started/glossary.md#heavy-armor) pieces |
+| **Condition** | Always active; the armor bonus needs 2+ [heavy armor](../reference/glossary.md#heavy-armor) pieces |
 | **Config ID** | `StaticBody` |
 | **Config section** | `[Attribute Static Body]` |
 
@@ -42,7 +42,7 @@ Extra damage added to your weapon hits:
 | *Lightning*{.dmg .lightning} resistance | Very resistant |
 
 When an enemy hits you, it takes *Lightning*{.dmg .lightning} damage back.
-0.25 [per level](../getting-started/glossary.md#per-level):
+0.25 [per level](../reference/glossary.md#per-level):
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -62,6 +62,6 @@ When an enemy hits you, it takes *Lightning*{.dmg .lightning} damage back.
 ## Related pages
 
 - [Thor](../demigods/thor.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

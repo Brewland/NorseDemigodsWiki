@@ -8,7 +8,7 @@ stronger with Brokkr's level and can give him energy when it hits an enemy.
 | | |
 | --- | --- |
 | **Used by** | [Brokkr](../demigods/brokkr.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | 3 |
 | **Cooldown** | 120 s |
 | **Duration** | 60 s |

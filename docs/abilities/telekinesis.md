@@ -8,7 +8,7 @@ It can also lift a cart and launch it where he aims.
 | | |
 | --- | --- |
 | **Used by** | [Hraesvelgr](../demigods/hraesvelgr.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | 1 |
 | **Cooldown** | 1 s |
 | **Range** | 30 m |

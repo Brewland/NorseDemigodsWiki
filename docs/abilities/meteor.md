@@ -8,7 +8,7 @@ knocks down trees. It costs eitr instead of energy and can give energy back on a
 | | |
 | --- | --- |
 | **Used by** | [Hel](../demigods/hel.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Eitr cost** | 50 |
 | **Energy cost** | None |
 | **Cooldown** | 5 s |
@@ -31,7 +31,7 @@ knocks down trees. It costs eitr instead of energy and can give energy back on a
 
 ## Damage
 
-10 base + 1.4 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.
+10 base + 1.4 [per level](../reference/glossary.md#per-level), split evenly between the two types.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -39,7 +39,7 @@ knocks down trees. It costs eitr instead of energy and can give energy back on a
 | Damage to trees *Chop*{.dmg .chop} | 200 | 400 | 600 |
 
 - Damage to trees: 200 base + 4 per level.
-- TODO: verify (explosion radius and [tool tier](../getting-started/glossary.md#tool-tier) come from the game's own
+- TODO: verify (explosion radius and [tool tier](../reference/glossary.md#tool-tier) come from the game's own
   meteor projectile).
 
 ## Infused
@@ -62,6 +62,6 @@ knocks down trees. It costs eitr instead of energy and can give energy back on a
 ## Related pages
 
 - [Hel](../demigods/hel.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

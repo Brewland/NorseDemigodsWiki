@@ -33,7 +33,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-middle++ (Special attack, swords or polearms)
+    ++mouse-middle++<br>(Special attack, swords or polearms)
 
     A blast of air in front of you that pushes enemies away.
 
@@ -41,7 +41,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 
     ---
 
-    ++block++ + ++mouse-middle++ (Special attack while blocking, swords or polearms)
+    ++block++ + ++mouse-middle++<br>(Special attack while blocking, swords or polearms)
 
     Spin in place, damaging and pushing away all enemies around you.
 
@@ -49,7 +49,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-middle++ (Special attack while airborne)
+    ++mouse-middle++<br>(Special attack while airborne)
 
     Launch yourself forward through the air; hold to charge.
 
@@ -57,7 +57,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Lift an enemy or cart and pull it to you.
 
@@ -65,7 +65,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Channel a vortex that pulls in objects, then explodes.
 
@@ -73,7 +73,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Summon a wisp that heals, attacks enemies and mines ore.
 
@@ -81,7 +81,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     A wind barrier: physical resistance and healing for 10 s.
 
@@ -89,7 +89,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -198,6 +198,6 @@ Infusing Hraesvelgr's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

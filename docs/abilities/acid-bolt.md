@@ -8,7 +8,7 @@ damage to enemies around it. It costs eitr instead of energy and can give energy
 | | |
 | --- | --- |
 | **Used by** | [Hel](../demigods/hel.md) |
-| **Input** | ++mouse-middle++ (Special attack, unarmed) |
+| **Input** | ++mouse-middle++<br>(Special attack, unarmed) |
 | **Eitr cost** | 15 |
 | **Energy cost** | None |
 | **Cooldown** | None |
@@ -31,8 +31,8 @@ damage to enemies around it. It costs eitr instead of energy and can give energy
 
 ## Damage
 
-[True damage](../getting-started/glossary.md#true-damage): 5 base + 0.7
-[per level](../getting-started/glossary.md#per-level). Extra *Poison*{.dmg .poison} damage: 20% of the true damage.
+[True damage](../reference/glossary.md#true-damage): 5 base + 0.7
+[per level](../reference/glossary.md#per-level). Extra *Poison*{.dmg .poison} damage: 20% of the true damage.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -40,7 +40,7 @@ damage to enemies around it. It costs eitr instead of energy and can give energy
 | Extra damage *Poison*{.dmg .poison} | **1** | **8** | **15** |
 
 - The in-game status shows the two values separately.
-- The explosion also damages trees, rocks and ores within 2 m. [Tool tier](../getting-started/glossary.md#tool-tier) 1.
+- The explosion also damages trees, rocks and ores within 2 m. [Tool tier](../reference/glossary.md#tool-tier) 1.
 
 ## Infused
 
@@ -53,6 +53,6 @@ damage to enemies around it. It costs eitr instead of energy and can give energy
 ## Related pages
 
 - [Hel](../demigods/hel.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

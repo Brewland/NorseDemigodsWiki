@@ -28,7 +28,7 @@ and Poison damage to enemies around it.
 
 ## Damage
 
-5 base + 0.7 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.
+5 base + 0.7 [per level](../reference/glossary.md#per-level), split evenly between the two types.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

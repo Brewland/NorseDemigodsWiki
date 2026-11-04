@@ -48,6 +48,6 @@ Extra damage added to your weapon hits:
 
 - [Eir](../demigods/eir.md)
 - [Purity](purity.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

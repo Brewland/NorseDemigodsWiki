@@ -8,7 +8,7 @@ Titan Legs' landing blast at full force. Njord's version has a water and lightni
 | | |
 | --- | --- |
 | **Used by** | [Njord](../demigods/njord.md), [Surtr](../demigods/surtr.md) |
-| **Input** | ++mouse-middle++ (Special attack while airborne) |
+| **Input** | ++mouse-middle++<br>(Special attack while airborne) |
 | **Energy cost** | 1 |
 | **Cooldown** | 10 s |
 | **Config ID** | `Crush` |
@@ -51,7 +51,7 @@ Both variants share one config section: a server change affects Njord and Surtr 
 - Cooldown: 10 s → 5 s.
 - Landing explosion: every enemy within 5 m of where you land takes damage. It also hits birds.
 
-Explosion damage: 1 [per level](../getting-started/glossary.md#per-level), with no base damage.
+Explosion damage: 1 [per level](../reference/glossary.md#per-level), with no base damage.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

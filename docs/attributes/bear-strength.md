@@ -27,7 +27,7 @@ energy you have left.
 
 ## Scaling
 
-Extra carry weight: 2 [per level](../getting-started/glossary.md#per-level).
+Extra carry weight: 2 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -36,7 +36,7 @@ Extra carry weight: 2 [per level](../getting-started/glossary.md#per-level).
 ## Notes
 
 - The movement penalty counts all equipment together.
-- Example: 30% total penalty from [heavy armor](../getting-started/glossary.md#heavy-armor), weapon and shield
+- Example: 30% total penalty from [heavy armor](../reference/glossary.md#heavy-armor), weapon and shield
   slows you by only 5%.
 - The extra *Blunt*{.dmg .blunt} damage scales with current energy compared to maximum energy.
 - Example: +5% at full energy, +2% with 2 of 5 energy.

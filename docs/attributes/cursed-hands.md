@@ -19,7 +19,7 @@ for up to 15 seconds.
 ## Effect
 
 1. Hit a standing tree or a log with a melee attack that deals chop damage (an axe, for example) and is strong enough to
-   damage it ([tool tier](../getting-started/glossary.md#tool-tier)).
+   damage it ([tool tier](../reference/glossary.md#tool-tier)).
 2. The tree or log is cursed: every 0.5 s, it takes **35%** of that hit's damage again.
 3. The curse lasts 15 s, or until the tree or log is destroyed.
 
@@ -30,6 +30,6 @@ for up to 15 seconds.
 ## Related pages
 
 - [Hel](../demigods/hel.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

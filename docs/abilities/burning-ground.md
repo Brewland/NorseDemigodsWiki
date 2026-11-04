@@ -8,7 +8,7 @@ charges a large explosion and cleanses Poison and Frost from him.
 | | |
 | --- | --- |
 | **Used by** | [Surtr](../demigods/surtr.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | 2 |
 | **Cooldown** | 30 s |
 | **Duration** | 6 s |
@@ -34,7 +34,7 @@ charges a large explosion and cleanses Poison and Frost from him.
 
 ## Damage
 
-2 base + 0.48 [per level](../getting-started/glossary.md#per-level), per second.
+2 base + 0.48 [per level](../reference/glossary.md#per-level), per second.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
@@ -47,7 +47,7 @@ charges a large explosion and cleanses Poison and Frost from him.
   birds, and is loud enough to alert enemies far away.
 - **Cleanse:** while you stand in the fire, Poison and Frost are removed from you every second.
 
-Explosion damage: 1.25 [per level](../getting-started/glossary.md#per-level), with no base damage, split 80%
+Explosion damage: 1.25 [per level](../reference/glossary.md#per-level), with no base damage, split 80%
 *Blunt*{.dmg .blunt} and 20% *Fire*{.dmg .fire}.
 
 | | Lv 0 | Lv 50 | Lv 100 |

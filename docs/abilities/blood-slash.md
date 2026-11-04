@@ -8,7 +8,7 @@ Slash damage that grows with his level.
 | | |
 | --- | --- |
 | **Used by** | [Kvasir](../demigods/kvasir.md) |
-| **Input** | ++mouse-middle++ (Special attack, knives or unarmed) |
+| **Input** | ++mouse-middle++<br>(Special attack, knives or unarmed) |
 | **Energy cost** | 1 |
 | **Cooldown** | 3 s |
 | **Range** | 9 m in front of you, 6 m wide |
@@ -29,7 +29,7 @@ Slash damage that grows with his level.
 
 ## Damage
 
-5 base + 0.7 [per level](../getting-started/glossary.md#per-level).
+5 base + 0.7 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

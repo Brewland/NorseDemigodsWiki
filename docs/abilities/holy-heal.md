@@ -8,7 +8,7 @@ are not aiming at an injured player.
 | | |
 | --- | --- |
 | **Used by** | [Eir](../demigods/eir.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | 2 |
 | **Cooldown** | 45 s |
 | **Range** | 25 m |

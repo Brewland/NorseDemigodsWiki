@@ -8,7 +8,7 @@ energy over time instead of costing energy up front.
 | | |
 | --- | --- |
 | **Used by** | [Thor](../demigods/thor.md) |
-| **Input** | ++mouse-side-down++ (Ability B) |
+| **Input** | ++mouse-side-down++<br>(Ability B) |
 | **Energy cost** | Needs 1+ energy; drains 1 every 4 s |
 | **Cooldown** | None |
 | **Duration** | Until turned off or out of energy |

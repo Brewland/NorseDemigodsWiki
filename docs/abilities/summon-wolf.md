@@ -9,7 +9,7 @@ summons. Fenrir summons an Ulv; Ullr summons a wolf.
 | | |
 | --- | --- |
 | **Used by** | [Fenrir](../demigods/fenrir.md), [Ullr](../demigods/ullr.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | None |
 | **Cooldown** | 50 s |
 | **Duration** | Until dismissed or killed |

@@ -8,7 +8,7 @@ It costs eitr instead of energy, can give energy back on a hit and also damages 
 | | |
 | --- | --- |
 | **Used by** | [Fenrir](../demigods/fenrir.md) |
-| **Input** | ++block++ + ++mouse-middle++ (Special attack while blocking, unarmed) |
+| **Input** | ++block++ + ++mouse-middle++<br>(Special attack while blocking, unarmed) |
 | **Eitr cost** | 7 |
 | **Energy cost** | None |
 | **Cooldown** | None |
@@ -27,14 +27,14 @@ It costs eitr instead of energy, can give energy back on a hit and also damages 
 
 ## Damage
 
-Each shard: 5 base + 0.75 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.
+Each shard: 5 base + 0.75 [per level](../reference/glossary.md#per-level), split evenly between the two types.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |
 | Damage per shard | **5**<br><span class="nd-split">2.5 *Pierce*{.dmg .pierce} + 2.5 *Frost*{.dmg .frost}</span> | **42.5**<br><span class="nd-split">21.25 *Pierce*{.dmg .pierce} + 21.25 *Frost*{.dmg .frost}</span> | **80**<br><span class="nd-split">40 *Pierce*{.dmg .pierce} + 40 *Frost*{.dmg .frost}</span> |
 | Damage to ores per shard *Pickaxe*{.dmg .pickaxe} | 5 | 42.5 | 80 |
 
-- [Tool tier](../getting-started/glossary.md#tool-tier) 1.
+- [Tool tier](../reference/glossary.md#tool-tier) 1.
 - TODO: verify (shards per cast: the ability uses the Staff of Embers cast with Staff of Frost shards).
 
 ## Infused

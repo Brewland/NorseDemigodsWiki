@@ -8,7 +8,7 @@ staggering everything around you. Eir and Freyja share the same version.
 | | |
 | --- | --- |
 | **Used by** | [Eir](../demigods/eir.md), [Freyja](../demigods/freyja.md) |
-| **Input** | ++block++ + ++mouse-middle++ (Special attack while blocking, spears) |
+| **Input** | ++block++ + ++mouse-middle++<br>(Special attack while blocking, spears) |
 | **Energy cost** | 1 |
 | **Cooldown** | 10 s |
 | **Range** | 4 m around you |

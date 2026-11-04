@@ -8,7 +8,7 @@ her eitr and stamina regeneration and her movement, and halves the physical dama
 | | |
 | --- | --- |
 | **Demigod** | [Hel](../demigods/hel.md) |
-| **Condition** | After 5 s out of combat, only when not wearing any [heavy armor](../getting-started/glossary.md#heavy-armor) |
+| **Condition** | After 5 s out of combat, only when not wearing any [heavy armor](../reference/glossary.md#heavy-armor) |
 | **Config ID** | `PhantomShroud` |
 | **Config section** | `[Attribute Phantom Shroud]` |
 
@@ -45,6 +45,6 @@ While the shroud is active:
 
 - [Hel](../demigods/hel.md)
 - [Celestial Body](celestial-body.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

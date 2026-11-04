@@ -8,7 +8,7 @@ eitr and her eitr regeneration.
 | | |
 | --- | --- |
 | **Demigod** | [Eir](../demigods/eir.md) |
-| **Condition** | Only when not wearing any [heavy armor](../getting-started/glossary.md#heavy-armor) |
+| **Condition** | Only when not wearing any [heavy armor](../reference/glossary.md#heavy-armor) |
 | **Config ID** | `Purity` |
 | **Config section** | `[Attribute Purity]` |
 

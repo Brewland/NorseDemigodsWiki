@@ -8,7 +8,7 @@ on his weapon and pushes enemies away.
 | | |
 | --- | --- |
 | **Used by** | [Hraesvelgr](../demigods/hraesvelgr.md) |
-| **Input** | ++mouse-middle++ (Special attack, swords or polearms) |
+| **Input** | ++mouse-middle++<br>(Special attack, swords or polearms) |
 | **Energy cost** | 1 |
 | **Cooldown** | 5 s |
 | **Range** | About 11 m in front of you, 5 m wide |
@@ -39,7 +39,7 @@ The blast deals **100%** of your weapon damage as *Blunt*{.dmg .blunt}, whatever
 
 ## Infused
 
-The blast also deals *Lightning*{.dmg .lightning} damage: 0.5 [per level](../getting-started/glossary.md#per-level),
+The blast also deals *Lightning*{.dmg .lightning} damage: 0.5 [per level](../reference/glossary.md#per-level),
 with no base damage.
 
 | | Lv 0 | Lv 50 | Lv 100 |

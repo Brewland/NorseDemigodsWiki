@@ -46,6 +46,33 @@
 }
 
 /* ----------------------------------------------------------------------------------------------------
+   Plain table: every other table (level tables, effect tables, recipes). Lighter than the infobox and the
+   overview table: thin panel border, rounded corners, a tinted header row, no stripes or accent.
+   The infobox and overview rules below are more specific and override these.
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset table:not([class]) {
+    border: 1px solid var(--nd-panel-border);
+    border-radius: 0.3rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+    background: var(--nd-panel-bg);
+    border-bottom: 1px solid var(--nd-panel-border);
+}
+
+.md-typeset table:not([class]) td {
+    border-top: 1px solid var(--nd-panel-border);
+}
+
+.md-typeset table:not([class]) tbody tr:first-child > td {
+    border-top: none;
+}
+
+/* ----------------------------------------------------------------------------------------------------
    Infobox: <div class="nd-infobox" markdown> around a two-column table
    ---------------------------------------------------------------------------------------------------- */
 
@@ -121,6 +148,7 @@
 .md-typeset .nd-overview table:not([class]) th {
     background: var(--nd-overview-head-bg);
     color: var(--nd-overview-head-fg);
+    border-bottom: none;
     letter-spacing: 0.02em;
 }
 

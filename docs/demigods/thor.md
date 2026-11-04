@@ -34,7 +34,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     Long-range lightning beam that explodes on impact. Costs eitr.
 
@@ -42,7 +42,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Teleport forward, damaging enemies in your path.
 
@@ -50,7 +50,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Toggle: faster attacks, faster movement and stamina regeneration.
 
@@ -58,7 +58,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Toggle: lightning repeatedly strikes nearby enemies.
 
@@ -66,7 +66,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Channel to heal and restore energy, stamina and eitr.
 
@@ -74,7 +74,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -148,6 +148,6 @@ Infusing Thor's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

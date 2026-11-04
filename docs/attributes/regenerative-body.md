@@ -8,7 +8,7 @@ and Slash wounds heal back over time. He is weak to Spirit damage.
 | | |
 | --- | --- |
 | **Demigod** | [Kvasir](../demigods/kvasir.md) |
-| **Condition** | Always active; armor and damage reduction only without [heavy armor](../getting-started/glossary.md#heavy-armor) |
+| **Condition** | Always active; armor and damage reduction only without [heavy armor](../reference/glossary.md#heavy-armor) |
 | **Config ID** | `RegenerativeFlesh` |
 | **Config section** | `[Attribute Regenerative Flesh]` |
 
@@ -19,7 +19,7 @@ and Slash wounds heal back over time. He is weak to Spirit damage.
 ## Scaling
 
 Without any heavy armor piece: 0.2 extra armor and 0.2% less damage taken
-[per level](../getting-started/glossary.md#per-level).
+[per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

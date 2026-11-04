@@ -8,7 +8,7 @@ they grow much stronger with Hel's level and stay until they die.
 | | |
 | --- | --- |
 | **Used by** | [Hel](../demigods/hel.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | 1 |
 | **Cooldown** | 2 s |
 | **Duration** | Until killed |

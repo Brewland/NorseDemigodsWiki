@@ -8,7 +8,7 @@ Channel too long and the gathered energy explodes in a large Lightning blast tha
 | | |
 | --- | --- |
 | **Used by** | [Thor](../demigods/thor.md), [Njord](../demigods/njord.md) |
-| **Input** | ++mouse-side-down++ + ++block++ (Ability D), hold |
+| **Input** | ++mouse-side-down++ + ++block++<br>(Ability D), hold |
 | **Energy cost** | None |
 | **Cooldown** | 30 s, starts when activated |
 | **Duration** | While held, up to 10 s |
@@ -38,7 +38,7 @@ Hold the ability key to channel. You cannot move while channeling. Every second:
 
 ## Healing and blast
 
-Healing per second: 10 base + 0.2 [per level](../getting-started/glossary.md#per-level).
+Healing per second: 10 base + 0.2 [per level](../reference/glossary.md#per-level).
 
 If you channel for the full 10 s, the energy becomes unstable:
 

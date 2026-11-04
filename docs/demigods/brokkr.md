@@ -8,7 +8,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 | | |
 | --- | --- |
 | **Role** | Throws bombs that destroy entire ore veins, launches lightning torpedoes, summons a stone golem, and more |
-| **Element** | *Lightning*{.dmg .lightning} *Fire*{.dmg .fire} |
+| **Element** | *Lightning*{.dmg .lightning}<br>*Fire*{.dmg .fire} |
 | **Favorite weapons** | Axes, clubs, crossbows |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Brokkr` |
@@ -33,7 +33,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     Homing torpedo that explodes on impact. Costs eitr.
 
@@ -41,7 +41,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 
     ---
 
-    ++mouse-middle++ (Special attack while airborne)
+    ++mouse-middle++<br>(Special attack while airborne)
 
     Explosion that launches you forward or upward.
 
@@ -49,7 +49,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Throw a bomb that damages enemies and breaks trees, rocks and ores.
 
@@ -57,7 +57,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Short shield: physical resistance, healing, stamina and speed.
 
@@ -65,7 +65,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Summon a stone golem that fights for you for 60 s.
 
@@ -73,7 +73,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Lightning cube that damages enemies and heals players inside.
 
@@ -81,7 +81,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -162,6 +162,6 @@ Infusing Brokkr's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

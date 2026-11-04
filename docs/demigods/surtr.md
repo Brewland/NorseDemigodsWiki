@@ -35,7 +35,7 @@ armor.
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     Fireball that explodes on impact and damages trees. Costs eitr.
 
@@ -43,7 +43,7 @@ armor.
 
     ---
 
-    ++mouse-middle++ (Special attack, axes or swords)
+    ++mouse-middle++<br>(Special attack, axes or swords)
 
     Sweep that hits all nearby enemies and chops trees.
 
@@ -51,7 +51,7 @@ armor.
 
     ---
 
-    ++mouse-middle++ (Special attack while airborne)
+    ++mouse-middle++<br>(Special attack while airborne)
 
     Leap and strike from above, landing with a blast.
 
@@ -59,7 +59,7 @@ armor.
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Set the ground around you on fire for 6 s.
 
@@ -67,7 +67,7 @@ armor.
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Three charges of damage reduction, Fire immunity and speed.
 
@@ -75,7 +75,7 @@ armor.
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Summon a surtling that fights for you for 30 s.
 
@@ -83,7 +83,7 @@ armor.
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Toggle: turn your own health into energy.
 
@@ -91,7 +91,7 @@ armor.
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -181,6 +181,6 @@ Infusing Surtr's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

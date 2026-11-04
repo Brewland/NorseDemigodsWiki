@@ -8,7 +8,7 @@ part of its damage as Frost to enemies around the spot it hits.
 | | |
 | --- | --- |
 | **Used by** | [Ullr](../demigods/ullr.md) |
-| **Input** | ++mouse-middle++ (Special attack, bows or crossbows) |
+| **Input** | ++mouse-middle++<br>(Special attack, bows or crossbows) |
 | **Energy cost** | 1 |
 | **Cooldown** | 1 s |
 | **Duration** | 5 s, or until you shoot |
@@ -31,7 +31,7 @@ part of its damage as Frost to enemies around the spot it hits.
 
 ## Damage
 
-Extra damage on the arrow: 10 base + 1.4 [per level](../getting-started/glossary.md#per-level).
+Extra damage on the arrow: 10 base + 1.4 [per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

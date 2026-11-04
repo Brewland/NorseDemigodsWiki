@@ -34,7 +34,7 @@ at his side. He cannot use melee weapons or shields, and fights best in light ar
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     Claw sweep that hits all nearby enemies and chops trees.
 
@@ -42,7 +42,7 @@ at his side. He cannot use melee weapons or shields, and fights best in light ar
 
     ---
 
-    ++block++ + ++mouse-middle++ (Special attack while blocking, unarmed)
+    ++block++ + ++mouse-middle++<br>(Special attack while blocking, unarmed)
 
     Fire ice shards from your hands. Costs eitr.
 
@@ -50,7 +50,7 @@ at his side. He cannot use melee weapons or shields, and fights best in light ar
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Toggle: Spirit bonus and Frost splash on hits, half damage taken.
 
@@ -58,7 +58,7 @@ at his side. He cannot use melee weapons or shields, and fights best in light ar
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Frost burst that damages all enemies around you.
 
@@ -66,7 +66,7 @@ at his side. He cannot use melee weapons or shields, and fights best in light ar
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Summon your Ulv companion, which grows stronger with you.
 
@@ -74,7 +74,7 @@ at his side. He cannot use melee weapons or shields, and fights best in light ar
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Heal every second until full health, draining energy.
 
@@ -82,7 +82,7 @@ at his side. He cannot use melee weapons or shields, and fights best in light ar
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -210,6 +210,6 @@ TODO: verify (the full-set skill bonus is assumed to be the vanilla set's Unarme
 
 - [Infusion Items](../items/infusion-items.md)
 - [Titan Arms](../attributes/titan-arms.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

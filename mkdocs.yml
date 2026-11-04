@@ -55,7 +55,16 @@ nav:
   - Home: index.md
   - Getting Started:
       - getting-started/index.md
-      - Glossary: getting-started/glossary.md
+      - Setup:
+          - Installing the Mod: getting-started/installing-the-mod.md
+          - Recommended Mods: getting-started/recommended-mods.md
+          - Compatibility: getting-started/compatibility.md
+          - Difficulty: getting-started/difficulty.md
+          - Optional Features: getting-started/optional-features.md
+      - Playing:
+          - How the Mod Works: getting-started/how-the-mod-works.md
+          - Controls and Hotkeys: getting-started/controls-and-hotkeys.md
+          - First Steps: getting-started/first-steps.md
   - Demigods:
       - demigods/index.md
       - Brokkr: demigods/brokkr.md
@@ -185,3 +194,4 @@ nav:
       - companions/index.md
   - Reference:
       - reference/index.md
+      - Glossary: reference/glossary.md

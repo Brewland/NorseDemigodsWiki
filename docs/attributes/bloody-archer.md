@@ -8,7 +8,7 @@ turns into a burst of true damage, and he shoots and sneaks faster.
 | | |
 | --- | --- |
 | **Demigod** | [Kvasir](../demigods/kvasir.md) |
-| **Condition** | Always active; draw and reload bonuses only without [heavy armor](../getting-started/glossary.md#heavy-armor) |
+| **Condition** | Always active; draw and reload bonuses only without [heavy armor](../reference/glossary.md#heavy-armor) |
 | **Config ID** | `BloodyArcher` |
 | **Config section** | `[Attribute Bloody Archer]` |
 
@@ -25,7 +25,7 @@ turns into a burst of true damage, and he shoots and sneaks faster.
 | Crossbow reload time, without heavy armor | −30% |
 | Bows and Crossbows skill experience | ×2 (200%) |
 
-- "Without heavy armor" means no [heavy armor](../getting-started/glossary.md#heavy-armor) piece at all.
+- "Without heavy armor" means no [heavy armor](../reference/glossary.md#heavy-armor) piece at all.
 
 ## Blood bolt
 
@@ -38,7 +38,7 @@ When an arrow or bolt hits an enemy, a blood bolt jumps from it to the closest o
 ## Eitr burst
 
 When your eitr is full, your next hit on an enemy while you hold a bow or crossbow consumes all of it and deals **2**
-extra [true damage](../getting-started/glossary.md#true-damage) per eitr point.
+extra [true damage](../reference/glossary.md#true-damage) per eitr point.
 
 - Example: with 60 full eitr, the hit deals **120** extra true damage and your eitr drops to 0.
 - You need some maximum eitr (for example, from eitr food).

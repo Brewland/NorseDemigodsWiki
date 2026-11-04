@@ -82,11 +82,11 @@ shared attributes not written yet.
 | Section | Status | Notes |
 | --- | --- | --- |
 | Home (`index.md`) | 🟡 | Summary and server-defaults disclaimer only |
-| Getting Started | 🟡 | Glossary done; Becoming a Demigod, Controls and Hotkeys, Energy, Demigod Skill and Progression, Ability Infusion to do |
+| Getting Started | 🟡 | Setup (Installing the Mod, Recommended Mods, Compatibility, Difficulty, Optional Features) and Playing (How the Mod Works, Controls and Hotkeys, First Steps) done; Energy, Demigod Skill and Progression, Ability Infusion to do |
 | Abilities | ✅ | All 54 ability pages and Teleport |
 | Items | ✅ | Demigod Runestone, Abyssal Harpoon, Infused Megingjord, Infusion Items, Permanent Consumables, Sweet Fish Foods |
 | Companions | ✅ | One overview page comparing every companion |
-| Reference | ⬜ | Difficulty and Server Settings, Optional Features, Compatibility, FAQ, Changelog |
+| Reference | 🟡 | Glossary done (moved from Getting Started); FAQ, Changelog to do |
 
 ## Open items
 
@@ -97,9 +97,9 @@ Remove an item once it is resolved.
 - **Mod 1.9.1 must be released first.** The wiki already describes it, including the sneak-attack changes and the
   fixes made during the Freyja/Hel/Njord/Surtr batch (Burning Ground, Crush, Sacrifice, Raider, Water Sphere) and
   the Hraesvelgr/Kvasir/Ullr batch (Holy Strike swing, Infused Arrow crossbows in `Demigods.yaml`, Vortex tooltip in
-  all languages). All are committed in the mod (up to `63718f1`) but not released yet.
-- **Check the damage display** (total on top, smaller `nd-split` breakdown line) in light and dark mode with
-  `mkdocs serve`. It was only checked in the generated HTML.
+  all languages), and the Getting Started batch (Find Closest Bosses pins the Queen and Fader, Difficulty scales
+  only creature damage, `Ignore Non Teleportable Items` description). All are committed in the mod (up to
+  `a455d90`) but not released yet.
 
 ### Questions for the mod (not answered yet)
 
@@ -145,5 +145,3 @@ Remove an item once it is resolved.
 
 - **Changelog page:** use the player README's release notes (1.9.1 has a "Sneak attacks" entry); link to them,
   do not copy them.
-- **Holy Sun tar burning:** still needs `Enable Experimental Features` and does not work in multiplayer; document
-  it on the Optional Features page too.

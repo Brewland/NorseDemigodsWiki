@@ -8,7 +8,7 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 | | |
 | --- | --- |
 | **Role** | Heals, conjures an elemental shield and even organic matter, bringing light to even the depths of the underworld |
-| **Element** | *Spirit*{.dmg .spirit} *Fire*{.dmg .fire} |
+| **Element** | *Spirit*{.dmg .spirit}<br>*Fire*{.dmg .fire} |
 | **Favorite weapons** | Spears, swords, shields |
 | **Preferred armor** | Heavy and light |
 | **Config ID** | `Eir` |
@@ -34,7 +34,7 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     Instant holy fire on the enemy under your crosshair. Costs eitr.
 
@@ -42,7 +42,7 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 
     ---
 
-    ++block++ + ++mouse-middle++ (Special attack while blocking, spears)
+    ++block++ + ++mouse-middle++<br>(Special attack while blocking, spears)
 
     Spin with your spear, staggering all nearby enemies.
 
@@ -50,7 +50,7 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Sun beam that burns enemies, trees, rocks and ores.
 
@@ -58,7 +58,7 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Three charges of damage reduction, Spirit immunity and speed.
 
@@ -66,7 +66,7 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Heal another player or yourself instantly.
 
@@ -74,7 +74,7 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Conjure a fish, with a chance of seeds or a queen bee.
 
@@ -82,7 +82,7 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -185,6 +185,6 @@ Infusing Eir's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

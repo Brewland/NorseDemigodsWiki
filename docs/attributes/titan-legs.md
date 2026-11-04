@@ -33,7 +33,7 @@ that damages nearby enemies.
 - Also damages nearby trees, rocks and other destructible objects.
 - Does not damage buildings placed by players.
 
-Damage: 10 base + 1.4 [per level](../getting-started/glossary.md#per-level), scaled from 75% to 125%. Longer falls
+Damage: 10 base + 1.4 [per level](../reference/glossary.md#per-level), scaled from 75% to 125%. Longer falls
 and closer enemies take more.
 
 | | Lv 0 | Lv 50 | Lv 100 |

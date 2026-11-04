@@ -106,7 +106,7 @@ armor, eitr or faster energy regeneration. The bonuses stay when you switch to a
 | | |
 | --- | --- |
 | **Type** | Consumable (permanent effect) |
-| **Effect** | +1 [tool tier](../getting-started/glossary.md#tool-tier) for the abilities and attributes below |
+| **Effect** | +1 [tool tier](../reference/glossary.md#tool-tier) for the abilities and attributes below |
 | **Restricted to** | Any demigod |
 | **Stack size** | 1 |
 | **Consume limit** | Once |
@@ -141,7 +141,7 @@ It applies to the abilities and attributes that let you damage trees, rocks and 
 | | |
 | --- | --- |
 | **Type** | Consumable (permanent effect) |
-| **Effect** | +3 [tool tier](../getting-started/glossary.md#tool-tier) (replaces Infused Earthbreaker's +1) |
+| **Effect** | +3 [tool tier](../reference/glossary.md#tool-tier) (replaces Infused Earthbreaker's +1) |
 | **Restricted to** | Any demigod |
 | **Stack size** | 1 |
 | **Consume limit** | Once, after Infused Earthbreaker |
@@ -371,6 +371,6 @@ default:
 
 - [Infusion Items](infusion-items.md)
 - [Demigod Runestone](demigod-runestone.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

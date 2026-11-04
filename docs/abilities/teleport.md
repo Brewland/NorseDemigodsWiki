@@ -8,7 +8,7 @@ It costs no energy and is enabled by default.
 | | |
 | --- | --- |
 | **Used by** | All demigods (e.g. [Thor](../demigods/thor.md)) |
-| **Input** | ++p++ (Teleport) |
+| **Input** | ++p++<br>(Teleport) |
 | **Energy cost** | None |
 | **Cooldown** | 15 s |
 | **Cast time** | 3 s |
@@ -29,10 +29,11 @@ It costs no energy and is enabled by default.
 ## Limits
 
 - You must have claimed a bed.
-- You cannot teleport while carrying items that cannot be teleported, such as ore.
+- You cannot teleport while carrying items that cannot be teleported, such as ore. If you pick one up while the
+  teleport charges, it is cancelled.
 
-**If enabled:** `[Teleportation] Ignore Non Teleportable Items` = `true` allows them. This only matters if world
-modifiers or other mods restrict teleportation.
+**If enabled:** `[Teleportation] Ignore Non Teleportable Items` = `true` lets Teleport carry them. It changes nothing
+when a world modifier already lets all items through portals: Teleport then carries everything anyway.
 
 ## Settings
 

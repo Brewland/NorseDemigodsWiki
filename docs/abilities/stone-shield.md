@@ -8,7 +8,7 @@ stamina, can restore energy and makes him move faster.
 | | |
 | --- | --- |
 | **Used by** | [Brokkr](../demigods/brokkr.md) |
-| **Input** | ++mouse-side-down++ (Ability B) |
+| **Input** | ++mouse-side-down++<br>(Ability B) |
 | **Energy cost** | None |
 | **Cooldown** | 30 s, starts when activated |
 | **Duration** | 5 s |

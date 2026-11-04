@@ -8,7 +8,7 @@ out of runestones. It stays until you dismiss it.
 | | |
 | --- | --- |
 | **Used by** | [Freyja](../demigods/freyja.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | None |
 | **Cooldown** | 30 s, starts when summoned |
 | **Duration** | Until dismissed |
@@ -37,7 +37,7 @@ out of runestones. It stays until you dismiss it.
 ## Crops
 
 Every second, the wisp takes a share of a crop's total growth time off its remaining time: 5% base + 0.2%
-[per level](../getting-started/glossary.md#per-level).
+[per level](../reference/glossary.md#per-level).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

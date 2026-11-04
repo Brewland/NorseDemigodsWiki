@@ -8,7 +8,7 @@ him every second. Once infused, he can cast it on another player.
 | | |
 | --- | --- |
 | **Used by** | [Hraesvelgr](../demigods/hraesvelgr.md) |
-| **Input** | ++mouse-side-down++ + ++block++ (Ability D) |
+| **Input** | ++mouse-side-down++ + ++block++<br>(Ability D) |
 | **Energy cost** | 2 |
 | **Cooldown** | 25 s, starts when activated |
 | **Duration** | 10 s |

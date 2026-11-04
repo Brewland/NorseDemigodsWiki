@@ -8,7 +8,7 @@ bushes. It does not fight, and stays until you dismiss it or it dies.
 | | |
 | --- | --- |
 | **Used by** | [Njord](../demigods/njord.md) |
-| **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
+| **Input** | ++mouse-side-up++ + ++block++<br>(Ability C) |
 | **Energy cost** | None |
 | **Cooldown** | 30 s, starts when summoned |
 | **Duration** | Until dismissed or killed |
@@ -46,7 +46,7 @@ Damage grows evenly with level; health grows slowly at low levels and sharply at
 | Damage per hit *Chop*{.dmg .chop} | 10 | 20 | 30 |
 | Maximum health | 20 | 80 | 200 |
 
-- [Tool tier](../getting-started/glossary.md#tool-tier) 0: beech, pine, fir and Ashlands trees.
+- [Tool tier](../reference/glossary.md#tool-tier) 0: beech, pine, fir and Ashlands trees.
 - Servers can change which bushes and small objects it chops: `[Ability Neck] Destructibles List`.
 
 ## Infused
@@ -65,7 +65,7 @@ Damage grows evenly with level; health grows slowly at low levels and sharply at
 ## Related pages
 
 - [Njord](../demigods/njord.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 - [Companions](../companions/index.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

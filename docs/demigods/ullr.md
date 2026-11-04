@@ -8,7 +8,7 @@ spears and axes, and fights best in light armor.
 | | |
 | --- | --- |
 | **Role** | A true hunter accompanied by a wolf. Master of bows, knives and stealth |
-| **Element** | *Frost*{.dmg .frost} *Poison*{.dmg .poison} |
+| **Element** | *Frost*{.dmg .frost}<br>*Poison*{.dmg .poison} |
 | **Favorite weapons** | Bows, knives, spears, axes |
 | **Preferred armor** | Light |
 | **Config ID** | `Ullr` |
@@ -33,7 +33,7 @@ spears and axes, and fights best in light armor.
 
     ---
 
-    ++mouse-middle++ (Special attack, bows or crossbows)
+    ++mouse-middle++<br>(Special attack, bows or crossbows)
 
     Charge your next arrow with Frost damage that splashes.
 
@@ -41,7 +41,7 @@ spears and axes, and fights best in light armor.
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     A blast of force that pushes enemies in front of you away.
 
@@ -49,7 +49,7 @@ spears and axes, and fights best in light armor.
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Markers show the direction of prey within 70 m.
 
@@ -57,7 +57,7 @@ spears and axes, and fights best in light armor.
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     A loyal wolf companion that grows stronger with you.
 
@@ -65,7 +65,7 @@ spears and axes, and fights best in light armor.
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Heal every second until full health, draining energy.
 
@@ -73,7 +73,7 @@ spears and axes, and fights best in light armor.
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -173,6 +173,6 @@ Infusing Ullr's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

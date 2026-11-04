@@ -8,7 +8,7 @@ for her. She favors two-handed axes and swords, polearms and knives, and fights 
 | | |
 | --- | --- |
 | **Role** | The gatekeeper of the underworld. Brings darkness to the surroundings while followed by many minions |
-| **Element** | *Spirit*{.dmg .spirit} *Poison*{.dmg .poison} |
+| **Element** | *Spirit*{.dmg .spirit}<br>*Poison*{.dmg .poison} |
 | **Favorite weapons** | Two-handed axes, two-handed swords, polearms, knives |
 | **Preferred armor** | Heavy and light |
 | **Config ID** | `Hel` |
@@ -34,7 +34,7 @@ for her. She favors two-handed axes and swords, polearms and knives, and fights 
 
     ---
 
-    ++mouse-middle++ (Special attack, unarmed)
+    ++mouse-middle++<br>(Special attack, unarmed)
 
     Acid bolt that explodes on impact with true and Poison damage. Costs eitr.
 
@@ -42,7 +42,7 @@ for her. She favors two-handed axes and swords, polearms and knives, and fights 
 
     ---
 
-    ++mouse-side-up++ (Ability A)
+    ++mouse-side-up++<br>(Ability A)
 
     Call a meteor down on the spot you aim at. Costs eitr.
 
@@ -50,7 +50,7 @@ for her. She favors two-handed axes and swords, polearms and knives, and fights 
 
     ---
 
-    ++mouse-side-down++ (Ability B)
+    ++mouse-side-down++<br>(Ability B)
 
     Toggle: drain the life of nearby enemies to heal yourself.
 
@@ -58,7 +58,7 @@ for her. She favors two-handed axes and swords, polearms and knives, and fights 
 
     ---
 
-    ++mouse-side-up++ + ++block++ (Ability C)
+    ++mouse-side-up++ + ++block++<br>(Ability C)
 
     Raise up to three skeletons that fight for you.
 
@@ -66,7 +66,7 @@ for her. She favors two-handed axes and swords, polearms and knives, and fights 
 
     ---
 
-    ++mouse-side-down++ + ++block++ (Ability D)
+    ++mouse-side-down++ + ++block++<br>(Ability D)
 
     Turn your minions, or your own health, into energy.
 
@@ -74,7 +74,7 @@ for her. She favors two-handed axes and swords, polearms and knives, and fights 
 
     ---
 
-    ++p++ (Teleport)
+    ++p++<br>(Teleport)
 
     Teleport to your bed and back. Shared by all demigods.
 
@@ -162,6 +162,6 @@ Infusing Hel's abilities upgrades all of them at once:
 ## Related pages
 
 - [Infusion Items](../items/infusion-items.md)
-- [Glossary](../getting-started/glossary.md)
+- [Glossary](../reference/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

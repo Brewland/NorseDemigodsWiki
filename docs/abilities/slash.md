@@ -8,7 +8,7 @@ uses his claws and deals Frost damage; Surtr's version uses his axe or sword and
 | | |
 | --- | --- |
 | **Used by** | [Fenrir](../demigods/fenrir.md), [Surtr](../demigods/surtr.md) |
-| **Input** | ++mouse-middle++ (Special attack, unarmed for Fenrir; axes or swords for Surtr) |
+| **Input** | ++mouse-middle++<br>(Special attack, unarmed for Fenrir; axes or swords for Surtr) |
 | **Energy cost** | 1 |
 | **Cooldown** | 3 s |
 | **Range** | 3.5 m |
@@ -46,9 +46,9 @@ The damage is based on your normal attack, then split into 75% *Slash*{.dmg .sla
 - Damage: 75% *Slash*{.dmg .slash} + 25% *Frost*{.dmg .frost}.
 - Uses Fenrir's claws. It scales with both the demigod skill and the Unarmed skill (see
   [Titan Arms](../attributes/titan-arms.md)).
-- Wearing any [heavy armor](../getting-started/glossary.md#heavy-armor) lowers Titan Arms' attack speed, and with it
+- Wearing any [heavy armor](../reference/glossary.md#heavy-armor) lowers Titan Arms' attack speed, and with it
   the slash damage.
-- Tree damage uses Titan Arms' [tool tier](../getting-started/glossary.md#tool-tier), which grows with your Unarmed
+- Tree damage uses Titan Arms' [tool tier](../reference/glossary.md#tool-tier), which grows with your Unarmed
   skill.
 
 Damage with no heavy armor (75% *Slash*{.dmg .slash} + 25% *Frost*{.dmg .frost}):

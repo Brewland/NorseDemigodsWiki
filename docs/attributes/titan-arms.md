@@ -8,7 +8,7 @@ physical and Frost damage, block like a shield and fell trees. In exchange, he c
 | | |
 | --- | --- |
 | **Demigod** | [Fenrir](../demigods/fenrir.md) |
-| **Condition** | Always active; faster without [heavy armor](../getting-started/glossary.md#heavy-armor) |
+| **Condition** | Always active; faster without [heavy armor](../reference/glossary.md#heavy-armor) |
 | **Config ID** | `TitanArms` |
 | **Config section** | `[Attribute Titan Arms]` |
 
@@ -23,7 +23,7 @@ Bare-handed, Fenrir attacks with natural claws instead of punches. Each hit deal
 
 Damage grows with both skills:
 
-- 4 base + 0.46 [per level](../getting-started/glossary.md#per-level) of the demigod skill,
+- 4 base + 0.46 [per level](../reference/glossary.md#per-level) of the demigod skill,
 - then +0.5% per Unarmed skill level (+50% at Unarmed 100).
 
 | | Lv 0 | Lv 50 | Lv 100 |
@@ -53,7 +53,7 @@ Blocking bare-handed uses your arms as a shield: 1.25 block armor per level (min
 
 ## Felling trees
 
-Bare-handed attacks damage trees. Tree damage and [tool tier](../getting-started/glossary.md#tool-tier) grow with
+Bare-handed attacks damage trees. Tree damage and [tool tier](../reference/glossary.md#tool-tier) grow with
 the **Unarmed** skill:
 
 | | Unarmed 0 | Unarmed 50 | Unarmed 100 |

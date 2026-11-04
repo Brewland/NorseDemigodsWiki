@@ -24,7 +24,7 @@ Deer Endurance makes your stamina come back faster and start regenerating sooner
 ## Scaling
 
 Stamina regeneration rate grows evenly from 150% at level 0 to 200% at level 100
-([per level](../getting-started/glossary.md#per-level)).
+([per level](../reference/glossary.md#per-level)).
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

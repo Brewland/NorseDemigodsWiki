@@ -8,7 +8,7 @@ enemies, and he takes half damage from every source. It drains energy while acti
 | | |
 | --- | --- |
 | **Used by** | [Fenrir](../demigods/fenrir.md) |
-| **Input** | ++mouse-side-up++ (Ability A) |
+| **Input** | ++mouse-side-up++<br>(Ability A) |
 | **Energy cost** | Needs 1+ energy; drains 1 every 2 s |
 | **Cooldown** | None |
 | **Duration** | Until turned off or out of energy |
