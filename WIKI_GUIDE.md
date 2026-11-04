@@ -197,6 +197,9 @@ Custom key names are defined under `pymdownx.keys` → `key_map` in `mkdocs.yml`
   `| | Unarmed 0 | Unarmed 50 | Unarmed 100 |` (e.g. Titan Arms tree damage).
 - A column that holds one damage type may carry the badge in its **header**:
   `| Weapon | Extra damage *Lightning*{.dmg .lightning} |` (see Static Body).
+- Tables that compare several sources with different damage types (the Companions page) put the types in their own
+  `Damage types` column, as shares with badges (`75% *Blunt*{.dmg .blunt} + 25% *Pierce*{.dmg .pierce}`, or just the
+  badge for one type), and keep only the bold totals in the level columns.
 - **Bold** marks damage and healing amounts only, including a damage share in prose ("deal **35%** of the hit's
   damage as *Lightning*{.dmg .lightning}"). Percentage bonuses in effect tables (`+10%`) are not bold.
 - State the formula in one short line above the table: "10 base + 1.4 per level".
@@ -600,7 +603,8 @@ accent line on top, a fjord-blue header row (`--nd-overview-head-bg`), the panel
 striped rows (`--nd-overview-stripe`), an accent tint on hover and a bold first column. Use it for:
 
 - every section index table (`demigods/`, `abilities/`, `attributes/`, `items/index.md`);
-- the `## Overview` table of grouped item pages (Infusion Items, Permanent Consumables, Sweet Fish Foods).
+- the `## Overview` table of grouped item pages (Infusion Items, Permanent Consumables, Sweet Fish Foods);
+- the `## Overview` table of the Companions page.
 
 Wrap the table in a `div` (blank lines inside it are required). Notes after the table go outside the `div`.
 
@@ -1058,6 +1062,31 @@ with your demigod skill level.
 <!-- Verified against NorseDemigods x.y.z -->
 ```
 
+### Companions
+
+`companions/index.md` is a single System page (no infobox) that compares every companion. The ability pages keep the
+details; the Companions page only compares and links. Sections, in order:
+
+1. `## Overview`: an [overview table](#overview-table) with the columns Companion, Ability, Demigod, Job, How many,
+   Lasts. The companion links to its ability page (or variant section). Rows alphabetical by companion.
+2. `## How companions work`: the shared rules as bullets, then `### Summon Wolf is different`.
+3. `## Damage` and `## Health`: level tables with one row per companion (alphabetical), damage types in a
+   `Damage types` column (see [Damage and healing](#damage-and-healing)).
+4. `## Energy and regeneration`, `## Distance from you`: plain comparison tables. Write "No" when a rule does not
+   apply, "None" for a zero chance.
+5. `## Permanent bonuses`, `## Interactions` (links to the abilities and attributes that treat companions
+   differently), `## Wisps`, `## Related pages`.
+
+- **Companion names** are the vanilla creature names in sentence case: Stone golem, Surtling, Skeleton, Ghost,
+  Deathsquito, Neck, Ulv, Wolf, plus "Charmed creature". Rows that share every value are merged ("Skeleton or ghost").
+- **What counts as a companion:** a creature summoned or charmed by an ability. Nature Wisp and Energy Wisp are not
+  creatures (enemies cannot attack them); they get a short `## Wisps` section, not rows.
+- Every companion ability page lists `[Companions](../companions/index.md)` last in its Related pages.
+- Each value on the Companions page must match its ability page. When one changes, update both.
+- **Logout:** write "when you teleport, die or log out". Do not mention the 5 s delay after a disconnect
+  (logging out through the menu removes companions at once; the difference does not matter to players).
+- **Distances** are written "X m or more", even where the code checks "more than X m" (e.g. Charm's 55 m).
+
 ## 5. Source-file map
 
 Paths are relative to `../NorseDemigods/NorseDemigods/`. Translation keys are in
@@ -1121,6 +1150,8 @@ Paths are relative to `../NorseDemigods/NorseDemigods/`. Translation keys are in
 | Teleport ability | `Abilities/AbilityTeleport.cs`, `StatusEffects/SE_TeleportLocationExpiration.cs` |
 | Harpoon fishing, honey, merchant, armor sets | `Configs.cs`, `NorseDemigods.cs` |
 | Console commands (for Becoming a Demigod and the FAQ) | `Console/*.cs` |
+| Companions: shared rules (distance, boss damage, regeneration, energy on hit, summon bonuses) | `StatusEffects/SE_Minion.cs`, `StatusEffects/SE_Wolf.cs`, `Helper.cs` (`GetSummonDamageModifier`, `GetSummonHealthModifier`), each summon ability's `Execute` |
+| Companions: what happens on teleport, death and logout | `DemigodAbility.cs` (`OnPlayerTeleporting`, `OnPlayerDeath`, `OnPlayerDisconnecting`), each ability's `Stop` |
 | Compatibility | `Configs.cs` (`Enhance Compatibility With …`), `Patches/*.cs`, `_Publish/README.md` |
 
 Global config sections in `Configs.cs`: `(Configs)`, `(Difficulty)`, `(General)`, `(Hotkeys)`,
@@ -1166,7 +1197,7 @@ docs/
 │   │                                       Leather Scraps, Liquid Frost, Morgenheart, Serpent Scale
 │   └── sweet-fish-foods.md                 Overview table + one section per food
 ├── companions/
-│   └── index.md                            Overview of every summon
+│   └── index.md                            One page comparing every companion (see Companions template)
 └── reference/
     ├── index.md
     ├── difficulty-and-server-settings.md   What players feel

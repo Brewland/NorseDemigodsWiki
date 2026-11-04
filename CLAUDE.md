@@ -85,7 +85,7 @@ shared attributes not written yet.
 | Getting Started | 🟡 | Glossary done; Becoming a Demigod, Controls and Hotkeys, Energy, Demigod Skill and Progression, Ability Infusion to do |
 | Abilities | ✅ | All 54 ability pages and Teleport |
 | Items | ✅ | Demigod Runestone, Abyssal Harpoon, Infused Megingjord, Infusion Items, Permanent Consumables, Sweet Fish Foods |
-| Companions | ⬜ | |
+| Companions | ✅ | One overview page comparing every companion |
 | Reference | ⬜ | Difficulty and Server Settings, Optional Features, Compatibility, FAQ, Changelog |
 
 ## Open items

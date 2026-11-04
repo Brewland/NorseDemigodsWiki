@@ -75,5 +75,6 @@ If the creature can be tamed (in vanilla: boars, wolves, lox and other tameable 
 ## Related pages
 
 - [Kvasir](../demigods/kvasir.md)
+- [Companions](../companions/index.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

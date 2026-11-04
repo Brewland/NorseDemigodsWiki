@@ -29,7 +29,7 @@ much stronger with Surtr's level and can give him energy when it hits an enemy.
 - It regenerates 5% of its maximum health per second.
 - Casting again replaces the current surtling. Setting: `[Ability Surtling] Replace Summons`.
 - When 35 m or more away from you, it moves much faster to catch up.
-- It disappears 5 s after you log out, and when you teleport or die.
+- It disappears if it gets 65 m or more away from you, and when you teleport, die or log out.
 
 ## Stats
 
@@ -58,5 +58,6 @@ Damage and health grow slowly at low levels and sharply at high levels.
 ## Related pages
 
 - [Surtr](../demigods/surtr.md)
+- [Companions](../companions/index.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

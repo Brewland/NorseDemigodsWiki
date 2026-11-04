@@ -66,5 +66,6 @@ Damage grows evenly with level; health grows slowly at low levels and sharply at
 
 - [Njord](../demigods/njord.md)
 - [Glossary](../getting-started/glossary.md)
+- [Companions](../companions/index.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

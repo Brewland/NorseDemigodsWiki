@@ -28,7 +28,7 @@ stronger with Brokkr's level and can give him energy when it hits an enemy.
 
 - Casting again replaces the current golem.
 - It regenerates about 1% of its maximum health per second.
-- It disappears if it gets more than 65 m away from you, or 5 s after you log out.
+- It disappears if it gets 65 m or more away from you, and when you teleport, die or log out.
 - When more than 35 m away, it moves much faster to catch up.
 
 ## Stats
@@ -62,5 +62,6 @@ Resistances:
 ## Related pages
 
 - [Brokkr](../demigods/brokkr.md)
+- [Companions](../companions/index.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

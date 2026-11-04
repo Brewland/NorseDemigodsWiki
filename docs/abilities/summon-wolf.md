@@ -30,6 +30,7 @@ Both variants share one config section: a server change affects Fenrir and Ullr 
 
 - Each hit on an enemy: 50% chance to regenerate 1 energy for you.
 - It remembers its name, health and feeding between summons.
+- Teleporting, dying or logging out dismisses it, just like using the ability again. Summon it again afterwards.
 - **If it dies, it is lost for good:** your next summon is a new companion with no stars, no hits and no name.
 - It flees when its health is low (30%).
 - Hits from bosses deal only 50% damage to it.
@@ -103,5 +104,6 @@ Damage and health grow slowly at low levels and sharply at high levels.
 
 - [Fenrir](../demigods/fenrir.md)
 - [Ullr](../demigods/ullr.md)
+- [Companions](../companions/index.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

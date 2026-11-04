@@ -28,7 +28,7 @@ for her for 30 seconds.
 
 - Casting again removes the deathsquitos from the previous cast. Setting: `[Ability Poison Cloud] Replace Summons`.
 - The deathsquitos are smaller than wild ones.
-- They disappear if they get 55 m or more away from you, 5 s after you log out, and when you teleport or die.
+- They disappear if they get 55 m or more away from you, and when you teleport, die or log out.
 
 ## Damage
 
@@ -57,5 +57,6 @@ Deathsquito hits: the same amount, split 75% *Pierce*{.dmg .pierce} and 25% *Poi
 ## Related pages
 
 - [Freyja](../demigods/freyja.md)
+- [Companions](../companions/index.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->
