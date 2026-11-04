@@ -63,21 +63,30 @@ nav:
       - Fenrir: demigods/fenrir.md
       - Freyja: demigods/freyja.md
       - Hel: demigods/hel.md
+      - Hraesvelgr: demigods/hraesvelgr.md
+      - Kvasir: demigods/kvasir.md
       - Njord: demigods/njord.md
       - Surtr: demigods/surtr.md
       - Thor: demigods/thor.md
+      - Ullr: demigods/ullr.md
   - Abilities:
       - abilities/index.md
       - Teleport: abilities/teleport.md
       - Acid Bolt: abilities/acid-bolt.md
+      - Blast: abilities/blast.md
+      - Blood Slash: abilities/blood-slash.md
       - Bomb: abilities/bomb.md
       - Burning Ground: abilities/burning-ground.md
+      - Charm: abilities/charm.md
+      - Cleave: abilities/cleave.md
       - Combustion: abilities/combustion.md
       - Crush: abilities/crush.md
+      - Dark Aura: abilities/dark-aura.md
       - Dash: abilities/dash.md
       - Decay Aura: abilities/decay-aura.md
       - Drain Blood: abilities/drain-blood.md
       - Elemental Shield: abilities/elemental-shield.md
+      - Energy Wisp: abilities/energy-wisp.md
       - Enrage: abilities/enrage.md
       - Fireball: abilities/fireball.md
       - Frost Nova: abilities/frost-nova.md
@@ -87,6 +96,7 @@ nav:
       - Holy Strike: abilities/holy-strike.md
       - Holy Sun: abilities/holy-sun.md
       - Ice Shards: abilities/ice-shards.md
+      - Infused Arrow: abilities/infused-arrow.md
       - Lightning Aura: abilities/lightning-aura.md
       - Lightning Bolt: abilities/lightning-bolt.md
       - Lightning Storm: abilities/lightning-storm.md
@@ -101,38 +111,58 @@ nav:
       - Poison Javelin: abilities/poison-javelin.md
       - Restoration: abilities/restoration.md
       - Sacrifice: abilities/sacrifice.md
+      - Sense Creatures: abilities/sense-creatures.md
       - Slash: abilities/slash.md
+      - Soar: abilities/soar.md
       - Stagger: abilities/stagger.md
       - Stone Golem: abilities/stone-golem.md
       - Stone Shield: abilities/stone-shield.md
       - Summon Surtling: abilities/summon-surtling.md
       - Summon Wolf: abilities/summon-wolf.md
+      - Telekinesis: abilities/telekinesis.md
       - Tornado: abilities/tornado.md
+      - Vortex: abilities/vortex.md
+      - Warp: abilities/warp.md
       - Water Sphere: abilities/water-sphere.md
+      - Whirlwind: abilities/whirlwind.md
+      - Wind Shield: abilities/wind-shield.md
   - Attributes:
       - attributes/index.md
       - Aquatic Body: attributes/aquatic-body.md
       - Bear Strength: attributes/bear-strength.md
       - Blacksmith: attributes/blacksmith.md
+      - Bloody Archer: attributes/bloody-archer.md
       - Boiling Blood: attributes/boiling-blood.md
       - Celestial Body: attributes/celestial-body.md
       - Child of Darkness: attributes/child-of-darkness.md
       - Cold Blood: attributes/cold-blood.md
+      - Corruption: attributes/corruption.md
       - Cursed Hands: attributes/cursed-hands.md
       - Deer Endurance: attributes/deer-endurance.md
+      - Eagle Agility: attributes/eagle-agility.md
+      - Eagle Endurance: attributes/eagle-endurance.md
+      - Eagle Precision: attributes/eagle-precision.md
+      - Eagle Sense: attributes/eagle-sense.md
       - Eagle Strength: attributes/eagle-strength.md
       - Flame Body: attributes/flame-body.md
       - Fox Legs: attributes/fox-legs.md
       - Frost Body: attributes/frost-body.md
+      - Glide: attributes/glide.md
       - Gourmand: attributes/gourmand.md
       - Hare Legs: attributes/hare-legs.md
       - Holy Body: attributes/holy-body.md
+      - Hunter: attributes/hunter.md
+      - Lumberjack: attributes/lumberjack.md
       - Phantom Shroud: attributes/phantom-shroud.md
+      - Piercing Instincts: attributes/piercing-instincts.md
       - Purity: attributes/purity.md
       - Raider: attributes/raider.md
+      - Regenerative Body: attributes/regenerative-body.md
+      - Sneaky: attributes/sneaky.md
       - Soul Reaper: attributes/soul-reaper.md
       - Static Body: attributes/static-body.md
       - Sturdy Legs: attributes/sturdy-legs.md
+      - Thirsty: attributes/thirsty.md
       - Thorn Body: attributes/thorn-body.md
       - Thunder Forger: attributes/thunder-forger.md
       - Titan Arms: attributes/titan-arms.md
@@ -140,6 +170,8 @@ nav:
       - Titan Strength: attributes/titan-strength.md
       - Valkyrie: attributes/valkyrie.md
       - Water Shield: attributes/water-shield.md
+      - Wind Aura: attributes/wind-aura.md
+      - Wolf Fur: attributes/wolf-fur.md
       - Wolf Speed: attributes/wolf-speed.md
   - Items:
       - items/index.md

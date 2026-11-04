@@ -7,7 +7,7 @@ fall damage.
 
 | | |
 | --- | --- |
-| **Demigods** | [Eir](../demigods/eir.md), [Fenrir](../demigods/fenrir.md), [Freyja](../demigods/freyja.md), Hraesvelgr, Kvasir, Ullr |
+| **Demigods** | [Eir](../demigods/eir.md), [Fenrir](../demigods/fenrir.md), [Freyja](../demigods/freyja.md), [Hraesvelgr](../demigods/hraesvelgr.md), [Kvasir](../demigods/kvasir.md), [Ullr](../demigods/ullr.md) |
 | **Condition** | Always active; no speed bonus while encumbered |
 | **Config ID** | `HareLegs` |
 | **Config section** | `[Attribute Hare Legs]` |
@@ -48,6 +48,9 @@ fall damage.
 - [Eir](../demigods/eir.md)
 - [Fenrir](../demigods/fenrir.md)
 - [Freyja](../demigods/freyja.md)
+- [Hraesvelgr](../demigods/hraesvelgr.md)
+- [Kvasir](../demigods/kvasir.md)
+- [Ullr](../demigods/ullr.md)
 - [Wolf Speed](wolf-speed.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

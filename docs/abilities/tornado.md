@@ -28,8 +28,7 @@ Lightning damage.
 
 - Casting is loud and alerts enemies nearby.
 - Usable while airborne or swimming.
-- TODO: verify (the tornado also hits destructible objects in its path; whether trees, rocks or buildings take
-  damage).
+- TODO: verify (the tornado also hits destructible objects in its path; whether trees or rocks take damage).
 
 ## Damage
 

@@ -90,6 +90,11 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
     sneak note to them, and make no sneak claims about summons.
 - **Bosses are never staggered** by the mod's staggers (abilities and attributes). Add the boss standard note to
   every stagger effect.
+- **Player buildings:** Titan Legs' landing blast is the only effect that skips pieces built by players; its page says
+  so. Do not mention buildings for any other ability or attribute, even when its area damage hits destructible objects.
+- **Weapon swings of special attacks:** state the swing's damage only when the ability sets it (Slash, Blood Slash,
+  Cleave: 50%; Stagger: 70%, configurable; Whirlwind and Holy Strike: none, and no stamina). Crush, Soar and
+  Combustion leave the weapon's own special-attack damage unchanged; say nothing about their swing damage.
 
 ## 3. Conventions
 
@@ -237,6 +242,8 @@ Reuse these exact wordings in `## Notes` (or the `**Notes:**` label) wherever th
 | An energy-on-hit or energy-on-block chance that is blocked by draining abilities | No energy regeneration while an energy-draining ability is active. |
 | A "+X% movement speed" bonus | **Movement speed:** applies to walking, jogging, sprinting, sneaking and swimming, but not while encumbered, and does not change jump height. Adds up with other movement speed bonuses. Setting: `[(Special Modifiers)] Special Movement Speed Modifier (%)`. |
 | A stagger effect | Bosses are not staggered. |
+| Area damage that also hits destructible objects (not limited to trees and ores) | It also hits destructible objects in the area. Add the collateral limit when the code checks it: "Objects are not hit while an enemy is within 10 m, or an enemy within 6 m of you is targeting you. Setting: `[(General)] Protect Resources From Collateral Damage` (on by default; outdoors only)." |
+| A special attack whose weapon swing still deals damage (the ability sets a damage multiplier on the swing) | Your weapon also swings, hitting with **50%** of its normal damage. The swing costs no stamina. (Use the code's percentage.) |
 
 ### Standard limits
 
@@ -262,6 +269,17 @@ Use exactly this form:
     | Material | Amount |
     | --- | --- |
     | Thunderstone | 1 |
+```
+
+Kvasir's infusion is a kill, not a recipe. Use the title "Infusion condition (spoiler)" and put the condition in
+bullets inside the box:
+
+```markdown
+??? spoiler "Infusion condition (spoiler)"
+
+    Kill **Brenna**, the fire skeleton that guards one of Hildir's chests (vanilla).
+
+    - Kvasir must land the killing blow, or be within 50 m of Brenna when it dies.
 ```
 
 Food, Runestone, Megingjord and permanent consumable recipes do not need a spoiler.
@@ -534,6 +552,35 @@ use (add new ones here):
 | Drain Blood | `:material-heart-minus:` |
 | Cold Blood | `:material-thermometer-low:` |
 | Flame Body | `:material-fire-circle:` |
+| Cleave | `:material-weather-windy:` |
+| Whirlwind | `:material-weather-hurricane:` |
+| Soar | `:material-airplane-takeoff:` |
+| Telekinesis | `:material-magnet:` |
+| Vortex | `:material-rotate-orbit:` |
+| Energy Wisp | `:material-star-shooting:` |
+| Wind Shield | `:material-shield-airplane:` |
+| Eagle Agility | `:material-sword:` |
+| Eagle Endurance | `:material-lungs:` |
+| Eagle Precision | `:material-bullseye-arrow:` |
+| Eagle Sense | `:material-compass:` |
+| Glide | `:material-feather:` |
+| Wind Aura | `:material-weather-windy-variant:` |
+| Blood Slash | `:material-knife:` |
+| Warp | `:material-transfer-right:` |
+| Dark Aura | `:material-shield-moon:` |
+| Charm | `:material-account-heart:` |
+| Bloody Archer | `:material-bow-arrow:` |
+| Corruption | `:material-treasure-chest:` |
+| Piercing Instincts | `:material-knife-military:` |
+| Regenerative Body | `:material-bandage:` |
+| Thirsty | `:material-glass-wine:` |
+| Infused Arrow | `:material-arrow-projectile:` |
+| Blast | `:material-weather-dust:` |
+| Sense Creatures | `:material-radar:` |
+| Hunter | `:material-target-account:` |
+| Lumberjack | `:material-axe:` |
+| Sneaky | `:material-incognito:` |
+| Wolf Fur | `:material-dog-side:` |
 
 #### Section index pages
 

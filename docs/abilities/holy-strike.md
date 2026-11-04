@@ -26,6 +26,8 @@ Spirit damage. It costs eitr instead of energy and can give energy back on a hit
 2. Holy fire strikes it instantly. There is no projectile to dodge.
 3. 30% chance to regenerate 1 energy.
 
+- The cast animation deals no damage by itself and costs no stamina.
+
 ## Damage
 
 5 base + 1.45 [per level](../getting-started/glossary.md#per-level), split evenly between the two types.

@@ -58,12 +58,12 @@ shared attributes not written yet.
 | Fenrir | ✅ | |
 | Freyja | ✅ | |
 | Hel | ✅ | |
-| Hraesvelgr | ⬜ | Already exist: Eagle Strength, Hare Legs |
-| Kvasir | ⬜ | Already exist: Heal Over Time Blood section, Deer Endurance, Hare Legs |
+| Hraesvelgr | ✅ | |
+| Kvasir | ✅ | |
 | Njord | ✅ | |
 | Surtr | ✅ | |
 | Thor | ✅ | Reference batch |
-| Ullr | ⬜ | Already exist: Summon Wolf Wolf and Heal Over Time Frost sections, Deer Endurance, Hare Legs, Wolf Speed |
+| Ullr | ✅ | |
 
 ### Shared attributes
 
@@ -83,7 +83,7 @@ shared attributes not written yet.
 | --- | --- | --- |
 | Home (`index.md`) | 🟡 | Summary and server-defaults disclaimer only |
 | Getting Started | 🟡 | Glossary done; Becoming a Demigod, Controls and Hotkeys, Energy, Demigod Skill and Progression, Ability Infusion to do |
-| Abilities | 🟡 | Teleport + Brokkr's, Eir's, Fenrir's, Freyja's, Hel's, Njord's, Surtr's and Thor's abilities done |
+| Abilities | ✅ | All 54 ability pages and Teleport |
 | Items | ⬜ | Demigod Runestone, Infusion Items, Permanent Consumables, Infused Megingjord, Sweet Fish Foods, Abyssal Harpoon |
 | Companions | ⬜ | |
 | Reference | ⬜ | Difficulty and Server Settings, Optional Features, Compatibility, FAQ, Changelog |
@@ -96,7 +96,8 @@ Remove an item once it is resolved.
 
 - **Mod 1.9.1 must be released first.** The wiki already describes it, including the sneak-attack changes and the
   fixes made during the Freyja/Hel/Njord/Surtr batch (Burning Ground, Crush, Sacrifice, Raider, Water Sphere; mod
-  commits up to `6d943d6`).
+  commits up to `6d943d6`), and the fixes from the Hraesvelgr/Kvasir/Ullr batch (Holy Strike swing, Infused Arrow
+  crossbows in `Demigods.yaml`, Vortex tooltip in all languages). Those were not committed in the mod yet.
 - **Check the damage display** (total on top, smaller `nd-split` breakdown line) in light and dark mode with
   `mkdocs serve`. It was only checked in the generated HTML.
 
@@ -112,7 +113,11 @@ Remove an item once it is resolved.
 - **Elemental Shield, infused:** eitr and stamina regeneration pause while burning, poisoned, frozen, shocked or
   freezing (`SE_ElementalShield.cs:45`). The user's notes said eitr has no conditions. The wiki documents the code.
 - **Wind Aura tooltip** says stamina regenerates "when not sprinting"; the code also requires not being
-  encumbered while on the ground (`AttributeWindAura.cs:63`). Relevant for the Hraesvelgr batch.
+  encumbered while on the ground (`AttributeWindAura.cs:63`). The wiki documents the code.
+- **Corruption tooltip** mentions only wood and seeds; the code also duplicates coal, tar and charcoal resin
+  (`AttributeCorruption.AssignItemToBeDuplicated`). The wiki documents the code.
+- **Bloody Archer eitr burst** triggers on any hit while a bow or crossbow is equipped (`OnVictimDamage` checks the
+  equipped weapon, not the hit's source). The wiki says "your next hit on an enemy while you hold a bow or crossbow".
 
 ### `TODO: verify` in the pages
 
@@ -125,10 +130,11 @@ Remove an item once it is resolved.
 - `docs/demigods/fenrir.md`: Fenris full-set skill bonus (assumed to be the vanilla Unarmed bonus); display name
   of the Berserkir set.
 - `docs/demigods/freyja.md`: Poison piercing on the first hit and in multiplayer (same question as Eir).
+- `docs/demigods/kvasir.md`: Spirit piercing on the first hit and in multiplayer (same question as Eir).
 - `docs/abilities/meteor.md`: explosion radius and tool tier (vanilla `projectile_meteor`).
 - `docs/abilities/fireball.md`: explosion radius (vanilla Staff of Embers projectile).
 - `docs/abilities/crush.md`: the strike's damage (the equipped weapon's secondary attack, with the knife animation).
-- `docs/abilities/tornado.md`: damage to trees, rocks and buildings (it also hits destructible objects).
+- `docs/abilities/tornado.md`: damage to trees and rocks (it also hits destructible objects).
 
 ### For later batches
 
@@ -136,5 +142,3 @@ Remove an item once it is resolved.
   do not copy them.
 - **Holy Sun tar burning:** still needs `Enable Experimental Features` and does not work in multiplayer; document
   it on the Optional Features page too.
-- **Hunter (Ullr batch):** its extra skins only come from creatures that are enemies of the nearby Hunter player,
-  never from tamed creatures or companions (`NorseDemigods.cs:2534`). The same 50 m / closest-player rule as Raider.

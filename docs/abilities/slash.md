@@ -27,7 +27,7 @@ Both variants share one config section: a server change affects Fenrir and Surtr
 2. Every enemy within 3.5 m of a point just in front of you takes damage and is pushed back slightly.
 3. Trees, logs and other destructible objects within 2 m take chop damage.
 
-- The slash costs no stamina.
+- Your weapon also swings, hitting with **50%** of its normal damage. The swing costs no stamina.
 - Usable while airborne.
 
 ## Damage

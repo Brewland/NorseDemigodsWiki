@@ -8,7 +8,7 @@ summons. Fenrir summons an Ulv; Ullr summons a wolf.
 
 | | |
 | --- | --- |
-| **Used by** | [Fenrir](../demigods/fenrir.md), Ullr |
+| **Used by** | [Fenrir](../demigods/fenrir.md), [Ullr](../demigods/ullr.md) |
 | **Input** | ++mouse-side-up++ + ++block++ (Ability C) |
 | **Energy cost** | None |
 | **Cooldown** | 50 s |
@@ -102,5 +102,6 @@ Damage and health grow slowly at low levels and sharply at high levels.
 ## Related pages
 
 - [Fenrir](../demigods/fenrir.md)
+- [Ullr](../demigods/ullr.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->
