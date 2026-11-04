@@ -2,6 +2,8 @@
 
 Every active ability, with its damage, cooldown, energy cost and infused upgrade.
 
+<div class="nd-overview" markdown>
+
 | Ability | Used by | Input | Summary |
 | --- | --- | --- | --- |
 | [Acid Bolt](acid-bolt.md) | [Hel](../demigods/hel.md) | ++mouse-middle++ (Special attack, unarmed) | Acid bolt that explodes on impact with true and Poison damage. |
@@ -59,5 +61,7 @@ Every active ability, with its damage, cooldown, energy cost and infused upgrade
 | [Water Sphere](water-sphere.md) | [Njord](../demigods/njord.md) | ++mouse-side-up++ (Ability A) | Water spheres that launch at the closest enemies. |
 | [Whirlwind](whirlwind.md) | [Hraesvelgr](../demigods/hraesvelgr.md) | ++block++ + ++mouse-middle++ (Special attack while blocking, swords or polearms) | Spin in place, damaging and pushing away all enemies around you. |
 | [Wind Shield](wind-shield.md) | [Hraesvelgr](../demigods/hraesvelgr.md) | ++mouse-side-down++ + ++block++ (Ability D) | A wind barrier: physical resistance and healing for 10 s. |
+
+</div>
 
 Inputs show the default keys.

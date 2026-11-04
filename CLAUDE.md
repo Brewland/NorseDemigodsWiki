@@ -84,7 +84,7 @@ shared attributes not written yet.
 | Home (`index.md`) | 🟡 | Summary and server-defaults disclaimer only |
 | Getting Started | 🟡 | Glossary done; Becoming a Demigod, Controls and Hotkeys, Energy, Demigod Skill and Progression, Ability Infusion to do |
 | Abilities | ✅ | All 54 ability pages and Teleport |
-| Items | ⬜ | Demigod Runestone, Infusion Items, Permanent Consumables, Infused Megingjord, Sweet Fish Foods, Abyssal Harpoon |
+| Items | ✅ | Demigod Runestone, Abyssal Harpoon, Infused Megingjord, Infusion Items, Permanent Consumables, Sweet Fish Foods |
 | Companions | ⬜ | |
 | Reference | ⬜ | Difficulty and Server Settings, Optional Features, Compatibility, FAQ, Changelog |
 
@@ -95,9 +95,9 @@ Remove an item once it is resolved.
 ### Before sharing the wiki
 
 - **Mod 1.9.1 must be released first.** The wiki already describes it, including the sneak-attack changes and the
-  fixes made during the Freyja/Hel/Njord/Surtr batch (Burning Ground, Crush, Sacrifice, Raider, Water Sphere; mod
-  commits up to `6d943d6`), and the fixes from the Hraesvelgr/Kvasir/Ullr batch (Holy Strike swing, Infused Arrow
-  crossbows in `Demigods.yaml`, Vortex tooltip in all languages). Those were not committed in the mod yet.
+  fixes made during the Freyja/Hel/Njord/Surtr batch (Burning Ground, Crush, Sacrifice, Raider, Water Sphere) and
+  the Hraesvelgr/Kvasir/Ullr batch (Holy Strike swing, Infused Arrow crossbows in `Demigods.yaml`, Vortex tooltip in
+  all languages). All are committed in the mod (up to `63718f1`) but not released yet.
 - **Check the damage display** (total on top, smaller `nd-split` breakdown line) in light and dark mode with
   `mkdocs serve`. It was only checked in the generated HTML.
 
@@ -135,6 +135,11 @@ Remove an item once it is resolved.
 - `docs/abilities/fireball.md`: explosion radius (vanilla Staff of Embers projectile).
 - `docs/abilities/crush.md`: the strike's damage (the equipped weapon's secondary attack, with the knife animation).
 - `docs/abilities/tornado.md`: damage to trees and rocks (it also hits destructible objects).
+- `docs/items/infused-megingjord.md`: the vanilla Megingjord's +150 carry weight (replaced, not added to).
+- `docs/items/permanent-consumables.md`: vanilla display names of `FrozenFuel`, `TrophyBarka`, `CharredBone` and
+  `MorgenHeart` (written as Liquid frost, Barka trophy, Charred bone, Morgen heart).
+- `docs/items/sweet-fish-foods.md`: the vanilla recipe the mod frees from its crafting station (`Recipe_Fish1`,
+  assumed Perch → raw fish).
 
 ### For later batches
 

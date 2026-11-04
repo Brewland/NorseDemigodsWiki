@@ -208,6 +208,7 @@ TODO: verify (the full-set skill bonus is assumed to be the vanilla set's Unarme
 
 ## Related pages
 
+- [Infusion Items](../items/infusion-items.md)
 - [Titan Arms](../attributes/titan-arms.md)
 - [Glossary](../getting-started/glossary.md)
 

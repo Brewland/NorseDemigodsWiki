@@ -282,7 +282,13 @@ bullets inside the box:
     - Kvasir must land the killing blow, or be within 50 m of Brenna when it dies.
 ```
 
-Food, Runestone, Megingjord and permanent consumable recipes do not need a spoiler.
+Recipes **and crafting stations** of infusion items, permanent consumables and Infused Megingjord are spoilers:
+they appear only inside the spoiler box, never in an overview table or an infobox. The box starts with
+"Craft it at a Forge (level 7+)." (on demigod pages: "Craft an **Infused Hammer** at a Forge (level 7+) and consume
+it."), then any extra bullets, then the recipe table. Title: "Infusion recipe (spoiler)" for infusion items,
+"Recipe (spoiler)" for the others. A `TODO: verify` about recipe materials goes inside the box too.
+
+Food and Runestone recipes are not spoilers.
 
 ### Off-by-default features
 
@@ -334,7 +340,8 @@ Every entry on the compatibility page is labelled:
 
 - Use relative links to `.md` files so `mkdocs build --strict` can check them:
   `[Surtr](../demigods/surtr.md)`.
-- Link the **first** use of a glossary term on each page:
+- Link the **first** use of a glossary term on each page. On grouped item pages, link it in **each item section**
+  that uses it, since each section is read on its own (e.g. "tool tier" in both Earthbreaker cards):
 
   | Term | Link target | Meaning (verify against the code) |
   | --- | --- | --- |
@@ -349,6 +356,7 @@ Every entry on the compatibility page is labelled:
   - **Demigods:** alphabetical.
   - **Abilities:** Teleport first, then alphabetical.
   - **Attributes:** alphabetical.
+  - **Items:** Demigod Runestone first, then alphabetical.
 - Every new page also gets a row in its section's `index.md` table (see [Section index pages](#section-index-pages)).
 
 ### File naming
@@ -418,9 +426,12 @@ Field order (omit rows that do not apply, except where marked "always"):
 | Demigod | Role, Element (badges), Favorite weapons, Preferred armor, Config ID, Config section |
 | Ability | Used by, Input, Eitr cost (only if any), Energy cost (always), Cooldown (always), Duration or Cast time, Range, other areas (e.g. Explosion radius), Config ID, Config section |
 | Attribute | Demigod (one owner) or Demigods (several owners), Condition, Config ID, Config section |
-| Item | Type, Crafting station, Restricted to, Stack size, Consume limit, Config ID |
+| Item | Type, Effect (or food stats: Health, Stamina, Eitr, Healing, Duration), Crafting station, Recipe, Restricted to, Stack size, Consume limit, Config ID, Config section |
 
 - Values that scale with level appear as a range: `12–18 m, by level`; the level table has the details.
+- Item infoboxes show **Crafting station** and **Recipe** only when the recipe is not a spoiler (foods, Runestone).
+  The Recipe row lists one material per line, amount first: `2 Raw fish<br>2 Honey`. **Effect** is a short
+  summary; several effects go on separate lines with `<br>`.
 - Channeled abilities add ", hold" after the input: `++mouse-side-down++ + ++block++ (Ability D), hold`.
 - Shared config sections add `(shared by all variants)` after the section.
 - Element and resistance rows use damage badges: `*Lightning*{.dmg .lightning}`.
@@ -582,15 +593,40 @@ use (add new ones here):
 | Sneaky | `:material-incognito:` |
 | Wolf Fur | `:material-dog-side:` |
 
+#### Overview table
+
+Tables that list the entries of a section or page are styled as overview tables: full content width, a bronze
+accent line on top, a fjord-blue header row (`--nd-overview-head-bg`), the panel border with rounded corners,
+striped rows (`--nd-overview-stripe`), an accent tint on hover and a bold first column. Use it for:
+
+- every section index table (`demigods/`, `abilities/`, `attributes/`, `items/index.md`);
+- the `## Overview` table of grouped item pages (Infusion Items, Permanent Consumables, Sweet Fish Foods).
+
+Wrap the table in a `div` (blank lines inside it are required). Notes after the table go outside the `div`.
+
+```markdown
+<div class="nd-overview" markdown>
+
+| Item | Effect | Consume limit |
+| --- | --- | --- |
+| [Infused Bloodbag](#infused-bloodbag) | +20 maximum health | Once |
+
+</div>
+```
+
+Do not use it for other tables (level tables, effect tables, recipes): those stay plain.
+
 #### Section index pages
 
-Each section's `index.md` is a one-line summary plus one entry per page, sorted alphabetically by name:
+Each section's `index.md` is a one-line summary plus one entry per page, sorted alphabetically by name, in an
+[overview table](#overview-table):
 
 | Index | Columns | Notes |
 | --- | --- | --- |
 | `demigods/index.md` | Demigod, Summary, Element, Favorite weapons, Preferred armor | Element as badges |
 | `abilities/index.md` | Ability, Used by, Input, Summary | Input as keys; ends with "Inputs show the default keys." |
 | `attributes/index.md` | Attribute, Demigods, Summary | Every attribute links to its own page |
+| `items/index.md` | Page, Summary | One row per page (grouped pages are one row), in `nav` order: Demigod Runestone first, then alphabetical |
 | `getting-started/index.md` | No table: a `## Pages` bullet list | `- [Glossary](glossary.md): heavy armor, per level, …` |
 
 Demigods without a page yet are plain text (no link) in the Used by / Demigods columns.
@@ -605,6 +641,8 @@ Demigods without a page yet are plain text (no link) in the Used by / Demigods c
 | `lg middle` | Card icon size and alignment (Material built-in) | `:material-flash:{ .lg .middle }` |
 | `keys` | Generated by `pymdownx.keys`; CSS stops key combinations from wrapping | `++mouse-side-up++ + ++block++` |
 | `admonition quote` | Lore box, recolored to the accent color | `!!! quote "Lore"` |
+| `nd-overview` | `<div>` around a section index table or a grouped page's `## Overview` table | `<div class="nd-overview" markdown>` |
+| `nd-row-exception` | A link in a table's first cell; tints that whole row with the panel background (CSS `:has()`) | `[Kvasir](../demigods/kvasir.md){ .nd-row-exception }` |
 
 Damage-type classes (always together with `dmg`): `blunt`, `slash`, `pierce`, `chop`, `pickaxe`, `fire`,
 `frost`, `lightning`, `poison`, `spirit`. Use the badge for **damage types and elements only**, not for
@@ -634,6 +672,7 @@ The theme colors are CSS variables at the top of `extra.css`; `mkdocs.yml` uses 
 | Accent | `#b07a22` bronze | `#e2b354` gold |
 | Links | `#2a5d88` | `#8cbbe3` |
 | Panel background / border (infobox) | `#f4f1ea` / `#d9cfbd` | `#1f2a36` / `#34465a` |
+| Overview table header / stripe | `#24394d` / `#faf8f4` | `#2c4155` / `rgba(255, 255, 255, 0.025)` |
 
 The accent color is used for the infobox's left border, the Lore box, the top border and icon of each card, and
 card titles on hover. `h2` headings get a thin bottom border.
@@ -914,12 +953,15 @@ Infused Megingjord is an equippable belt that increases your maximum energy and 
 
 | | |
 | --- | --- |
-| **Type** | Equipment / Consumable (permanent effect) / Food |
-| **Crafting station** | Forge (level X+) |
-| **Restricted to** | Any demigod / [Demigod](../demigods/….md) |
+| **Type** | Equipment (belt) / Consumable (permanent effect) / Consumable (ability infusion) / Food / Misc (reusable) / Weapon (vanilla item) |
+| **Effect** | Short summary (grouped pages; standalone pages use `## Effect`) |
+| **Crafting station** | None (craft from your inventory) / Cauldron (level X+) / Unchanged (vanilla recipe); omit if it is a spoiler |
+| **Recipe** | `1 Stone<br>1 Resin`; omit if it is a spoiler |
+| **Restricted to** | Anyone / Any demigod / [Demigod](../demigods/….md) (omit for foods) |
 | **Stack size** | X |
-| **Consume limit** | How many times it can be consumed, if limited |
+| **Consume limit** | Once / 5 times / Once, after Infused Earthbreaker (consumables only) |
 | **Config ID** | `InfusedBeltStrength` |
+| **Config section** | `[Enhanced Megingjord]` (omit if the item has none) |
 
 </div>
 
@@ -931,9 +973,13 @@ Infused Megingjord is an equippable belt that increases your maximum energy and 
 
 ## Recipe
 
-| Material | Amount |
-| --- | --- |
-| … | … |
+??? spoiler "Recipe (spoiler)"
+
+    Craft it at a Forge (level 7+).
+
+    | Material | Amount |
+    | --- | --- |
+    | … | … |
 
 ## Related pages
 
@@ -942,10 +988,41 @@ Infused Megingjord is an equippable belt that increases your maximum energy and 
 <!-- Verified against NorseDemigods x.y.z -->
 ```
 
-Grouped item pages (Infusion Items, Permanent Consumables, Sweet Fish Foods) start with an overview table and
-then repeat the infobox under one `##` section per item. Infusion recipes go in spoiler boxes. Food sections add a
-stats table (health, stamina, eitr, regeneration, duration) and note that only one sweet fish type can be active
-at a time.
+A visible recipe (Runestone) has no `## Recipe` section: it is the infobox's Recipe row, and any recipe setting
+goes under `## Getting one`.
+
+Grouped item pages (Infusion Items, Permanent Consumables, Sweet Fish Foods) start with a `## How … work` bullet
+list (the shared rules), then a `## Overview` table (an [overview table](#overview-table)), then one `##` section per item. Each section is
+**one card**:
+
+1. The infobox, holding everything that fits in a row: Effect (or the food stats), and a visible recipe.
+2. The image placeholder.
+3. Only if needed, details without a heading: a table when an effect has several values (Infused Chitin per
+   weapon, Infused Hard Antlers per item consumed), then bullets.
+4. The recipe spoiler box, if the recipe is a spoiler.
+
+Never use `###` subsections or a one-row table inside an item section. The Sweet Fish Foods page notes that only
+one sweet fish food can be active at a time.
+
+- **Infusion Items:** item names are public; recipes and crafting stations are spoilers. Overview columns: Demigod,
+  Item, sorted by demigod, with Kvasir last as the exception: his row reads
+  `| [Kvasir](../demigods/kvasir.md){ .nd-row-exception } | None: [a kill](#kvasir) |`, which gives it a faint
+  panel background. The sections follow the table order (Kvasir's `## Kvasir` section last). Each section is the
+  infobox, a "What it upgrades: [Thor › Infusion](../demigods/thor.md#infusion)." line and the spoiler (the demigod
+  page's recipe table and any extra bullet, e.g. Brokkr's Blacksmith line; Kvasir: the same condition spoiler as
+  his page).
+- **Permanent Consumables:** overview columns: Item, Effect, Consume limit. Sections are
+  alphabetical, except Infused Grand Earthbreaker, which follows Infused Earthbreaker (it is its upgrade). Their
+  config section is the attribute's: `[Attribute Infused Bloodbag]` (`MorgenHeart` → `[Attribute Infused Morgen Heart]`).
+- **Sweet Fish Foods:** overview columns: Food, Health, Stamina, Eitr, Healing, Duration (no Crafting station: the
+  table must fit without a horizontal scroll bar; the station is in each card). Each card
+  lists Type, Health, Stamina, Eitr, Healing (`5 per tick`), Duration, Crafting station, Recipe, Stack size,
+  Config ID. Food stats are plain numbers (not bold); a note under the overview says a tick is every 10 seconds
+  (vanilla). Durations in minutes (`m_foodBurnTime` / 60).
+- **Recipe materials** use the vanilla English display names in sentence case, as the demigod pages do: "Hard
+  antler", "Raw fish", "Refined eitr" (prefab `Eitr`), "Bronze pickaxe".
+- **Vanilla items the mod changes** (Abyssal Harpoon) use the vanilla prefab as Config ID (`SpearChitin`) and the
+  mod's config section for that feature.
 
 ### System
 
@@ -1031,6 +1108,10 @@ Paths are relative to `../NorseDemigods/NorseDemigods/`. Translation keys are in
 | Effects and consume limit (`MaxLevel`) | `Attributes/AttributeInfused*.cs` |
 | Names and descriptions | Translation keys `item_*`, `attribute_infused*` |
 | Consumable behavior | `CustomConsumable.cs`, `StatusEffects/SE_CustomConsumable.cs`, `StatusEffects/SE_Infused_Belt_Strength.cs` |
+| Consume checks (demigods only, restriction, limits, sweet fish one at a time) | `NorseDemigods.cs` (`Humanoid_UseItem_Patch`) |
+| Where each permanent effect applies | `NorseDemigods.cs` (max health, armor, block armor, eitr, attack speed), `SE_Demigod.cs` (energy, eitr regeneration), `Helper.cs` (damage, healing, summons), `StatusEffects/SE_Minion.cs`, `SE_Wolf.cs` |
+| Runestone menu, switching demigods | `CustomUI.cs` (`RunestoneMenu*`), `Demigod.cs` (`RevokeDemigod`) |
+| Abyssal Harpoon, raw fish recipe | `NorseDemigods.cs` (`ObjectDB_Awake_Patch`, `ApplyItemCustomChanges`, `Projectile_OnHit_Patch`) |
 
 ### System pages
 
@@ -1078,12 +1159,12 @@ docs/
 ├── items/
 │   ├── index.md
 │   ├── demigod-runestone.md
-│   ├── infusion-items.md                   10 sections, recipes in spoilers
+│   ├── abyssal-harpoon.md                  Abyssal Harpoon & Harpoon Fishing
+│   ├── infused-megingjord.md
+│   ├── infusion-items.md                   10 item sections + Kvasir, recipes in spoilers
 │   ├── permanent-consumables.md            Bloodbag, Chitin, Earthbreaker (+ Grand), Eitr, Hard Antlers,
 │   │                                       Leather Scraps, Liquid Frost, Morgenheart, Serpent Scale
-│   ├── infused-megingjord.md
-│   ├── sweet-fish-foods.md                 One page, table
-│   └── abyssal-harpoon.md                  Abyssal Harpoon & Harpoon Fishing
+│   └── sweet-fish-foods.md                 Overview table + one section per food
 ├── companions/
 │   └── index.md                            Overview of every summon
 └── reference/

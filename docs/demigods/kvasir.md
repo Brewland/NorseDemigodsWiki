@@ -173,6 +173,7 @@ Kvasir's infusion is not crafted: it comes from a kill.
 
 ## Related pages
 
+- [Infusion Items](../items/infusion-items.md)
 - [Glossary](../getting-started/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

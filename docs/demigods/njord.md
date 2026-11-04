@@ -168,6 +168,7 @@ Infusing Njord's abilities upgrades all of them at once:
 
 ## Related pages
 
+- [Infusion Items](../items/infusion-items.md)
 - [Glossary](../getting-started/glossary.md)
 
 <!-- Verified against NorseDemigods 1.9.1 -->

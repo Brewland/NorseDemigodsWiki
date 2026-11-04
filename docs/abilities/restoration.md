@@ -54,7 +54,8 @@ If you channel for the full 10 s, the energy becomes unstable:
 | Blast with 0 energy *Lightning*{.dmg .lightning} | **20** | **160** | **300** |
 | Blast with full energy *Lightning*{.dmg .lightning} | **22** | **216** | **480** |
 
-Bonus maximum energy (for example from Infused Megingjord) makes the blast even stronger.
+Bonus maximum energy (for example from [Infused Megingjord](../items/infused-megingjord.md)) makes the blast even
+stronger.
 
 ## Variants
 

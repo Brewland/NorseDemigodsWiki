@@ -2,6 +2,8 @@
 
 Every playable demigod, with its abilities, attributes, favorite weapons and preferred armor.
 
+<div class="nd-overview" markdown>
+
 | Demigod | Summary | Element | Favorite weapons | Preferred armor |
 | --- | --- | --- | --- | --- |
 | [Brokkr](brokkr.md) | Throws bombs that destroy entire ore veins, launches lightning torpedoes, summons a stone golem, and more. | *Lightning*{.dmg .lightning} *Fire*{.dmg .fire} | Axes, clubs, crossbows | Heavy |
@@ -15,3 +17,5 @@ Every playable demigod, with its abilities, attributes, favorite weapons and pre
 | [Surtr](surtr.md) | Burns everything around by using weapons, spells, and even minions. | *Fire*{.dmg .fire} | Axes, swords, polearms | Heavy |
 | [Thor](thor.md) | Dashes at the speed of light and strikes enemies with lightning. | *Lightning*{.dmg .lightning} | Clubs, axes, Himminafl | Heavy |
 | [Ullr](ullr.md) | A true hunter accompanied by a wolf. Master of bows, knives and stealth. | *Frost*{.dmg .frost} *Poison*{.dmg .poison} | Bows, knives, spears, axes | Light |
+
+</div>

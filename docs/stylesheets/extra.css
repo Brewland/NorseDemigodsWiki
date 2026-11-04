@@ -14,6 +14,9 @@
 
     --nd-panel-bg: #f4f1ea;
     --nd-panel-border: #d9cfbd;
+    --nd-overview-head-bg: #24394d;
+    --nd-overview-head-fg: #ffffff;
+    --nd-overview-stripe: #faf8f4;
 }
 
 [data-md-color-scheme="slate"] {
@@ -27,6 +30,9 @@
 
     --nd-panel-bg: #1f2a36;
     --nd-panel-border: #34465a;
+    --nd-overview-head-bg: #2c4155;
+    --nd-overview-head-fg: #ffffff;
+    --nd-overview-stripe: rgba(255, 255, 255, 0.025);
 }
 
 .md-typeset h1 {
@@ -91,6 +97,64 @@
     width: 1%;
     white-space: nowrap;
     color: var(--md-default-fg-color--light);
+}
+
+/* ----------------------------------------------------------------------------------------------------
+   Overview table: <div class="nd-overview" markdown> around a section index or overview table
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset .nd-overview .md-typeset__table {
+    display: block;
+}
+
+.md-typeset .nd-overview table:not([class]) {
+    display: table;
+    width: 100%;
+    border: 1px solid var(--nd-panel-border);
+    border-top: 0.2rem solid var(--md-accent-fg-color);
+    border-radius: 0.3rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.md-typeset .nd-overview table:not([class]) th {
+    background: var(--nd-overview-head-bg);
+    color: var(--nd-overview-head-fg);
+    letter-spacing: 0.02em;
+}
+
+.md-typeset .nd-overview table:not([class]) td {
+    border-top: 1px solid var(--nd-panel-border);
+}
+
+.md-typeset .nd-overview table:not([class]) tr:first-child td {
+    border-top: none;
+}
+
+.md-typeset .nd-overview table:not([class]) td:first-child {
+    font-weight: 700;
+}
+
+.md-typeset .nd-overview table:not([class]) tbody tr:nth-child(even) > td {
+    background: var(--nd-overview-stripe);
+}
+
+.md-typeset .nd-overview table:not([class]) tbody tr:hover {
+    box-shadow: none;
+}
+
+.md-typeset .nd-overview table:not([class]) tbody tr:hover > td {
+    background: var(--md-accent-fg-color--transparent);
+}
+
+/* ----------------------------------------------------------------------------------------------------
+   Exception row in a table: | [Kvasir](…){ .nd-row-exception } | … |
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset table:not([class]) tbody tr:has(.nd-row-exception) > td,
+.md-typeset .nd-overview table:not([class]) tbody tr:has(.nd-row-exception) > td {
+    background: var(--nd-panel-bg);
 }
 
 /* ----------------------------------------------------------------------------------------------------

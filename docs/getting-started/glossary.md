@@ -32,6 +32,8 @@ vanilla axes and pickaxes.
 
 - An ability with tool tier 2 damages everything a tier 2 tool can, and all lower tiers.
 - Axes and pickaxes of the same material have different tiers (a Bronze axe is tier 2, a Bronze pickaxe tier 1).
+- [Infused Earthbreaker](../items/permanent-consumables.md#infused-earthbreaker) raises the tool tier of some
+  abilities and attributes.
 
 | Tier | Same as | New trees | New rocks and ores |
 | --- | --- | --- | --- |

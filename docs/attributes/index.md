@@ -2,6 +2,8 @@
 
 Every passive attribute, with its effects, conditions and the demigods that have it.
 
+<div class="nd-overview" markdown>
+
 | Attribute | Demigods | Summary |
 | --- | --- | --- |
 | [Aquatic Body](aquatic-body.md) | [Njord](../demigods/njord.md) | Frost bonus damage and splash, faster swimming, stamina in the water. |
@@ -49,3 +51,5 @@ Every passive attribute, with its effects, conditions and the demigods that have
 | [Wind Aura](wind-aura.md) | [Hraesvelgr](../demigods/hraesvelgr.md) | Out of combat: faster chopping and mining, speed and stamina. |
 | [Wolf Fur](wolf-fur.md) | [Ullr](../demigods/ullr.md) | Without heavy armor: extra armor, less damage taken; Frost resistance. |
 | [Wolf Speed](wolf-speed.md) | [Fenrir](../demigods/fenrir.md), [Freyja](../demigods/freyja.md), [Ullr](../demigods/ullr.md) | Faster movement, sneaking and swimming, cheaper sprinting. |
+
+</div>
