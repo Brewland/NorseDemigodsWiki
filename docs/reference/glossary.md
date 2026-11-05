@@ -42,8 +42,8 @@ vanilla axes and pickaxes.
 | 2 | Bronze axe, Iron pickaxe | Birch, oak, ancient (swamp) trees | Silver, obsidian, glacier ice |
 | 3 | Iron axe, Black metal pickaxe | — | Giant remains (black marble), meteorites, lava Leviathans (Ashlands) |
 | 4 | Black metal axe, Jotun Bane | Yggdrasil shoots | — |
-| 5 | — | — | Ashlands fortress walls and gates |
-| 6 | Berserkir axes | — | — |
+| 5 | — | — | Gold veins, Ashlands fortress walls and gates |
+| 6 | Berserkir axes | — | Frozen troll remains |
 
 These are vanilla Valheim values, not mod settings.
 
