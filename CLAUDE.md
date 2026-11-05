@@ -81,7 +81,7 @@ shared attributes not written yet.
 
 | Section | Status | Notes |
 | --- | --- | --- |
-| Home (`index.md`) | 🟡 | Summary and server-defaults disclaimer only |
+| Home (`index.md`) | ✅ | Intro, New to the mod, demigod cards, Explore the wiki, download links. Header: date, logo, Thunderstore and Hexium links; colored tab icon |
 | Getting Started | ✅ | Setup (Installing the Mod, Recommended Mods, Compatibility, Difficulty, Optional Features) and Playing (How the Mod Works, Controls and Hotkeys, Progression, Energy, First Steps). No Ability Infusion page: infusion is on each ability page |
 | Abilities | ✅ | All 54 ability pages and Teleport |
 | Items | ✅ | Demigod Runestone, Abyssal Harpoon, Infused Megingjord, Infusion Items, Permanent Consumables, Sweet Fish Foods |

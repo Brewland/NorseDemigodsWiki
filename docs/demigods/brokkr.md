@@ -9,7 +9,7 @@ stone golem. He favors axes, clubs and crossbows, and is built to fight in heavy
 | --- | --- |
 | **Role** | Throws bombs that destroy entire ore veins, launches lightning torpedoes, summons a stone golem, and more |
 | **Element** | *Lightning*{.dmg .lightning}<br>*Fire*{.dmg .fire} |
-| **Favorite weapons** | Axes, clubs, crossbows |
+| **Favorite weapons** | Axes<br>Clubs<br>Crossbows |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Brokkr` |
 | **Config section** | `[Demigod Brokkr]` |

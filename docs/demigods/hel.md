@@ -9,8 +9,8 @@ for her. She favors two-handed axes and swords, polearms and knives, and fights 
 | --- | --- |
 | **Role** | The gatekeeper of the underworld. Brings darkness to the surroundings while followed by many minions |
 | **Element** | *Spirit*{.dmg .spirit}<br>*Poison*{.dmg .poison} |
-| **Favorite weapons** | Two-handed axes, two-handed swords, polearms, knives |
-| **Preferred armor** | Heavy and light |
+| **Favorite weapons** | Two-handed axes<br>Two-handed swords<br>Polearms<br>Knives |
+| **Preferred armor** | Heavy<br>Light |
 | **Config ID** | `Hel` |
 | **Config section** | `[Demigod Hel]` |
 

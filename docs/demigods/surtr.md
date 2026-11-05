@@ -10,7 +10,7 @@ armor.
 | --- | --- |
 | **Role** | Burns everything around by using weapons, spells, and even minions |
 | **Element** | *Fire*{.dmg .fire} |
-| **Favorite weapons** | Axes, swords, polearms |
+| **Favorite weapons** | Axes<br>Swords<br>Polearms |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Surtr` |
 | **Config section** | `[Demigod Surtr]` |

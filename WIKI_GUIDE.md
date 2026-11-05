@@ -57,8 +57,9 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
   in multiplayer yet. Mention it on the Holy Sun page with an "If enabled" label.
 - **Controllers are never mentioned.** Gamepad bindings are commented out in the code. Do not write about
   controllers at all, not even to say they are unsupported.
-- **Changelog** (`reference/changelog.md`) links to the mod's release notes on the mod page (Thunderstore · Hexium) and
-  names the mod version the wiki describes. Do not copy or summarize the release notes: no per-version lines.
+- **Changelog** (`reference/changelog.md`) links to the mod's release notes in the Changelog tab of the mod page
+  (the mod's `CHANGELOG.md`; Thunderstore · Hexium) and names the mod version the wiki describes. Do not copy or
+  summarize the release notes: no per-version lines.
 - **Images:** add an image placeholder on every page now (see templates); screenshots come later.
   Icons and models live in the Unity bundle and cannot be extracted from the source scan.
 - **Server-defaults disclaimer:** the sentence "Values shown are server defaults; your server may differ." appears
@@ -259,6 +260,7 @@ explicitly with `<br>`:
 | --- | --- | --- |
 | Input (table cell or card) | `++p++<br>(Teleport)` | `++p++ (Teleport)` |
 | Cell that lists badges (Element, demigod infobox and index) | `*Spirit*{.dmg .spirit}<br>*Fire*{.dmg .fire}` | `*Spirit*{.dmg .spirit} *Fire*{.dmg .fire}` |
+| Favorite weapons and preferred armor (demigod infobox and index) | `Axes<br>Clubs<br>Crossbows`, `Heavy<br>Light` (one per line, each capitalized) | `Axes, clubs, crossbows`, `Heavy and light` |
 | Cell that lists damage shares (Companions `Damage types`) | `75% *Pierce*{.dmg .pierce}<br>25% *Poison*{.dmg .poison}` | `75% … + 25% …` |
 | Text that introduces a link | `Mod page:<br>` then the link on the next source line | Text and link on one line, or a blank line between |
 
@@ -518,7 +520,7 @@ Console Commands. All use the System template.
 
 ### Images
 
-Until screenshots exist, add an image placeholder as an HTML comment right after the infobox:
+The home page has no images. On every other page, until screenshots exist, add an image placeholder as an HTML comment right after the infobox:
 
 ```markdown
 <!-- IMAGE: in-game screenshot of Slash (Fire) hitting an enemy -->
@@ -776,6 +778,34 @@ Each section's `index.md` is a one-line summary plus one entry per page, sorted 
 
 Demigods without a page yet are plain text (no link) in the Used by / Demigods columns.
 
+#### Home page
+
+`docs/index.md` is short and written to be found by search engines and AI tools. No images, no icons, no infobox.
+In this order:
+
+1. `# Norse Demigods Wiki`, then one intro paragraph (max 3 sentences): the mod in the README's own words ("a
+   daughter or son of Odin blessed with the powers of the gods"), the number of demigods, each "an RPG-like class
+   of its own", and that many echo classic RPG roles (cleric, necromancer, ranger) while each is a figure from Norse
+   myth that belongs in Valheim. Never call it "just another RPG mod" or reduce a demigod to a class.
+2. One paragraph: the mod version the wiki describes, then the server-defaults disclaimer.
+3. `## New to the mod?`: four grid cards, Installing the Mod → How the Mod Works → Controls and Hotkeys → First
+   Steps. The hotkeys card says to set up the ability keys first.
+4. `## Choose your demigod`: one grid card per demigod, alphabetical. Line 1: the linked name in bold, then its
+   element badges. After `---`, one line: a classic-role label in Title Case with `&` for "and" (e.g. "Engineer &
+   Smith"; the same labels as the README's "Plays like" column), a colon, then two or three signature abilities or
+   traits (max ~10 words), e.g. "Cleric: holy strikes, healing and elemental shields." Each claim must match the
+   demigod's ability and attribute pages. Never call a melee demigod a mage (Hraesvelgr is an "Aerial Warrior").
+5. `## Explore the wiki`: one grid card per remaining section (Abilities, Attributes, Items, Companions, Help,
+   Reference), one line each.
+6. `## Download and community`: the Thunderstore · Hexium links and the Discord.
+
+Home cards have no icon; otherwise they follow the [card grid](#card-grid) format. When a demigod is added or its
+kit changes, update its home card and the demigod count in the intro.
+
+Search metadata: `site_description` in `mkdocs.yml` is the meta description for every page (keep it under ~160
+characters, with "Valheim mod", "demigods" and "classes"). `overrides/main.html` gives only the home page the
+`<title>` "Norse Demigods Wiki: Valheim Class Mod Guide"; other pages keep Material's "Page - Norse Demigods Wiki".
+
 #### CSS class reference
 
 | Class | Use on | Markdown example |
@@ -790,6 +820,7 @@ Demigods without a page yet are plain text (no link) in the Used by / Demigods c
 | (none) | Any other table: plain table style, applied automatically | A normal Markdown table |
 | `nd-row-exception` | A link in a table's first cell; tints that whole row with the panel background (CSS `:has()`) | `[Kvasir](../demigods/kvasir.md){ .nd-row-exception }` |
 | `nd-faq` | `<div>` around one FAQ question (`###`) and its answer; the question becomes a tinted header bar | `<div class="nd-faq" markdown>` |
+| `nd-updated` | The "Updated" date after the site name in the header; set by the template, never written in pages | (none) |
 
 Damage-type classes (always together with `dmg`): `blunt`, `slash`, `pierce`, `chop`, `pickaxe`, `fire`,
 `frost`, `lightning`, `poison`, `spirit`. Use the badge for **damage types and elements only**, not for
@@ -825,6 +856,27 @@ The theme colors are CSS variables at the top of `extra.css`; `mkdocs.yml` uses 
 The accent color is used for the infobox's left border, the Lore box, the top border and icon of each card, and
 card titles on hover. `h2` headings get a thin bottom border.
 
+#### Header date, logo and download links
+
+The header shows **Updated** and a date after the site name (for example *Updated 5 Nov 2026*). It is the build date
+(`build_date_utc`), and the site is rebuilt on every push to `main`, so it is the date of the last update. It comes
+from `overrides/partials/header.html`, a copy of Material's header partial with only that addition; re-copy it
+and add the `<time class="nd-updated">` element again if Material is upgraded and changes the partial. Pages never
+write the date themselves.
+
+The header icon is `docs/assets/images/logo.png`: a 128 × 128 copy of the mod's white logo ("Norse Demigods White
+Only.png"), trimmed to its content and centered on a transparent square. White reads on the header in both light
+and dark mode.
+
+The browser tab icon (favicon) is `docs/assets/images/favicon.png`: a 64 × 64 copy of the mod's colored icon
+("icon.png"), trimmed and centered on a transparent square. It is colored with dark outlines so it shows on light
+and dark tabs. To replace either image, make a new resized copy; never edit the original artwork.
+
+The header also shows the download links **Thunderstore | Hexium**, between the title and the light/dark toggle:
+small text in the header color, a faint `|` between them, accent color on hover, hidden below 60em like the repo
+link. Keep it to these two short names; no other text in the header. The URLs live in `mkdocs.yml` under
+`extra.download` (a list of `name` and `link`), and `overrides/partials/header.html` loops over that list.
+
 #### Required `mkdocs.yml` setup
 
 These settings make the components work; do not remove them:
@@ -832,8 +884,12 @@ These settings make the components work; do not remove them:
 ```yaml
 theme:
   name: material
-  custom_dir: overrides          # main.html only extends base.html (no banner)
+  custom_dir: overrides          # main.html: home page <title> (no banner); partials/header.html: the date
+  logo: assets/images/logo.png   # header icon (see Header date, logo and download links)
+  favicon: assets/images/favicon.png  # browser tab icon
   palette: # light + dark, both with primary: custom, accent: custom
+extra:
+  download:                      # header links: Thunderstore, Hexium (name + link)
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:

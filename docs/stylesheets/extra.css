@@ -46,6 +46,46 @@
 }
 
 /* ----------------------------------------------------------------------------------------------------
+   Last-updated date after the site name in the header (overrides/partials/header.html)
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-header .nd-updated {
+    margin-left: 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+/* Download links in the header, right of the title. Hidden on narrow screens, like the repo link. */
+
+.nd-header-links {
+    display: none;
+    flex-shrink: 0;
+    margin: 0 0.8rem;
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 60em) {
+    .nd-header-links {
+        display: block;
+    }
+}
+
+.nd-header-links a {
+    color: inherit;
+}
+
+.nd-header-links a:hover {
+    color: var(--md-accent-fg-color);
+}
+
+.nd-header-links__sep {
+    margin: 0 0.4rem;
+    opacity: 0.5;
+}
+
+/* ----------------------------------------------------------------------------------------------------
    Plain table: every other table (level tables, effect tables, recipes). Lighter than the infobox and the
    overview table: thin panel border, rounded corners, a tinted header row, no stripes or accent.
    The infobox and overview rules below are more specific and override these.

@@ -1,1 +1,10 @@
 {% extends "base.html" %}
+
+{#- Home page only: a search-friendly <title>. Other pages keep Material's "Page - Site" title. -#}
+{% block htmltitle %}
+  {% if page.is_homepage %}
+    <title>{{ config.site_name }}: Valheim Class Mod Guide</title>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}

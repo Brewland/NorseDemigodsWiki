@@ -9,7 +9,7 @@ axes and Himminafl, and is built to fight in heavy armor.
 | --- | --- |
 | **Role** | Dashes at the speed of light and strikes enemies with lightning |
 | **Element** | *Lightning*{.dmg .lightning} |
-| **Favorite weapons** | Clubs, axes, Himminafl |
+| **Favorite weapons** | Clubs<br>Axes<br>Himminafl |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Thor` |
 | **Config section** | `[Demigod Thor]` |

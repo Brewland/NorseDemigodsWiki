@@ -9,7 +9,7 @@ deathsquitos and a helpful wisp. She favors spears, swords and shields, and is b
 | --- | --- |
 | **Role** | A member of the family of Valkyries. Calls upon nature for help and even a wisp to cultivate crops |
 | **Element** | *Poison*{.dmg .poison} |
-| **Favorite weapons** | Spears, swords, shields |
+| **Favorite weapons** | Spears<br>Swords<br>Shields |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Freyja` |
 | **Config section** | `[Demigod Freyja]` |

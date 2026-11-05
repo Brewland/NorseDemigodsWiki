@@ -9,7 +9,7 @@ resources. He swims and sails faster, favors axes, swords and polearms, and is b
 | --- | --- |
 | **Role** | Calls the force of the seas to summon tornadoes and even necks to help with gathering resources. Swims and sails faster |
 | **Element** | *Lightning*{.dmg .lightning}<br>*Frost*{.dmg .frost} |
-| **Favorite weapons** | Axes, swords, polearms |
+| **Favorite weapons** | Axes<br>Swords<br>Polearms |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Njord` |
 | **Config section** | `[Demigod Njord]` |

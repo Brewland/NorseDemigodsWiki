@@ -9,7 +9,7 @@ heals by killing. He favors bows and knives, and fights best in light armor.
 | --- | --- |
 | **Role** | Once a traveler, teaching and spreading knowledge. Now, there is only darkness, and only blood will satisfy his needs |
 | **Element** | *Spirit*{.dmg .spirit} |
-| **Favorite weapons** | Bows, knives |
+| **Favorite weapons** | Bows<br>Knives |
 | **Preferred armor** | Light |
 | **Config ID** | `Kvasir` |
 | **Config section** | `[Demigod Kvasir]` |

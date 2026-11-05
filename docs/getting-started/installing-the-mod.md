@@ -74,8 +74,8 @@ mod.
 
 The mod uses your game language when a translation exists, and English otherwise.
 
-Included: Brazilian Portuguese, Chinese, English, French, German, Japanese, Korean, Polish, Russian, Spanish,
-Turkish, Ukrainian and Vietnamese.
+Included: Brazilian Portuguese, Chinese, English, French, German, Hungarian, Italian, Japanese, Korean, Polish,
+Russian, Spanish, Turkish, Ukrainian and Vietnamese.
 
 ## Related pages
 

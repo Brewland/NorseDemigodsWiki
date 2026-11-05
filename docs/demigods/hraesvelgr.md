@@ -9,7 +9,7 @@ wind. He favors swords and polearms, and is built to fight in heavy armor.
 | --- | --- |
 | **Role** | A highly mobile eagle demigod that glides through the air, using telekinesis and destructive blasts to eliminate enemies |
 | **Element** | *Lightning*{.dmg .lightning} |
-| **Favorite weapons** | Swords, polearms |
+| **Favorite weapons** | Swords<br>Polearms |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Hraesvelgr` |
 | **Config section** | `[Demigod Hraesvelgr]` |

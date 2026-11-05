@@ -9,7 +9,7 @@ spears and axes, and fights best in light armor.
 | --- | --- |
 | **Role** | A true hunter accompanied by a wolf. Master of bows, knives and stealth |
 | **Element** | *Frost*{.dmg .frost}<br>*Poison*{.dmg .poison} |
-| **Favorite weapons** | Bows, knives, spears, axes |
+| **Favorite weapons** | Bows<br>Knives<br>Spears<br>Axes |
 | **Preferred armor** | Light |
 | **Config ID** | `Ullr` |
 | **Config section** | `[Demigod Ullr]` |

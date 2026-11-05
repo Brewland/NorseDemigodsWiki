@@ -1,5 +1,5 @@
 site_name: Norse Demigods Wiki
-site_description: Player guide to the Norse Demigods mod for Valheim.
+site_description: Player wiki for Norse Demigods, the Valheim mod that adds 11 playable demigods, lore-friendly classes with abilities, magic, companions and attributes.
 site_url: https://brewland.github.io/NorseDemigodsWiki/
 repo_url: https://github.com/Brewland/NorseDemigodsWiki
 repo_name: Brewland/NorseDemigodsWiki
@@ -7,6 +7,8 @@ repo_name: Brewland/NorseDemigodsWiki
 theme:
   name: material
   custom_dir: overrides
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -28,6 +30,13 @@ theme:
     - navigation.indexes
     - search.suggest
     - search.highlight
+
+extra:
+  download: # header links (overrides/partials/header.html)
+    - name: Thunderstore
+      link: https://thunderstore.io/c/valheim/p/Alpus/NorseDemigods/
+    - name: Hexium
+      link: https://valheim.hexium.gg/mods/Alpus/NorseDemigods
 
 extra_css:
   - stylesheets/extra.css

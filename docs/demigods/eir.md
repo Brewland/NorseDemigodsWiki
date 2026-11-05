@@ -9,8 +9,8 @@ and Spirit damage. She favors spears, swords and shields, and fights in heavy or
 | --- | --- |
 | **Role** | Heals, conjures an elemental shield and even organic matter, bringing light to even the depths of the underworld |
 | **Element** | *Spirit*{.dmg .spirit}<br>*Fire*{.dmg .fire} |
-| **Favorite weapons** | Spears, swords, shields |
-| **Preferred armor** | Heavy and light |
+| **Favorite weapons** | Spears<br>Swords<br>Shields |
+| **Preferred armor** | Heavy<br>Light |
 | **Config ID** | `Eir` |
 | **Config section** | `[Demigod Eir]` |
 
