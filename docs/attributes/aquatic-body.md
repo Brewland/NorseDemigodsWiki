@@ -46,6 +46,7 @@ Extra damage added to your weapon hits:
 
 - Only while swimming. Also works while encumbered.
 - Does not stack with other swim speed bonuses: the highest one applies.
+- Scaled by `[(Special Modifiers)] Special Movement Speed Modifier (%)`.
 - Movement speed bonuses apply on top when you are not encumbered.
 
 ## Resources

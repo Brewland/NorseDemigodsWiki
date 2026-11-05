@@ -45,7 +45,7 @@ Choosing a different demigod while you already are one asks for confirmation fir
 
 | What happens | Default |
 | --- | --- |
-| Demigod skill levels lost | 5 (never below level 0) |
+| Demigod skill levels lost | 5, and your progress toward the next level (never below level 0) |
 | Abilities | Replaced by the new demigod's abilities |
 | [Ability infusion](infusion-items.md) | Lost; the new demigod must be infused on its own |
 | [Permanent consumables](permanent-consumables.md) | Kept |

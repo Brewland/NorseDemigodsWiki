@@ -31,8 +31,9 @@ Both variants share one config section: a server change affects Njord and Surtr 
 - While airborne, the special attack always triggers Crush, whatever weapon you hold.
 - It cancels slow falling (such as from the Feather cape) and gliding effects.
 - Landing in water ends it without a landing blast.
-- TODO: verify (the strike's damage comes from your equipped weapon's special attack, played with a different
-  animation).
+- The strike deals your weapon's normal special-attack damage, but always uses the knife's special-attack animation.
+  It gets no sneak-attack bonus. TODO: verify (the strike in game, including weapons whose special attack is a
+  throw, such as spears).
 
 ## Variants
 

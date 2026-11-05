@@ -58,8 +58,6 @@ Damage with no heavy armor (75% *Slash*{.dmg .slash} + 25% *Frost*{.dmg .frost})
 | Damage, Unarmed skill 0 | **6** | **40.5** | **75** |
 | Damage, Unarmed skill 100 | **9** | **60.6** | **112.5** |
 
-TODO: verify (rounding of the Lv 50, Unarmed skill 100 value).
-
 Damage to trees depends on the Unarmed skill only:
 
 | | Unarmed 0 | Unarmed 50 | Unarmed 100 |

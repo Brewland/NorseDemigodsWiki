@@ -179,9 +179,8 @@ Infusing Freyja's abilities upgrades all of them at once:
 
 ## Class quirks
 
-- **Poison piercing:** when Freyja damages an enemy that is immune or very resistant to *Poison*{.dmg .poison}, it
-  becomes only resistant to Poison. TODO: verify (whether this already applies to the first hit, and in multiplayer
-  when another player's game controls the enemy).
+- **Poison piercing:** Freyja's hits treat enemies that are immune or very resistant to *Poison*{.dmg .poison} as only
+  resistant to it, from the first hit, also in multiplayer. Hits from other players and companions are not affected.
 
 ## Related pages
 

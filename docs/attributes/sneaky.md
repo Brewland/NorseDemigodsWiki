@@ -29,6 +29,7 @@ chasing enemies. His knives deal extra Poison damage and stronger sneak attacks,
 - Sneak speed: only while sneaking, and not while encumbered. Sneaking is never faster than jogging, including with
   armor penalties.
 - Does not stack with other sneak speed bonuses: the highest one applies.
+- Scaled by `[(Special Modifiers)] Special Movement Speed Modifier (%)`.
 - **Losing pursuers:** while you sneak, every second, each enemy at least 15 m away that is targeting you has a 20%
   chance to lose track of you.
 - Your body turns translucent and your armor is hidden while you sneak. Setting: `[Attribute Sneaky] Enable Visual

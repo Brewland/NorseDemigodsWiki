@@ -167,9 +167,8 @@ Kvasir's infusion is not crafted: it comes from a kill.
 
 ## Class quirks
 
-- **Spirit piercing:** when Kvasir damages an enemy that is immune or very resistant to *Spirit*{.dmg .spirit}, it
-  becomes only resistant to Spirit. TODO: verify (whether this already applies to the first hit, and in multiplayer
-  when another player's game controls the enemy).
+- **Spirit piercing:** Kvasir's hits treat enemies that are immune or very resistant to *Spirit*{.dmg .spirit} as only
+  resistant to it, from the first hit, also in multiplayer. Hits from other players and companions are not affected.
 
 ## Related pages
 

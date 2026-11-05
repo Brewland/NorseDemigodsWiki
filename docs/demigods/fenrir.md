@@ -197,14 +197,14 @@ The mod changes the Fenris armor set for every player:
 | Movement speed per piece (except the helmet) | +5% |
 | Full set: *Fire*{.dmg .fire} *Slash*{.dmg .slash} | Resistant |
 | Full set: *Pierce*{.dmg .pierce} | Slightly resistant |
-| Full set: skill bonus | +30 |
+| Full set: Unarmed skill | +30 |
 | Full set, Fenrir only: armor | +18 |
 
-TODO: verify (the full-set skill bonus is assumed to be the vanilla set's Unarmed bonus).
+### Bear (Berserker) set
 
-### Berserkir set
+Headdress, Patterns and Loincloth of the Bear (set effect: Berserk).
 
-- Full set, Fenrir only: +12 armor. TODO: verify (display name of the set).
+- Full set, Fenrir only: +12 armor.
 
 ## Related pages
 

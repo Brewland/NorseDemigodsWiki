@@ -71,7 +71,7 @@ Your demigod skill stops rising at a cap, set by the strongest boss whose trophy
 | --- | --- |
 | You die | Nothing: the Demigod skill is protected from Valheim's skill loss on death |
 | You die, with skill loss on death turned on | 5 levels, and your progress toward the next level |
-| You switch demigods with the [Demigod Runestone](../items/demigod-runestone.md#switching-demigods) | 5 levels |
+| You switch demigods with the [Demigod Runestone](../items/demigod-runestone.md#switching-demigods) | 5 levels, and your progress toward the next level |
 | You use the `RevokeDemigod` command (see [First Steps](first-steps.md#changing-your-mind)) | Everything: back to level 0 |
 
 You never drop below level 0.
@@ -86,9 +86,6 @@ You never drop below level 0.
 | Skill loss on death | Off | `[Skills] Enable Skill Loss On Death` |
 | Levels lost on death (if on) | 5 | `[Skills] Levels Lost On Death` |
 | Levels lost when switching demigods | 5 | `[Skills] Levels Lost When Switching Demigod` |
-
-- Hraesvelgr's experience from being airborne is a share of a level, so the experience setting and Valheim's skill
-  gain world modifier do not change it.
 
 ## Related pages
 

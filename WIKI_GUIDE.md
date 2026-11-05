@@ -34,6 +34,9 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
   3. English localization `NorseDemigods/_Publish/Translations/English/EN-NorseDemigods.json`: display names
      and tooltip wording. Tooltip numbers are placeholders (`{0}`); fill them from the code.
   4. `NorseDemigods/_Publish/README.md`: secondary. If it disagrees with the code, follow the code.
+- **Tooltips may leave details out** (e.g. Corruption does not list every item it copies; stamina regeneration
+  tooltips do not mention "encumbered"). The wiki still documents the full behavior from the code. Ask for a
+  tooltip fix only when the tooltip is wrong, not when it is merely shorter.
 - **Default values only.** Assume every setting is at its default: `Difficulty` = `Vanilla`,
   `(Special Modifiers)` at 100%, no Infused Liquid Frost or Infused Morgenheart consumed, and the shipped
   `Demigods.yaml`. Some tooltips are scaled by these (e.g. Elemental Shield by Difficulty), so the in-game
@@ -74,7 +77,8 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
     than jogging (armor penalties included).
   - Swim speed (`Bonus Swim Speed (%)`): only while swimming, also while encumbered.
   - Bonuses of the same kind do not stack (the highest applies). Both multiply with movement speed bonuses.
-  - They are not scaled by the Special Movement Speed Modifier.
+  - Both are scaled by `[(Special Modifiers)] Special Movement Speed Modifier (%)` (since 1.9.1). Add the bullet
+    "Scaled by `[(Special Modifiers)] Special Movement Speed Modifier (%)`." after the "Does not stack" bullet.
 - **Sneak stamina** (`Stamina Drain Modifier From Sneaking (%)`): reductions from different attributes add up,
   like the sprinting ones.
 - **Sprinting:** call the sprint key's effects "sprinting" everywhere, never "running" or "jogging" (e.g. "No
@@ -1131,6 +1135,9 @@ one sweet fish food can be active at a time.
   (vanilla). Durations in minutes (`m_foodBurnTime` / 60).
 - **Recipe materials** use the vanilla English display names in sentence case, as the demigod pages do: "Hard
   antler", "Raw fish", "Refined eitr" (prefab `Eitr`), "Bronze pickaxe".
+- **Vanilla armor sets** are named "<Name> set". When the in-game set has no single name, use the material and the
+  set effect: "Bear (Berserker) set" (Headdress, Patterns and Loincloth of the Bear; set effect Berserk). Never
+  "Berserkir".
 - **Vanilla items the mod changes** (Abyssal Harpoon) use the vanilla prefab as Config ID (`SpearChitin`) and the
   mod's config section for that feature.
 

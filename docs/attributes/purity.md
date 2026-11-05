@@ -20,7 +20,7 @@ eitr and her eitr regeneration.
 
 | Effect | Value |
 | --- | --- |
-| Spirit damage of your weapon hits | +50% |
+| Spirit damage | +50% |
 | Base eitr | +25 |
 | Eitr regeneration | +50% |
 
@@ -28,9 +28,10 @@ eitr and her eitr regeneration.
 
 ## Notes
 
-- The Spirit bonus multiplies the Spirit damage your weapon already deals, for example a silver sword.
-- It does not boost the Spirit damage added by [Holy Body](holy-body.md), or the damage of abilities such as
-  [Holy Strike](../abilities/holy-strike.md). TODO: verify (the tooltip says "all spirit damage").
+- The Spirit bonus applies to all Spirit damage you deal: your weapon (for example a silver sword), Spirit added by
+  attributes such as [Holy Body](holy-body.md), and abilities such as [Holy Strike](../abilities/holy-strike.md).
+- Spirit damage over time from a boosted hit is boosted once, through that hit.
+- It does not boost the damage of your companions.
 
 ## Related pages
 

@@ -26,7 +26,7 @@ While equipped:
 | Carry weight | +300 |
 | Maximum energy | +3 |
 
-- The +300 replaces the vanilla Megingjord's +150 carry weight; they do not add up. TODO: verify (vanilla +150)
+- The +300 replaces the vanilla Megingjord's +150 carry weight; they do not add up.
 - Taking the belt off lowers your energy to your new maximum.
 - Bonus maximum energy also makes [Restoration](../abilities/restoration.md)'s blast stronger.
 

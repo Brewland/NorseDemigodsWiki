@@ -38,7 +38,8 @@ every companion and lists the rules they share; each ability page has the full d
 ### Summon Wolf is different
 
 - Your Ulv or wolf has a name and can be commanded like a tamed creature.
-- Dismissing it, teleporting, dying or logging out keeps its name, health, feeding and stars for the next summon.
+- Dismissing it, teleporting, dying, logging out or leaving it too far behind keeps its name, health, feeding and
+  stars for the next summon.
 - If it dies, it is lost for good: your next summon is a new companion with no stars.
 - Feeding it (+25% damage) and stars (+25% maximum health each) are explained on the
   [Summon Wolf](../abilities/summon-wolf.md#feeding) page.

@@ -35,8 +35,6 @@ energy but has a long cooldown.
 | Deep North | Northern salmon | None |
 | Ocean | Coral cod | None |
 
-TODO: verify (fish names are the vanilla names of the fish the code spawns per biome).
-
 ## Infused
 
 - Also conjures **2 Surtling cores** every time.

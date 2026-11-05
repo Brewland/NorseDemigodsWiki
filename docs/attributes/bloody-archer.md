@@ -37,10 +37,11 @@ When an arrow or bolt hits an enemy, a blood bolt jumps from it to the closest o
 
 ## Eitr burst
 
-When your eitr is full, your next hit on an enemy while you hold a bow or crossbow consumes all of it and deals **2**
+When your eitr is full, your next arrow or bolt that hits an enemy consumes all of it and deals **2**
 extra [true damage](../reference/glossary.md#true-damage) per eitr point.
 
 - Example: with 60 full eitr, the hit deals **120** extra true damage and your eitr drops to 0.
+- Only the enemy the arrow or bolt hits. Bounces, explosions and abilities do not trigger it.
 - You need some maximum eitr (for example, from eitr food).
 
 ## Sneaking
@@ -53,6 +54,7 @@ extra [true damage](../reference/glossary.md#true-damage) per eitr point.
 - Sneak speed: only while sneaking, and not while encumbered. Sneaking is never faster than jogging, including with
   armor penalties.
 - Does not stack with other sneak speed bonuses: the highest one applies.
+- Scaled by `[(Special Modifiers)] Special Movement Speed Modifier (%)`.
 
 ## Related pages
 

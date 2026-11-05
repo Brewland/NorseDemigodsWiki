@@ -95,59 +95,29 @@ Remove an item once it is resolved.
 ### Before sharing the wiki
 
 - **Mod 1.9.1 must be released first.** The wiki already describes it, including the sneak-attack changes and the
-  fixes made during the Freyja/Hel/Njord/Surtr batch (Burning Ground, Crush, Sacrifice, Raider, Water Sphere) and
-  the Hraesvelgr/Kvasir/Ullr batch (Holy Strike swing, Infused Arrow crossbows in `Demigods.yaml`, Vortex tooltip in
-  all languages), and the Getting Started batch (Find Closest Bosses pins the Queen and Fader, Difficulty scales
-  only creature damage, `Ignore Non Teleportable Items` description). All are committed in the mod (up to
-  `a455d90`) but not released yet.
+  fixes made during the Freyja/Hel/Njord/Surtr batch (Burning Ground, Crush, Sacrifice, Raider, Water Sphere), the
+  Hraesvelgr/Kvasir/Ullr batch (Holy Strike swing, Infused Arrow crossbows in `Demigods.yaml`, Vortex tooltip in all
+  languages), the Getting Started batch (Find Closest Bosses pins the Queen and Fader, Difficulty scales only creature
+  damage, `Ignore Non Teleportable Items` description) and the 2026-11-04 review (sneak and swim speed scaled by
+  `Special Movement Speed Modifier (%)`, Hraesvelgr's airborne experience uses the experience modifiers, switching
+  demigods resets progress, Purity boosts all Spirit damage, elemental piercing per hit and in multiplayer for the
+  demigod's own hits, Bloody Archer's eitr burst only on the arrow's target, a wolf left behind or unloaded keeps its
+  data, "obtain the head of the next boss" tooltip). All are committed in the mod (up to `6c9a993`) but not released
+  yet.
 
-### Questions for the mod (not answered yet)
+### Waiting on the user
 
-- **Wolf data on logout (possible bug, untested):** `SE_Wolf.OnDestroy` calls `AbilityWolf.Stop()`. If the game
-  removes the wolf without it dying (e.g. 5 s after the owner logs out, or when its area unloads), its ZDO may
-  already be gone, so `Stop()` takes the "dead" branch and deletes its name, hits and stars
-  (`AbilityWolf.cs:254-266`). Test: summon a wolf with stars, log out and back in, summon again.
-- **Sneak and swim speed ignore `Special Movement Speed Modifier (%)`** (`SE_Demigod.GetSneakSpeedModifier`,
-  `GetSwimSpeedModifier`), although the setting's description says it scales speed from "special sources from this
-  mod (such as attributes)". Scale them, or change the description. The guide currently says they are not scaled.
-- **Elemental Shield, infused:** eitr and stamina regeneration pause while burning, poisoned, frozen, shocked or
-  freezing (`SE_ElementalShield.cs:45`). The user's notes said eitr has no conditions. The wiki documents the code.
-- **Wind Aura tooltip** says stamina regenerates "when not sprinting"; the code also requires not being
-  encumbered while on the ground (`AttributeWindAura.cs:63`). The wiki documents the code.
-- **Corruption tooltip** mentions only wood and seeds; the code also duplicates coal, tar and charcoal resin
-  (`AttributeCorruption.AssignItemToBeDuplicated`). The wiki documents the code.
-- **Bloody Archer eitr burst** triggers on any hit while a bow or crossbow is equipped (`OnVictimDamage` checks the
-  equipped weapon, not the hit's source). The wiki says "your next hit on an enemy while you hold a bow or crossbow".
-- **Progression and Energy (sent to `norsedemigods-7e`, no reply yet):**
-  - Hraesvelgr's airborne experience (`RaiseSkillPct`) ignores `[Skills] Skill Demigod Experience Modifier (%)`
-    and the world skill-gain modifier. Intended? `progression.md` documents the code.
-  - The `demigod_basic_tooltip_ext` text " (kill the next boss to uncap it)" conflicts with the trophy requirement
-    (the cap uses `player.m_trophies`).
-  - Switching demigods: `RevokeDemigod(softReset)` calls `RaiseSkill(level)` after the level loss, so progress
-    toward the next level is kept. `progression.md` says "5 levels".
-  - Confirm that energy is not saved (starts at 0 on login, respawn and choosing a demigod), as `energy.md` says.
+- **Saving energy:** postponed by the user. `norsedemigods-7e` proposed a separate custom-data key, restored on
+  login (clamped to max), reset to 0 on death and when switching demigods. If it is ever done, update `energy.md`.
+- **Corruption tooltip (sent to `norsedemigods-7e` on 2026-11-05):** option A, without the timings: "…once
+  pulsing with vitality, such as wood and seeds, one piece at a time." Record the commit hash with the 1.9.1 item
+  once committed. The wiki page keeps the full item and timing table.
 
 ### `TODO: verify` in the pages
 
-- `docs/abilities/holy-conjuration.md`: fish names (vanilla names of the fish spawned per biome).
-- `docs/abilities/ice-shards.md`: shards per cast (Staff of Embers cast with Staff of Frost shards).
-- `docs/abilities/slash.md`, `docs/attributes/titan-arms.md`: rounding of the Lv 50, Unarmed skill 100 value.
-- `docs/attributes/purity.md`: Spirit damage scope (the tooltip says "all spirit damage").
-- `docs/demigods/eir.md`: Spirit piercing on the first hit, and in multiplayer when another player's game controls
-  the enemy.
-- `docs/demigods/fenrir.md`: Fenris full-set skill bonus (assumed to be the vanilla Unarmed bonus); display name
-  of the Berserkir set.
-- `docs/demigods/freyja.md`: Poison piercing on the first hit and in multiplayer (same question as Eir).
-- `docs/demigods/kvasir.md`: Spirit piercing on the first hit and in multiplayer (same question as Eir).
-- `docs/abilities/meteor.md`: explosion radius and tool tier (vanilla `projectile_meteor`).
-- `docs/abilities/fireball.md`: explosion radius (vanilla Staff of Embers projectile).
-- `docs/abilities/crush.md`: the strike's damage (the equipped weapon's secondary attack, with the knife animation).
-- `docs/abilities/tornado.md`: damage to trees and rocks (it also hits destructible objects).
-- `docs/items/infused-megingjord.md`: the vanilla Megingjord's +150 carry weight (replaced, not added to).
-- `docs/items/permanent-consumables.md`: vanilla display names of `FrozenFuel`, `TrophyBarka`, `CharredBone` and
-  `MorgenHeart` (written as Liquid frost, Barka trophy, Charred bone, Morgen heart).
-- `docs/items/sweet-fish-foods.md`: the vanilla recipe the mod frees from its crafting station (`Recipe_Fish1`,
-  assumed Perch → raw fish).
+- `docs/abilities/crush.md`: the strike in game, including weapons whose special attack is a throw (spears).
+- `docs/abilities/meteor.md`: explosion radius and tool tier (vanilla `projectile_meteor`). The user will confirm.
+- `docs/abilities/fireball.md`: explosion radius (vanilla Staff of Embers projectile). The user will confirm.
 
 ### For later batches
 

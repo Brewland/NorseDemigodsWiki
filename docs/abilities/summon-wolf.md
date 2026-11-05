@@ -29,7 +29,7 @@ Both variants share one config section: a server change affects Fenrir and Ullr 
 3. Use the ability again to dismiss it.
 
 - Each hit on an enemy: 50% chance to regenerate 1 energy for you.
-- It remembers its name, health and feeding between summons.
+- It remembers its name, health and feeding between summons, also when it disappears for being too far from you.
 - Teleporting, dying or logging out dismisses it, just like using the ability again. Summon it again afterwards.
 - **If it dies, it is lost for good:** your next summon is a new companion with no stars, no hits and no name.
 - It flees when its health is low (30%).

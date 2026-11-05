@@ -302,8 +302,6 @@ default:
     | Liquid frost | 80 |
     | Barka trophy | 1 |
 
-    TODO: verify (vanilla display names of the Deep North materials `FrozenFuel` and `TrophyBarka`)
-
 ## Infused Morgenheart
 
 <div class="nd-infobox" markdown>
@@ -337,8 +335,6 @@ default:
     | Thunderstone | 40 |
     | Charred bone | 80 |
     | Morgen heart | 1 |
-
-    TODO: verify (vanilla display names of `CharredBone` and `MorgenHeart`)
 
 ## Infused Serpent Scale
 

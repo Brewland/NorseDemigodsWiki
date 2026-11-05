@@ -31,12 +31,14 @@ bonuses of leg attributes such as [Hare Legs](hare-legs.md).
 - Only while sneaking, and not while encumbered.
 - Sneaking is never faster than jogging, including with armor penalties.
 - Does not stack with other sneak speed bonuses: the highest one applies.
+- Scaled by `[(Special Modifiers)] Special Movement Speed Modifier (%)`.
 - The movement speed bonus applies on top.
 
 ## Swim speed
 
 - Only while swimming. Also works while encumbered.
 - Does not stack with other swim speed bonuses: the highest one applies.
+- Scaled by `[(Special Modifiers)] Special Movement Speed Modifier (%)`.
 - The movement speed bonus applies on top when you are not encumbered.
 
 ## Notes

@@ -156,7 +156,6 @@ them a strong food for demigods. Anyone can eat them, but only one sweet fish fo
 ## Getting the ingredients
 
 - **Raw fish:** with this mod, the vanilla recipe that turns a Perch into raw fish needs no crafting station.
-  TODO: verify (what the vanilla recipe makes and which station it normally needs)
 - **Fish:** you can also catch fish by throwing an [Abyssal Harpoon](abyssal-harpoon.md) at them.
 - **Honey:** from beehives (vanilla). Server settings in `[Honey]`:
 

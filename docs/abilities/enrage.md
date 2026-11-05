@@ -31,7 +31,7 @@ Press once to turn it on, again to turn it off. While active:
 | Stamina regeneration | 5 per second |
 
 - The bonus and splash apply to bare hands only, not fist weapons.
-- Enemies that are immune or very resistant to *Spirit*{.dmg .spirit} become only resistant to it when you hit them.
+- Your hits treat enemies that are immune or very resistant to *Spirit*{.dmg .spirit} as only resistant to it.
 - Turns off by itself when your energy reaches 0.
 - Turning it off within the first 2 s still costs 1 energy.
 - No stamina regeneration while sprinting, swimming or encumbered.

@@ -31,8 +31,6 @@ Damage grows with both skills:
 | Damage per hit, Unarmed skill 0 | **4** | **27** | **50** |
 | Damage per hit, Unarmed skill 100 | **6** | **40.4** | **75** |
 
-TODO: verify (rounding of the Lv 50, Unarmed skill 100 value).
-
 ## Attack speed
 
 | Situation | Claw attack speed |
