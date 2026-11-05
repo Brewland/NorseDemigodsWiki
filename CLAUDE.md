@@ -93,22 +93,6 @@ shared attributes not written yet.
 
 Remove an item once it is resolved.
 
-### Before sharing the wiki
-
-- **Mod 1.9.1 must be released first.** The wiki already describes it, including the sneak-attack changes and the
-  fixes made during the Freyja/Hel/Njord/Surtr batch (Burning Ground, Crush, Sacrifice, Raider, Water Sphere), the
-  Hraesvelgr/Kvasir/Ullr batch (Holy Strike swing, Infused Arrow crossbows in `Demigods.yaml`, Vortex tooltip in all
-  languages), the Getting Started batch (Find Closest Bosses pins the Queen and Fader, Difficulty scales only creature
-  damage, `Ignore Non Teleportable Items` description), the 2026-11-04 review (sneak and swim speed scaled by
-  `Special Movement Speed Modifier (%)`, Hraesvelgr's airborne experience uses the experience modifiers, switching
-  demigods resets progress, Purity boosts all Spirit damage, elemental piercing per hit and in multiplayer for the
-  demigod's own hits, Bloody Archer's eitr burst only on the arrow's target, a wolf left behind or unloaded keeps its
-  data, "obtain the head of the next boss" tooltip, Corruption tooltip without timings) and the 2026-11-05 fixes
-  (Infused Morgenheart +25% damage, Crush strikes in melee with a spear, ability projectiles use their tool tier,
-  Hel's infused ghost can be summoned indoors), the Hungarian and Italian translations, and the release README
-  rework (links to the wiki, release notes moved to `CHANGELOG.md`, which the wiki's Changelog page points to). All
-  are committed in the mod (up to `29a5844`, which also requires BepInExPack 5.4.2360) but not released yet. After the release, check on Hexium that the README's emoji show and that a Changelog tab appears.
-
 ### Parked indefinitely
 
 Not planned. Do not bring these up as open work.
