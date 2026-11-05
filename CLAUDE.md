@@ -102,16 +102,13 @@ Remove an item once it is resolved.
   `Special Movement Speed Modifier (%)`, Hraesvelgr's airborne experience uses the experience modifiers, switching
   demigods resets progress, Purity boosts all Spirit damage, elemental piercing per hit and in multiplayer for the
   demigod's own hits, Bloody Archer's eitr burst only on the arrow's target, a wolf left behind or unloaded keeps its
-  data, "obtain the head of the next boss" tooltip). All are committed in the mod (up to `6c9a993`) but not released
-  yet.
+  data, "obtain the head of the next boss" tooltip, Corruption tooltip without timings). All are committed in the
+  mod (up to `fc62316`) but not released yet.
 
 ### Waiting on the user
 
 - **Saving energy:** postponed by the user. `norsedemigods-7e` proposed a separate custom-data key, restored on
   login (clamped to max), reset to 0 on death and when switching demigods. If it is ever done, update `energy.md`.
-- **Corruption tooltip (sent to `norsedemigods-7e` on 2026-11-05):** option A, without the timings: "…once
-  pulsing with vitality, such as wood and seeds, one piece at a time." Record the commit hash with the 1.9.1 item
-  once committed. The wiki page keeps the full item and timing table.
 
 ### `TODO: verify` in the pages
 
