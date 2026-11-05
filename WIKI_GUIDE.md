@@ -57,7 +57,8 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
   in multiplayer yet. Mention it on the Holy Sun page with an "If enabled" label.
 - **Controllers are never mentioned.** Gamepad bindings are commented out in the code. Do not write about
   controllers at all, not even to say they are unsupported.
-- **Changelog** links to the mod's release notes. Do not copy them into the wiki.
+- **Changelog** (`reference/changelog.md`) links to the mod's release notes on the mod page (Thunderstore · Hexium) and
+  names the mod version the wiki describes. Do not copy or summarize the release notes: no per-version lines.
 - **Images:** add an image placeholder on every page now (see templates); screenshots come later.
   Icons and models live in the Unity bundle and cannot be extracted from the source scan.
 - **Server-defaults disclaimer:** the sentence "Values shown are server defaults; your server may differ." appears
@@ -428,7 +429,36 @@ All use the System template.
   Describe them from their own page and say they are not made or tested by the Norse Demigods author.
 - **Compendium page names** are written in bold as they appear in-game: **ND: Introduction**, **ND: Abilities**.
 - **Console commands** (`RevokeDemigod`): say that the console opens with ++f5++ only when the game is started with
-  `-console` (vanilla). Cheat commands are not documented in Getting Started.
+  `-console` (vanilla). Cheat commands are not documented in Getting Started: they live on Help › Console Commands.
+
+### Help pages
+
+The Help section (`docs/help/`) holds the pages players open when they are stuck. `nav` order: FAQ, Troubleshooting,
+Console Commands. All use the System template.
+
+- **FAQ** (`faq.md`): questions players really ask (from the Discord), grouped under topic `##` headings (Getting
+  started, Controls, Progression and infusion, Abilities and combat, Companions, Servers and settings,
+  Troubleshooting). Each question is its own `###` heading, so it shows in the page's table of contents, the search
+  finds it and it can be linked directly.
+  - Each question and its answer sit in one box: `<div class="nd-faq" markdown>`, blank line, the `###` question,
+    the answer, blank line, `</div>`. The question shows as a tinted header bar with an accent "Q"; the boxes
+    separate one question from the next. Not a table: answers often hold bullets or a small table.
+  - Answers are short (1–3 sentences or a few bullets) and link to the page that owns the topic.
+  - **No duplicated details:** do not repeat numbers (damage, levels lost, chances, ranges) that live on another page;
+    say what happens and link there. Setting names are fine. This keeps the FAQ stable when values change.
+  - **Spoilers:** never name an infusion recipe, material, crafting station or Kvasir's enemy. Say what kind of thing
+    it is ("Kvasir has no infusion item: he must defeat a specific enemy"), point to the compendium hint and link the
+    spoiler box.
+  - Leave out opinion questions (which demigod is strongest), questions about other mods by the same author, and
+    questions about past bugs.
+- **Troubleshooting** (`troubleshooting.md`): a Common problems table (Problem, What to do), how to
+  test the mod alone, the log files (`Player.log` and `Player-prev.log` in
+  `%USERPROFILE%\AppData\LocalLow\IronGate\Valheim`), and how to report a bug in the Discord **#bugs** forum
+  (`https://discord.gg/gSQHmE3yap`; title format "(Norse Demigods) Problem").
+- **Console Commands** (`console-commands.md`): how to open the console and turn on cheats (vanilla), a Commands table
+  (Command, What it does, Cheat) from `Console/*.cs`, then vanilla commands that act on the mod. `MakeMeSaiyan` is
+  excluded (see [Exclusions](#exclusions)). Do not say whether the world's skill modifiers scale
+  `GiveDemigodExperience`: it is untested.
 
 ### Exclusions
 
@@ -460,6 +490,8 @@ All use the System template.
   - **Abilities:** Teleport first, then alphabetical.
   - **Attributes:** alphabetical.
   - **Items:** Demigod Runestone first, then alphabetical.
+  - **Help:** FAQ, Troubleshooting, Console Commands.
+  - **Reference:** Glossary, Changelog.
 - Every new page also gets a row in its section's `index.md` table (see [Section index pages](#section-index-pages)).
 
 ### File naming
@@ -739,6 +771,7 @@ Each section's `index.md` is a one-line summary plus one entry per page, sorted 
 | `attributes/index.md` | Attribute, Demigods, Summary | Every attribute links to its own page |
 | `items/index.md` | Page, Summary | One row per page (grouped pages are one row), in `nav` order: Demigod Runestone first, then alphabetical |
 | `getting-started/index.md` | No table: `## Setup` and `## Playing` bullet lists, in reading order (Python-Markdown ignores list start numbers, so no numbered lists) | `- [Installing the Mod](installing-the-mod.md): requirements, …` |
+| `help/index.md` | No table: a `## Pages` bullet list, in `nav` order | `- [FAQ](faq.md): short answers to …` |
 | `reference/index.md` | No table: a `## Pages` bullet list | `- [Glossary](glossary.md): heavy armor, per level, …` |
 
 Demigods without a page yet are plain text (no link) in the Used by / Demigods columns.
@@ -756,6 +789,7 @@ Demigods without a page yet are plain text (no link) in the Used by / Demigods c
 | `nd-overview` | `<div>` around a section index table or a grouped page's `## Overview` table | `<div class="nd-overview" markdown>` |
 | (none) | Any other table: plain table style, applied automatically | A normal Markdown table |
 | `nd-row-exception` | A link in a table's first cell; tints that whole row with the panel background (CSS `:has()`) | `[Kvasir](../demigods/kvasir.md){ .nd-row-exception }` |
+| `nd-faq` | `<div>` around one FAQ question (`###`) and its answer; the question becomes a tinted header bar | `<div class="nd-faq" markdown>` |
 
 Damage-type classes (always together with `dmg`): `blunt`, `slash`, `pierce`, `chop`, `pickaxe`, `fire`,
 `frost`, `lightning`, `poison`, `spirit`. Use the badge for **damage types and elements only**, not for
@@ -1143,7 +1177,7 @@ one sweet fish food can be active at a time.
 
 ### System
 
-Used for Getting Started topics (Progression, Energy, …), Companions and
+Used for Getting Started topics (Progression, Energy, …), Companions, Help and
 Reference pages. No infobox.
 
 ```markdown
@@ -1328,10 +1362,14 @@ docs/
 │   └── sweet-fish-foods.md                 Overview table + one section per food
 ├── companions/
 │   └── index.md                            One page comparing every companion (see Companions template)
+├── help/
+│   ├── index.md                            ## Pages list
+│   ├── faq.md                              Question headings, short answers, links (see Help pages)
+│   ├── troubleshooting.md                  Common problems, testing alone, log files, bug reports
+│   └── console-commands.md                 Mod commands, cheats, vanilla commands
 └── reference/
     ├── index.md
     ├── glossary.md                         heavy armor, per level, specialized weapons, tool tier, true damage
-    ├── faq.md
     └── changelog.md                        Links to the mod's release notes
 ```
 

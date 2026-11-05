@@ -285,3 +285,31 @@
 .md-typeset .grid.cards > ul > li > p:first-child > a:hover {
     color: var(--md-accent-fg-color);
 }
+
+/* ----------------------------------------------------------------------------------------------------
+   FAQ entry: <div class="nd-faq" markdown> around one ### question and its answer. The question is a
+   tinted header bar, so it stays a real heading (table of contents, search, permalink).
+   ---------------------------------------------------------------------------------------------------- */
+
+.md-typeset .nd-faq {
+    margin: 1em 0;
+    padding: 0 0.9rem 0.1rem;
+    border: 1px solid var(--nd-panel-border);
+    border-left: 0.25rem solid var(--md-accent-fg-color);
+    border-radius: 0.3rem;
+}
+
+.md-typeset .nd-faq > h3 {
+    margin: 0 -0.9rem 0.8em;
+    padding: 0.55em 0.9rem;
+    background: var(--nd-panel-bg);
+    border-bottom: 1px solid var(--nd-panel-border);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.md-typeset .nd-faq > h3::before {
+    content: "Q";
+    margin-right: 0.5em;
+    color: var(--md-accent-fg-color);
+}

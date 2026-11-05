@@ -194,6 +194,12 @@ nav:
       - Sweet Fish Foods: items/sweet-fish-foods.md
   - Companions:
       - companions/index.md
+  - Help:
+      - help/index.md
+      - FAQ: help/faq.md
+      - Troubleshooting: help/troubleshooting.md
+      - Console Commands: help/console-commands.md
   - Reference:
       - reference/index.md
       - Glossary: reference/glossary.md
+      - Changelog: reference/changelog.md

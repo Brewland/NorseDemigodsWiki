@@ -105,7 +105,7 @@ Each hit a companion lands on an enemy may regenerate 1 energy for you.
 
 ## Permanent bonuses
 
-- [Infused Morgenheart](../items/permanent-consumables.md#infused-morgenheart): +20% damage and +25% maximum health
+- [Infused Morgenheart](../items/permanent-consumables.md#infused-morgenheart): +25% damage and +25% maximum health
   for summoned companions. Companions already out get the health bonus right away.
 - [Infused Liquid Frost](../items/permanent-consumables.md#infused-liquid-frost): +20% damage for summoned
   companions too. It multiplies with Infused Morgenheart.

@@ -30,7 +30,7 @@ armor, eitr or faster energy regeneration. The bonuses stay when you switch to a
 | [Infused Hard Antlers](#infused-hard-antlers) | +3% melee attack speed each | 5 times |
 | [Infused Leather Scraps](#infused-leather-scraps) | −10% energy regeneration time each | 5 times |
 | [Infused Liquid Frost](#infused-liquid-frost) | +20% ability and attribute damage and healing | Once |
-| [Infused Morgenheart](#infused-morgenheart) | +20% damage, +25% health for summons | Once |
+| [Infused Morgenheart](#infused-morgenheart) | +25% damage, +25% health for summons | Once |
 | [Infused Serpent Scale](#infused-serpent-scale) | +5 armor | Once |
 
 </div>
@@ -309,7 +309,7 @@ default:
 | | |
 | --- | --- |
 | **Type** | Consumable (permanent effect) |
-| **Effect** | +20% summoned creature damage<br>+25% summoned creature maximum health |
+| **Effect** | +25% summoned creature damage<br>+25% summoned creature maximum health |
 | **Restricted to** | Any demigod |
 | **Stack size** | 1 |
 | **Consume limit** | Once |

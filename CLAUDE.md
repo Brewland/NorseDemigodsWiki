@@ -86,7 +86,8 @@ shared attributes not written yet.
 | Abilities | ✅ | All 54 ability pages and Teleport |
 | Items | ✅ | Demigod Runestone, Abyssal Harpoon, Infused Megingjord, Infusion Items, Permanent Consumables, Sweet Fish Foods |
 | Companions | ✅ | One overview page comparing every companion |
-| Reference | 🟡 | Glossary done (moved from Getting Started); FAQ, Changelog to do |
+| Help | ✅ | FAQ (from the Discord export), Troubleshooting, Console Commands |
+| Reference | ✅ | Glossary (moved from Getting Started), Changelog (links the release notes) |
 
 ## Open items
 
@@ -104,19 +105,21 @@ Remove an item once it is resolved.
   demigod's own hits, Bloody Archer's eitr burst only on the arrow's target, a wolf left behind or unloaded keeps its
   data, "obtain the head of the next boss" tooltip, Corruption tooltip without timings). All are committed in the
   mod (up to `fc62316`) but not released yet.
+- **Infused Morgenheart +25% damage** (was 20%): changed in the mod by `norsedemigods-7e`
+  (`AttributeInfusedMorgenHeart.cs:14`, README table and 1.9.1 release notes) but **not committed** there yet. The
+  wiki already shows 25%.
 
-### Waiting on the user
+### Parked indefinitely
 
-- **Saving energy:** postponed by the user. `norsedemigods-7e` proposed a separate custom-data key, restored on
-  login (clamped to max), reset to 0 on death and when switching demigods. If it is ever done, update `energy.md`.
+Not planned. Do not bring these up as open work.
+
+- **Saving energy:** the user decided not to do it. `norsedemigods-7e` had proposed a separate custom-data key,
+  restored on login (clamped to max), reset to 0 on death and when switching demigods. If it is ever revived,
+  update `energy.md`.
 
 ### `TODO: verify` in the pages
 
-- `docs/abilities/crush.md`: the strike in game, including weapons whose special attack is a throw (spears).
+- `docs/abilities/crush.md`: the strike in game. With a spear, Crush throws and drops the spear (user-tested); the
+  fix was requested from `norsedemigods-7e` on 2026-11-05. Update the page from its reply.
 - `docs/abilities/meteor.md`: explosion radius and tool tier (vanilla `projectile_meteor`). The user will confirm.
 - `docs/abilities/fireball.md`: explosion radius (vanilla Staff of Embers projectile). The user will confirm.
-
-### For later batches
-
-- **Changelog page:** use the player README's release notes (1.9.1 has a "Sneak attacks" entry); link to them,
-  do not copy them.
