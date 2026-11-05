@@ -13,6 +13,7 @@ knocks down trees. It costs eitr instead of energy and can give energy back on a
 | **Energy cost** | None |
 | **Cooldown** | 5 s |
 | **Range** | 30 m |
+| **Explosion radius** | 5 m |
 | **Config ID** | `Meteor` |
 | **Config section** | `[Ability Meteor]` |
 
@@ -38,9 +39,7 @@ knocks down trees. It costs eitr instead of energy and can give energy back on a
 | Damage | **10**<br><span class="nd-split">5 *Blunt*{.dmg .blunt} + 5 *Fire*{.dmg .fire}</span> | **80**<br><span class="nd-split">40 *Blunt*{.dmg .blunt} + 40 *Fire*{.dmg .fire}</span> | **150**<br><span class="nd-split">75 *Blunt*{.dmg .blunt} + 75 *Fire*{.dmg .fire}</span> |
 | Damage to trees *Chop*{.dmg .chop} | 200 | 400 | 600 |
 
-- Damage to trees: 200 base + 4 per level.
-- TODO: verify (explosion radius and [tool tier](../reference/glossary.md#tool-tier) come from the game's own
-  meteor projectile).
+- Damage to trees: 200 base + 4 per level. [Tool tier](../reference/glossary.md#tool-tier) 1.
 
 ## Infused
 

@@ -105,9 +105,14 @@ Remove an item once it is resolved.
   demigod's own hits, Bloody Archer's eitr burst only on the arrow's target, a wolf left behind or unloaded keeps its
   data, "obtain the head of the next boss" tooltip, Corruption tooltip without timings). All are committed in the
   mod (up to `fc62316`) but not released yet.
-- **Infused Morgenheart +25% damage** (was 20%): changed in the mod by `norsedemigods-7e`
-  (`AttributeInfusedMorgenHeart.cs:14`, README table and 1.9.1 release notes) but **not committed** there yet. The
-  wiki already shows 25%.
+- **Not committed in the mod yet** (changed by `norsedemigods-7e`, waiting for the user's approval; the wiki already
+  describes them):
+  - Infused Morgenheart +25% damage (was 20%): `AttributeInfusedMorgenHeart.cs:14`, README table and 1.9.1 notes.
+  - Crush with a spear strikes in melee instead of throwing and dropping it: `AbilityCrush.cs:238-245`, 1.9.1 notes.
+    Not tested in game yet.
+  - Projectile abilities (Fireball, Acid Bolt, Ice Shards, Poison Javelin, Meteor) hit trees and ores with tool tier
+    1 + Infused Earthbreaker; before, the game's projectiles always hit at tier 0. `NorseDemigods.cs:3173-3227`,
+    `AbilityMeteor.cs:118-126`, 1.9.1 notes. Tested in game by the user.
 
 ### Parked indefinitely
 
@@ -116,10 +121,3 @@ Not planned. Do not bring these up as open work.
 - **Saving energy:** the user decided not to do it. `norsedemigods-7e` had proposed a separate custom-data key,
   restored on login (clamped to max), reset to 0 on death and when switching demigods. If it is ever revived,
   update `energy.md`.
-
-### `TODO: verify` in the pages
-
-- `docs/abilities/crush.md`: the strike in game. With a spear, Crush throws and drops the spear (user-tested); the
-  fix was requested from `norsedemigods-7e` on 2026-11-05. Update the page from its reply.
-- `docs/abilities/meteor.md`: explosion radius and tool tier (vanilla `projectile_meteor`). The user will confirm.
-- `docs/abilities/fireball.md`: explosion radius (vanilla Staff of Embers projectile). The user will confirm.

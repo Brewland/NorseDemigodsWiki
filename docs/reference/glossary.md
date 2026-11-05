@@ -37,11 +37,13 @@ vanilla axes and pickaxes.
 
 | Tier | Same as | New trees | New rocks and ores |
 | --- | --- | --- | --- |
-| 0 | Stone axe, Antler pickaxe | Beech, pine, fir, Ashlands trees | Stone, copper, tin, muddy scrap piles, Ashlands rocks |
-| 1 | Flint axe, Bronze pickaxe | — | — |
-| 2 | Bronze axe, Iron pickaxe | Birch, oak, ancient (swamp) trees | Silver, obsidian |
-| 3 | Iron axe, Black metal pickaxe | — | Giant remains (black marble), flametal (Ashlands) |
+| 0 | Stone axe, Antler pickaxe | Beech, pine, fir, Ashlands trees | Most rocks, copper, tin |
+| 1 | Flint axe, Bronze pickaxe | — | Muddy scrap piles |
+| 2 | Bronze axe, Iron pickaxe | Birch, oak, ancient (swamp) trees | Silver, obsidian, glacier ice |
+| 3 | Iron axe, Black metal pickaxe | — | Giant remains (black marble), meteorites, lava Leviathans (Ashlands) |
 | 4 | Black metal axe, Jotun Bane | Yggdrasil shoots | — |
+| 5 | — | — | Ashlands fortress walls and gates |
+| 6 | Berserkir axes | — | — |
 
 These are vanilla Valheim values, not mod settings.
 

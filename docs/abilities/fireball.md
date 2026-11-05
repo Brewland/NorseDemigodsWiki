@@ -12,6 +12,7 @@ damages trees. It costs eitr instead of energy and can give energy back on a hit
 | **Eitr cost** | 20 |
 | **Energy cost** | None |
 | **Cooldown** | None |
+| **Explosion radius** | 3 m |
 | **Config ID** | `Fireball` |
 | **Config section** | `[Ability Fireball]` |
 
@@ -35,7 +36,6 @@ damages trees. It costs eitr instead of energy and can give energy back on a hit
 | Damage to trees *Chop*{.dmg .chop} | 50 | 100 | 150 |
 
 - Damage to trees: 50 base + 1 per level. [Tool tier](../reference/glossary.md#tool-tier) 1.
-- TODO: verify (explosion radius comes from the game's Staff of Embers fireball).
 
 ## Infused
 

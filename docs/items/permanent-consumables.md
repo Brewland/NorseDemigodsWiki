@@ -121,7 +121,7 @@ It applies to the abilities and attributes that let you damage trees, rocks and 
 
 - Abilities: [Acid Bolt](../abilities/acid-bolt.md), [Bomb](../abilities/bomb.md),
   [Energy Wisp](../abilities/energy-wisp.md), [Fireball](../abilities/fireball.md),
-  [Holy Sun](../abilities/holy-sun.md), [Ice Shards](../abilities/ice-shards.md),
+  [Holy Sun](../abilities/holy-sun.md), [Ice Shards](../abilities/ice-shards.md), [Meteor](../abilities/meteor.md),
   [Poison Javelin](../abilities/poison-javelin.md), [Slash](../abilities/slash.md), [Vortex](../abilities/vortex.md).
 - Attributes: [Piercing Instincts](../attributes/piercing-instincts.md), [Titan Arms](../attributes/titan-arms.md).
 

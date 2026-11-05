@@ -32,8 +32,9 @@ Both variants share one config section: a server change affects Njord and Surtr 
 - It cancels slow falling (such as from the Feather cape) and gliding effects.
 - Landing in water ends it without a landing blast.
 - The strike deals your weapon's normal special-attack damage, but always uses the knife's special-attack animation.
-  It gets no sneak-attack bonus. TODO: verify (the strike in game, including weapons whose special attack is a
-  throw, such as spears).
+  It gets no sneak-attack bonus.
+- With a spear, the strike hits in melee in front of you instead of throwing: the spear stays in your hand and deals
+  the same damage as its throw.
 
 ## Variants
 
