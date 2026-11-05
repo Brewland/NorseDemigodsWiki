@@ -107,8 +107,7 @@ Remove an item once it is resolved.
   (Infused Morgenheart +25% damage, Crush strikes in melee with a spear, ability projectiles use their tool tier,
   Hel's infused ghost can be summoned indoors), the Hungarian and Italian translations, and the release README
   rework (links to the wiki, release notes moved to `CHANGELOG.md`, which the wiki's Changelog page points to). All
-  are committed in the mod (up to `65b8633`) but not released yet, except the ghost fix, which is not committed yet
-  (`norsedemigods-0e`, waiting for the user's approval; record its hash here). After the release, check on Hexium that the README's emoji show and that a Changelog tab appears.
+  are committed in the mod (up to `29a5844`, which also requires BepInExPack 5.4.2360) but not released yet. After the release, check on Hexium that the README's emoji show and that a Changelog tab appears.
 
 ### Parked indefinitely
 
