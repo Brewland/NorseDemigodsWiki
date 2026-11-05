@@ -36,7 +36,7 @@ All settings on this page are for server admins (or for you, in single player).
 | Abilities in PvP | On | Offensive abilities also hit other players in PvP. | `[Combat] Enable Pvp For Abilities` |
 | Ward protection | Off | Players cannot damage buildings inside an active player ward. | `[(General)] Protect Pieces Covered By Ward` |
 | Single-use runestone | Off | The [Demigod Runestone](../items/demigod-runestone.md) is used up when you choose a demigod. | `[Runestone] Runestone Consumable` |
-| Skill loss on death | Off | You lose 5 demigod skill levels when you die. | `[Skills] Enable Skill Loss On Death`, `[Skills] Levels Lost On Death` |
+| Skill loss on death | Off | You lose 5 demigod skill levels and your progress toward the next level when you die. | `[Skills] Enable Skill Loss On Death`, `[Skills] Levels Lost On Death` |
 | Disabled demigods | None | Demigods on this list cannot be chosen, e.g. `Fenrir,Thor`. | `[(General)] Disabled Demigods List` |
 
 ## Related pages

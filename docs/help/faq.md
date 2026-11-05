@@ -270,7 +270,8 @@ airborne.
 ### Can Fenrir use weapons and tools?
 
 Fenrir fights with his bare claws and cannot equip melee weapons or shields. He can use fist weapons, bows,
-crossbows, staffs and pickaxes, and his claws fell trees. See [Titan Arms](../attributes/titan-arms.md#weapons).
+crossbows, staffs, pickaxes, the Abyssal Harpoon, the Butcher knife and torches, and his claws fell trees. See
+[Titan Arms](../attributes/titan-arms.md#weapons).
 
 </div>
 

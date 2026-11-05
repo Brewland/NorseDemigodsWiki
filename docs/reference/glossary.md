@@ -52,7 +52,8 @@ These are vanilla Valheim values, not mod settings.
 Damage without a type, such as the core damage of Hel's [Acid Bolt](../abilities/acid-bolt.md).
 
 - Armor, resistances and weaknesses do not change it.
-- Other abilities that deal it: [Decay Aura](../abilities/decay-aura.md).
+- Other sources: [Decay Aura](../abilities/decay-aura.md) and the eitr burst of
+  [Bloody Archer](../attributes/bloody-archer.md).
 
 These are vanilla Valheim rules, not mod settings.
 

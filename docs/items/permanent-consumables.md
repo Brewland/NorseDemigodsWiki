@@ -29,7 +29,7 @@ armor, eitr or faster energy regeneration. The bonuses stay when you switch to a
 | [Infused Eitr](#infused-eitr) | +25 base eitr, faster eitr regeneration | Once |
 | [Infused Hard Antlers](#infused-hard-antlers) | +3% melee attack speed each | 5 times |
 | [Infused Leather Scraps](#infused-leather-scraps) | −10% energy regeneration time each | 5 times |
-| [Infused Liquid Frost](#infused-liquid-frost) | +20% ability and attribute damage and healing | Once |
+| [Infused Liquid Frost](#infused-liquid-frost) | +20% ability and attribute damage and healing, +20% companion damage | Once |
 | [Infused Morgenheart](#infused-morgenheart) | +25% damage, +25% health for summons | Once |
 | [Infused Serpent Scale](#infused-serpent-scale) | +5 armor | Once |
 
@@ -291,6 +291,8 @@ default:
 
 - "Flat" means fixed amounts, such as an ability's base damage and its damage per level. Percentage-based effects
   (for example "+10% extra damage") are unchanged.
+- Summoned companions also deal 20% more damage. This multiplies with
+  [Infused Morgenheart](#infused-morgenheart). Charmed creatures are not affected.
 
 ??? spoiler "Recipe (spoiler)"
 

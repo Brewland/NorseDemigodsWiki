@@ -52,7 +52,6 @@ Damage and health grow slowly at low levels and sharply at high levels.
 
 - With 3 skeletons active, cast again to summon a **ghost** as well (one at a time).
 - The ghost has the same health as a skeleton and deals double damage.
-- The ghost cannot be summoned indoors, such as in dungeons and caves.
 
 | | Lv 0 | Lv 50 | Lv 100 |
 | --- | ---: | ---: | ---: |

@@ -24,7 +24,7 @@ Abilities are powers you trigger with a key. Each demigod has its own set:
   demigod's favorite weapons. Some demigods have another one while blocking or while airborne.
 - **Teleport:** every demigod can teleport to their bed and back.
 
-Most abilities cost energy, some also cost eitr, and most have a cooldown. Their damage and healing grow with your
+Most abilities cost energy, some cost eitr instead, and most have a cooldown. Their damage and healing grow with your
 demigod skill level. See [Abilities](../abilities/index.md) and [Controls and Hotkeys](controls-and-hotkeys.md).
 
 - **Good to know:** an enemy you hit stops taking chop and pickaxe damage until it dies. This stops abilities that

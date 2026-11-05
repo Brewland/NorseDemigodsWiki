@@ -104,10 +104,11 @@ Remove an item once it is resolved.
   demigods resets progress, Purity boosts all Spirit damage, elemental piercing per hit and in multiplayer for the
   demigod's own hits, Bloody Archer's eitr burst only on the arrow's target, a wolf left behind or unloaded keeps its
   data, "obtain the head of the next boss" tooltip, Corruption tooltip without timings) and the 2026-11-05 fixes
-  (Infused Morgenheart +25% damage, Crush strikes in melee with a spear, ability projectiles use their tool tier),
-  the Hungarian and Italian translations, and the release README rework (links to the wiki, release notes moved to
-  `CHANGELOG.md`, which the wiki's Changelog page points to). All are committed in the mod (up to `65b8633`) but not
-  released yet. After the release, check on Hexium that the README's emoji show and that a Changelog tab appears.
+  (Infused Morgenheart +25% damage, Crush strikes in melee with a spear, ability projectiles use their tool tier,
+  Hel's infused ghost can be summoned indoors), the Hungarian and Italian translations, and the release README
+  rework (links to the wiki, release notes moved to `CHANGELOG.md`, which the wiki's Changelog page points to). All
+  are committed in the mod (up to `65b8633`) but not released yet, except the ghost fix, which is not committed yet
+  (`norsedemigods-0e`, waiting for the user's approval; record its hash here). After the release, check on Hexium that the README's emoji show and that a Changelog tab appears.
 
 ### Parked indefinitely
 

@@ -77,8 +77,8 @@ Each page has the exact chance or amount.
 | [Lightning Torpedo](../abilities/lightning-torpedo.md) | Brokkr | Chance when it hits an enemy | Yes |
 | [Poison Javelin](../abilities/poison-javelin.md) | Freyja | Chance when it hits an enemy | Yes |
 | [Hunter](../attributes/hunter.md) | Ullr | Chance when an arrow or bolt hits an enemy | Yes |
-| [Titan Arms](../attributes/titan-arms.md) | Fenrir | Chance on bare-handed hits and blocks | Yes |
-| [Valkyrie](../attributes/valkyrie.md) | Eir, Freyja | Chance when blocking an enemy's attack | Yes |
+| [Titan Arms](../attributes/titan-arms.md) | Fenrir | Chance on bare-handed or fist-weapon hits, and on bare-handed blocks | Yes |
+| [Valkyrie](../attributes/valkyrie.md) | Eir, Freyja | Chance when blocking an enemy's attack or hitting it with a thrown spear | Yes |
 | [Drain Blood](../abilities/drain-blood.md) | Surtr | Turns health into energy | No |
 | [Sacrifice](../abilities/sacrifice.md) | Hel | Turns minions (or health) into energy | No |
 | [Restoration](../abilities/restoration.md) | Njord, Thor | Restores energy while you channel it | No |
