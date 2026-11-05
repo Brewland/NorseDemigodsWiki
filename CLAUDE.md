@@ -99,20 +99,13 @@ Remove an item once it is resolved.
   fixes made during the Freyja/Hel/Njord/Surtr batch (Burning Ground, Crush, Sacrifice, Raider, Water Sphere), the
   Hraesvelgr/Kvasir/Ullr batch (Holy Strike swing, Infused Arrow crossbows in `Demigods.yaml`, Vortex tooltip in all
   languages), the Getting Started batch (Find Closest Bosses pins the Queen and Fader, Difficulty scales only creature
-  damage, `Ignore Non Teleportable Items` description) and the 2026-11-04 review (sneak and swim speed scaled by
+  damage, `Ignore Non Teleportable Items` description), the 2026-11-04 review (sneak and swim speed scaled by
   `Special Movement Speed Modifier (%)`, Hraesvelgr's airborne experience uses the experience modifiers, switching
   demigods resets progress, Purity boosts all Spirit damage, elemental piercing per hit and in multiplayer for the
   demigod's own hits, Bloody Archer's eitr burst only on the arrow's target, a wolf left behind or unloaded keeps its
-  data, "obtain the head of the next boss" tooltip, Corruption tooltip without timings). All are committed in the
-  mod (up to `fc62316`) but not released yet.
-- **Not committed in the mod yet** (changed by `norsedemigods-7e`, waiting for the user's approval; the wiki already
-  describes them):
-  - Infused Morgenheart +25% damage (was 20%): `AttributeInfusedMorgenHeart.cs:14`, README table and 1.9.1 notes.
-  - Crush with a spear strikes in melee instead of throwing and dropping it: `AbilityCrush.cs:238-245`, 1.9.1 notes.
-    Not tested in game yet.
-  - Projectile abilities (Fireball, Acid Bolt, Ice Shards, Poison Javelin, Meteor) hit trees and ores with tool tier
-    1 + Infused Earthbreaker; before, the game's projectiles always hit at tier 0. `NorseDemigods.cs:3173-3227`,
-    `AbilityMeteor.cs:118-126`, 1.9.1 notes. Tested in game by the user.
+  data, "obtain the head of the next boss" tooltip, Corruption tooltip without timings) and the 2026-11-05 fixes
+  (Infused Morgenheart +25% damage, Crush strikes in melee with a spear, ability projectiles use their tool tier).
+  All are committed in the mod (up to `a19002f`) but not released yet.
 
 ### Parked indefinitely
 
