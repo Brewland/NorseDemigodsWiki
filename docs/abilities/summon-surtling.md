@@ -60,4 +60,4 @@ Damage and health grow slowly at low levels and sharply at high levels.
 - [Surtr](../demigods/surtr.md)
 - [Companions](../companions/index.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

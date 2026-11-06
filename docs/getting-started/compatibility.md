@@ -52,4 +52,4 @@ They are not made or tested by the Norse Demigods author; descriptions come from
 - [Installing the Mod](installing-the-mod.md)
 - [Recommended Mods](recommended-mods.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

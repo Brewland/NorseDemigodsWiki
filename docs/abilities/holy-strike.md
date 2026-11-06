@@ -54,4 +54,4 @@ Spirit damage. It costs eitr instead of energy and can give energy back on a hit
 - [Eir](../demigods/eir.md)
 - [Holy Sun](holy-sun.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

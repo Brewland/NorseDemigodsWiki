@@ -69,4 +69,4 @@ after Njord's or Surtr's [Crush](../abilities/crush.md).
 - [Dash](../abilities/dash.md)
 - [Crush](../abilities/crush.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

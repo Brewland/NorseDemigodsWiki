@@ -32,4 +32,4 @@ it when attacking.
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Deer Endurance](deer-endurance.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

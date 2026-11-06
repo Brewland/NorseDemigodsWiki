@@ -45,4 +45,4 @@ Without any heavy armor piece: 0.2 extra armor and 0.2% less damage taken
 - [Kvasir](../demigods/kvasir.md)
 - [Wolf Fur](wolf-fur.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

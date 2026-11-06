@@ -212,4 +212,4 @@ Headdress, Patterns and Loincloth of the Bear (set effect: Berserk).
 - [Titan Arms](../attributes/titan-arms.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

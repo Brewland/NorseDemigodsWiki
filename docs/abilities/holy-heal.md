@@ -47,4 +47,4 @@ Healing grows evenly from 50 at level 0 to 300 at level 100.
 
 - [Eir](../demigods/eir.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

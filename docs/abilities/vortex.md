@@ -84,4 +84,4 @@ The explosion also deals *Chop*{.dmg .chop} damage to trees and other destructib
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Telekinesis](telekinesis.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

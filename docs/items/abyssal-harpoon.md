@@ -55,4 +55,4 @@ his shop).
 
 - [Sweet Fish Foods](sweet-fish-foods.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

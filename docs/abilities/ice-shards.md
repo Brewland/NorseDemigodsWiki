@@ -55,4 +55,4 @@ Each shard: 5 base + 0.75 [per level](../reference/glossary.md#per-level), split
 - [Fenrir](../demigods/fenrir.md)
 - [Frost Body](../attributes/frost-body.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

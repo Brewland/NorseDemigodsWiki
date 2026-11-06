@@ -200,4 +200,4 @@ Infusing Hraesvelgr's abilities upgrades all of them at once:
 - [Infusion Items](../items/infusion-items.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

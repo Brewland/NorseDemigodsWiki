@@ -97,6 +97,5 @@ Remove an item once it is resolved.
 
 Not planned. Do not bring these up as open work.
 
-- **Saving energy:** the user decided not to do it. `norsedemigods-7e` had proposed a separate custom-data key,
-  restored on login (clamped to max), reset to 0 on death and when switching demigods. If it is ever revived,
-  update `energy.md`.
+- None.
+

@@ -56,4 +56,4 @@ with no base damage.
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Cleave](cleave.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

@@ -144,4 +144,4 @@ summoned helpers, but not creatures: enemies cannot attack them, and the compani
 - [Charm](../abilities/charm.md)
 - [Permanent Consumables](../items/permanent-consumables.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

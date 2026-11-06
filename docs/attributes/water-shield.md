@@ -50,4 +50,4 @@ While the shield is active:
 - [Njord](../demigods/njord.md)
 - [Aquatic Body](aquatic-body.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

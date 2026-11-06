@@ -49,4 +49,4 @@ Extra carry weight: 2 [per level](../reference/glossary.md#per-level).
 - [Thor](../demigods/thor.md)
 - [Eagle Strength](eagle-strength.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

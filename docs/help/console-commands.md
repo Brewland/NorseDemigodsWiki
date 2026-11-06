@@ -16,9 +16,10 @@ server admins and testing.
 
 | Command | What it does | Cheat |
 | --- | --- | --- |
-| `RevokeDemigod` | Removes your demigod, your ability infusion and your permanent consumables, and resets your demigod skill to level 0. Cannot be undone. | No |
+| `RevokeDemigod` | Removes your demigod, every ability infusion (including those remembered for other demigods) and your permanent consumables, and resets your demigod skill to level 0. Cannot be undone. | No |
 | `InfuseAbilities` | Infuses your current demigod's abilities. | Yes |
 | `GiveDemigodExperience <amount>` | Gives your demigod skill the amount of experience, for example `GiveDemigodExperience 100`. It ignores the [skill cap](../getting-started/progression.md#skill-cap). | Yes |
+| `RaisePlayerDemigodSkill <levels> <player name>` | Raises the demigod skill of an online player by that many levels, for example `RaisePlayerDemigodSkill 10 Ragnar`. A negative number lowers it. The player must already be a demigod and sees a message with the new level. Names with spaces work, and upper/lower case does not matter. Only admins can use it on a server. It ignores the [skill cap](../getting-started/progression.md#skill-cap). | Yes |
 | `NoAbilityCooldown` | Abilities have no cooldown. Run it again to turn it off. | Yes |
 | `NoEnergyCost` | Abilities cost no energy. Run it again to turn it off. | Yes |
 | `RestoreEnergy` | Fills your energy and gives you the Rested effect. | Yes |
@@ -38,4 +39,4 @@ The commands that act on your demigod do nothing if you have not chosen one.
 - [Progression](../getting-started/progression.md)
 - [FAQ](faq.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

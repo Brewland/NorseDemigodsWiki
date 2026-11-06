@@ -44,15 +44,15 @@ Before you choose a demigod, only ND: Introduction is there.
 
 ## Changing your mind
 
-- **Switch demigods:** use the runestone again and pick another demigod. You lose 5 demigod skill levels and your
-  ability infusion, but keep your permanent consumables. See
+- **Switch demigods:** use the runestone again and pick another demigod. You lose 5 demigod skill levels, but keep
+  your permanent consumables, and each demigod keeps its ability infusion for when you switch back. See
   [Switching demigods](../items/demigod-runestone.md#switching-demigods).
 - **Stop being a demigod:** type `RevokeDemigod` in the game console (++f5++). It needs no cheats, but the
   console only opens if the game was started with the `-console` launch option (vanilla).
 
 !!! warning "RevokeDemigod cannot be undone"
-    It removes your demigod, your ability infusion and your permanent consumables, and resets your demigod skill
-    to level 0.
+    It removes your demigod, every ability infusion (including those remembered for other demigods) and your
+    permanent consumables, and resets your demigod skill to level 0.
 
 ## Related pages
 
@@ -60,4 +60,4 @@ Before you choose a demigod, only ND: Introduction is there.
 - [Demigod Runestone](../items/demigod-runestone.md)
 - [Controls and Hotkeys](controls-and-hotkeys.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

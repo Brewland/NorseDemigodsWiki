@@ -53,4 +53,4 @@ Healing per second grows evenly from 2 at level 0 to 7 at level 100.
 
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

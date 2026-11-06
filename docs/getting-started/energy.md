@@ -9,7 +9,8 @@ attributes give it back, and your maximum energy grows with your demigod skill l
 
 - Most abilities cost energy. Each ability page shows its cost in the infobox; some cost eitr instead.
 - You cannot cast an ability without enough energy for it.
-- You start with 0 energy each time you log in, respawn or choose a demigod.
+- Your energy is saved when you log out and comes back when you log in (up to your current maximum).
+- You start with 0 energy after you die or choose a demigod.
 - The energy meter at the bottom left shows your energy, your maximum and your demigod skill level. While a
   draining ability is active, it shows that ability's name instead of the level.
 
@@ -107,4 +108,4 @@ Each page has the exact chance or amount.
 - [Infused Megingjord](../items/infused-megingjord.md)
 - [Permanent Consumables](../items/permanent-consumables.md#infused-leather-scraps)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

@@ -84,6 +84,8 @@ the **Unarmed** skill:
 ## Notes
 
 - Servers can allow melee weapons: `[Attribute Titan Arms] Forbid Melee Weapons`.
+- Picking up a weapon while unarmed does not equip it. Each player can turn this off:
+  `[Attribute Titan Arms] Prevent Weapon Auto Equip On Pickup`.
 - With `[Attribute Titan Arms] Display Natural Claws When Unarmed` = `false`, Fenrir punches instead of clawing, at
   +100% attack speed (+70% with heavy armor).
 
@@ -93,4 +95,4 @@ the **Unarmed** skill:
 - [Slash](../abilities/slash.md#frost-fenrir)
 - [Enrage](../abilities/enrage.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

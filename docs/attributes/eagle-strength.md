@@ -45,4 +45,4 @@ Extra carry weight: 1 [per level](../reference/glossary.md#per-level).
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Bear Strength](bear-strength.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

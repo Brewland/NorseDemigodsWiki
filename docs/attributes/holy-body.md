@@ -50,4 +50,4 @@ Extra damage added to your weapon hits:
 - [Purity](purity.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

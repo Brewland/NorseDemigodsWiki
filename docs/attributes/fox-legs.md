@@ -43,4 +43,4 @@ reduced fall damage.
 
 - [Hel](../demigods/hel.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

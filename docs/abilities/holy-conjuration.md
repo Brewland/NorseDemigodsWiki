@@ -20,8 +20,9 @@ energy but has a long cooldown.
 
 ## Effect
 
-1. A fish appears on the ground about 3 m in front of you. Its quality is 2 or 3.
+1. Eir puts her weapons away and a fish appears on the ground about 3 m in front of you. Its quality is 2 or 3.
 2. 30% chance to also conjure a bonus item for the biome.
+3. Your weapons come back 1.5 s later.
 
 | Biome | Fish | Bonus item (30% chance) |
 | --- | --- | --- |
@@ -51,4 +52,4 @@ energy but has a long cooldown.
 
 - [Eir](../demigods/eir.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

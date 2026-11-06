@@ -52,4 +52,4 @@ Extra damage added to your weapon hits:
 - [Freyja](../demigods/freyja.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

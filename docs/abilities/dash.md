@@ -63,4 +63,4 @@ Range grows evenly from 12 m to 18 m.
 - [Thor](../demigods/thor.md)
 - [Titan Legs](../attributes/titan-legs.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

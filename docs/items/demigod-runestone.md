@@ -47,10 +47,14 @@ Choosing a different demigod while you already are one asks for confirmation fir
 | --- | --- |
 | Demigod skill levels lost | 5, and your progress toward the next level (never below level 0) |
 | Abilities | Replaced by the new demigod's abilities |
-| [Ability infusion](infusion-items.md) | Lost; the new demigod must be infused on its own |
+| [Ability infusion](infusion-items.md) | Remembered for that demigod: switch back and its abilities are infused again |
 | [Permanent consumables](permanent-consumables.md) | Kept |
+| Energy | Starts at 0 |
 
 - The level loss is a setting: `[Skills] Levels Lost When Switching Demigod`.
+- Remembering infusions is a setting: `[(General)] Keep Infused Abilities Per Demigod` (on by default). When it is
+  off, the infusion is lost and the demigod must be infused again, even when you switch back.
+- `RevokeDemigod` forgets every remembered infusion.
 - Choosing the demigod you already are does nothing.
 
 ## Related pages
@@ -59,4 +63,4 @@ Choosing a different demigod while you already are one asks for confirmation fir
 - [Infusion Items](infusion-items.md)
 - [Permanent Consumables](permanent-consumables.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

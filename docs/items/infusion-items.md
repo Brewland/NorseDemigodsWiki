@@ -8,8 +8,9 @@ comes from a kill.
 
 - Only the demigod named on the item can consume it, and only once.
 - Infusion upgrades every ability of that demigod. Each ability page lists what it adds in its **Infused** section.
-- Switching to another demigod with the [Demigod Runestone](demigod-runestone.md) removes the infusion. This also
-  happens if you later switch back: you must infuse again.
+- Switching to another demigod with the [Demigod Runestone](demigod-runestone.md) keeps the infusion for that
+  demigod: switch back later and its abilities are infused again. Servers can turn this off with
+  `[(General)] Keep Infused Abilities Per Demigod`; then you must infuse again after switching back.
 - Each demigod's introduction in the in-game compendium gives a hint about its infusion.
 - Recipes and crafting stations are deliberately hidden in the game, so they are in spoiler boxes below.
 
@@ -335,4 +336,4 @@ Kvasir has no infusion item: his infusion comes from a kill. What it upgrades:
 - [Demigod Runestone](demigod-runestone.md)
 - [Permanent Consumables](permanent-consumables.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

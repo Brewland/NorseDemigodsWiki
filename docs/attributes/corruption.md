@@ -60,4 +60,4 @@ While you stand inside the area of an active ward:
 
 - [Kvasir](../demigods/kvasir.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

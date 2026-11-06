@@ -35,6 +35,7 @@ All settings on this page are for server admins (or for you, in single player).
 | Teleport with any item | Off | Teleport also works while you carry items that cannot be teleported. See [Teleport](../abilities/teleport.md#limits). | `[Teleportation] Ignore Non Teleportable Items` |
 | Abilities in PvP | On | Offensive abilities also hit other players in PvP. | `[Combat] Enable Pvp For Abilities` |
 | Ward protection | Off | Players cannot damage buildings inside an active player ward. | `[(General)] Protect Pieces Covered By Ward` |
+| Infusion per demigod | On | Each demigod keeps its ability infusion when you switch away, and gets it back when you switch back. See [Switching demigods](../items/demigod-runestone.md#switching-demigods). | `[(General)] Keep Infused Abilities Per Demigod` |
 | Single-use runestone | Off | The [Demigod Runestone](../items/demigod-runestone.md) is used up when you choose a demigod. | `[Runestone] Runestone Consumable` |
 | Skill loss on death | Off | You lose 5 demigod skill levels and your progress toward the next level when you die. | `[Skills] Enable Skill Loss On Death`, `[Skills] Levels Lost On Death` |
 | Disabled demigods | None | Demigods on this list cannot be chosen, e.g. `Fenrir,Thor`. | `[(General)] Disabled Demigods List` |
@@ -44,4 +45,4 @@ All settings on this page are for server admins (or for you, in single player).
 - [Difficulty](difficulty.md)
 - [Installing the Mod](installing-the-mod.md#settings)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

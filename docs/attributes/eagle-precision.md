@@ -41,4 +41,4 @@ With a bow (not a crossbow):
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Eagle Agility](eagle-agility.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

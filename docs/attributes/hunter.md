@@ -48,4 +48,4 @@ his arrow hits can give energy, and hunted animals drop twice the skins and feat
 - [Bloody Archer](bloody-archer.md)
 - [Sense Creatures](../abilities/sense-creatures.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

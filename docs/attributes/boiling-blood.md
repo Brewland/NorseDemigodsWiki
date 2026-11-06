@@ -36,4 +36,4 @@ While sitting and out of combat:
 
 - [Fenrir](../demigods/fenrir.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

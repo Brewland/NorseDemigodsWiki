@@ -45,8 +45,8 @@ The server has disabled that demigod, so it cannot be chosen. Players who alread
 
 ### Can I switch to another demigod?
 
-Yes, with the [Demigod Runestone](../items/demigod-runestone.md). You lose a few demigod skill levels and your ability
-infusion, but keep your permanent consumables. See
+Yes, with the [Demigod Runestone](../items/demigod-runestone.md). You lose a few demigod skill levels, but keep your
+permanent consumables, and each demigod keeps its ability infusion for when you switch back. See
 [Switching demigods](../items/demigod-runestone.md#switching-demigods).
 
 </div>
@@ -55,7 +55,11 @@ infusion, but keep your permanent consumables. See
 
 ### Can I keep my infusion when I switch demigods?
 
-No. Infusion belongs to one demigod, and you must infuse again after switching, even when you switch back.
+Each demigod keeps its own. Infusion belongs to one demigod: if you infuse Thor, switch to Freyja and later back to
+Thor, Thor's abilities are infused again. Freyja still needs her own infusion.
+
+Servers can turn this off with `[(General)] Keep Infused Abilities Per Demigod`; then you must infuse again after
+switching, even when you switch back. `RevokeDemigod` always forgets every infusion.
 
 Server admins can infuse a player with the `InfuseAbilities` [console command](console-commands.md).
 
@@ -455,4 +459,4 @@ languages already included.
 
 </div>
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

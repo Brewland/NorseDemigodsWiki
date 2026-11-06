@@ -69,4 +69,4 @@ All variants have the same values; only the visual and sound effects differ.
 - [Kvasir](../demigods/kvasir.md)
 - [Ullr](../demigods/ullr.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

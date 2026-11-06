@@ -41,4 +41,4 @@ Frost Nova freezes the ground around Fenrir: after a short charge, every enemy w
 
 - [Fenrir](../demigods/fenrir.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

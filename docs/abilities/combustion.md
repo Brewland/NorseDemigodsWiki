@@ -50,4 +50,4 @@ Jump, then use the special attack while in the air:
 - [Brokkr](../demigods/brokkr.md)
 - [Sturdy Legs](../attributes/sturdy-legs.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

@@ -92,4 +92,4 @@ necks. See [Companions](../companions/index.md).
 - [Controls and Hotkeys](controls-and-hotkeys.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

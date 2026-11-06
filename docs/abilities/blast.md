@@ -54,4 +54,4 @@ with Blunt damage, pushing them away.
 
 - [Ullr](../demigods/ullr.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

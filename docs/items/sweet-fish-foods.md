@@ -170,4 +170,4 @@ them a strong food for demigods. Anyone can eat them, but only one sweet fish fo
 
 - [Abyssal Harpoon](abyssal-harpoon.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

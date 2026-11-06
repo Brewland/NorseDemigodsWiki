@@ -21,8 +21,8 @@ they grow much stronger with Hel's level and stay until they die.
 
 ## Effect
 
-1. Hel performs a summoning ritual. You cannot move for 1.5 s.
-2. A skeleton rises about 5 m in front of you.
+1. Hel puts her weapons away and performs a summoning ritual. You cannot move for 1.5 s.
+2. A skeleton rises about 5 m in front of you, and your weapons come back.
 3. It follows you and attacks your enemies.
 
 - Up to 3 skeletons at a time. With 3 active, you cannot cast it again (unless infused).
@@ -73,4 +73,4 @@ Damage and health grow slowly at low levels and sharply at high levels.
 - [Sacrifice](sacrifice.md)
 - [Companions](../companions/index.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

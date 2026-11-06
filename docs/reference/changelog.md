@@ -7,6 +7,6 @@ The mod's release notes list every change, version by version. They are publishe
 Release notes, in the **Changelog** tab of the mod page:<br>
 [Thunderstore](https://thunderstore.io/c/valheim/p/Alpus/NorseDemigods/changelog/) · [Hexium](https://valheim.hexium.gg/mods/Alpus/NorseDemigods)
 
-This wiki describes Norse Demigods **1.9.1**.
+This wiki describes Norse Demigods **1.9.2**.
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

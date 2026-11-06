@@ -44,7 +44,7 @@ A video walkthrough of the setup and the mod's basics:<br>
 
 ## Multiplayer
 
-- The server and every player need the mod, in **exactly the same version** (for example 1.9.1).
+- The server and every player need the mod, in **exactly the same version** (for example 1.9.2).
 - Every player also needs the same `Demigods.yaml` and `Consumables.json` as the server. These files set each
   demigod's abilities and attributes, and the mod's recipes.
 - A player with different files cannot join. In-game message: *"Norse Demigods: your Demigods.yaml differs from
@@ -83,4 +83,4 @@ Russian, Spanish, Turkish, Ukrainian and Vietnamese.
 - [Compatibility](compatibility.md)
 - [Difficulty](difficulty.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

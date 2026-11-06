@@ -53,8 +53,8 @@ A thrown spear always comes back to your inventory:
 - if it flies 100 m or more away from you,
 - when you teleport or log out.
 
-It is equipped again if your hands are free. If your inventory is full, it drops at your feet or stays where it
-landed.
+It goes back to the slot you threw it from if that slot is still free, otherwise to the first free slot. It is
+equipped again if your hands are free. If your inventory is full, it drops at your feet or stays where it landed.
 
 ## Notes
 
@@ -66,4 +66,4 @@ landed.
 - [Freyja](../demigods/freyja.md)
 - [Stagger](../abilities/stagger.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

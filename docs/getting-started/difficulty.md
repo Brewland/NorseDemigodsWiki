@@ -76,4 +76,4 @@ Also in `[(Difficulty)]`, all for server admins:
 - [Optional Features](optional-features.md)
 - [Installing the Mod](installing-the-mod.md#settings)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

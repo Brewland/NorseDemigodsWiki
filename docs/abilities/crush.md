@@ -72,4 +72,4 @@ Explosion damage: 1 [per level](../reference/glossary.md#per-level), with no bas
 - [Surtr](../demigods/surtr.md)
 - [Titan Legs](../attributes/titan-legs.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

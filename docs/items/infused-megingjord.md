@@ -57,4 +57,4 @@ and `[Enhanced Megingjord] Infused Megingjord Cost Item Quantity`.
 - [Restoration](../abilities/restoration.md)
 - [Blacksmith](../attributes/blacksmith.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

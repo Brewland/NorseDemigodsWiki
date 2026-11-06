@@ -52,4 +52,4 @@ chasing enemies. His knives deal extra Poison damage and stronger sneak attacks,
 - [Ullr](../demigods/ullr.md)
 - [Wolf Speed](wolf-speed.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

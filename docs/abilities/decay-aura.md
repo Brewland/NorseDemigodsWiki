@@ -63,4 +63,4 @@ While the aura damages enemies, you also regain part of the total damage, with n
 - [Hel](../demigods/hel.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

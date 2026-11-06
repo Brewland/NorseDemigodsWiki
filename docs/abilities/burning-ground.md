@@ -63,4 +63,4 @@ Explosion damage: 1.25 [per level](../reference/glossary.md#per-level), with no 
 - [Surtr](../demigods/surtr.md)
 - [Cold Blood](../attributes/cold-blood.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

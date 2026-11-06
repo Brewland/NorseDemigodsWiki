@@ -42,4 +42,4 @@ Both demigods share one config section: a server change affects Eir and Freyja a
 - [Freyja](../demigods/freyja.md)
 - [Valkyrie](../attributes/valkyrie.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

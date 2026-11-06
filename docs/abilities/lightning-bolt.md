@@ -51,4 +51,4 @@ damage. It costs eitr instead of energy and can give energy back on a hit.
 
 - [Njord](../demigods/njord.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

@@ -50,4 +50,4 @@ Range grows evenly from 12 m to 18 m.
 - [Kvasir](../demigods/kvasir.md)
 - [Dash](dash.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

@@ -55,4 +55,4 @@ A spirit aura damages all enemies within 5 m every second: 0.25 per level.
 - [Fenrir](../demigods/fenrir.md)
 - [Titan Arms](../attributes/titan-arms.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

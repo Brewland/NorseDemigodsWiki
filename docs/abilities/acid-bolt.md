@@ -55,4 +55,4 @@ damage to enemies around it. It costs eitr instead of energy and can give energy
 - [Hel](../demigods/hel.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

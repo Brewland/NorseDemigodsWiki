@@ -64,4 +64,4 @@ Extra damage added to your weapon hits:
 - [Njord](../demigods/njord.md)
 - [Water Shield](water-shield.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

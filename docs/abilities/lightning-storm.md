@@ -63,4 +63,4 @@ Each strike: 5 base + 0.45 [per level](../reference/glossary.md#per-level).
 - [Thor](../demigods/thor.md)
 - [Lightning Aura](lightning-aura.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

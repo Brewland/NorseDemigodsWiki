@@ -64,4 +64,4 @@ Each hit: 2 base + 0.48 [per level](../reference/glossary.md#per-level), split e
 - [Eir](../demigods/eir.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->

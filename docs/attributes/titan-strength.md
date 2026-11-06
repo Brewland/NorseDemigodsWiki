@@ -44,4 +44,4 @@ Extra carry weight: 3 [per level](../reference/glossary.md#per-level).
 - [Brokkr](../demigods/brokkr.md)
 - [Bear Strength](bear-strength.md)
 
-<!-- Verified against NorseDemigods 1.9.1 -->
+<!-- Verified against NorseDemigods 1.9.2 -->
