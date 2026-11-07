@@ -367,8 +367,8 @@ default:
 
 ## Related pages
 
-- [Infusion Items](infusion-items.md)
+- [Ability Infusion Items](ability-infusion-items.md)
 - [Demigod Runestone](demigod-runestone.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -58,4 +58,4 @@ The longer you charge, the stronger the launch:
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Glide](../attributes/glide.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

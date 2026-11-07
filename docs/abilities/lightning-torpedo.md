@@ -56,4 +56,4 @@ on impact with Blunt and Lightning damage. It costs eitr instead of energy and c
 - [Brokkr](../demigods/brokkr.md)
 - [Combustion](combustion.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

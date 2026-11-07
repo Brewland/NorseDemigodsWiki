@@ -64,4 +64,4 @@ When an enemy hits you, it takes *Lightning*{.dmg .lightning} damage back.
 - [Thor](../demigods/thor.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -56,4 +56,4 @@ with no base damage.
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Whirlwind](whirlwind.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -146,8 +146,8 @@ See [Skill cap](../getting-started/progression.md#skill-cap).
 Each demigod has its own infusion item. Consume it once to upgrade all of your demigod's abilities.
 
 - Your compendium page **ND: Introduction** gives a hint in its last paragraph.
-- The recipes are on [Infusion Items](../items/infusion-items.md) and in each demigod's **Infusion** section,
-  hidden in spoiler boxes.
+- The recipes are on [Ability Infusion Items](../items/ability-infusion-items.md) and in each demigod's **Infusion**
+  section, hidden in spoiler boxes.
 - Each ability page lists what infusion adds in its **Infused** section.
 
 </div>
@@ -459,4 +459,4 @@ languages already included.
 
 </div>
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

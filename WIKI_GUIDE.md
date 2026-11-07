@@ -58,8 +58,9 @@ The mod source at `../NorseDemigods` is the **only** source of truth. It is **re
 - **Controllers are never mentioned.** Gamepad bindings are commented out in the code. Do not write about
   controllers at all, not even to say they are unsupported.
 - **Changelog** (`reference/changelog.md`) links to the mod's release notes in the Changelog tab of the mod page
-  (the mod's `CHANGELOG.md`; Thunderstore · Hexium) and names the mod version the wiki describes. Do not copy or
-  summarize the release notes: no per-version lines.
+  (the mod's `CHANGELOG.md`; Thunderstore `…/changelog/` · Hexium `…#fn-changelog`, both opening that tab
+  directly) and names the mod version the wiki describes. Do not copy or summarize the release notes: no
+  per-version lines.
 - **Images:** add an image placeholder on every page now (see templates); screenshots come later.
   Icons and models live in the Unity bundle and cannot be extracted from the source scan.
 - **Server-defaults disclaimer:** the sentence "Values shown are server defaults; your server may differ." appears
@@ -297,7 +298,7 @@ State whether an ability works while airborne or swimming (`Helper.IsPlayerBusy`
 ### Spoilers
 
 Infusion recipes are deliberately hidden in the game. Put them **inside a collapsible spoiler box**, on the demigod
-page and on the Infusion Items page. This also applies to Kvasir's infusion condition, which is not a recipe.
+page and on the Ability Infusion Items page. This also applies to Kvasir's infusion condition, which is not a recipe.
 Use exactly this form:
 
 ```markdown
@@ -383,8 +384,8 @@ always kept separate from Playing (in the game). `nav` and the index follow this
 - **Setup:** Installing the Mod, Recommended Mods, Compatibility, Difficulty, Optional Features.
 - **Playing:** How the Mod Works, Controls and Hotkeys, Progression, Energy, First Steps.
 
-There is no Ability Infusion page: Infusion Items and each demigod's `## Infusion` section cover it, and How the Mod
-Works links to Infusion Items.
+There is no Ability Infusion page: Ability Infusion Items and each demigod's `## Infusion` section cover it, and
+How the Mod Works links to Ability Infusion Items.
 
 All use the System template.
 
@@ -513,7 +514,8 @@ Console Commands. All use the System template.
   the same ability stay as sections on that page, see above).
 - **Items are the exception:** related items stay grouped on one page, one `##` section each. Keep the groups
   separate by who can use them:
-  - **Infusion Items** (`infusion-items.md`): the items that infuse a demigod's abilities, one per demigod.
+  - **Ability Infusion Items** (`ability-infusion-items.md`): the items that infuse a demigod's abilities, one per
+    demigod.
   - **Permanent Consumables** (`permanent-consumables.md`): items any demigod can consume for a permanent effect.
   - **Sweet Fish Foods** (`sweet-fish-foods.md`).
   - Standalone items (Demigod Runestone, Infused Megingjord, Abyssal Harpoon) get their own page.
@@ -572,6 +574,8 @@ Field order (omit rows that do not apply, except where marked "always"):
 - Channeled abilities add ", hold" after the input: `++mouse-side-down++ + ++block++<br>(Ability D), hold`.
 - Shared config sections add `(shared by all variants)` after the section.
 - Element and resistance rows use damage badges: `*Lightning*{.dmg .lightning}`.
+- An element that only comes from infusion gets ` (infused)` after its badge, in the infobox and in
+  `demigods/index.md`: `*Lightning*{.dmg .lightning} (infused)`.
 
 #### Lore
 
@@ -737,7 +741,7 @@ accent line on top, a fjord-blue header row (`--nd-overview-head-bg`), the panel
 striped rows (`--nd-overview-stripe`), an accent tint on hover and a bold first column. Use it for:
 
 - every section index table (`demigods/`, `abilities/`, `attributes/`, `items/index.md`);
-- the `## Overview` table of grouped item pages (Infusion Items, Permanent Consumables, Sweet Fish Foods);
+- the `## Overview` table of grouped item pages (Ability Infusion Items, Permanent Consumables, Sweet Fish Foods);
 - the `## Overview` table of the Companions page.
 
 Wrap the table in a `div` (blank lines inside it are required). Notes after the table go outside the `div`.
@@ -1201,8 +1205,8 @@ Infused Megingjord is an equippable belt that increases your maximum energy and 
 A visible recipe (Runestone) has no `## Recipe` section: it is the infobox's Recipe row, and any recipe setting
 goes under `## Getting one`.
 
-Grouped item pages (Infusion Items, Permanent Consumables, Sweet Fish Foods) start with a `## How … work` bullet
-list (the shared rules), then a `## Overview` table (an [overview table](#overview-table)), then one `##` section per item. Each section is
+Grouped item pages (Ability Infusion Items, Permanent Consumables, Sweet Fish Foods) start with a `## How … work`
+bullet list (the shared rules), then a `## Overview` table (an [overview table](#overview-table)), then one `##` section per item. Each section is
 **one card**:
 
 1. The infobox, holding everything that fits in a row: Effect (or the food stats), and a visible recipe.
@@ -1214,8 +1218,8 @@ list (the shared rules), then a `## Overview` table (an [overview table](#overvi
 Never use `###` subsections or a one-row table inside an item section. The Sweet Fish Foods page notes that only
 one sweet fish food can be active at a time.
 
-- **Infusion Items:** item names are public; recipes and crafting stations are spoilers. Overview columns: Demigod,
-  Item, sorted by demigod, with Kvasir last as the exception: his row reads
+- **Ability Infusion Items:** item names are public; recipes and crafting stations are spoilers. Overview columns:
+  Demigod, Item, sorted by demigod, with Kvasir last as the exception: his row reads
   `| [Kvasir](../demigods/kvasir.md){ .nd-row-exception } | None: [a kill](#kvasir) |`, which gives it a faint
   panel background. The sections follow the table order (Kvasir's `## Kvasir` section last). Each section is the
   infobox, a "What it upgrades: [Thor › Infusion](../demigods/thor.md#infusion)." line and the spoiler (the demigod
@@ -1332,7 +1336,7 @@ Paths are relative to `../NorseDemigods/NorseDemigods/`. Translation keys are in
 | Field | Source |
 | --- | --- |
 | Lore, infusion hint | Translation keys `demigod_<id>_description`, `_overview_ext` |
-| Role, elements, weapons, armor | `_Publish/README.md` Demigods table (ignore the outdated Hraesvelgr footnote) |
+| Role, elements, weapons, armor | `_Publish/README.md` Demigods table |
 | Ability loadout and inputs, attributes | `_Publish/Demigods.yaml` |
 | How it gains experience | `Demigods/Demigod<Id>.cs` (`SkillDemigodXp*`) |
 | Infusion recipe or condition | `_Publish/Consumables.json` (`RestrictedToDemigod`); Kvasir: `Demigods/DemigodKvasir.cs` |
@@ -1418,7 +1422,7 @@ docs/
 │   ├── demigod-runestone.md
 │   ├── abyssal-harpoon.md                  Abyssal Harpoon & Harpoon Fishing
 │   ├── infused-megingjord.md
-│   ├── infusion-items.md                   10 item sections + Kvasir, recipes in spoilers
+│   ├── ability-infusion-items.md           10 item sections + Kvasir, recipes in spoilers
 │   ├── permanent-consumables.md            Bloodbag, Chitin, Earthbreaker (+ Grand), Eitr, Hard Antlers,
 │   │                                       Leather Scraps, Liquid Frost, Morgenheart, Serpent Scale
 │   └── sweet-fish-foods.md                 Overview table + one section per food
@@ -1533,6 +1537,6 @@ Attributes with one owner (38):
 | Thor | Static Body |
 | Ullr | Hunter, Lumberjack, Sneaky, Wolf Fur |
 
-The 10 `Infused…` attributes are covered on the Items pages (Infusion Items, Permanent Consumables),
+The 10 `Infused…` attributes are covered on the Items pages (Ability Infusion Items, Permanent Consumables),
 not as attribute pages. Attribute themes (Titan Arms `FROST`; Titan Legs `BLUE`/`BROWN`) are documented on the
 attribute's page.

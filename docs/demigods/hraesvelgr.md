@@ -1,14 +1,15 @@
 # Hraesvelgr
 
 Hraesvelgr is an eagle demigod who glides through the air, pulls enemies to him with telekinesis and blasts them with
-wind. He favors swords and polearms, and is built to fight in heavy armor.
+wind. He favors swords and polearms, and is built to fight in heavy armor. His abilities deal physical damage;
+infusing them adds *Lightning*{.dmg .lightning} damage to Cleave and Whirlwind.
 
 <div class="nd-infobox" markdown>
 
 | | |
 | --- | --- |
 | **Role** | A highly mobile eagle demigod that glides through the air, using telekinesis and destructive blasts to eliminate enemies |
-| **Element** | *Lightning*{.dmg .lightning} |
+| **Element** | *Lightning*{.dmg .lightning} (infused) |
 | **Favorite weapons** | Swords<br>Polearms |
 | **Preferred armor** | Heavy |
 | **Config ID** | `Hraesvelgr` |
@@ -197,7 +198,7 @@ Infusing Hraesvelgr's abilities upgrades all of them at once:
 
 ## Related pages
 
-- [Infusion Items](../items/infusion-items.md)
+- [Ability Infusion Items](../items/ability-infusion-items.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

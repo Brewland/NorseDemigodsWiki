@@ -43,4 +43,4 @@ energy is full. Infused, it also restores stamina.
 - [Surtr](../demigods/surtr.md)
 - [Sacrifice](sacrifice.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

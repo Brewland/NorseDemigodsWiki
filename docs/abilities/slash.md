@@ -80,4 +80,4 @@ Damage to trees depends on the Unarmed skill only:
 - [Surtr](../demigods/surtr.md)
 - [Titan Arms](../attributes/titan-arms.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -47,7 +47,7 @@ Choosing a different demigod while you already are one asks for confirmation fir
 | --- | --- |
 | Demigod skill levels lost | 5, and your progress toward the next level (never below level 0) |
 | Abilities | Replaced by the new demigod's abilities |
-| [Ability infusion](infusion-items.md) | Remembered for that demigod: switch back and its abilities are infused again |
+| [Ability infusion](ability-infusion-items.md) | Remembered for that demigod: switch back and its abilities are infused again |
 | [Permanent consumables](permanent-consumables.md) | Kept |
 | Energy | Starts at 0 |
 
@@ -60,7 +60,7 @@ Choosing a different demigod while you already are one asks for confirmation fir
 ## Related pages
 
 - [Demigods](../demigods/index.md)
-- [Infusion Items](infusion-items.md)
+- [Ability Infusion Items](ability-infusion-items.md)
 - [Permanent Consumables](permanent-consumables.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

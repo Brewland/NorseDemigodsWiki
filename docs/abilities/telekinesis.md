@@ -76,4 +76,4 @@ It can also lift a cart and launch it where he aims.
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Vortex](vortex.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

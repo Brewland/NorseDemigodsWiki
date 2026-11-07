@@ -38,4 +38,4 @@ and Poison damage to enemies around it.
 
 - [Hel](../demigods/hel.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

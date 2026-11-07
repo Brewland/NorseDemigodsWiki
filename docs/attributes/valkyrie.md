@@ -66,4 +66,4 @@ equipped again if your hands are free. If your inventory is full, it drops at yo
 - [Freyja](../demigods/freyja.md)
 - [Stagger](../abilities/stagger.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

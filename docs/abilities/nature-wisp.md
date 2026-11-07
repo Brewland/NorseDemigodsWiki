@@ -70,4 +70,4 @@ Time per piece of wood grows shorter evenly from 5 s at level 0 to 2.5 s at leve
 
 - [Freyja](../demigods/freyja.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

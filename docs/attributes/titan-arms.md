@@ -95,4 +95,4 @@ the **Unarmed** skill:
 - [Slash](../abilities/slash.md#frost-fenrir)
 - [Enrage](../abilities/enrage.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

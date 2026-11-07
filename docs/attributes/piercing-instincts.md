@@ -39,4 +39,4 @@ and ores:
 - [Kvasir](../demigods/kvasir.md)
 - [Blood Slash](../abilities/blood-slash.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -60,4 +60,4 @@ Ideas and suggestions go in the **#ideas** forum.
 - [Compatibility](../getting-started/compatibility.md)
 - [Installing the Mod](../getting-started/installing-the-mod.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

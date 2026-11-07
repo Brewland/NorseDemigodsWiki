@@ -39,4 +39,4 @@ The commands that act on your demigod do nothing if you have not chosen one.
 - [Progression](../getting-started/progression.md)
 - [FAQ](faq.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

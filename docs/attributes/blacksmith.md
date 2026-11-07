@@ -33,4 +33,4 @@ damage and every crafting station he uses counts as one level higher.
 
 - [Brokkr](../demigods/brokkr.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

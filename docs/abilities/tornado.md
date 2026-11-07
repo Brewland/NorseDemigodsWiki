@@ -57,4 +57,4 @@ Each hit: 1 base + 0.39 [per level](../reference/glossary.md#per-level).
 
 - [Njord](../demigods/njord.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

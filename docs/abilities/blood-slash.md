@@ -54,4 +54,4 @@ The slash also deals **20%** of its damage as *Spirit*{.dmg .spirit}.
 - [Kvasir](../demigods/kvasir.md)
 - [Piercing Instincts](../attributes/piercing-instincts.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

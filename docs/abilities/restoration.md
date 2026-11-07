@@ -79,4 +79,4 @@ stronger.
 - [Njord](../demigods/njord.md)
 - [Thor](../demigods/thor.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

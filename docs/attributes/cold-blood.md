@@ -43,4 +43,4 @@ this way once per second, based on its Fire damage.
 - [Burning Ground](../abilities/burning-ground.md)
 - [Flame Body](flame-body.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

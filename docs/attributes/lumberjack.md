@@ -29,4 +29,4 @@ Lumberjack is Ullr's own attribute: he swings axes faster and fells trees much f
 - [Ullr](../demigods/ullr.md)
 - [Eagle Strength](eagle-strength.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -47,4 +47,4 @@ While the shroud is active:
 - [Celestial Body](celestial-body.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

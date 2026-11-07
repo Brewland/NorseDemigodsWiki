@@ -1,8 +1,8 @@
-# Infusion Items
+# Ability Infusion Items
 
-Infusion items are crafted materials that awaken the true power of a demigod's abilities: consuming one upgrades
-all of that demigod's abilities at once, for good. Each demigod has its own item, except Kvasir, whose infusion
-comes from a kill.
+Ability infusion items are crafted materials that awaken the true power of a demigod's abilities: consuming one
+upgrades all of that demigod's abilities at once, for good. Each demigod has its own item, except Kvasir, whose
+infusion comes from a kill.
 
 ## How infusion works
 
@@ -336,4 +336,4 @@ Kvasir has no infusion item: his infusion comes from a kill. What it upgrades:
 - [Demigod Runestone](demigod-runestone.md)
 - [Permanent Consumables](permanent-consumables.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

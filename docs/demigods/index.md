@@ -11,7 +11,7 @@ Every playable demigod, with its abilities, attributes, favorite weapons and pre
 | [Fenrir](fenrir.md) | Accompanied by a wolf, lands destructive punches strong enough to bring down trees. | *Frost*{.dmg .frost} | Fists | Light |
 | [Freyja](freyja.md) | A member of the family of Valkyries. Calls upon nature for help and even a wisp to cultivate crops. | *Poison*{.dmg .poison} | Spears<br>Swords<br>Shields | Heavy |
 | [Hel](hel.md) | The gatekeeper of the underworld. Brings darkness to the surroundings while followed by many minions. | *Spirit*{.dmg .spirit}<br>*Poison*{.dmg .poison} | Two-handed axes<br>Two-handed swords<br>Polearms<br>Knives | Heavy<br>Light |
-| [Hraesvelgr](hraesvelgr.md) | A highly mobile eagle demigod that glides through the air, using telekinesis and destructive blasts to eliminate enemies. | *Lightning*{.dmg .lightning} | Swords<br>Polearms | Heavy |
+| [Hraesvelgr](hraesvelgr.md) | A highly mobile eagle demigod that glides through the air, using telekinesis and destructive blasts to eliminate enemies. | *Lightning*{.dmg .lightning} (infused) | Swords<br>Polearms | Heavy |
 | [Kvasir](kvasir.md) | Once a traveler, teaching and spreading knowledge. Now, there is only darkness, and only blood will satisfy his needs. | *Spirit*{.dmg .spirit} | Bows<br>Knives | Light |
 | [Njord](njord.md) | Calls the force of the seas to summon tornadoes and even necks to help with gathering resources. Swims and sails faster. | *Lightning*{.dmg .lightning}<br>*Frost*{.dmg .frost} | Axes<br>Swords<br>Polearms | Heavy |
 | [Surtr](surtr.md) | Burns everything around by using weapons, spells, and even minions. | *Fire*{.dmg .fire} | Axes<br>Swords<br>Polearms | Heavy |

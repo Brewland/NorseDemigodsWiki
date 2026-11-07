@@ -61,4 +61,4 @@ extra [true damage](../reference/glossary.md#true-damage) per eitr point.
 - [Kvasir](../demigods/kvasir.md)
 - [Hunter](hunter.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

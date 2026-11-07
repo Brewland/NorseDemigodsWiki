@@ -32,4 +32,4 @@ A configuration manager: a settings window for all your mods, opened in-game.
 - [Installing the Mod](installing-the-mod.md)
 - [Compatibility](compatibility.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

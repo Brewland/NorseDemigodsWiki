@@ -49,4 +49,4 @@ Extra damage added to your melee hits:
 - [Brokkr](../demigods/brokkr.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

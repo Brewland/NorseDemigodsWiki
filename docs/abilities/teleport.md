@@ -46,4 +46,4 @@ when a world modifier already lets all items through portals: Teleport then carr
 
 - [Thor](../demigods/thor.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -38,4 +38,4 @@ eitr and her eitr regeneration.
 - [Eir](../demigods/eir.md)
 - [Holy Body](holy-body.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

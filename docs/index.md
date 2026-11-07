@@ -5,7 +5,7 @@ powers of the gods. Each of the 11 demigods is an RPG-like class of its own, wit
 attributes that grow as you progress. Many echo classic RPG roles, such as the cleric, the necromancer or the
 ranger, but every one is a figure from Norse myth that belongs in the world of Valheim.
 
-This wiki describes Norse Demigods **1.9.2**. Values shown are server defaults; your server may differ.
+This wiki describes Norse Demigods **1.9.3**. Values shown are server defaults; your server may differ.
 
 ## New to the mod?
 

@@ -68,4 +68,4 @@ Damage grows evenly with level; health grows slowly at low levels and sharply at
 - [Glossary](../reference/glossary.md)
 - [Companions](../companions/index.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

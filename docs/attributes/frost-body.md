@@ -43,4 +43,4 @@ Extra armor when wearing no heavy armor: 0.4 [per level](../reference/glossary.m
 - [Fenrir](../demigods/fenrir.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -30,4 +30,4 @@ his home, guiding him back without a map.
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Teleport](../abilities/teleport.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -28,8 +28,9 @@ and takes reduced fall damage.
 ## Fall damage
 
 - No fall damage from falls of 12 m or less.
-- Above 12 m, fall damage rises to 100 at 20 m or higher.
-- Fall damage never takes you below 10 health.
+- Above 12 m, fall damage rises steadily to 100 at 28 m or higher (vanilla: from 4 m to 20 m).
+- Falls can kill you. Server owners can turn on `[(General)] Prevent Lethal Fall Damage` so that fall damage never
+  takes you below 10 health.
 
 ## Notes
 
@@ -44,4 +45,4 @@ and takes reduced fall damage.
 - [Brokkr](../demigods/brokkr.md)
 - [Combustion](../abilities/combustion.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -64,7 +64,7 @@ Each demigod has one **infusion item** that permanently upgrades all its abiliti
 compendium gives a hint once you have chosen a demigod: read the last paragraph of **ND: Introduction**. Kvasir
 is infused by a kill instead of an item.
 
-See [Infusion Items](../items/infusion-items.md).
+See [Ability Infusion Items](../items/ability-infusion-items.md).
 
 ## Items and food
 
@@ -92,4 +92,4 @@ necks. See [Companions](../companions/index.md).
 - [Controls and Hotkeys](controls-and-hotkeys.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

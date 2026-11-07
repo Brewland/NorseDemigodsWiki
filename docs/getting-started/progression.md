@@ -93,4 +93,4 @@ You never drop below level 0.
 - [Demigods](../demigods/index.md)
 - [Compatibility](compatibility.md#built-in-support) (PathOfValheiman's skill freeze)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

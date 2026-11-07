@@ -51,4 +51,4 @@ Healing per pulse grows evenly from 3 at level 0 to 8 at level 100.
 
 - [Brokkr](../demigods/brokkr.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

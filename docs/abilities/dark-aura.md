@@ -50,4 +50,4 @@ While the aura is active:
 
 - [Kvasir](../demigods/kvasir.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

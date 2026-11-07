@@ -55,4 +55,4 @@ costs eitr instead of energy and can give energy back on a hit.
 - [Thor](../demigods/thor.md)
 - [Lightning Storm](lightning-storm.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

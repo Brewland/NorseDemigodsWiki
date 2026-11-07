@@ -108,4 +108,4 @@ Each page has the exact chance or amount.
 - [Infused Megingjord](../items/infused-megingjord.md)
 - [Permanent Consumables](../items/permanent-consumables.md#infused-leather-scraps)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

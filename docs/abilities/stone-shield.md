@@ -55,4 +55,4 @@ Healing per second grows evenly from 8 at level 0 to 15 at level 100.
 
 - [Brokkr](../demigods/brokkr.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

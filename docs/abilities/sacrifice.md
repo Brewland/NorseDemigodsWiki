@@ -53,4 +53,4 @@ Explosion damage: 2 per type [per level](../reference/glossary.md#per-level), wi
 - [Minions](minions.md)
 - [Drain Blood](drain-blood.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

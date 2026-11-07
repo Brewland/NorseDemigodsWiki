@@ -41,4 +41,4 @@ Eagle Agility is Hraesvelgr's own attribute: he attacks faster with swords and p
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Eagle Precision](eagle-precision.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

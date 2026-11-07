@@ -38,4 +38,4 @@ Without any heavy armor piece: 0.2 extra armor and 0.2% less damage taken
 - [Ullr](../demigods/ullr.md)
 - [Regenerative Body](regenerative-body.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

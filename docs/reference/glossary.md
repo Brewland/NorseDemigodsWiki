@@ -57,4 +57,4 @@ Damage without a type, such as the core damage of Hel's [Acid Bolt](../abilities
 
 These are vanilla Valheim rules, not mod settings.
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

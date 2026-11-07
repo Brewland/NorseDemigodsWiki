@@ -55,4 +55,4 @@ It costs eitr instead of energy, can give energy back on a hit and also damages 
 - [Freyja](../demigods/freyja.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

@@ -32,4 +32,4 @@ Glide is Hraesvelgr's own attribute: he always falls slowly, gliding through the
 - [Hraesvelgr](../demigods/hraesvelgr.md)
 - [Soar](../abilities/soar.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

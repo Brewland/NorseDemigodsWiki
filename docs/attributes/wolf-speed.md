@@ -56,4 +56,4 @@ bonuses of leg attributes such as [Hare Legs](hare-legs.md).
 - [Ullr](../demigods/ullr.md)
 - [Hare Legs](hare-legs.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

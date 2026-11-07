@@ -70,4 +70,4 @@ settings too.
 - [Abilities](../abilities/index.md)
 - [Recommended Mods](recommended-mods.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

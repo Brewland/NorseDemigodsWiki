@@ -52,4 +52,4 @@ energy but has a long cooldown.
 
 - [Eir](../demigods/eir.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

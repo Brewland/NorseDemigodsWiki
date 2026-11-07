@@ -32,4 +32,4 @@ for up to 15 seconds.
 - [Hel](../demigods/hel.md)
 - [Glossary](../reference/glossary.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

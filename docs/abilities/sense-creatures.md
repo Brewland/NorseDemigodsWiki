@@ -42,4 +42,4 @@ animal within 70 m.
 - [Ullr](../demigods/ullr.md)
 - [Hunter](../attributes/hunter.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->

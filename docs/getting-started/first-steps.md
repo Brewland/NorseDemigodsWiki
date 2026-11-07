@@ -60,4 +60,4 @@ Before you choose a demigod, only ND: Introduction is there.
 - [Demigod Runestone](../items/demigod-runestone.md)
 - [Controls and Hotkeys](controls-and-hotkeys.md)
 
-<!-- Verified against NorseDemigods 1.9.2 -->
+<!-- Verified against NorseDemigods 1.9.3 -->
