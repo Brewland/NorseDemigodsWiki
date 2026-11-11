@@ -1,3 +1,8 @@
+---
+class_label: "Lightning Warrior"
+description: "Thor, the Lightning Warrior class in the Valheim mod Norse Demigods: dashes at the speed of light, strikes enemies with lightning and calls down a storm."
+---
+
 # Thor
 
 Thor is a lightning demigod who dashes at the speed of light and strikes enemies with lightning. He favors clubs,

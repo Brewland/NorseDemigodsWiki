@@ -1,3 +1,8 @@
+---
+class_label: "Vampiric Archer"
+description: "Kvasir, the Vampiric Archer class in the Valheim mod Norse Demigods: warps through space, charms creatures to fight for him and heals by killing."
+---
+
 # Kvasir
 
 Kvasir is a blood demigod who warps through space, slashes enemies with knives, charms creatures to fight for him and

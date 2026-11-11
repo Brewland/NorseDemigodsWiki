@@ -1,3 +1,7 @@
+---
+description: "Help for the Valheim mod Norse Demigods: FAQ, troubleshooting, how to report a bug, and console commands."
+---
+
 # Help
 
 Answers to common questions, fixes for common problems, and how to report a bug.

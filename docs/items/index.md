@@ -1,3 +1,7 @@
+---
+description: "Items in the Valheim mod Norse Demigods: the Demigod Runestone, Abyssal Harpoon, Infused Megingjord, ability infusion items, permanent consumables and foods."
+---
+
 # Items
 
 The Demigod Runestone, infusion items, permanent consumables, sweet fish foods and other items added by the mod.

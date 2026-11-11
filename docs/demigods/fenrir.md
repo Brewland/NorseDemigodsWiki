@@ -1,3 +1,8 @@
+---
+class_label: "Brawler"
+description: "Fenrir, the Brawler class in the Valheim mod Norse Demigods: fights bare-handed with frost claws strong enough to fell trees, with a summoned wolf at his side."
+---
+
 # Fenrir
 
 Fenrir is a frost demigod who fights bare-handed: his claws hit hard enough to fell trees, and his summoned Ulv fights

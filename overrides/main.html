@@ -1,11 +1,18 @@
 {% extends "base.html" %}
 
-{#- Home page only: a search-friendly <title>. Other pages keep Material's "Page - Site" title. -#}
+{#- Search-friendly <title> (texts in mkdocs.yml extra.seo). Home page: its own title. Pages with a "class_label"
+    front matter key (demigods): "Hel: Necromancer Class - <suffix>". Every other page: "Page - <suffix>".
+    The site name in the header stays config.site_name. -#}
 {% block htmltitle %}
+  {% set seo = config.extra.seo %}
   {% if page.is_homepage %}
-    <title>{{ config.site_name }}: Valheim Class Mod Guide</title>
+    <title>{{ seo.home_title }}</title>
+  {% elif page.meta and page.meta.class_label %}
+    <title>{{ page.title | striptags }}: {{ page.meta.class_label }} Class - {{ seo.title_suffix }}</title>
+  {% elif page.title %}
+    <title>{{ page.title | striptags }} - {{ seo.title_suffix }}</title>
   {% else %}
-    {{ super() }}
+    <title>{{ seo.title_suffix }}</title>
   {% endif %}
 {% endblock %}
 

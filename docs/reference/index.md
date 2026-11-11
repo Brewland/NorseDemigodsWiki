@@ -1,3 +1,7 @@
+---
+description: "Reference for the Valheim mod Norse Demigods: a glossary of game terms and the changelog of every release."
+---
+
 # Reference
 
 Pages to look things up: game terms and the mod's changes.

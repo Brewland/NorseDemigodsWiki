@@ -1,3 +1,8 @@
+---
+class_label: "Aerial Warrior"
+description: "Hraesvelgr, the Aerial Warrior class in the Valheim mod Norse Demigods: glides through the air, pulls enemies in with telekinesis and blasts them with wind."
+---
+
 # Hraesvelgr
 
 Hraesvelgr is an eagle demigod who glides through the air, pulls enemies to him with telekinesis and blasts them with

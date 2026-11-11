@@ -1,3 +1,8 @@
+---
+class_label: "Necromancer"
+description: "Hel, the Necromancer class in the Valheim mod Norse Demigods: raises skeleton minions, drains the life of her enemies and calls down meteors."
+---
+
 # Hel
 
 Hel is a demigod of the underworld who drains the life of her enemies, calls down meteors and raises skeletons to fight

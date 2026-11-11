@@ -1,3 +1,8 @@
+---
+class_label: "Engineer & Smith"
+description: "Brokkr, the Engineer & Smith class in the Valheim mod Norse Demigods: throws bombs that destroy ore veins, launches lightning torpedoes, summons a stone golem."
+---
+
 # Brokkr
 
 Brokkr is a forging demigod who throws bombs that destroy entire ore veins, launches lightning torpedoes and summons a

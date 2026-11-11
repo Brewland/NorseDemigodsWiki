@@ -1,3 +1,8 @@
+---
+class_label: "Pyromancer"
+description: "Surtr, the Pyromancer class in the Valheim mod Norse Demigods: burns everything with his weapons, fireballs, burning ground and summoned surtlings."
+---
+
 # Surtr
 
 Surtr is a fire demigod who burns everything around him with his weapons, fireballs, burning ground and summoned

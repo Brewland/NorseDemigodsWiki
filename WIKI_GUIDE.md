@@ -806,9 +806,51 @@ In this order:
 Home cards have no icon; otherwise they follow the [card grid](#card-grid) format. When a demigod is added or its
 kit changes, update its home card and the demigod count in the intro.
 
-Search metadata: `site_description` in `mkdocs.yml` is the meta description for every page (keep it under ~160
-characters, with "Valheim mod", "demigods" and "classes"). `overrides/main.html` gives only the home page the
-`<title>` "Norse Demigods Wiki: Valheim Class Mod Guide"; other pages keep Material's "Page - Norse Demigods Wiki".
+#### Search metadata (titles and descriptions)
+
+Search engines show the `<title>` as the blue link and the meta description as the text under it. Neither is visible
+on the page itself: headings, `nav` labels and the site name in the header ("Norse Demigods Wiki") never change for
+search reasons.
+
+**Titles** come from `overrides/main.html`, with the texts in `mkdocs.yml` under `extra.seo`. Every title ends with the
+same suffix, `title_suffix` = "Norse Demigods Valheim Mod". The suffix has no "Wiki", to keep titles near
+Google's ~60-character cutoff; the home title keeps it for "norse demigods wiki" searches:
+
+| Page | `<title>` | Set by |
+| --- | --- | --- |
+| Home | "Norse Demigods Wiki: Valheim RPG Class Mod" | `extra.seo.home_title` |
+| Demigod | "Thor: Lightning Warrior Class - Norse Demigods Valheim Mod" | `class_label` in the page's front matter |
+| Every other page | "Fireball - Norse Demigods Valheim Mod" | the `nav` title, automatically |
+
+`class_label` is the demigod's classic-role label from its home card (the README's "Plays like" column), without
+the word "Class": `Engineer & Smith`, `Cleric`, `Brawler`, `Valkyrie Druid`, `Necromancer`, `Aerial Warrior`,
+`Vampiric Archer`, `Sea Shaman`, `Pyromancer`, `Lightning Warrior`, `Ranger`. Only demigod pages have it. Never put
+`title:` in front matter (it would change the `nav` label).
+
+**Descriptions** are a `description:` front matter key, max 160 characters, plain text (no Markdown, no badges),
+in double quotes. They are required on the home page, every section `index.md` and every demigod page; other
+pages (abilities, attributes, items, help) leave them out and fall back to `site_description` in `mkdocs.yml`,
+while search engines pick their own snippet from the page's opening summary.
+
+- Demigod pages follow one pattern: "<Name>, the <class label> class in the Valheim mod Norse Demigods: <two or three
+  signature abilities or traits>." Each trait starts with a verb ("dashes at the speed of light, strikes enemies with
+  lightning and calls down a storm"). The traits must match the page's opening summary and its ability pages.
+- Section index pages: what the section lists, with "the Valheim mod Norse Demigods" in the first sentence.
+- Home page: "Norse Demigods, the Valheim RPG class mod", the demigod count, and what the wiki covers.
+- `site_description` (the fallback) stays under ~160 characters, with "Valheim mod", "demigods" and "classes".
+
+Front matter goes at the very top of the file, before the `#` heading (example in the [Demigod](#demigod)
+template).
+
+When a demigod is added, give its page a `class_label` and a `description`, and keep the demigod count in the home
+and Demigods index descriptions right.
+
+#### Moved pages (redirects)
+
+When a page is renamed or moved, add the old path to `redirect_maps` under the `redirects` plugin in `mkdocs.yml`
+(`old/path.md: new/path.md`), so links in the mod README, on Discord and in search results keep working. Never
+remove an entry. Then fix the links that point to the old path (also in the mod's `_Publish/README.md`: tell the
+user, since the mod repo is read-only from here).
 
 #### CSS class reference
 
@@ -894,11 +936,16 @@ These settings make the components work; do not remove them:
 ```yaml
 theme:
   name: material
-  custom_dir: overrides          # main.html: home page <title> (no banner); partials/header.html: the date
+  custom_dir: overrides          # main.html: page <title>s, GoatCounter; partials/header.html: the date
   logo: assets/images/logo.png   # header icon (see Header date, logo and download links)
   favicon: assets/images/favicon.png  # browser tab icon
   palette: # light + dark, both with primary: custom, accent: custom
+plugins:
+  - search
+  - redirects:                   # mkdocs-redirects (requirements.txt): old URLs of moved pages
+      redirect_maps:
 extra:
+  seo:                           # home_title, title_suffix (see Search metadata)
   download:                      # header links: Thunderstore, Hexium (name + link)
 extra_css:
   - stylesheets/extra.css
@@ -931,9 +978,14 @@ sections that would be empty; never leave empty headings.
 ### Demigod
 
 Abilities and attributes appear **only as cards** (see [Card grid](#card-grid)). All details live on their own
-pages.
+pages. The page starts with front matter (see [Search metadata](#search-metadata-titles-and-descriptions)).
 
 ```markdown
+---
+class_label: "Lightning Warrior"
+description: "Thor, the Lightning Warrior class in the Valheim mod Norse Demigods: dashes at the speed of light, strikes enemies with lightning and calls down a storm."
+---
+
 # Thor
 
 Thor is a lightning demigod who dashes at the speed of light and strikes enemies with lightning. He favors

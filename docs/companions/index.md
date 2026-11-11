@@ -1,3 +1,7 @@
+---
+description: "Every creature a demigod can summon in the Valheim mod Norse Demigods, compared: damage, health, energy, and the rules all companions share."
+---
+
 # Companions
 
 Several demigods can summon creatures that follow them and fight, or gather resources, for them. This page compares

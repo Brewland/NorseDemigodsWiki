@@ -1,3 +1,8 @@
+---
+class_label: "Sea Shaman"
+description: "Njord, the Sea Shaman class in the Valheim mod Norse Demigods: strikes with lightning bolts and tornadoes, summons necks to gather resources and swims faster."
+---
+
 # Njord
 
 Njord is a sea demigod who strikes with lightning bolts and tornadoes, hurls water spheres and summons necks to gather

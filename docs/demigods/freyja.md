@@ -1,3 +1,8 @@
+---
+class_label: "Valkyrie Druid"
+description: "Freyja, the Valkyrie Druid class in the Valheim mod Norse Demigods: throws poison javelins, poisons the ground and calls on deathsquitos and a helpful wisp."
+---
+
 # Freyja
 
 Freyja is a nature demigod and Valkyrie who throws poison javelins, curses the ground with poison and calls on

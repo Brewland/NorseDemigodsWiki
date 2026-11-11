@@ -1,3 +1,7 @@
+---
+description: "Every ability in the Valheim mod Norse Demigods: damage, cooldown, energy cost, input and infused upgrade, and the demigods that use it."
+---
+
 # Abilities
 
 Every active ability, with its damage, cooldown, energy cost and infused upgrade.

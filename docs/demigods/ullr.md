@@ -1,3 +1,8 @@
+---
+class_label: "Ranger"
+description: "Ullr, the Ranger class in the Valheim mod Norse Demigods: fights with frost-infused arrows, hides with stealth and hunts with a wolf companion."
+---
+
 # Ullr
 
 Ullr is a hunter demigod who fights with frost-infused arrows, a wolf companion and stealth. He favors bows, knives,

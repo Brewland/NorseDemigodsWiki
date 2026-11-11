@@ -31,7 +31,16 @@ theme:
     - search.suggest
     - search.highlight
 
+plugins:
+  - search
+  - redirects: # old URLs that moved; keep them so existing links keep working
+      redirect_maps:
+        items/infusion-items.md: items/ability-infusion-items.md
+
 extra:
+  seo: # browser tab / search result titles (overrides/main.html)
+    home_title: "Norse Demigods Wiki: Valheim RPG Class Mod"
+    title_suffix: Norse Demigods Valheim Mod
   goatcounter: norsedemigods # visitor stats: https://norsedemigods.goatcounter.com (overrides/main.html)
   download: # header links (overrides/partials/header.html)
     - name: Thunderstore

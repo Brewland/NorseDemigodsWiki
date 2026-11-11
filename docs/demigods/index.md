@@ -1,3 +1,7 @@
+---
+description: "All 11 demigods of the Valheim mod Norse Demigods, each an RPG-like class (cleric, necromancer, ranger, pyromancer and more), with element and weapons."
+---
+
 # Demigods
 
 Every playable demigod, with its abilities, attributes, favorite weapons and preferred armor.

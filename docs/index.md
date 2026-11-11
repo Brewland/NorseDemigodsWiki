@@ -1,3 +1,7 @@
+---
+description: "Player wiki for Norse Demigods, the Valheim RPG class mod: 11 playable demigods with abilities, spells, companions and attributes. Setup, stats and guides."
+---
+
 # Norse Demigods Wiki
 
 **Norse Demigods** is a Valheim mod that lets you play as a demigod, a daughter or son of Odin blessed with the

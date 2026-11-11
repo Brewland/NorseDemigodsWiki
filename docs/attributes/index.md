@@ -1,3 +1,7 @@
+---
+description: "Every passive attribute in the Valheim mod Norse Demigods, with its effects, its scaling and the demigods that have it."
+---
+
 # Attributes
 
 Every passive attribute, with its effects, conditions and the demigods that have it.

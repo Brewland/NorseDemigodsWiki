@@ -1,3 +1,8 @@
+---
+class_label: "Cleric"
+description: "Eir, the Cleric class in the Valheim mod Norse Demigods: heals her allies, protects herself with a holy shield and burns enemies with Fire and Spirit damage."
+---
+
 # Eir
 
 Eir is a holy demigod and healer who heals her allies, protects herself with a holy shield and burns enemies with Fire

@@ -1,3 +1,7 @@
+---
+description: "How to install and start playing Norse Demigods, the Valheim RPG class mod: setup, mod managers, multiplayer, controls, energy and your first steps."
+---
+
 # Getting Started
 
 Everything a new player needs, in order. **Setup** happens before you launch the game: installing the mod, other
