@@ -16,6 +16,16 @@
   {% endif %}
 {% endblock %}
 
+{#- Search engine ownership tags (codes in mkdocs.yml extra.seo). -#}
+{% block extrahead %}
+  {% if config.extra.seo.google_verification %}
+    <meta name="google-site-verification" content="{{ config.extra.seo.google_verification }}">
+  {% endif %}
+  {% if config.extra.seo.bing_verification %}
+    <meta name="msvalidate.01" content="{{ config.extra.seo.bing_verification }}">
+  {% endif %}
+{% endblock %}
+
 {#- GoatCounter visitor stats (code set in mkdocs.yml extra.goatcounter). Skipped on localhost so local previews are not counted. -#}
 {% block analytics %}
   {% if config.extra.goatcounter %}

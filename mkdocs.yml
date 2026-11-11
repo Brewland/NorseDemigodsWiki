@@ -38,9 +38,11 @@ plugins:
         items/infusion-items.md: items/ability-infusion-items.md
 
 extra:
-  seo: # browser tab / search result titles (overrides/main.html)
+  seo: # browser tab / search result titles and search engine ownership tags (overrides/main.html)
     home_title: "Norse Demigods Wiki: Valheim RPG Class Mod"
     title_suffix: Norse Demigods Valheim Mod
+    google_verification: tmbdlGh1SNfe3gzGq4nGgOORPp1v3z_pBXEMyeXrpoM # Google Search Console
+    bing_verification: # Bing Webmaster Tools (empty: imported from Search Console instead)
   goatcounter: norsedemigods # visitor stats: https://norsedemigods.goatcounter.com (overrides/main.html)
   download: # header links (overrides/partials/header.html)
     - name: Thunderstore
