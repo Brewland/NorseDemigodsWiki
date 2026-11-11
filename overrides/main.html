@@ -8,3 +8,13 @@
     {{ super() }}
   {% endif %}
 {% endblock %}
+
+{#- GoatCounter visitor stats (code set in mkdocs.yml extra.goatcounter). Skipped on localhost so local previews are not counted. -#}
+{% block analytics %}
+  {% if config.extra.goatcounter %}
+    <script>
+      if (["localhost", "127.0.0.1"].includes(location.hostname)) window.goatcounter = { no_onload: true };
+    </script>
+    <script data-goatcounter="https://{{ config.extra.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  {% endif %}
+{% endblock %}
